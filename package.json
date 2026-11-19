@@ -1,0 +1,16 @@
+{
+  "name": "shipped-with-ai",
+  "private": true,
+  "description": "Tooling for the Shipped with AI YouTube channel",
+  "scripts": {
+    "remotion": "remotion",
+    "studio": "remotion studio"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.545",
+    "remotion": "4.0.545",
+    "hyperframes": "0.9.70",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  }
+}
