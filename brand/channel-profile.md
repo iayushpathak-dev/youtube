@@ -20,22 +20,22 @@
 | Video watermark | `brand/assets/watermark-150.png` | 150×150 PNG (optional) |
 
 ## Description (About)
-596 characters (limit 1,000). Paste exactly:
+Final, written by the creator and lightly edited by Claude (2026-11-21). 709 characters (limit 1,000). Paste exactly:
 
 ```
 Discover. Build. Automate. Ship.
 
-ShippedWithAI helps you actually use AI, whether you're a student, a working professional, a founder, a creator or a developer.
+AI is changing the way we learn, work and create. At ShippedWithAI, we show you how to actually use it in everyday life.
 
-I'm a software engineer who builds real things with AI. Every week I show you:
-→ which AI tools to use for which job (ChatGPT, Claude, Gemini and more)
-→ how to build apps and AI agents, often without writing code
-→ how to automate the repetitive parts of your work and business
-→ what actually holds up when you ship it: the wins, the limits and the mistakes
+Whether you're a student, working professional, founder, creator or developer, you'll find practical ways to make AI work for you.
 
-No hype. No fake demos. Just AI you can use.
+We dive into tools like ChatGPT, Claude, Gemini and more. We build apps and AI agents, experiment with automation and put AI to work on real-world problems.
 
-🎬 New video every Tuesday.
+Expect practical tutorials, useful tools, real experiments and honest takes on what works, what doesn't and what we've learned along the way.
+
+No hype. No unrealistic promises. Just useful AI, explored and put into action.
+
+New videos every Tuesday. Shorts daily.
 ```
 
 ## Channel keywords
@@ -49,6 +49,8 @@ AI tools, how to use AI, AI agents, AI automation, build with AI, no code AI, Cl
 - Default tags: AI, AI tools, ShippedWithAI (plus topic tags per video, see `strategy/seo-packaging.md`)
 
 ## History
+- **2026-11-21 (Claude draft, replaced the same day by the creator's version above):**
+  > Discover. Build. Automate. Ship. / ShippedWithAI helps you actually use AI, whether you're a student, a working professional, a founder, a creator or a developer. / I'm a software engineer who builds real things with AI. Every week I show you: → which AI tools to use for which job (ChatGPT, Claude, Gemini and more) → how to build apps and AI agents, often without writing code → how to automate the repetitive parts of your work and business → what actually holds up when you ship it: the wins, the limits and the mistakes / No hype. No fake demos. Just AI you can use. / 🎬 New video every Tuesday.
 - **2026-11-19 → 2026-11-21 (v1, developer-only, superseded by DEC-001):**
   - About: "Real apps, built with AI, shipped to production. I'm a senior frontend developer. On this channel I build real React and Next.js projects with Claude Code, Cursor and other AI tools, and I show what holds up and what breaks: the prompts, the code review, the bugs and the deploy. No hype and no toy demos. Every video ends with something that actually ships. New videos every Tuesday."
   - Keywords: claude code, ai coding, cursor ai, nextjs, react, ai for developers, frontend development, vibe coding, ai web development, github copilot, build apps with ai, senior developer.
