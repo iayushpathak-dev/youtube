@@ -8,9 +8,9 @@ objective: reach
 hypothesis: "If we explain agents simply with one concrete example, then the "Clearly Explained" format works for us in Shorts too (avg % viewed, shares)."
 title: "AI Agents Explained in 45 Seconds"
 hook: "A chatbot answers you. An agent does the work. Here's the difference in 45 seconds."
-production_status: SCRIPTED
-approval_status: PROPOSED
-publish_date: "2026-11-25"
+production_status: KILLED
+approval_status: REJECTED
+publish_date: ""
 video_url: ""
 experiments: []
 created: 2026-11-21
@@ -51,3 +51,4 @@ Format 1080×1920. Captions burned in (Inter Black, mint key word), kept out of 
 |---|---|---|---|---|---|---|---|---|
 
 ## Lessons learned
+- 2026-11-21 · KILLED before production: the creator asked for all 7 launch-week Shorts to come from SWAI-L001 ("us video ke 7 shorts"). The script stays here for reuse; topic moved to opportunities: AI agents explainer (OPP-007).

@@ -2,7 +2,7 @@
 
 **Channel:** AI Made Usable (@aimadeusable), renamed from ShippedWithAI on 2026-11-21 (DEC-017).
 
-**Last updated:** 2026-11-21 · **Phase:** 2, **Launch week production** (DEC-018). Long-form SWAI-L001 on Tue 2026-11-24 19:30 IST + Shorts SWAI-S001..S007 (Sun 11-22 → Sat 11-28). All scripted, awaiting the creator's script approval + recordings.
+**Last updated:** 2026-11-21 · **Phase:** 2, **Launch week production**: The AI Showdown (DEC-019). Long-form SWAI-L001 (~8–9 min, game show, jokes) on Tue 2026-11-24 19:30 IST + 7 Shorts cut from it (S001 Sun 11-22 → S010 Sat 11-28). Scripted, awaiting the creator's review + recording (test **Sunday**).
 
 ## Channel state (FACT, Windsor.ai, 2026-11-21)
 0 subscribers · 0 public videos · 0 views · About description empty. Brand v2 files ready in `brand/assets/` (v1 archived). Not yet uploaded.
@@ -39,7 +39,7 @@
 |---|---|---|---|
 | T1 | ✅ Week 1 calendar + scripts (L001, S001–S007) | Claude | done 2026-11-21 |
 | T7 | Approve/edit the week-1 scripts | Creator | — |
-| T8 | Record SWAI-L001 test (protocol in the item file) + voice for S001/S002 (needed first: Sun/Mon) | Creator | T7 |
+| T8 | **Sunday 11-22:** record the AI Showdown test (protocol in SWAI-L001) + voice for S001 (clone or phone) | Creator | T7 |
 | T9 | Edit L001 + Shorts, graphics, captions, thumbnail B (with the creator's photo) | Claude | T8 (recordings), T4 |
 | T10 | Upload + schedule each video in Studio | Creator | T9 |
 | T2 | In YouTube Studio: change the display name to **AI Made Usable** (handle @aimadeusable ✅ done), upload logo/banner/watermark, paste About + keywords (`brand/channel-profile.md`) | Creator | — (approved 2026-11-21) |

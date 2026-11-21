@@ -28,7 +28,10 @@ AI is always the central theme. Segment needs are in `research/audience/segments
 Real results with AI, shown honestly: what works, what breaks, and what it takes to ship.
 No hype, and no toy demos without a takeaway.
 
-## Voice (PROPOSED)
+## Voice
+Tone set by the creator for the first video (DEC-019, 2026-11-21): **casual, fun, AI jokes, learning in every segment.** Jokes target what the AI did on screen or our own struggles, never real-world claims about companies or people.
+
+### Voice principles (PROPOSED)
 - Clear before clever. Explain so a beginner can follow without boring an expert.
 - Honest: show failures and limits, not just wins.
 - Practical: every piece ends with something the viewer can do.

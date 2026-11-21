@@ -8,9 +8,9 @@ objective: reach
 hypothesis: "If we give students a study prompt that makes them think (not copy), then the Short reaches the STU segment (audience age data, views)."
 title: "Stop Using AI to Do Your Homework. Do This."
 hook: "Using AI to do your homework makes you worse. Using it like this makes you better."
-production_status: SCRIPTED
-approval_status: PROPOSED
-publish_date: "2026-11-28"
+production_status: KILLED
+approval_status: REJECTED
+publish_date: ""
 video_url: ""
 experiments: []
 created: 2026-11-21
@@ -50,3 +50,4 @@ Format 1080×1920. Captions burned in (Inter Black, mint key word), kept out of 
 |---|---|---|---|---|---|---|---|---|
 
 ## Lessons learned
+- 2026-11-21 · KILLED before production: the creator asked for all 7 launch-week Shorts to come from SWAI-L001 ("us video ke 7 shorts"). The script stays here for reuse; topic moved to opportunities: AI tutor-mode for students (OPP-017).

@@ -147,3 +147,11 @@ Never delete entries. Mark superseded ones with `SUPERSEDED by DEC-###`.
 - **Evidence:** Starter ≈ $6/mo with cloning + commercial licence (third-party guides, Nov 2026. Verify on elevenlabs.io). Disclosure rule from YouTube Help (14328491). Alternatives considered: Murf AI (Indian-accent stock voices), Resemble, CAMB.AI.
 - **Approval record:** The creator, 2026-11-21: "so lets set up a ai voice tool jo meri voice use krega". This approves the tool and the cloning of their own voice. **The paid plan is the creator's purchase.**
 - **Status:** APPROVED → IN PROGRESS (waiting for the account, API key via secure form, and voice sample).
+
+### DEC-019: First video format, length and tone
+- **Date:** 2026-11-21
+- **Description:** SWAI-L001 becomes **"The AI Showdown"**: a game-show format, ~8–9 min (not 15–25), casual tone with AI jokes, and the same verifiable test. All 7 launch-week Shorts are cut from it (S001 teaser, S002/S003/S006/S008/S009 one round each, S010 cheat sheet). The off-topic drafts S004/S005/S007 are KILLED (IDs retired, ideas kept as OPP-007/016/017).
+- **Evidence:** `research/competitors/snapshots/2026-11-21-l001-format-research.md`. Humour-led "I tested AI" videos 5–10M. Successful direct comparisons 7–13 min (Parker Prompts 211K at 8:51).
+- **Approval record:** The creator, 2026-11-21: "first video kya hogi uski research kr… us video ke 7 shorts bana dena or 1 long video jyada long nhi boring nhi hona chaheye interesting and Mazza aana chaheye… casual jokes… AI based jokes".
+- **Status:** APPROVED (direction) → IMPLEMENTED in the scripts. The scripts themselves still await the creator's review (approval_status PROPOSED).
+- **Humour rules (brand voice):** jokes target what happened on screen or our own struggles, never claims about companies or people. No fake fails. Keep the learning point in every round.

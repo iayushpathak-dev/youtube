@@ -103,6 +103,8 @@ items = []
 for folder in ("long", "shorts"):
     for p in sorted((ROOT / "content" / folder).glob("SWAI-*.md")):
         fm, body = front(p)
+        if fm.get("production_status") == "KILLED":
+            continue
         items.append((fm, body, p.relative_to(ROOT).as_posix()))
 items.sort(key=lambda x: (x[0].get("publish_date", ""), x[0].get("id", "")))
 
