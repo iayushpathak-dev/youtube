@@ -34,5 +34,6 @@ One home per type of information. If you are about to create a file that duplica
 | Q | Weekly / monthly reports | `reports/weekly/`, `reports/monthly/` | Templates in `reports/README.md` |
 | R | Future content opportunities | `research/opportunities.md` | Trends/topics not yet turned into content items |
 | S | Project status & pending tasks | `status/STATUS.md` | Current phase, tasks, blockers, pending approvals |
+| — | Handoff summary prompt (paste into a new session) | `status/handoff-prompt.md` | Refresh after major milestones |
 | — | Tools & integrations inventory | `status/integrations.md` | What works, what's missing, minimum access needed |
 | — | Scripts | `tools/` | `content_index.py`, `render-branding.js` |
