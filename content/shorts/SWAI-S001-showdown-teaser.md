@@ -8,7 +8,7 @@ objective: reach
 hypothesis: "If the first Short frames a fun, fair fight with a guess-the-winner prompt, then viewers comment and come back Tuesday (comments, subs)."
 title: "I'm Making ChatGPT, Claude & Gemini Fight"
 hook: "I'm making ChatGPT, Claude and Gemini fight. Over a spreadsheet."
-production_status: SCRIPTED
+production_status: EDITED
 approval_status: PROPOSED
 publish_date: "2026-11-22"
 video_url: ""
@@ -49,3 +49,4 @@ AI Showdown package (contestant tiles, round card, ✓/✗ stamps, mini scoreboa
 |---|---|---|---|---|---|---|---|---|
 
 ## Lessons learned
+- 2026-11-21 · Rendered with `production/shorts/render_short.py` + clone voice take 1 (40.6 s, a little under the 45 s target). Scenes are scaled proportionally to the voice, not word-aligned. Awaiting the creator's listen + approval before upload.

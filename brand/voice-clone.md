@@ -11,7 +11,7 @@ Decision: DEC-008 + DEC-013 (b). The creator asked on 2026-11-21: "so lets set u
 | Key storage | Environment network secret (saved via the secure form). **Never in this repo.** |
 | Voice name | `AI Made Usable - Creator` (voice_id recorded below once created) |
 | Model | Multilingual v2 (handles the Indian-English accent of the sample). Re-evaluate after the first listening test. |
-| voice_id | _not created yet_ |
+| voice_id | **`pm90bpkUxKb7610rgiaR`**, name in ElevenLabs: `ai-made-usable-voice-sample` (created by the creator 2026-11-21) |
 
 ## Rules
 - Clone **only the creator's own voice**, with the creator's consent (given 2026-11-21).
@@ -54,3 +54,4 @@ Decision: DEC-008 + DEC-013 (b). The creator asked on 2026-11-21: "so lets set u
 - 2026-11-21 · **ElevenLabs connector connected** (claude.ai connector, OAuth, no API key needed). Verified: plan **starter**, status active, 40,000 characters/month, 0/10 voice slots used. The connector can **generate speech** (`creative_generate_speech`) with any voice in the account and list voices. It **cannot create an Instant Voice Clone from a recording** (it only has "design a voice from a description"). So: the creator makes the clone once on elevenlabs.io (Voices → Add voice → Instant Voice Clone → upload sample), then Claude finds it with `creative_list_voices` and generates every Shorts voiceover through the connector.
 - Budget: a 45–60 s Short ≈ 600–750 characters per take, and the connector defaults to 2 takes ≈ 1,500 characters. A week of 7 Shorts ≈ 10,000 of the 40,000 monthly characters.
 - 2026-11-21 · Re-checked the connector's full node list: "voice-creation" = **Voice Design from a text description** (eleven_ttv_v3), not cloning from audio. Voice Changer, Isolator and TTS exist. **There is no Instant Voice Clone tool**, so even if the creator sends the recording to Claude, Claude cannot create the clone through the connector. The creator uploads the sample on elevenlabs.io once (or adds an API key, which was declined earlier).
+- 2026-11-21 · **Clone created** by the creator (voice_id `pm90bpkUxKb7610rgiaR`). First use: SWAI-S001 voiceover, model eleven_v4, 2 takes (591 credits each; 40.6 s and 41.2 s). Audio check (ffmpeg): no clipping (peak −1.6/−1.2 dBFS), no silences > 0.7 s, LRA 3.0/3.7. Final mix normalised to ≈ −16 LUFS. Network: `elevenlabsusercontent.com` added to the environment's allowed hosts (approved 2026-11-21) to download generations.
