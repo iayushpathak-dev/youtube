@@ -125,3 +125,11 @@ Never delete entries. Mark superseded ones with `SUPERSEDED by DEC-###`.
 - **Approval record:** The creator, 2026-11-21: "so now you need to write description and create logo and banner for this" (following the Phase 1 report).
 - **Status:** DEC-005 and DEC-006 → **APPROVED → IMPLEMENTED** in the repo (`brand/channel-profile.md`, `brand/assets/`). **Going live is pending the creator's upload in YouTube Studio.** Claude verifies the About via Windsor.ai after the upload.
 - **Update 2026-11-21:** The creator supplied their own About text ("finalize this …"). Claude made light edits only: removed Markdown `**` (YouTube doesn't render it), reduced the repeated "explore", and changed "honest experiences" to "honest takes". Final text in `brand/channel-profile.md`. Note: "Shorts daily" matches DEC-002. If DEC-012 Option B is approved, update this line.
+
+### DEC-017: Channel name change
+- **Date:** 2026-11-21
+- **Description:** The creator wants to rename because "ShippedWithAI" is crowded. Evidence: `research/competitors/snapshots/2026-11-21-channel-name-check.md`. No exact-name channel was found, but @shippedwithai is taken, two near-identical small channels exist, and "shipped with AI" search overlaps with AI dropshipping.
+- **Options (handle free as of 2026-11-21, no similar channel names found):** "AI Made Usable" (@aimadeusable) · "Real AI Work" (@realaiwork) · "AI First Lab" (@aifirstlab) · "Ship This AI" (@shipthisai) · or keep ShippedWithAI.
+- **Recommendation:** **AI Made Usable**. It states the promise ("Just useful AI") for every segment, is distinct in search, and doesn't overlap with dropshipping. The tagline "Discover. Build. Automate. Ship." and the logo mark still fit.
+- **Impact if changed:** banner text, About first lines, repo docs, CLAUDE.md identity, handle. The logo mark and watermark are unaffected. Renaming is cheapest now (0 videos).
+- **Status:** PROPOSED. A major brand change needs the creator's explicit choice.
