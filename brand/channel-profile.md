@@ -17,7 +17,7 @@
 |---|---|---|
 | Picture | `brand/assets/logo.png` | 800×800 PNG |
 | Banner image | `brand/assets/banner.png` | 2560×1440 PNG, content inside the 1546×423 safe area |
-| Video watermark | `brand/assets/watermark-150.png` | 150×150 PNG (optional) |
+| Video watermark | `brand/assets/watermark.png` | 300×300 transparent PNG, round badge (optional; ≤1 MB) |
 
 ## Description (About)
 Final, written by the creator and lightly edited by Claude (2026-11-21). 709 characters (limit 1,000). Paste exactly:

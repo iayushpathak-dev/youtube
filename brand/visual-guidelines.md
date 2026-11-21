@@ -22,7 +22,7 @@ The accent gradient is mint → teal at 90° for text and diagonal for marks. Ke
 
 ## Logo (v2, 2026-11-21)
 - A bold up-right **"ship" arrow** (mint→teal gradient, soft glow) with two white **AI sparks**, on ink. It reads as "launch/ship + AI" for any audience (v1's `>_` prompt read developer-only).
-- Files: `brand/assets/logo.png` (800×800), `brand/assets/watermark-150.png`. Source: `brand/assets/src/logo.html`.
+- Files: `brand/assets/logo.png` (800×800), `brand/assets/watermark.png` (300×300, transparent). Source: `brand/assets/src/logo.html`.
 - Checked as a circle crop at 200, 98 and 40 px (legible at all three). Keep the mark inside the central ~70%.
 - Banner: `brand/assets/banner.png`. Checked at the 1546×423 all-device safe crop (logo and text have margin).
 - Re-render after edits: `node tools/render-branding.js`.
@@ -34,7 +34,7 @@ The accent gradient is mint → teal at 90° for text and diagonal for marks. Ke
 | Banner | 2560×1440, ≤6 MB | Safe area **1546×423** in the centre holds all text and logo |
 | Long-form thumbnail | 1280×720 (16:9), ≤2 MB, JPG/PNG | Readable at ~168 px wide on mobile |
 | Shorts | 1080×1920 (9:16) | Keep captions out of the bottom ~20% and right ~15% (UI overlays) |
-| Video watermark | 150×150 PNG | Optional, use the logo |
+| Video watermark | 300×300 transparent PNG (min 150×150, ≤1 MB) | `brand/assets/watermark.png`: round ink badge (88% opacity) + teal ring + mark. Transparent corners, so no box shows over video. Checked on light and dark footage. |
 
 ## Thumbnail rules (PROPOSED, to validate with data)
 - One idea, ≤4 words of text, high contrast on ink.
