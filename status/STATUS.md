@@ -43,7 +43,7 @@
 | T9 | Edit L001 + Shorts, graphics, captions, thumbnail B (with the creator's photo) | Claude | T8 (recordings), T4 |
 | T10 | Upload + schedule each video in Studio | Creator | T9 |
 | T2 | In YouTube Studio: change the display name to **AI Made Usable** (handle @aimadeusable ✅ done), upload logo/banner/watermark, paste About + keywords (`brand/channel-profile.md`) | Creator | — (approved 2026-11-21) |
-| T3 | Voice clone: the API-key form was declined (2026-11-21), so **manual mode**: the creator makes the clone on elevenlabs.io (Starter), generates voiceovers from Claude's scripts and sends the MP3s. API mode only if the creator later adds the key in environment settings | Creator → Claude | — |
+| T3 | Voice clone: ElevenLabs connector ✅ connected (Starter). The creator creates the **Instant Voice Clone** once on elevenlabs.io from the 2-min sample (`brand/voice-clone.md`). Claude then generates the Shorts voiceovers via the connector | Creator → Claude | creator's clone |
 | T4 | `npm install` Remotion/HyperFrames when production starts | Claude | Phase 2 |
 | T5 | Decide the daily/regular Shorts publish time | Creator | DEC-012 |
 | T6 | Next competitor pass: comments/hooks, Hindi channels, thumbnails at scale | Claude | DEC-014 (API key) for comments |

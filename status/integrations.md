@@ -15,7 +15,7 @@ Last verified: **2026-11-21** (cloud Claude Code session). Re-verify when someth
 | Web research (AI market, news, docs) | ✅ Works | WebSearch tool; web-fetch agent | US-only search results. |
 | Google Trends | ❌ Blocked | `trends.google.com` refused by network policy | Needs the host allowed. |
 | Reddit / Hacker News (community discussion) | ❌ Blocked | `reddit.com`, `hn.algolia.com` refused by network policy | Needs the hosts allowed. Partial substitute: WebSearch. |
-| Text-to-speech for Shorts | ❌ None | `api.elevenlabs.io` blocked; no key | See DEC-008. |
+| Text-to-speech for Shorts | ✅ Works (2026-11-21) | **ElevenLabs connector** (claude.ai, OAuth): `creative_generate_speech`, `creative_list_voices`, `account_get_usage` | Starter plan, 40k chars/month. No tool to clone a voice from a recording, so the creator does that once on elevenlabs.io. Only loads in sessions where the connector is enabled. |
 | Video production | ⚠️ Partial | ffmpeg 6.1.1 ✅, Chromium + Playwright ✅ (render HTML → PNG), Python ✅ | Remotion / HyperFrames are declared in `package.json` but **not installed** in this session (`npm install` needed; these are already-declared project dependencies). |
 | Fonts | ✅ | Inter, Inter Display, JetBrains Mono installed locally | Used by the brand assets. |
 | Scheduled / recurring sessions | ✅ Available | Scheduled-task tools | Not created. See DEC-009. |
