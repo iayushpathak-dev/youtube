@@ -140,3 +140,10 @@ Never delete entries. Mark superseded ones with `SUPERSEDED by DEC-###`.
 - **Description:** The creator asked to start: a long-form for Tuesday 2026-11-24 plus multiple Shorts. Claude created SWAI-L001 (ChatGPT vs Claude vs Gemini, 5 verifiable tasks) and SWAI-S001..S007 (daily per DEC-002) using its recommended defaults for the still-PROPOSED DEC-010/011/016. The Shorts voice for week 1 is the creator's own recording (DEC-013 option c) because no TTS exists.
 - **Approval record:** The creator, 2026-11-21: "so lets create a video that we published on tuesday but we create shorts multiple so that we start". This approves **starting production**. It does not approve the individual scripts (each item is approval_status PROPOSED) or DEC-010/011/012/013/016 as permanent strategy.
 - **Status:** APPROVED → IN PROGRESS.
+
+### DEC-008 / DEC-013 resolution: creator voice clone via ElevenLabs
+- **Date:** 2026-11-21
+- **Description:** Shorts narration = an ElevenLabs Instant Voice Clone of the creator's own voice (DEC-013 option b), with the YouTube "altered content" disclosure on every clone-narrated Short. Long-form stays in the real voice. Details and rules: `brand/voice-clone.md`.
+- **Evidence:** Starter ≈ $6/mo with cloning + commercial licence (third-party guides, Nov 2026. Verify on elevenlabs.io). Disclosure rule from YouTube Help (14328491). Alternatives considered: Murf AI (Indian-accent stock voices), Resemble, CAMB.AI.
+- **Approval record:** The creator, 2026-11-21: "so lets set up a ai voice tool jo meri voice use krega". This approves the tool and the cloning of their own voice. **The paid plan is the creator's purchase.**
+- **Status:** APPROVED → IN PROGRESS (waiting for the account, API key via secure form, and voice sample).

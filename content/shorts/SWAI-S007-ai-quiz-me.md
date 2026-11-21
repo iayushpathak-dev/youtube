@@ -17,7 +17,7 @@ created: 2026-11-21
 updated: 2026-11-21
 ---
 
-> **Working assumptions:** written 2026-11-21 when the creator asked to start production. Pillar/segments follow Claude's recommended defaults (DEC-010/011 still PROPOSED). **Narration:** DEC-013 is pending and no TTS is set up, so for week 1 the recommendation is that the creator records the voice (≈2 min per Short on a phone). An AI voice can replace it later once DEC-013/008 are decided.
+> **Working assumptions:** written 2026-11-21 when the creator asked to start production. Pillar/segments follow Claude's recommended defaults (DEC-010/011 still PROPOSED). **Narration:** the creator's ElevenLabs voice clone (DEC-008/013 approved 2026-11-21, `brand/voice-clone.md`). Fallback: the creator records it on a phone if the clone isn't ready in time. **Upload: Altered content = Yes.**
 
 ## Research
 - FACT · 95% of UK students use AI (HEPI 2026). Institutions are unclear on guidance. [HEPI](https://www.hepi.ac.uk/reports/student-generative-ai-survey-2026/)

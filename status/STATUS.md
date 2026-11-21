@@ -30,10 +30,8 @@
 | DEC-011 | Segment priority | Primary PRO, BEG, BIZ |
 | DEC-016 | Launch formats | Masterclass / Clearly Explained + build / honest experiment / monthly course. No daily news. |
 | DEC-012 | Shorts cadence (would change DEC-002) | 3–4/week for 8 weeks, then review |
-| DEC-013 | Shorts voice | Creator's voice, or a clone of it with disclosure |
 | DEC-015 | Monetization v2 (supersedes DEC-007) | Approve the direction |
 | DEC-014 | Research access (API key, hosts, Studio export) | Approve |
-| DEC-008 | TTS provider | After DEC-013 |
 | DEC-009 | Weekly research/analytics session | Start when publishing starts |
 
 ## Pending tasks
@@ -45,7 +43,7 @@
 | T9 | Edit L001 + Shorts, graphics, captions, thumbnail B (with the creator's photo) | Claude | T8 (recordings), T4 |
 | T10 | Upload + schedule each video in Studio | Creator | T9 |
 | T2 | In YouTube Studio: change the display name to **AI Made Usable** (handle @aimadeusable ✅ done), upload logo/banner/watermark, paste About + keywords (`brand/channel-profile.md`) | Creator | — (approved 2026-11-21) |
-| T3 | Shorts narration setup | Claude | DEC-013 → DEC-008 |
+| T3 | Voice clone: creator makes an ElevenLabs account (Starter) + saves the API key in the secure form + records the 2-min sample (`brand/voice-clone.md`). Claude then creates the clone and test voiceovers | Creator → Claude | — (approved 2026-11-21) |
 | T4 | `npm install` Remotion/HyperFrames when production starts | Claude | Phase 2 |
 | T5 | Decide the daily/regular Shorts publish time | Creator | DEC-012 |
 | T6 | Next competitor pass: comments/hooks, Hindi channels, thumbnails at scale | Claude | DEC-014 (API key) for comments |

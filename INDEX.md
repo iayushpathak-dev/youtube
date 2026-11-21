@@ -22,6 +22,7 @@ One home per type of information. If you are about to create a file that duplica
 | G | Content schema & statuses | `content/README.md` | Field definitions and ID rules |
 | H | Shorts production workflow | `content/workflows/shorts.md` | + template `content/templates/short.md` |
 | I | Long-form production workflow | `content/workflows/long-form.md` | + template `content/templates/long.md` |
+| J | Creator voice clone (Shorts narration) | `brand/voice-clone.md` | Provider, rules, disclosure, sample script, voice_id |
 | J | Visual identity & creative guidelines | `brand/visual-guidelines.md` | Colours, type, asset specs |
 | J | Brand assets | `brand/assets/` | Logo, banner, HTML sources (`tools/render-branding.js`). Unapproved variants in `brand/assets/proposals/` |
 | K | YouTube SEO & packaging | `strategy/seo-packaging.md` | Titles, thumbnails, descriptions, tags |
