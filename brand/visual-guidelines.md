@@ -1,6 +1,6 @@
 # Visual identity & creative guidelines
 
-Status: the v1 identity is **PROPOSED** (DEC-005). The logo is recommended to keep. The banner needs a revision to match DEC-001.
+Status: **identity v2 final** (DEC-005, produced at the creator's request on 2026-11-21). v1 is archived in `brand/assets/archive/v1/`.
 
 ## Palette
 | Token | Hex | Use |
@@ -20,9 +20,11 @@ The accent gradient is mint → teal at 90° for text and diagonal for marks. Ke
 - Code, terminal, labels: **JetBrains Mono**.
 - All three are open-source (OFL) and installed in the build environment.
 
-## Logo
-- A `>_` terminal prompt (mint→teal, soft glow) plus a white up-right "ship" arrow on ink. File: `brand/assets/logo.png` (800×800). Source: `brand/assets/src/logo.html`.
-- YouTube crops it to a circle, so keep the mark inside the central ~70%.
+## Logo (v2, 2026-11-21)
+- A bold up-right **"ship" arrow** (mint→teal gradient, soft glow) with two white **AI sparks**, on ink. It reads as "launch/ship + AI" for any audience (v1's `>_` prompt read developer-only).
+- Files: `brand/assets/logo.png` (800×800), `brand/assets/watermark-150.png`. Source: `brand/assets/src/logo.html`.
+- Checked as a circle crop at 200, 98 and 40 px (legible at all three). Keep the mark inside the central ~70%.
+- Banner: `brand/assets/banner.png`. Checked at the 1546×423 all-device safe crop (logo and text have margin).
 - Re-render after edits: `node tools/render-branding.js`.
 
 ## Asset specs (YouTube)

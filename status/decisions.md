@@ -118,3 +118,9 @@ Never delete entries. Mark superseded ones with `SUPERSEDED by DEC-###`.
 - **Description:** Long-form formats: (1) "Learn 80% of X" tool masterclass for non-developers, (2) "Clearly Explained + build one" (concept + a working example), (3) honest experiment/test ("I let AI do X — an engineer's verdict"), (4) a monthly full course. Shorts: one-tip demos, "which AI for which job", myth-vs-reality. **Not:** daily news reaction, hype money promises.
 - **Evidence:** Phase 1 report §5–7, `strategy/seo-packaging.md`.
 - **Status:** PROPOSED.
+
+### DEC-005 / DEC-006 resolution: brand identity v2 + About text
+- **Date:** 2026-11-21
+- **Description:** New logo (ship arrow + AI sparks), banner v3 ("AI for everyone, explained by an engineer who ships." · Discover/Build/Automate/Ship · New video every Tuesday), watermark, final About description (596 chars) + keywords. v1 archived in `brand/assets/archive/v1/`. `brand/assets/proposals/banner-v2.png` is kept as the intermediate proposal.
+- **Approval record:** The creator, 2026-11-21: "so now you need to write description and create logo and banner for this" (following the Phase 1 report).
+- **Status:** DEC-005 and DEC-006 → **APPROVED → IMPLEMENTED** in the repo (`brand/channel-profile.md`, `brand/assets/`). **Going live is pending the creator's upload in YouTube Studio.** Claude verifies the About via Windsor.ai after the upload.

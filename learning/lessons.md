@@ -38,3 +38,8 @@ Append-only. A lesson needs evidence (data, link or content ID). If a later less
 - Evidence: A first draft of the Phase 1 report said "32 channels, Shorts ~3–35% of long-form". Recomputing from the data gave 25 channels (≥5 Shorts), median 11%, range 3–72%.
 - Lesson: Recompute every summary statistic from the saved data before it goes into a report or decision. Never paraphrase numbers from memory.
 - Applies to: reports, decision evidence.
+
+### LES-007 · 2026-11-21 · production
+- Evidence: Banner v3 looked fine at full size, but the 1546×423 safe-area crop showed the logo circle touching the left edge.
+- Lesson: Always check banners at the safe-area crop (the phone view), not just at full size. Centre content with margin inside 1546×423.
+- Applies to: `brand/assets/src/banner.html`, any future banner.

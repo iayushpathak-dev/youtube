@@ -17,7 +17,7 @@ You are continuing work on ShippedWithAI, a YouTube channel. The GitHub repo iay
 - DEC-004 The repo knowledge architecture (below) is implemented.
 
 == PROPOSED, AWAITING THE CREATOR'S APPROVAL ==
-- DEC-005 Visual identity v1: logo (keep) = ">_" terminal prompt in mint→teal gradient + white up-right "ship" arrow on #0A0E14. Banner 2560x1440 currently says "ShippedWithAI · Real apps, built with AI, shipped to production" with chips Claude Code / Cursor / Next.js / React. Developer-only, conflicts with DEC-001, recommend revising to "Discover. Build. Automate. Ship." + "AI for everyone, from first prompt to shipped product" + "New video every Tuesday · Shorts daily". Not confirmed uploaded to the channel.
+- (History) DEC-005 Visual identity v1: logo (keep) = ">_" terminal prompt in mint→teal gradient + white up-right "ship" arrow on #0A0E14. Banner 2560x1440 currently says "ShippedWithAI · Real apps, built with AI, shipped to production" with chips Claude Code / Cursor / Next.js / React. Developer-only, conflicts with DEC-001, recommend revising to "Discover. Build. Automate. Ship." + "AI for everyone, from first prompt to shipped product" + "New video every Tuesday · Shorts daily". Not confirmed uploaded to the channel.
 - DEC-006 Rewrite the About description + channel keywords for the new positioning (after pillars are set).
 - DEC-007 3-month revenue plan (strategy/proposals/): YouTube as the funnel. Digital products (app source code + prompt packs, ₹499–999), freelance MVP builds, affiliate links, sponsors at ~2–5K subs. Needs revision for the broad audience.
 - DEC-008 Choose a TTS provider for Shorts narration (ElevenLabs / OpenAI TTS / Google TTS). Needs a host allowed + API key secret.
@@ -29,7 +29,7 @@ You are continuing work on ShippedWithAI, a YouTube channel. The GitHub repo iay
 - DEC-014 Research access: YouTube Data API key + allow trends.google.com, www.reddit.com, hn.algolia.com + weekly Studio CSV export.
 - DEC-015 Monetization v2 (strategy/proposals/2026-11-21-monetization-v2.md): services first, a free lead magnet + email, first paid kit month 2–3, affiliates only for tools used, sponsors/memberships/YPP later. Supersedes DEC-007 if approved.
 - DEC-016 Launch formats: "Learn 80% of X" masterclass for non-devs, "Clearly Explained + build one", honest experiments, monthly full course. No daily news, no hype money promises.
-- DEC-005 now has banner v2: brand/assets/proposals/banner-v2.png ("AI for everyone, explained by an engineer who ships." + Discover/Build/Automate/Ship). DEC-006 About draft is in the Phase 1 report §8.
+- DEC-005/006 APPROVED + IMPLEMENTED 2026-11-21: brand v2. Logo = up-right ship arrow (mint→teal) + 2 white AI sparks on #0A0E14. Banner = "ShippedWithAI · AI for everyone, explained by an engineer who ships. · Discover/Build/Automate/Ship · New video every Tuesday". Final About + keywords in brand/channel-profile.md. v1 archived in brand/assets/archive/v1/. The creator still has to upload them in YouTube Studio.
 
 == REPO STRUCTURE (one home per information type; see INDEX.md) ==
 CLAUDE.md (rules + session protocol) · INDEX.md · README.md
@@ -67,5 +67,5 @@ Phase 1 report: reports/research/2026-11-21-phase-1-research-report.md (read it 
 - Limits: no comments/transcripts/likes (bot check), so hooks were not analysed.
 
 == NEXT PHASE ==
-Waiting for the creator's decisions on DEC-005, 006, 008–016. Only after DEC-010/011/012/013/016 are approved: Phase 2 = launch calendar (strategy/calendar.md) + first content items (SWAI-L001, first SWAI-S###) via content/workflows/. Do NOT create the calendar or scripts before approval.
+Waiting for the creator's decisions on DEC-008..016 (DEC-005/006 done). Only after DEC-010/011/012/013/016 are approved: Phase 2 = launch calendar (strategy/calendar.md) + first content items (SWAI-L001, first SWAI-S###) via content/workflows/. Do NOT create the calendar or scripts before approval.
 ```

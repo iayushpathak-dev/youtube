@@ -1,0 +1,31 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+html,body{margin:0;width:2560px;height:1440px;background:#0A0E14;font-family:Inter,sans-serif}
+.wrap{position:relative;width:2560px;height:1440px;overflow:hidden;
+ background:radial-gradient(ellipse at 50% 50%,#132030 0%,#0A0E14 60%)}
+.grid{position:absolute;inset:0;background-image:linear-gradient(#ffffff07 1px,transparent 1px),linear-gradient(90deg,#ffffff07 1px,transparent 1px);background-size:64px 64px}
+.code{position:absolute;font-family:'JetBrains Mono';font-size:30px;line-height:1.7;color:#ffffff1c;white-space:pre}
+.safe{position:absolute;left:507px;top:508px;width:1546px;height:423px;display:flex;align-items:center;gap:64px}
+.mark{width:300px;height:300px;flex:none;border-radius:50%;background:#0A0E14;box-shadow:0 0 0 3px #22D3A655,0 0 80px #22D3A633}
+.text{display:flex;flex-direction:column;gap:22px}
+h1{margin:0;font-family:'Inter Display',Inter;font-weight:800;font-size:132px;letter-spacing:-4px;color:#fff;line-height:1}
+h1 span{background:linear-gradient(90deg,#7CFFB2,#22D3A6);-webkit-background-clip:text;color:transparent}
+.tag{font-size:46px;font-weight:500;color:#C9D4E0;letter-spacing:-.5px}
+.row{display:flex;gap:16px;align-items:center;margin-top:8px}
+.chip{font-family:'JetBrains Mono';font-weight:500;font-size:28px;color:#7CFFB2;border:2px solid #22D3A655;background:#22D3A612;padding:8px 20px;border-radius:12px}
+.when{font-size:30px;font-weight:600;color:#fff;margin-left:12px}
+</style></head><body><div class="wrap"><div class="grid"></div>
+<div class="code" style="left:80px;top:120px">$ claude "build the dashboard"
+✓ 14 files changed
+$ npm run build
+✓ Compiled successfully</div>
+<div class="code" style="right:90px;top:1040px;text-align:right">git push origin main
+→ deploying to production…
+✓ live in 42s</div>
+<div class="safe">
+ <img class="mark" src="../logo.png">
+ <div class="text">
+  <h1>Shipped<span>With</span>AI</h1>
+  <div class="tag">Real apps, built with AI, shipped to production.</div>
+  <div class="row"><div class="chip">Claude Code</div><div class="chip">Cursor</div><div class="chip">Next.js</div><div class="chip">React</div><div class="when">· New video every Tuesday</div></div>
+ </div>
+</div></div></body></html>
