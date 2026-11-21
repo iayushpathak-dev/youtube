@@ -37,6 +37,7 @@ Anything not written here is not known to the next session. Read this file in fu
 5. If content items changed, run `python3 tools/content_index.py` to regenerate and validate `content/registry.md`.
 6. Review `git diff`, then commit with a descriptive message and push to the working branch.
 7. Verify the push (`git status` shows up to date with the remote). Never claim a push you didn't verify.
+8. If scripts, calendar, status, brand or voice files changed, rebuild and republish the mobile Control Center: `python3 tools/build_hub.py`, then publish `hub/index.html` to https://claude.ai/artifact/B5BxntDZ8SeH6M4VqC7gRe (files: assets/logo.png, banner.png, watermark.png from `brand/assets/`). The creator uses it from their phone.
 
 ## 4. Knowledge rules
 
