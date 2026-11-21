@@ -1,0 +1,19 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+html,body{margin:0;width:800px;height:800px;background:#0A0E14}
+.wrap{position:relative;width:800px;height:800px;overflow:hidden;
+ background:radial-gradient(circle at 50% 45%,#16202c 0%,#0A0E14 70%)}
+.grid{position:absolute;inset:0;background-image:linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px);background-size:40px 40px}
+svg{position:absolute;inset:0}
+</style></head><body><div class="wrap"><div class="grid"></div>
+<svg viewBox="0 0 800 800" width="800" height="800">
+ <defs><linearGradient id="g" gradientUnits="userSpaceOnUse" x1="200" y1="270" x2="580" y2="560"><stop offset="0" stop-color="#7CFFB2"/><stop offset="1" stop-color="#22D3A6"/></linearGradient>
+ <filter id="glow" filterUnits="userSpaceOnUse" x="0" y="0" width="800" height="800"><feGaussianBlur stdDeviation="14" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+ <g filter="url(#glow)" fill="none" stroke="url(#g)" stroke-width="58" stroke-linecap="round" stroke-linejoin="round">
+  <polyline points="215,285 345,410 215,535"/>
+  <line x1="400" y1="535" x2="560" y2="535"/>
+ </g>
+ <g fill="none" stroke="#FFFFFF" stroke-width="30" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M500 265 L590 265 L590 355"/>
+  <line x1="590" y1="265" x2="470" y2="385"/>
+ </g>
+</svg></div></body></html>

@@ -1,10 +1,17 @@
-# Shipped with AI
+# ShippedWithAI
 
-Tooling for the channel. Setup:
+**Discover. Build. Automate. Ship.** A YouTube channel helping everyone understand, explore, use and build with AI.
 
+This repository is the channel's operating system and permanent memory.
+
+- Start here: [`CLAUDE.md`](CLAUDE.md) (operating rules) → [`INDEX.md`](INDEX.md) (where everything lives) → [`status/STATUS.md`](status/STATUS.md) (current state)
+- Decisions: [`status/decisions.md`](status/decisions.md)
+
+## Tooling
 ```bash
-pip install -r requirements.txt
-npm install
+pip install -r requirements.txt   # yt-dlp (public YouTube research), pandas
+npm install                       # Remotion + HyperFrames (motion graphics, captions)
 ```
-
-Installed: yt-dlp (research/transcripts), FFmpeg (audio/video processing), Remotion + HyperFrames (motion graphics, hook cards, captions).
+FFmpeg is used for audio/video processing. Helper scripts are in `tools/`:
+- `python3 tools/content_index.py`: validate content items and regenerate `content/registry.md`
+- `node tools/render-branding.js`: render `brand/assets/src/*.html` → PNG

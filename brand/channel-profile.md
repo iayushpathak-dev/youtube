@@ -1,8 +1,14 @@
 # Channel profile
 
+> **Status (2026-11-21):** Name, handle, URL, country, category and upload defaults are current.
+> The **Description (About)** and **Channel keywords** below are the original developer-only draft. They are **superseded by DEC-001**
+> and will be rewritten under DEC-006 (pending approval). FACT (Windsor.ai, 2026-11-21): the live About is empty.
+> The publish slot and video length are carried over. Cadence is now set by DEC-002 (Shorts daily).
+
 - **Name:** ShippedWithAI
 - **Handle:** @shippedwithaihq
 - **URL:** https://www.youtube.com/@shippedwithaihq
+- **Channel ID:** UCa2_ah_ehFCOyIn_QUt8t-w
 - **Country:** India
 - **Publish slot:** Tuesday 7:30 pm IST (9 am US Eastern). Shorts: Wed / Fri / Sun.
 - **Video length:** 15–25 min main videos + one 40–60 min full course per month.
