@@ -1,5 +1,8 @@
 # 3-month plan (Dec 2026 – Feb 2027)
 
+> **Status: PROPOSED (DEC-007), not approved.** Written 2026-11-21 for the earlier developer-only positioning.
+> Its cadence ("3 Shorts/week") is superseded by DEC-002 (daily Shorts) and its audience by DEC-001. To be revised after the research phase.
+
 Goal: first income within 90 days, with YouTube as the funnel, not the only source.
 
 ## Decisions

@@ -1,4 +1,6 @@
-# Competitor scan (Nov 2026)
+# Competitor scan: YouTube search, 2026-11-21
+
+> Snapshot, kept as written. Scope: AI-coding queries only. The takeaways were written for the earlier developer-only positioning (pre DEC-001), so they are HYPOTHESES for the broader audience.
 
 Source: YouTube search results (yt-dlp) for "claude code tutorial", "build app with claude code",
 "cursor ai nextjs", "vibe coding react app". View counts at time of scan.
