@@ -43,3 +43,11 @@ Decision: DEC-008 + DEC-013 (b). The creator asked on 2026-11-21: "so lets set u
 
 ## Log
 - 2026-11-21 · Setup started. The secure API-key form was **declined** by the creator. Until a key is added (environment settings → network secrets, host `api.elevenlabs.io`, header `xi-api-key`), use **manual mode**: the creator clones their voice in the ElevenLabs website, pastes Claude's script, downloads the MP3 and sends it to Claude for editing.
+
+## Free / low-cost options (researched 2026-11-21, at the creator's request "free for one month")
+| Option | Cost | Clones own voice? | Commercial (YouTube) use? | Notes |
+|---|---|---|---|---|
+| ElevenLabs Starter, first-month offer | **US$1 first month**, then ~US$6 | Yes (Instant) | Yes | Offer seen on the pricing page 2026-11-09/10. The end date is unclear (reported until 11-16, another source has no end date). **Check checkout.** Cancel before renewal if not kept. [Stork](https://www.stork.ai/blog/elevenlabs-promo-code-2026), [DevOpsCube](https://devopscube.com/elevenlabs-discount/) |
+| Chatterbox (Resemble AI, open source) | **Free** | Yes (short reference clip) | Yes, **MIT licence** | Runs in this cloud container (CPU, slower), so no account or key is needed. Needs approval to allow `huggingface.co` (model download) + install the Python package. [Resemble](https://www.resemble.ai/best-open-source-ai-voice-cloning-tools/), [findskill](https://findskill.ai/blog/best-open-source-tts-2026/) |
+| F5-TTS / XTTS v2 (open source) | Free | Yes | **No**: model weights are non-commercial (CC-BY-NC / CPML) | Not usable for a monetized channel. [codesota](https://codesota.com/guides/tts-models) |
+| Hosted free tiers (various) | Free | Sometimes | **Usually no** (personal use only) and low character caps | [Fish Audio guide](https://fish.audio/blog/is-free-voice-cloning-really-free-2026-guide/), [scriptbyai](https://www.scriptbyai.com/best-free-ai-voice-cloning/) |
