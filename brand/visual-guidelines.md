@@ -44,4 +44,4 @@ The accent gradient is mint → teal at 90° for text and diagonal for marks. Ke
 ## Shorts visual style (PROPOSED)
 - Burned-in captions in Inter Black, white with a mint highlight on the key word, centred in the upper-middle area.
 - Hook text on screen in the first second.
-- Brand corner tag `>_ ShippedWithAI` in JetBrains Mono at low opacity.
+- Brand corner tag `AI Made Usable` in JetBrains Mono at low opacity.

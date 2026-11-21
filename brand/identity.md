@@ -1,5 +1,7 @@
 # Brand identity & positioning
 
+**Channel name:** AI Made Usable (@aimadeusable). Renamed from ShippedWithAI on 2026-11-21 (DEC-017): the old name collided with @shippedwithai, near-identical small channels and "AI dropshipping" search results.
+
 Status: positioning, vision and audience are **APPROVED** (DEC-001, 2026-11-21). Everything marked *PROPOSED* still needs approval.
 
 ## Positioning

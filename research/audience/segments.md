@@ -1,7 +1,7 @@
 # Audience segments
 
 Evidence pass: **2026-11-21** (Phase 1). Each row separates FACT evidence (with source) from HYPOTHESIS needs.
-Supply = how crowded the segment is on YouTube. Demand = observed views on segment-targeted content. Fit = credibility of ShippedWithAI (a senior frontend developer, building real things).
+Supply = how crowded the segment is on YouTube. Demand = observed views on segment-targeted content. Fit = credibility of the channel (a senior frontend developer, building real things).
 Priority is a **recommendation** (DEC-011, PROPOSED), not approved.
 
 | Code | Segment | Demand evidence (FACT, 2026-11-21) | Supply / competition (FACT) | Likely needs & struggles (HYPOTHESIS) | Fit | Recommended priority |
@@ -20,4 +20,4 @@ Priority is a **recommendation** (DEC-011, PROPOSED), not approved.
 ## Cross-segment bridge (HYPOTHESIS, the strongest positioning opportunity)
 The same topic serves multiple segments when framed as **"build/automate X with AI, explained by someone who actually ships software"**.
 Evidence: no-code agent/app tutorials pull large numbers across BEG, PRO and BIZ (above), while developer channels mostly teach developers.
-ShippedWithAI's edge is engineering credibility applied to non-developer outcomes, with an honest "what breaks" layer.
+AI Made Usable's edge is engineering credibility applied to non-developer outcomes, with an honest "what breaks" layer.

@@ -3,10 +3,10 @@
 Paste the block below into a new session to give it full context. Source of truth is still the repo; this is a summary.
 
 ```text
-You are continuing work on ShippedWithAI, a YouTube channel. The GitHub repo iayushpathak-dev/youtube is the permanent memory and source of truth. Working branch: claude/adoring-pasteur-aywagg. The repo default branch is claude/gifted-gates-6r6omc (no main). PR #1 (initialization) was merged. Phase 1 research is on the working branch. FIRST: read CLAUDE.md, INDEX.md, status/STATUS.md and status/decisions.md, run git status / git log, then continue from the documented state. The creator often writes in Hinglish. Reply in their language, and write repo docs in English.
+You are continuing work on AI Made Usable (formerly ShippedWithAI; renamed 2026-11-21, DEC-017), a YouTube channel. The GitHub repo iayushpathak-dev/youtube is the permanent memory and source of truth. Working branch: claude/adoring-pasteur-aywagg. The repo default branch is claude/gifted-gates-6r6omc (no main). PR #1 (initialization) was merged. Phase 1 research is on the working branch. FIRST: read CLAUDE.md, INDEX.md, status/STATUS.md and status/decisions.md, run git status / git log, then continue from the documented state. The creator often writes in Hinglish. Reply in their language, and write repo docs in English.
 
 == CHANNEL ==
-- Name: ShippedWithAI · Handle: @shippedwithaihq · Channel ID: UCa2_ah_ehFCOyIn_QUt8t-w · Creator based in India.
+- Name: AI Made Usable · Handle: @aimadeusable (being claimed; was @shippedwithaihq) · Channel ID: UCa2_ah_ehFCOyIn_QUt8t-w · Creator based in India.
 - State on 2026-11-21 (Windsor.ai, FACT): 0 subscribers, 0 videos, 0 views, About description empty.
 - The creator is a senior frontend developer but wants a broad AI audience.
 

@@ -1,5 +1,7 @@
 # Project status
 
+**Channel:** AI Made Usable (@aimadeusable), renamed from ShippedWithAI on 2026-11-21 (DEC-017).
+
 **Last updated:** 2026-11-21 · **Phase:** 1, Research ✅ report delivered → **waiting for the creator's decisions** → next: Phase 2, launch calendar + first scripts (only after approval)
 
 ## Channel state (FACT, Windsor.ai, 2026-11-21)
@@ -38,7 +40,7 @@
 | # | Task | Owner | Blocked by |
 |---|---|---|---|
 | T1 | Phase 2: launch calendar + first scripts | Claude | DEC-010, 011, 012, 013, 016 |
-| T2 | Upload logo, banner, watermark + paste About/keywords in YouTube Studio (files: `brand/channel-profile.md`) | Creator | — (approved 2026-11-21) |
+| T2 | In YouTube Studio: change the name to **AI Made Usable** + handle **@aimadeusable**, upload logo/banner/watermark, paste About + keywords (`brand/channel-profile.md`) | Creator | — (approved 2026-11-21) |
 | T3 | Shorts narration setup | Claude | DEC-013 → DEC-008 |
 | T4 | `npm install` Remotion/HyperFrames when production starts | Claude | Phase 2 |
 | T5 | Decide the daily/regular Shorts publish time | Creator | DEC-012 |

@@ -1,11 +1,11 @@
-# CLAUDE.md: ShippedWithAI operating instructions
+# CLAUDE.md: AI Made Usable operating instructions
 
-This repository is the **permanent memory and source of truth** for the ShippedWithAI YouTube channel.
+This repository is the **permanent memory and source of truth** for the **AI Made Usable** YouTube channel (formerly ShippedWithAI, renamed 2026-11-21, DEC-017).
 Anything not written here is not known to the next session. Read this file in full at the start of every session.
 
 ## 1. Project identity (approved, DEC-001)
 
-- **Name:** ShippedWithAI · **Handle:** @shippedwithaihq · **Channel ID:** UCa2_ah_ehFCOyIn_QUt8t-w
+- **Name:** AI Made Usable · **Handle:** @aimadeusable (previously @shippedwithaihq; the creator claims the new handle in Studio) · **Channel ID:** UCa2_ah_ehFCOyIn_QUt8t-w
 - **Positioning:** *Discover. Build. Automate. Ship.*
 - **Vision:** Build a global YouTube brand that helps everyone understand, explore, use and build with AI.
 - **Audience:** students, beginners, developers, software engineers, content creators, entrepreneurs,

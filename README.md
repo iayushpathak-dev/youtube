@@ -1,6 +1,6 @@
-# ShippedWithAI
+# AI Made Usable
 
-**Discover. Build. Automate. Ship.** A YouTube channel helping everyone understand, explore, use and build with AI.
+**Discover. Build. Automate. Ship.** A YouTube channel (formerly ShippedWithAI) helping everyone understand, explore, use and build with AI.
 
 This repository is the channel's operating system and permanent memory.
 

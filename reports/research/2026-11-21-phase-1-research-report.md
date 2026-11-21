@@ -1,5 +1,7 @@
 # Phase 1 research report: ShippedWithAI
 
+> Note (2026-11-21, after this report): the channel was renamed **AI Made Usable** (DEC-017). The report is kept as written.
+
 **Date:** 2026-11-21 · **Status:** for the creator's review. Every recommendation here is PROPOSED (DEC-005, 006, 008–016). Nothing is approved by this report.
 **Labels:** **FACT** = observed, dated, sourced · **HYPOTHESIS** = inference to test · **REC** = recommendation.
 

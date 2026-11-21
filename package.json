@@ -1,7 +1,7 @@
 {
-  "name": "shipped-with-ai",
+  "name": "ai-made-usable",
   "private": true,
-  "description": "Tooling for the Shipped with AI YouTube channel",
+  "description": "Tooling for the AI Made Usable YouTube channel",
   "scripts": {
     "remotion": "remotion",
     "studio": "remotion studio"
