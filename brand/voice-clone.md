@@ -42,4 +42,4 @@ Decision: DEC-008 + DEC-013 (b). The creator asked on 2026-11-21: "so lets set u
 > Okay, that's enough from me. Is this exciting? Honestly, yes. Is it perfect? Not even close. Let's find out what actually works. Discover, build, automate, ship. See you on Tuesday.
 
 ## Log
-- 2026-11-21 · Setup started. Waiting for the creator's ElevenLabs account + API key + voice sample.
+- 2026-11-21 · Setup started. The secure API-key form was **declined** by the creator. Until a key is added (environment settings → network secrets, host `api.elevenlabs.io`, header `xi-api-key`), use **manual mode**: the creator clones their voice in the ElevenLabs website, pastes Claude's script, downloads the MP3 and sends it to Claude for editing.
