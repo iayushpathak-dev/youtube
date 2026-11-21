@@ -16,7 +16,7 @@ Decision: DEC-008 + DEC-013 (b). The creator asked on 2026-11-21: "so lets set u
 ## Rules
 - Clone **only the creator's own voice**, with the creator's consent (given 2026-11-21).
 - **YouTube disclosure:** a cloned own voice counts as altered/synthetic content, so tick **"Altered content = Yes"** at upload for every Short narrated by the clone. Per YouTube, this doesn't limit reach or monetization. [YouTube Help](https://support.google.com/youtube/answer/14328491)
-- Long-form stays in the creator's real voice (DEC-003).
+- ~~Long-form stays in the creator's real voice (DEC-003).~~ **Changed by DEC-020 (2026-11-21): all narration, long-form included, uses the clone. Faceless channel.**
 - Every clone-narrated Short must carry original insight or a real demo (inauthentic-content policy, Jul 2026).
 - The creator listens to every generated voiceover before it is published.
 

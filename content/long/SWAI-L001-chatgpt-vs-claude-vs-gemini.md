@@ -54,7 +54,7 @@ updated: 2026-11-21
 | **Total /50** | | | | |
 
 ## Script (creator's voice, casual: ~550 fixed words + ~400–500 words of real results ≈ 8–9 min with demo time)
-Tone: talking to a friend, quick, a bit cheeky. Jokes are about what the AIs actually did on screen, never claims about the companies. `{ }` = fill in from the real recording only. **[SFX]** = sound effect. **[REACT]** = the creator's real face reaction (keep these, they're gold).
+Narrated by the creator's **voice clone** (DEC-020, faceless). Tone: talking to a friend, quick, a bit cheeky. Jokes are about what the AIs actually did on screen, never claims about the companies. `{ }` = fill in from the real recording only. **[SFX]** = sound effect. **[MEME]** = a reaction overlay (zoom-in, freeze-frame, emoji stamp, text pop) placed by Claude in the edit. No face on camera.
 
 **0:00 COLD OPEN (≈15 s)**
 [The funniest real fail from the recording, 3–4 s, then freeze-frame + record-scratch SFX]
@@ -114,7 +114,7 @@ Joke bank:
 Engineer's verdict, ten seconds: {e.g. "fine for you, not for 10,000 customers, so get it reviewed before you sell it"}. Scores: {x / y / z}."
 
 **7:00 ROUND 5: TEACH ME LIKE I'M 15 (≈55 s)**
-[Live quiz. Creator answers one wrong on purpose. REACT]
+[Live quiz screen recording. Creator types one wrong answer on purpose. MEME overlay on the AI's response]
 "Last round. Explain AI agents to a fifteen-year-old, then quiz me. I'm getting one wrong on purpose.
 {how each handled it: one question at a time? graded fairly? under 150 words?}
 Joke bank:
@@ -134,11 +134,11 @@ And the biggest surprise: {surprise}."
 ## Visual direction & editing notes
 - **Game-show package (Claude builds it):** "THE AI SHOWDOWN" title card, contestant cards (name tiles, no company logos needed), round title cards, ✓/✗ stamps, padlock unlocks, animated scoreboard, decision card, "AI Made Usable" lower third.
 - **Pace:** cut every pause. Speed-ramp the AI "thinking". No shot longer than ~4 s without a change (zoom, highlight, stamp, cut to face).
-- **Face cam:** a corner bubble during rounds, full frame for the cold open, intro, verdicts and outro. Real reactions **[REACT]** are kept.
+- **No face cam (DEC-020).** Energy comes from motion graphics, MEME overlays (freeze-frame, zoom punch-in, emoji stamps), SFX and fast cuts. The intro and verdicts use full-screen graphic cards.
 - **SFX (royalty-free):** drum roll, ding, buzzer, record scratch, confetti. Low background music, ducked under the voice.
 - **Screen hygiene:** same zoom (125%) in all apps. Hide email, avatar and chat history.
 - **Honesty:** never re-run a task for a better result. Fails stay in, they're the comedy.
-- **Audio:** phone/USB mic, quiet room. Claude cleans it (noise reduction, −14 LUFS).
+- **Audio:** the voice clone via the ElevenLabs connector (Claude generates it per section), then mixed at −14 LUFS with music + SFX.
 
 ## Packaging
 **Title options (finalise after recording; must match what happened):**
@@ -146,7 +146,7 @@ And the biggest surprise: {surprise}."
 2. `ChatGPT vs Claude vs Gemini: The AI Showdown (5 Real Tasks)` (58)
 3. `{Loser} Embarrassed Itself. ChatGPT vs Claude vs Gemini` (only if true)
 
-**Thumbnail:** A (ready): `assets/SWAI-L001/thumbnail-a.png`. Recommended B: the creator's face (surprised/laughing) in the dashed slot + "WHICH AI?". Claude will composite it from one photo.
+**Thumbnail:** A (ready): `assets/SWAI-L001/thumbnail-a.png`. Faceless channel (DEC-020): variant B uses the funniest real AI fail screenshot in the slot instead of a face.
 
 **Description:**
 ```
@@ -179,10 +179,10 @@ SWAI-S001 teaser (Sun) · S002 Round 1 (Mon) · S003 Round 3 (Tue) · S006 Round
 
 ## Publishing checklist
 - [ ] Script approved by the creator
-- [ ] **Record the test on Sunday 11-22** (needed for Monday's Short), scoreboard filled, funniest moments time-stamped
-- [ ] Voice recorded (creator's real voice) after the test, reading the script with real results
+- [ ] **Creator screen-records the test on Sunday 11-22** (laptop or phone screen recording, no face/mic), fills in the scoreboard, notes the funniest moments
+- [ ] Claude fills in the `{ }` results, generates the narration with the voice clone, and the creator listens and approves
 - [ ] Claude edits: package graphics, SFX, captions, chapters, thumbnail B
-- [ ] AI disclosure: no realistic synthetic people/voice in the long video, so "altered content" = No
+- [ ] AI disclosure: **Altered content = Yes** (cloned own voice, DEC-020)
 - [ ] Upload + schedule **Tuesday 2026-11-24, 19:30 IST**. Title/thumbnail Test & Compare A/B
 - [ ] Pinned comment: "Which task should I throw at them next? 👇"
 

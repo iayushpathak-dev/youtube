@@ -18,12 +18,12 @@ updated: 2026-11-21
 ---
 
 > **v2 (2026-11-21):** part of the **AI Showdown** set. All 7 launch-week Shorts come from SWAI-L001, at the creator's request ("us video ke 7 shorts… interesting, casual, AI jokes"). `{ }` = fill in from the real recording only. Jokes describe what happened on screen, never claims about the companies.
-> **Narration:** the creator's ElevenLabs voice clone (`brand/voice-clone.md`); fallback is the creator recording on a phone. **Upload: Altered content = Yes** when the clone is used.
+> **Narration:** the creator's ElevenLabs voice clone (DEC-020, faceless). **Upload: Altered content = Yes.**
 
 ## Research
 - Source video: SWAI-L001 (The AI Showdown). Test protocol, dataset and answer key: `content/long/SWAI-L001-chatgpt-vs-claude-vs-gemini.md`, `content/long/assets/SWAI-L001/`.
 - Format evidence: `research/competitors/snapshots/2026-11-21-l001-format-research.md`.
-- **Needs:** Round 5 footage with the creator's real reaction.
+- **Needs:** Round 5 screen recording.
 
 ## Competitor references
 - Greg Isenberg / Riley Brown Shorts (473K–846K): one concrete result per Short wins (Phase 1 scan).
@@ -31,9 +31,9 @@ updated: 2026-11-21
 ## Script (45–60 s: 86 written words, plus the real results in { } ≈ 100–120 spoken words)
 | Time | Narration | On screen |
 |---|---|---|
-| 0–3 s | I answered a quiz wrong on purpose, just to see how three AIs would react. | Face cam, cheeky look |
+| 0–3 s | I answered a quiz wrong on purpose, just to see how three AIs would react. | Contestant tiles + "I did it on purpose 😈" text pop |
 | 3–15 s | I asked each one to explain AI agents like I'm fifteen, then quiz me. One question at a time. | Prompt on screen |
-| 15–45 s | {per AI: handled it / dumped the whole exam / corrected kindly}. {Real joke: "Nicer to me than any teacher I ever had." / "One question at a time, I said. It gave me the whole board exam."} | Quiz clips + REACT |
+| 15–45 s | {per AI: handled it / dumped the whole exam / corrected kindly}. {Real joke: "Nicer to me than any teacher I ever had." / "One question at a time, I said. It gave me the whole board exam."} | Quiz screen clips + MEME overlays |
 | 45–58 s | Use AI as a tutor, not an answer machine. Full showdown on the channel. | "Tutor mode" prompt card + "Full video ↗" |
 
 ## Visual direction

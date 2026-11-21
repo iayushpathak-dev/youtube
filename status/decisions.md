@@ -23,7 +23,7 @@ Never delete entries. Mark superseded ones with `SUPERSEDED by DEC-###`.
 - **Approval record:** Initialization brief, 2026-11-21.
 - **Note:** This supersedes the "3 Shorts per week" cadence in `strategy/proposals/2026-11-21-3-month-revenue-plan.md`, which was never approved.
 
-### DEC-003: Narration
+### DEC-003: Narration (SUPERSEDED by DEC-020 for long-form)
 - **Date:** 2026-11-21
 - **Description:** Shorts use AI-assisted narration. Long-form uses the creator's own voice.
 - **Status:** APPROVED. Implementation is blocked: no text-to-speech service is available (see DEC-008).
@@ -155,3 +155,11 @@ Never delete entries. Mark superseded ones with `SUPERSEDED by DEC-###`.
 - **Approval record:** The creator, 2026-11-21: "first video kya hogi uski research kr… us video ke 7 shorts bana dena or 1 long video jyada long nhi boring nhi hona chaheye interesting and Mazza aana chaheye… casual jokes… AI based jokes".
 - **Status:** APPROVED (direction) → IMPLEMENTED in the scripts. The scripts themselves still await the creator's review (approval_status PROPOSED).
 - **Humour rules (brand voice):** jokes target what happened on screen or our own struggles, never claims about companies or people. No fake fails. Keep the learning point in every round.
+
+### DEC-020: Faceless channel, all narration in the creator's voice clone (changes DEC-003)
+- **Date:** 2026-11-21
+- **Description:** No face on camera in any video. **All narration, long-form included, uses the creator's ElevenLabs voice clone.** Claude produces every video (graphics, edit, captions, SFX, voice generation via the connector). The creator only (1) creates the voice clone once, (2) screen-records the AI apps for tests (no face, no mic), and (3) uploads in YouTube Studio.
+- **Supersedes:** DEC-003 ("long-form in the creator's own voice") and the face-cam/REACT notes in SWAI-L001 v2.
+- **Policy notes:** YouTube "altered content" disclosure = **Yes** on every clone-narrated video (own-voice clone). Inauthentic-content risk is mitigated by original tests, original scripts and real screen recordings. Never templated mass output.
+- **Approval record:** The creator, 2026-11-21: "Video tu banayega na Kyu ki face wace wala kuch nhi hai bas voice aayegi Woh bhi ai tool meri voice mai krega".
+- **Status:** APPROVED → IMPLEMENTING.

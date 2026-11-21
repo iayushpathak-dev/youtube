@@ -29,3 +29,8 @@ Last verified: **2026-11-21** (cloud Claude Code session). Re-verify when someth
 4. **Trend and community research**: allow `trends.google.com`, `www.reddit.com`, `hn.algolia.com` in the environment network policy (needs the creator's approval).
 5. **TTS**: one provider host plus an API key secret (DEC-008).
 6. **Upload/scheduling**: manual in YouTube Studio by the creator. No available integration does it.
+
+## Checked 2026-11-21: can Claude run the ChatGPT / Gemini tests itself?
+- No ChatGPT/OpenAI or Google Gemini (AI assistant) connector exists in the directory search. The "Gemini" connector listed there is the **Gemini crypto exchange**, which is unrelated. Do not connect it for this.
+- An API route would be possible (OpenAI + Google AI API keys as environment secrets, plus allowing `api.openai.com` and `generativelanguage.googleapis.com`), but (1) it costs per use, (2) **API ≠ the apps viewers use** (file upload UI, browsing, canvas/app preview, default models), and (3) Claude operating the test would make Claude both a contestant and the operator, which weakens trust.
+- Decision for SWAI-L001: the creator screen-records the three consumer apps (no face, no mic). Claude does everything else.

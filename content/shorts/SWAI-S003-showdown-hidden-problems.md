@@ -18,7 +18,7 @@ updated: 2026-11-21
 ---
 
 > **v2 (2026-11-21):** part of the **AI Showdown** set. All 7 launch-week Shorts come from SWAI-L001, at the creator's request ("us video ke 7 shorts… interesting, casual, AI jokes"). `{ }` = fill in from the real recording only. Jokes describe what happened on screen, never claims about the companies.
-> **Narration:** the creator's ElevenLabs voice clone (`brand/voice-clone.md`); fallback is the creator recording on a phone. **Upload: Altered content = Yes** when the clone is used.
+> **Narration:** the creator's ElevenLabs voice clone (DEC-020, faceless). **Upload: Altered content = Yes.**
 
 ## Research
 - Source video: SWAI-L001 (The AI Showdown). Test protocol, dataset and answer key: `content/long/SWAI-L001-chatgpt-vs-claude-vs-gemini.md`, `content/long/assets/SWAI-L001/`.
