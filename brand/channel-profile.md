@@ -5,8 +5,8 @@
 > (no integration can edit channel branding). Live state last checked: the About is empty (Windsor.ai, 2026-11-21).
 
 - **Name:** AI Made Usable (renamed from ShippedWithAI on 2026-11-21, DEC-017)
-- **Handle:** @aimadeusable (to be claimed in Studio; previous handle @shippedwithaihq)
-- **URL:** https://www.youtube.com/@aimadeusable (after the handle change)
+- **Handle:** @aimadeusable (claimed: verified 2026-11-21, resolves to channel UCa2_ah_ehFCOyIn_QUt8t-w; previous handle @shippedwithaihq)
+- **URL:** https://www.youtube.com/@aimadeusable
 - **Channel ID:** UCa2_ah_ehFCOyIn_QUt8t-w
 - **Country:** India
 - **Publish slot:** Long-form Tuesday 7:30 pm IST (9 am US Eastern). Shorts cadence: DEC-002 (daily) unless DEC-012 changes it. Shorts time not set.

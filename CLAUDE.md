@@ -5,7 +5,7 @@ Anything not written here is not known to the next session. Read this file in fu
 
 ## 1. Project identity (approved, DEC-001)
 
-- **Name:** AI Made Usable · **Handle:** @aimadeusable (previously @shippedwithaihq; the creator claims the new handle in Studio) · **Channel ID:** UCa2_ah_ehFCOyIn_QUt8t-w
+- **Name:** AI Made Usable · **Handle:** @aimadeusable (claimed and verified 2026-11-21; previously @shippedwithaihq) · **Channel ID:** UCa2_ah_ehFCOyIn_QUt8t-w
 - **Positioning:** *Discover. Build. Automate. Ship.*
 - **Vision:** Build a global YouTube brand that helps everyone understand, explore, use and build with AI.
 - **Audience:** students, beginners, developers, software engineers, content creators, entrepreneurs,
