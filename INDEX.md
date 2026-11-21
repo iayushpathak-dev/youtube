@@ -23,7 +23,7 @@ One home per type of information. If you are about to create a file that duplica
 | H | Shorts production workflow | `content/workflows/shorts.md` | + template `content/templates/short.md` |
 | I | Long-form production workflow | `content/workflows/long-form.md` | + template `content/templates/long.md` |
 | J | Visual identity & creative guidelines | `brand/visual-guidelines.md` | Colours, type, asset specs |
-| J | Brand assets | `brand/assets/` | Logo, banner, HTML sources (`tools/render-branding.js`) |
+| J | Brand assets | `brand/assets/` | Logo, banner, HTML sources (`tools/render-branding.js`). Unapproved variants in `brand/assets/proposals/` |
 | K | YouTube SEO & packaging | `strategy/seo-packaging.md` | Titles, thumbnails, descriptions, tags |
 | L | Channel analytics | `analytics/channel-log.md` | Dated channel-level snapshots; Shorts and long-form separate |
 | L | Analytics method & metric availability | `analytics/README.md` | What can and cannot be pulled |
@@ -32,6 +32,7 @@ One home per type of information. If you are about to create a file that duplica
 | O | Lessons learned | `learning/lessons.md` | LES-### linked to evidence |
 | P | Strategic decisions & approvals | `status/decisions.md` | DEC-### register |
 | Q | Weekly / monthly reports | `reports/weekly/`, `reports/monthly/` | Templates in `reports/README.md` |
+| Q | Research phase reports | `reports/research/` | e.g. `2026-11-21-phase-1-research-report.md` |
 | R | Future content opportunities | `research/opportunities.md` | Trends/topics not yet turned into content items |
 | S | Project status & pending tasks | `status/STATUS.md` | Current phase, tasks, blockers, pending approvals |
 | — | Handoff summary prompt (paste into a new session) | `status/handoff-prompt.md` | Refresh after major milestones |

@@ -4,8 +4,9 @@ Last verified: **2026-11-21** (cloud Claude Code session). Re-verify when someth
 
 | Capability | Status | How | Limits / notes |
 |---|---|---|---|
-| GitHub (repo `iayushpathak-dev/youtube`) | ✅ Works | git push to the `claude/*` working branch; GitHub MCP tools | Push only to the session's working branch. Merging to `main` needs a PR the creator approves. |
-| YouTube public data: channel lists, search, subscriber counts | ✅ Works | `yt-dlp --flat-playlist` (videos/shorts tabs, `ytsearchN:`, `-J` for channel metadata) | Views are rounded in list mode. No upload dates in list mode. |
+| GitHub (repo `iayushpathak-dev/youtube`) | ✅ Works | git push to the `claude/*` working branch; GitHub MCP tools | The repo's **default branch is `claude/gifted-gates-6r6omc`** (there is no `main`). PR #1 (initialization) was merged into it on/before 2026-11-21. Push only to the session's working branch. Merging needs a PR the creator approves. |
+| YouTube public data: channel lists, search, subscriber counts | ✅ Works | `yt-dlp --flat-playlist` (videos/shorts tabs, `ytsearchN:`, `-J` for channel metadata) | Views are rounded in list mode. No upload dates in list mode. ~8% of search results come back without channel/views (2026-11-21), and an empty query can succeed on retry. |
+| YouTube thumbnails | ✅ Works | `https://i.ytimg.com/vi/<id>/mqdefault.jpg` | For visual review only. Do not commit other channels' thumbnails to the repo. |
 | YouTube publish dates + exact views (latest 15 uploads per channel) | ✅ Works | RSS `youtube.com/feeds/videos.xml?channel_id=…` | 15 most recent only. |
 | YouTube per-video pages: transcripts, comments, likes | ❌ Blocked | yt-dlp gets "Sign in to confirm you're not a bot" | Using account cookies is **not recommended** (it risks the creator's account). Alternative: a YouTube Data API key (comments and stats, no transcripts). |
 | YouTube Data API v3 | ❌ No key | `googleapis.com` reachable (returns 403 without a key) | **Recommended minimum addition:** a free API key gives competitor comments, exact stats and dates for any time range. |

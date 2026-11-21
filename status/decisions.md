@@ -45,12 +45,14 @@ Never delete entries. Mark superseded ones with `SUPERSEDED by DEC-###`.
 - **Recommendation:** Keep the logo. **Revise the banner before upload**: its tagline and chips are developer-only, which conflicts with DEC-001. Proposed banner text: "Discover. Build. Automate. Ship." plus "AI for everyone, from first prompt to shipped product" and "New video every Tuesday · Shorts daily".
 - **Status:** PROPOSED.
 - **Approval record:** none.
+- **Update 2026-11-21 (Phase 1):** Banner v2 rendered as a proposal: `brand/assets/proposals/banner-v2.png` ("AI for everyone, explained by an engineer who ships." + chips Discover / Build / Automate / Ship + "New video every Tuesday"). It leaves out "Shorts daily" until DEC-012 is decided. Logo unchanged. Evidence for the "engineer" framing: AUD-002. Still PROPOSED. Report §8.
 
 ### DEC-006: Channel About description rewrite
 - **Date:** 2026-11-21
 - **Description:** The current draft About text (in `brand/channel-profile.md`) speaks only to developers ("I'm a senior frontend developer… React and Next.js"). It needs rewriting for the DEC-001 positioning. The channel's About is currently empty (FACT, Windsor.ai, 2026-11-21).
 - **Recommendation:** Claude drafts a new About text and keywords once the research phase defines the content pillars, and the creator approves before it goes live.
 - **Status:** PROPOSED.
+- **Update 2026-11-21 (Phase 1):** Draft About text + keywords in the Phase 1 report §8. Still PROPOSED.
 
 ### DEC-007: 3-month revenue plan
 - **Date:** 2026-11-21
@@ -58,12 +60,14 @@ Never delete entries. Mark superseded ones with `SUPERSEDED by DEC-###`.
 - **Evidence:** Web search 2026-11-21. YPP ad revenue needs 1,000 subs + 4,000 watch hours (12 mo) or 10M Shorts views (90 d). Multiple outlets report that from **2027-02-01** new applicants need 8,000 watch hours or 20M Shorts views. Sources: [YouTube Help](https://support.google.com/youtube/answer/72851), [Tubefilter 2026-08-10](https://www.tubefilter.com/2026/08/10/youtube-partner-program-ad-eligibility-requirements-shorts/amp/), [vidIQ](https://vidiq.com/blog/post/monetize-youtube-guide/). One source disagrees ([Analytics Insight](https://www.analyticsinsight.net/apps/youtube-partner-program-eligibility-requirements)), so verify in Studio → Earn.
 - **Recommendation:** Re-evaluate after the research phase. The plan was written for a developer-only audience.
 - **Status:** PROPOSED (needs revision).
+- **Update 2026-11-21 (Phase 1):** Revised as DEC-015 (`strategy/proposals/2026-11-21-monetization-v2.md`). Recommend marking DEC-007 SUPERSEDED by DEC-015 if DEC-015 is approved.
 
 ### DEC-008: Text-to-speech service for Shorts narration
 - **Date:** 2026-11-21
 - **Description:** DEC-003 requires AI narration, and no TTS is available in the environment. `api.elevenlabs.io` is blocked by the network policy (2026-11-21).
 - **Recommendation:** Pick one TTS provider after a voice test (candidates: ElevenLabs, OpenAI TTS, Google Cloud TTS). Then allow that single host and add its API key as an environment secret.
 - **Status:** PROPOSED. Needs the creator's choice of provider, an account and a key.
+- **Update 2026-11-21 (Phase 1):** See DEC-013. Policy research shows that a cloned **own** voice requires an AI disclosure, generic TTS does not inherently require one, and mass-produced repetitive AI content is not monetizable (Jul 2026 "inauthentic content" update). The provider choice depends on DEC-013.
 
 ### DEC-009: Recurring weekly research and analytics session
 - **Date:** 2026-11-21
@@ -76,4 +80,41 @@ Never delete entries. Mark superseded ones with `SUPERSEDED by DEC-###`.
 - **Description:** Four pillars mapped to the positioning. **Discover** (AI news, tools and models explained), **Build** (making real things with AI, from no-code to code), **Automate** (AI workflows and agents for work and business), **Ship** (taking it live: launching, earning, real results).
 - **Evidence:** Derived from DEC-001 only. Not yet backed by research.
 - **Recommendation:** Validate or revise in the research phase before approval.
+- **Status:** PROPOSED.
+- **Update 2026-11-21 (Phase 1):** Research supports the four pillars with re-scoped definitions and weights: **Build 35%, Automate 30%, Discover 25% (explainers and decision guides, not a daily news race), Ship 10%**. Evidence and definitions: Phase 1 report §5. Still PROPOSED.
+
+### DEC-011: Segment priority
+- **Date:** 2026-11-21
+- **Description:** Primary: working professionals (PRO), beginners (BEG) and entrepreneurs/business owners (BIZ/STARTUP), served with "build and automate with AI, explained by an engineer". Secondary: developers/engineers (DEV/SWE, credibility anchor), freelancers (FRE, anti-hype), advanced users (ADV, deep long-form). Tertiary: students (STU), creators (CRE). Avoid: the daily AI-news race (ENT).
+- **Evidence:** `research/audience/segments.md`, AUD-001..003, `research/competitors/channels.md`. Phase 1 report §4.
+- **Status:** PROPOSED.
+
+### DEC-012: Shorts cadence and Shorts ↔ long-form relationship (proposes changing DEC-002)
+- **Date:** 2026-11-21
+- **Description:** Option A (keep DEC-002): 7 Shorts/week. **Option B (recommended):** 3–4 Shorts/week for the first 8 weeks, then decide from our own data (H-SHORT-1). In both options Shorts are mostly **standalone one-idea tips/demos** that point to a related long-form, plus 1–2 cut-downs per long-form.
+- **Evidence:** In 25 competitor channels with ≥5 recent Shorts, the median Short gets 11% (range 3–72%) of the median long-form views. 23 of 25 are below 34%. AIR (18K channels) suggests Shorts at 25–40% of uploads in education/business niches. Metricool links ~5 Shorts/month with +46% views. Neither study is peer-reviewed. The inauthentic-content policy penalises repetitive mass production. Phase 1 report §6.
+- **Status:** PROPOSED. Changing the schedule requires the creator's approval.
+
+### DEC-013: Shorts narration approach
+- **Date:** 2026-11-21
+- **Description:** Options: (a) generic AI TTS voice, (b) a clone of the creator's own voice (consistent brand voice; requires the YouTube AI disclosure per policy), (c) the creator records Shorts too (~2 min/Short). **Recommendation: (b) with disclosure, or (c)**, because one recognisable voice across formats builds trust. Every Short must carry original insight or a real demo, never templated mass output.
+- **Evidence:** `research/market/ai-landscape.md` → Platform & monetization (disclosure, inauthentic content). India industry comment on faceless AI voice-over content (opinion). Phase 1 report §6.
+- **Status:** PROPOSED. Changes how DEC-003 is implemented, not the decision itself.
+
+### DEC-014: Research access: YouTube Data API key + network hosts
+- **Date:** 2026-11-21
+- **Description:** (1) A free YouTube Data API v3 key as an environment secret (comments, exact stats, date history). (2) Allow `trends.google.com`, `www.reddit.com`, `hn.algolia.com`. (3) A weekly YouTube Studio CSV export by the creator once publishing starts (impressions/CTR/returning viewers).
+- **Evidence:** Phase 1 couldn't read any comments or transcripts (bot check), and 49 of 600 search results lacked metadata. `status/integrations.md`.
+- **Status:** PROPOSED.
+
+### DEC-015: Monetization strategy v2
+- **Date:** 2026-11-21
+- **Description:** Services first (AI builds/automation for founders and small businesses), a free lead magnet + email list in month 1, the first paid kit in month 2–3, affiliates only for tools used on camera, sponsorships and memberships later, and no optimisation for YPP in the first 90 days. `strategy/proposals/2026-11-21-monetization-v2.md`.
+- **Evidence:** YPP thresholds and reported Feb-2027 increase. Audience needs (AUD-002/003). Phase 1 report §9.
+- **Status:** PROPOSED. Supersedes DEC-007 if approved.
+
+### DEC-016: Content formats for launch
+- **Date:** 2026-11-21
+- **Description:** Long-form formats: (1) "Learn 80% of X" tool masterclass for non-developers, (2) "Clearly Explained + build one" (concept + a working example), (3) honest experiment/test ("I let AI do X — an engineer's verdict"), (4) a monthly full course. Shorts: one-tip demos, "which AI for which job", myth-vs-reality. **Not:** daily news reaction, hype money promises.
+- **Evidence:** Phase 1 report §5–7, `strategy/seo-packaging.md`.
 - **Status:** PROPOSED.

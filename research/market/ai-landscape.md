@@ -5,39 +5,57 @@ Append dated entries under each area. Format:
 When a finding is outdated, keep it and add `(superseded YYYY-MM-DD: …)`.
 
 ## AI models
-_No entries yet. Research phase._
+- 2026-11-21 · FACT · OpenAI released **GPT-6 Astra** on 2026-09-03 (initially to its Daybreak Access orgs; Astra + Astra Pro). Focus: coding and computer use; OSWorld 2.0 72.6% vs 65.7% for GPT-5.6 Sol (OpenAI-reported). OpenAI calls it the first model at its "critical" cyber level, and the "AGI era" framing is disputed. · [Axios](https://www.axios.com/2026/09/03/openai-astra-gpt-6-agi-brockman), [InfoQ](https://infoq.com/news/2026/09/openai-gpt6-astra), [The Batch](https://www.deeplearning.ai/the-batch/gpt-6-astra-is-a-star)
+- 2026-11-21 · FACT · Google **Gemini 4** family released in stages: Argon (shown 2026-09-30, broad rollout ~10-13), then Carbon (top tier) and Hydrogen (replaces Flash), then **Neon** on 2026-11-18 (mid tier, $3/$15 per M tokens). · [Axios](https://axios.com/2026/09/30/google-gemini-4), [Google blog](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/?hl=en), [9to5Google](https://9to5google.com/2026/11/18/gemini-4-neon/)
+- 2026-11-21 · FACT · Anthropic released **Claude Opus 5.5** on 2026-09-22: Fable 5.1-level performance at ~40% lower cost than Opus 5. Sonnet/Haiku 5.5 to follow. · [TechCrunch](https://techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance/), [Thurrott](https://thurrott.com/a-i/anthropic/341913/anthropic-releases-claude-opus-5-5)
+- 2026-11-21 · FACT (limitation) · "Fable 5.2", "GPT-6.2 Astra", "Meta Muse", "OpenAI Dots", "Jev", "Grok Bot", "Hermes Agent" appear in competitor titles from Oct–Nov 2026, but were **not verified** by web search in this pass. Do not cite them as facts until verified.
+- 2026-11-21 · HYPOTHESIS · Three frontier labs shipped new flagship families within ~10 weeks (Sep–Nov 2026), so "which model should I use for X" is a live, recurring question for every segment (see Jeff Su Short "When to use ChatGPT, Gemini, and Claude", 234K).
 
 ## AI coding tools
+- 2026-11-21 · FACT · JetBrains research (May–Jul 2026): workplace use of Claude Code 39%, GitHub Copilot 21%, OpenAI Codex 16%, Cursor 12%. 90% of professional devs use AI coding agents at least weekly, 68% daily. Pragmatic Engineer survey: Claude Code "most loved" (46%). Some secondary sites report conflicting shares, so they are not relied on. · [JetBrains](https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/), [Pragmatic Engineer](https://newsletter.pragmaticengineer.com/p/ai-tooling-2026)
+- 2026-11-21 · FACT · "Vibe coding" / "build an app with AI (no coding)" tutorials for non-developers draw large audiences: Tina Huang "Vibe Coding Fundamentals" 1.13M, Mikey No Code, Riley Brown, Futurepedia "Full Claude Code Tutorial for Non-Technical Beginners" 245K. · `research/competitors/snapshots/2026-11-21-phase1-channel-scan.md`
 - 2026-11-21 · FACT · "Claude Code" tutorials dominate AI-coding search results on YouTube. The top results range from 150K to 2.0M views (yt-dlp search scan). · `research/competitors/snapshots/2026-11-21-search-scan.md`
 
 ## AI agents
-_No entries yet._
+- 2026-11-21 · FACT (vendor surveys) · Zapier (Sep 2026, n=513 enterprise leaders): 88% using or testing AI agents, production use 71% (up from 40%). Deloitte (Apr–Jun 2026, n=501): only 5% say processes are highly prepared, and 15% have scaled multi-agent adoption. McKinsey 2026: 44% report AI scaling across the enterprise. · [Zapier](https://zapier.com/blog/ai-agents-survey/), [Deloitte](https://www.deloitte.com/us/en/about/press-room/deloitte-survey-examines-ai-readiness-agentic-ai-success.html), [McKinsey](https://www.mckinsey.com/the-state-of-ai)
+- 2026-11-21 · FACT · "AI agents explained / build your first agent (no code)" is a top-performing format across segments: Jeff Su "AI Agents, Clearly Explained" 5.79M, Liam Ottley "How to Build & Sell AI Agents" 4.0M (search), Metics Media "Build Your First AI Agent in 20 Minutes (No Coding)" 877K, Grace Leung 353K. · snapshot above
+- 2026-11-21 · HYPOTHESIS · Gap between adoption and readiness, so demand for honest "what actually works" agent content for businesses and professionals.
 
 ## AI automation
-_No entries yet._
+- 2026-11-21 · FACT · n8n / AI automation for business is a large YouTube category: Nate Herk "Build & Sell n8n AI Agents (8+ Hour Course)" 2.06M, NetworkChuck "You NEED to Use n8n" 2.68M, freeCodeCamp n8n course 1.29M (search, 2026-11-21). Recent Nate Herk uploads show a shift from n8n toward Claude-based automation. · snapshot
 
 ## AI applications
 _No entries yet._
 
 ## AI workflows
-_No entries yet._
+- 2026-11-21 · FACT · Short, concrete workflow tips are the best-performing AI Shorts in the scan: Greg Isenberg "How to 10x your Claude with 4 .md files" 846K, "Claude Code + Obsidian in under 1 minute" 657K, "Claude Code Clearly Explained" 473K. Riley Brown "Can Claude build a cross-platform AI app?" 639K. · snapshot
 
 ## AI for business
-_No entries yet._
+- 2026-11-21 · FACT · "One-person business with AI" framing recurs among business channels: Dan Martell "How to Build a 1-Person Business with AI Agents" 161K, Patrick Dang "$10K/Month One-Person Business With Claude" 429K, Liam Ottley "Ultimate 1-Person AI Guide". · snapshot
+- 2026-11-21 · FACT · Anthropic listed on Nasdaq (ticker ANT) on 2026-11-19, the largest IPO on record (raised ~$81B; opened $111.50 vs $83 IPO price; valuation reports differ, $1.5T–$2.1T). · [TechRepublic](https://www.techrepublic.com/article/news-anthropic-ipo-nasdaq-trading-debut/), [Al Jazeera](https://www.aljazeera.com/economy/2026/11/19/anthropic-starts-trading-in-the-us-after-blockbuster-ipo)
 
 ## AI for creators
-_No entries yet._
+- 2026-11-21 · FACT (mixed sources) · OpenAI exited video generation: Sora app discontinued 2026-04-26, Sora 2 API shut down 2026-09-24 (per Sacra summary; one source conflicts). Seedance (ByteDance) and Google Veo lead. "Seedance 2.5" is unverified. · [Sacra](https://sacra.com/chat/h/b771f627-fc1c-433a-a4f6-350176de27c5/), [Digit](https://www.digit.in/features/general/seedance-20-this-chinese-ai-video-tool-is-outpacing-veo-3-and-sora-2.html)
+- 2026-11-21 · FACT · AI-video tutorial channels perform well per subscriber: Dan Kieft median ~159K on 332K subs, Youri van Hofwegen ~51K on 343K. Tool churn is high, and titles reference specific versions. · snapshot
 
 ## AI productivity
-_No entries yet._
+- 2026-11-21 · FACT · Gallup (Q1–Q2 2026, US employees): ~50–52% use AI at work at least a few times a year, 28–30% a few times a week or more, 13–15% daily. Only 14% (in AI-adopting orgs) strongly agree it transformed how work gets done. · [Gallup indicator](https://www.gallup.com/699797/indicator-artificial-intelligence.aspx), [Tom's Hardware](https://www.tomshardware.com/tech-industry/artificial-intelligence/half-of-all-us-employees-now-use-artificial-intelligence-at-work-crossing-landmark-threshold-for-first-time-gallup-data-shows-daily-and-weekly-usage-hitting-all-time-high-of-28-percent-in-q1-2026-with-65-percent-feeling-positive-about-its-impact-on-productivity)
+- 2026-11-21 · FACT · Professional "use AI better" channels have the highest view-per-video among education channels: Jeff Su median ~268K long-form at ~0.6 uploads/week. "Use Claude better than 99% of people" variants: Sandeep Swadia 2.6M, Futurepedia 639K, Dan Martell "1000+ hours of Learning Claude in 15 Minutes" 1.5M. · snapshot
+- 2026-11-21 · HYPOTHESIS · Half of workers use AI rarely, so there is a large "intermediate gap": people who tried AI but don't use it well. This is the biggest addressable audience.
 
 ## AI education
-_No entries yet._
+- 2026-11-21 · FACT · Student AI use is near-universal in the UK (HEPI, Mar 2026, n=1,054: 95% use AI, 94% for assessed work). US (Lumina-Gallup 2026): 57% use AI weekly in coursework, and 53% say their school discourages or prohibits it. Institutional guidance lags. · [HEPI](https://www.hepi.ac.uk/reports/student-generative-ai-survey-2026/), [Gallup](https://news.gallup.com/poll/704090/routine-college-students-despite-campus-limits.aspx)
+- 2026-11-21 · FACT · The top student channel in the scan (Justin Sung, 2.31M) frames AI as "use AI without letting it think for you" (66K). Learning roadmaps do well: Tina Huang "AI Roadmap You Actually Need" 540K, Tejas AI "How to learn AI" 433K on 38K subs. · snapshot
 
 ## Emerging technologies
-_No entries yet._
+- 2026-11-21 · FACT · Local/private AI is a strong topic: Tina Huang "Every Size Local AI In 24 Minutes" 2.3M, Greg Isenberg "I'm Obsessed With Local AI" 541K, Kevin Stratvert "How to Use Ollama" 254K. · snapshot
 
 ## Platform & monetization (YouTube)
 - 2026-11-21 · FACT · YPP ad revenue currently requires 1,000 subscribers + 3 public uploads in 90 days + either 4,000 public watch hours (12 months) or 10M public Shorts views (90 days). Shorts-feed watch time does not count toward the 4,000 hours. · [YouTube Help](https://support.google.com/youtube/answer/72851), [vidIQ](https://vidiq.com/blog/post/monetize-youtube-guide/)
 - 2026-11-21 · FACT · The lower tier (fan funding, Shopping) is available at 500 subs + 3 uploads + 3,000 watch hours or 3M Shorts views. Eligible countries only. · [vidIQ](https://vidiq.com/blog/post/monetize-youtube-guide/)
 - 2026-11-21 · FACT (reported, conflicting) · From 2027-02-01, new applicants for ad revenue reportedly need 8,000 watch hours or 20M Shorts views. One outlet says no change. **Verify in YouTube Studio → Earn.** · [Tubefilter](https://www.tubefilter.com/2026/08/10/youtube-partner-program-ad-eligibility-requirements-shorts/amp/), [Analytics Insight (contradicting)](https://www.analyticsinsight.net/apps/youtube-partner-program-eligibility-requirements)
+- 2026-11-21 · FACT · YouTube counts public views from the first frame for all formats from 2026-08-24. Monetization still uses engaged views / engaged watch hours, and eligibility uses qualified views/hours. Several outlets report the YPP thresholds rising to 8,000 watch hours or 20M Shorts views (timing reported as Feb 2027). This corroborates the earlier entry, but there is still no official YouTube page in our sources. · [Tubefilter](https://www.tubefilter.com/2026/08/18/youtubes-now-counting-public-views-from-the-first-frame-hoping-inflated-numbers-will-help-creators-negotiate-brand-deals/), [Newscast Studio](https://www.newscaststudio.com/2026/08/18/youtube-view-count-metric-change/)
+- 2026-11-21 · FACT · YouTube's July 2026 YPP update renamed "repetitious content" to **"inauthentic content"**. Not monetizable: generic/repetitive mass-produced content, unsatisfying content, AI personas on sensitive topics. AI use itself is allowed. · [Tubefilter](https://www.tubefilter.com/2026/07/13/youtube-inauthentic-content-monetization-policy-update/), [TechCrunch](https://techcrunch.com/2026/07/20/youtube-clarifies-policies-around-ai-slop-and-upsetting-videos/)
+- 2026-11-21 · FACT · Disclosure: realistic altered/synthetic content must be disclosed at upload. Generic TTS voice-over does not inherently require a label, but **cloning one's own voice** for voice-overs is listed as requiring disclosure. Disclosure does not limit reach or monetization (per YouTube). · [YouTube Help](https://support.google.com/youtube/answer/14328491), [YouTube blog](https://blog.youtube/news-and-events/disclosing-ai-generated-content)
+- 2026-11-21 · FACT (vendor, observational) · AIR Media-Tech (18,000 channels): channels mixing Shorts + long-form have more subscribers in most niches, and it recommends Shorts at **25–40% of uploads** for education/business niches. Metricool (799,718 videos): ~5 Shorts/month associated with +46% views vs average. Neither study is peer-reviewed. · [AIR](https://air.io/en/audience-growth/do-youtube-shorts-help-your-long-form-videos-grow-data-from-18000-channels), [Metricool](https://metricool.com/youtube-study/)
+- 2026-11-21 · FACT · India: YouTube's largest market (500M+ users). YouTube reports +160% payouts to Indian creators in Q1 2026 and +200% creators joining Shopping. An industry founder quoted: mass-produced AI voice-over faceless content "is surely over" (opinion). · [Google India blog](https://blog.google/intl/en-in/products/platforms/how-youtube-is-fueling-indias-next-wave-of-growth-knowledge-and-culture/), [exchange4media](https://www.exchange4media.com/digital-news/no-more-templates-indias-creator-economy-adjusts-to-youtubes-new-normal-146426.html)

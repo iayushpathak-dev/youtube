@@ -94,7 +94,7 @@ A recommendation is never an approved decision. An approval is recorded with its
 
 The current inventory and gaps are in `status/integrations.md`. Check it before assuming any access.
 Key points:
-- Public YouTube research: `yt-dlp` (works).
+- Public YouTube research: `yt-dlp` list-level data + RSS (works). Per-video pages (comments, transcripts, likes) are **blocked**.
 - Channel analytics: Windsor.ai YouTube connector (read analytics; edit video details, comments and playlists; **no upload**;
   no impressions/CTR/returning viewers; trial = last 30 days).
 - Web research: the WebSearch tool.

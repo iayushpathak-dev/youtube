@@ -1,6 +1,6 @@
 # Reports
 
-- Weekly: `reports/weekly/YYYY-Www.md` (ISO week). Monthly: `reports/monthly/YYYY-MM.md`.
+- Weekly: `reports/weekly/YYYY-Www.md` (ISO week). Monthly: `reports/monthly/YYYY-MM.md`. Research phases: `reports/research/YYYY-MM-DD-<phase>.md`.
 - Reports summarise and link. Durable findings go into the knowledge files (INDEX.md), not only the report.
 
 ## Weekly template
