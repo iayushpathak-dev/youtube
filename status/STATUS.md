@@ -2,7 +2,7 @@
 
 **Channel:** AI Made Usable (@aimadeusable), renamed from ShippedWithAI on 2026-11-21 (DEC-017).
 
-**Last updated:** 2026-11-21 · **Phase:** 1, Research ✅ report delivered → **waiting for the creator's decisions** → next: Phase 2, launch calendar + first scripts (only after approval)
+**Last updated:** 2026-11-21 · **Phase:** 2, **Launch week production** (DEC-018). Long-form SWAI-L001 on Tue 2026-11-24 19:30 IST + Shorts SWAI-S001..S007 (Sun 11-22 → Sat 11-28). All scripted, awaiting the creator's script approval + recordings.
 
 ## Channel state (FACT, Windsor.ai, 2026-11-21)
 0 subscribers · 0 public videos · 0 views · About description empty. Brand v2 files ready in `brand/assets/` (v1 archived). Not yet uploaded.
@@ -39,7 +39,11 @@
 ## Pending tasks
 | # | Task | Owner | Blocked by |
 |---|---|---|---|
-| T1 | Phase 2: launch calendar + first scripts | Claude | DEC-010, 011, 012, 013, 016 |
+| T1 | ✅ Week 1 calendar + scripts (L001, S001–S007) | Claude | done 2026-11-21 |
+| T7 | Approve/edit the week-1 scripts | Creator | — |
+| T8 | Record SWAI-L001 test (protocol in the item file) + voice for S001/S002 (needed first: Sun/Mon) | Creator | T7 |
+| T9 | Edit L001 + Shorts, graphics, captions, thumbnail B (with the creator's photo) | Claude | T8 (recordings), T4 |
+| T10 | Upload + schedule each video in Studio | Creator | T9 |
 | T2 | In YouTube Studio: change the display name to **AI Made Usable** (handle @aimadeusable ✅ done), upload logo/banner/watermark, paste About + keywords (`brand/channel-profile.md`) | Creator | — (approved 2026-11-21) |
 | T3 | Shorts narration setup | Claude | DEC-013 → DEC-008 |
 | T4 | `npm install` Remotion/HyperFrames when production starts | Claude | Phase 2 |

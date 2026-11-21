@@ -66,6 +66,6 @@ Phase 1 report: reports/research/2026-11-21-phase-1-research-report.md (read it 
 - Unverified (seen only in creator titles): Fable 5.2, GPT-6.2 Astra, Meta Muse, Seedance 2.5, Jev, Grok Bot.
 - Limits: no comments/transcripts/likes (bot check), so hooks were not analysed.
 
-== NEXT PHASE ==
-Waiting for the creator's decisions on DEC-008..016 (DEC-005/006 done). Only after DEC-010/011/012/013/016 are approved: Phase 2 = launch calendar (strategy/calendar.md) + first content items (SWAI-L001, first SWAI-S###) via content/workflows/. Do NOT create the calendar or scripts before approval.
+== CURRENT PHASE ==
+Phase 2, launch week (DEC-018, approved 2026-11-21). Content items exist: SWAI-L001 (ChatGPT vs Claude vs Gemini, 5 verifiable tasks, test dataset + answer key in content/long/assets/SWAI-L001/, thumbnail-a.png), SWAI-S001..S007 (daily Shorts 2026-11-22..28). All are production_status SCRIPTED, approval_status PROPOSED. Calendar in strategy/calendar.md. Next: the creator approves the scripts and records (protocol in the L001 file). Claude then edits, makes graphics and fills `{ }` placeholders only from the real recordings. DEC-010/011/012/013/016 are still PROPOSED as permanent strategy.
 ```

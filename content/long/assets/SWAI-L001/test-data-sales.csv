@@ -1,0 +1,1841 @@
+date,region,product,units,unit_price_inr,revenue_inr,returns
+2026-07-01,North,Notebook,29,120,3480,3
+2026-07-01,North,Backpack,5,1450,7250,0
+2026-07-01,North,Water Bottle,15,399,5985,0
+2026-07-01,North,Desk Lamp,4,899,3596,0
+2026-07-01,North,Headphones,3,2499,7497,0
+2026-07-01,South,Notebook,27,120,3240,0
+2026-07-01,South,Backpack,6,1450,8700,0
+2026-07-01,South,Water Bottle,14,399,5586,1
+2026-07-01,South,Desk Lamp,4,899,3596,0
+2026-07-01,South,Headphones,4,2499,9996,1
+2026-07-01,East,Notebook,22,120,2640,2
+2026-07-01,East,Backpack,5,1450,7250,0
+2026-07-01,East,Water Bottle,17,399,6783,0
+2026-07-01,East,Desk Lamp,4,899,3596,0
+2026-07-01,East,Headphones,4,2499,9996,2
+2026-07-01,West,Notebook,22,120,2640,0
+2026-07-01,West,Backpack,7,1450,10150,0
+2026-07-01,West,Water Bottle,12,399,4788,0
+2026-07-01,West,Desk Lamp,3,899,2697,0
+2026-07-01,West,Headphones,3,2499,7497,1
+2026-07-02,North,Notebook,32,120,3840,0
+2026-07-02,North,Backpack,6,1450,8700,1
+2026-07-02,North,Water Bottle,14,399,5586,0
+2026-07-02,North,Desk Lamp,4,899,3596,0
+2026-07-02,North,Headphones,5,2499,12495,0
+2026-07-02,South,Notebook,30,120,3600,2
+2026-07-02,South,Backpack,7,1450,10150,0
+2026-07-02,South,Water Bottle,12,399,4788,1
+2026-07-02,South,Desk Lamp,4,899,3596,0
+2026-07-02,South,Headphones,3,2499,7497,1
+2026-07-02,East,Notebook,29,120,3480,1
+2026-07-02,East,Backpack,6,1450,8700,0
+2026-07-02,East,Water Bottle,15,399,5985,0
+2026-07-02,East,Desk Lamp,4,899,3596,0
+2026-07-02,East,Headphones,4,2499,9996,1
+2026-07-02,West,Notebook,30,120,3600,1
+2026-07-02,West,Backpack,5,1450,7250,0
+2026-07-02,West,Water Bottle,11,399,4389,0
+2026-07-02,West,Desk Lamp,5,899,4495,0
+2026-07-02,West,Headphones,4,2499,9996,0
+2026-07-03,North,Notebook,29,120,3480,3
+2026-07-03,North,Backpack,6,1450,8700,0
+2026-07-03,North,Water Bottle,14,399,5586,1
+2026-07-03,North,Desk Lamp,5,899,4495,0
+2026-07-03,North,Headphones,3,2499,7497,1
+2026-07-03,South,Notebook,27,120,3240,1
+2026-07-03,South,Backpack,5,1450,7250,0
+2026-07-03,South,Water Bottle,11,399,4389,0
+2026-07-03,South,Desk Lamp,4,899,3596,0
+2026-07-03,South,Headphones,4,2499,9996,0
+2026-07-03,East,Notebook,40,120,4800,1
+2026-07-03,East,Backpack,6,1450,8700,0
+2026-07-03,East,Water Bottle,15,399,5985,0
+2026-07-03,East,Desk Lamp,4,899,3596,0
+2026-07-03,East,Headphones,4,2499,9996,0
+2026-07-03,West,Notebook,35,120,4200,1
+2026-07-03,West,Backpack,5,1450,7250,0
+2026-07-03,West,Water Bottle,15,399,5985,0
+2026-07-03,West,Desk Lamp,3,899,2697,0
+2026-07-03,West,Headphones,4,2499,9996,1
+2026-07-04,North,Notebook,44,120,5280,0
+2026-07-04,North,Backpack,10,1450,14500,0
+2026-07-04,North,Water Bottle,22,399,8778,0
+2026-07-04,North,Desk Lamp,7,899,6293,0
+2026-07-04,North,Headphones,7,2499,17493,0
+2026-07-04,South,Notebook,49,120,5880,1
+2026-07-04,South,Backpack,10,1450,14500,0
+2026-07-04,South,Water Bottle,20,399,7980,0
+2026-07-04,South,Desk Lamp,7,899,6293,0
+2026-07-04,South,Headphones,5,2499,12495,1
+2026-07-04,East,Notebook,44,120,5280,2
+2026-07-04,East,Backpack,10,1450,14500,0
+2026-07-04,East,Water Bottle,23,399,9177,0
+2026-07-04,East,Desk Lamp,7,899,6293,1
+2026-07-04,East,Headphones,7,2499,17493,4
+2026-07-04,West,Notebook,51,120,6120,2
+2026-07-04,West,Backpack,9,1450,13050,0
+2026-07-04,West,Water Bottle,20,399,7980,0
+2026-07-04,West,Desk Lamp,7,899,6293,0
+2026-07-04,West,Headphones,7,2499,17493,0
+2026-07-05,North,Notebook,58,120,6960,3
+2026-07-05,North,Backpack,9,1450,13050,2
+2026-07-05,North,Water Bottle,20,399,7980,0
+2026-07-05,North,Desk Lamp,9,899,8091,0
+2026-07-05,North,Headphones,5,2499,12495,0
+2026-07-05,South,Notebook,48,120,5760,0
+2026-07-05,South,Backpack,9,1450,13050,0
+2026-07-05,South,Water Bottle,22,399,8778,0
+2026-07-05,South,Desk Lamp,7,899,6293,0
+2026-07-05,South,Headphones,6,2499,14994,3
+2026-07-05,East,Notebook,50,120,6000,2
+2026-07-05,East,Backpack,7,1450,10150,0
+2026-07-05,East,Water Bottle,21,399,8379,2
+2026-07-05,East,Desk Lamp,7,899,6293,0
+2026-07-05,East,Headphones,7,2499,17493,1
+2026-07-05,West,Notebook,54,120,6480,1
+2026-07-05,West,Backpack,8,1450,11600,0
+2026-07-05,West,Water Bottle,21,399,8379,0
+2026-07-05,West,Desk Lamp,7,899,6293,0
+2026-07-05,West,Headphones,5,2499,12495,1
+2026-07-06,North,Notebook,26,120,3120,0
+2026-07-06,North,Backpack,5,1450,7250,1
+2026-07-06,North,Water Bottle,11,399,4389,0
+2026-07-06,North,Desk Lamp,5,899,4495,0
+2026-07-06,North,Headphones,4,2499,9996,1
+2026-07-06,South,Notebook,23,120,2760,0
+2026-07-06,South,Backpack,6,1450,8700,1
+2026-07-06,South,Water Bottle,11,399,4389,0
+2026-07-06,South,Desk Lamp,5,899,4495,0
+2026-07-06,South,Headphones,4,2499,9996,0
+2026-07-06,East,Notebook,31,120,3720,1
+2026-07-06,East,Backpack,6,1450,8700,0
+2026-07-06,East,Water Bottle,12,399,4788,0
+2026-07-06,East,Desk Lamp,5,899,4495,0
+2026-07-06,East,Headphones,3,2499,7497,2
+2026-07-06,West,Notebook,29,120,3480,1
+2026-07-06,West,Backpack,5,1450,7250,0
+2026-07-06,West,Water Bottle,11,399,4389,1
+2026-07-06,West,Desk Lamp,5,899,4495,0
+2026-07-06,West,Headphones,3,2499,7497,1
+2026-07-07,North,Notebook,33,120,3960,0
+2026-07-07,North,Backpack,5,1450,7250,0
+2026-07-07,North,Water Bottle,15,399,5985,1
+2026-07-07,North,Desk Lamp,5,899,4495,0
+2026-07-07,North,Headphones,3,2499,7497,1
+2026-07-07,South,Notebook,22,120,2640,1
+2026-07-07,South,Backpack,7,1450,10150,0
+2026-07-07,South,Water Bottle,12,399,4788,0
+2026-07-07,South,Desk Lamp,5,899,4495,0
+2026-07-07,South,Headphones,4,2499,9996,1
+2026-07-07,East,Notebook,28,120,3360,0
+2026-07-07,East,Backpack,5,1450,7250,0
+2026-07-07,East,Water Bottle,12,399,4788,0
+2026-07-07,East,Desk Lamp,4,899,3596,0
+2026-07-07,East,Headphones,4,2499,9996,2
+2026-07-07,West,Notebook,23,120,2760,0
+2026-07-07,West,Backpack,4,1450,5800,2
+2026-07-07,West,Water Bottle,13,399,5187,0
+2026-07-07,West,Desk Lamp,5,899,4495,0
+2026-07-07,West,Headphones,3,2499,7497,1
+2026-07-08,North,Notebook,30,120,3600,0
+2026-07-08,North,Backpack,6,1450,8700,0
+2026-07-08,North,Water Bottle,16,399,6384,0
+2026-07-08,North,Desk Lamp,4,899,3596,0
+2026-07-08,North,Headphones,4,2499,9996,1
+2026-07-08,South,Notebook,27,120,3240,0
+2026-07-08,South,Backpack,5,1450,7250,0
+2026-07-08,South,Water Bottle,12,399,4788,0
+2026-07-08,South,Desk Lamp,5,899,4495,0
+2026-07-08,South,Headphones,3,2499,7497,0
+2026-07-08,East,Notebook,30,120,3600,4
+2026-07-08,East,Backpack,5,1450,7250,0
+2026-07-08,East,Water Bottle,10,399,3990,1
+2026-07-08,East,Desk Lamp,3,899,2697,0
+2026-07-08,East,Headphones,3,2499,7497,1
+2026-07-08,West,Notebook,29,120,3480,0
+2026-07-08,West,Backpack,6,1450,8700,1
+2026-07-08,West,Water Bottle,12,399,4788,0
+2026-07-08,West,Desk Lamp,5,899,4495,1
+2026-07-08,West,Headphones,4,2499,9996,1
+2026-07-09,North,Notebook,31,120,3720,1
+2026-07-09,North,Backpack,6,1450,8700,0
+2026-07-09,North,Water Bottle,12,399,4788,0
+2026-07-09,North,Desk Lamp,6,899,5394,0
+2026-07-09,North,Headphones,3,2499,7497,0
+2026-07-09,South,Notebook,27,120,3240,0
+2026-07-09,South,Backpack,5,1450,7250,0
+2026-07-09,South,Water Bottle,13,399,5187,1
+2026-07-09,South,Desk Lamp,3,899,2697,0
+2026-07-09,South,Headphones,4,2499,9996,2
+2026-07-09,East,Notebook,36,120,4320,1
+2026-07-09,East,Backpack,7,1450,10150,0
+2026-07-09,East,Water Bottle,14,399,5586,0
+2026-07-09,East,Desk Lamp,4,899,3596,0
+2026-07-09,East,Headphones,3,2499,7497,1
+2026-07-09,West,Notebook,31,120,3720,1
+2026-07-09,West,Backpack,6,1450,8700,0
+2026-07-09,West,Water Bottle,14,399,5586,0
+2026-07-09,West,Desk Lamp,5,899,4495,0
+2026-07-09,West,Headphones,3,2499,7497,3
+2026-07-10,North,Notebook,27,120,3240,0
+2026-07-10,North,Backpack,6,1450,8700,0
+2026-07-10,North,Water Bottle,15,399,5985,1
+2026-07-10,North,Desk Lamp,4,899,3596,0
+2026-07-10,North,Headphones,3,2499,7497,1
+2026-07-10,South,Notebook,28,120,3360,2
+2026-07-10,South,Backpack,7,1450,10150,0
+2026-07-10,South,Water Bottle,14,399,5586,1
+2026-07-10,South,Desk Lamp,4,899,3596,0
+2026-07-10,South,Headphones,3,2499,7497,1
+2026-07-10,East,Notebook,19,120,2280,0
+2026-07-10,East,Backpack,7,1450,10150,0
+2026-07-10,East,Water Bottle,14,399,5586,1
+2026-07-10,East,Desk Lamp,4,899,3596,0
+2026-07-10,East,Headphones,4,2499,9996,0
+2026-07-10,West,Notebook,32,120,3840,0
+2026-07-10,West,Backpack,6,1450,8700,0
+2026-07-10,West,Water Bottle,13,399,5187,0
+2026-07-10,West,Desk Lamp,5,899,4495,0
+2026-07-10,West,Headphones,4,2499,9996,0
+2026-07-11,North,Notebook,41,120,4920,3
+2026-07-11,North,Backpack,10,1450,14500,0
+2026-07-11,North,Water Bottle,18,399,7182,0
+2026-07-11,North,Desk Lamp,9,899,8091,0
+2026-07-11,North,Headphones,6,2499,14994,3
+2026-07-11,South,Notebook,51,120,6120,3
+2026-07-11,South,Backpack,9,1450,13050,0
+2026-07-11,South,Water Bottle,24,399,9576,0
+2026-07-11,South,Desk Lamp,8,899,7192,0
+2026-07-11,South,Headphones,5,2499,12495,1
+2026-07-11,East,Notebook,51,120,6120,2
+2026-07-11,East,Backpack,9,1450,13050,0
+2026-07-11,East,Water Bottle,21,399,8379,1
+2026-07-11,East,Desk Lamp,8,899,7192,0
+2026-07-11,East,Headphones,5,2499,12495,1
+2026-07-11,West,Notebook,45,120,5400,1
+2026-07-11,West,Backpack,10,1450,14500,0
+2026-07-11,West,Water Bottle,26,399,10374,0
+2026-07-11,West,Desk Lamp,8,899,7192,0
+2026-07-11,West,Headphones,6,2499,14994,1
+2026-07-12,North,Notebook,39,120,4680,1
+2026-07-12,North,Backpack,10,1450,14500,0
+2026-07-12,North,Water Bottle,22,399,8778,1
+2026-07-12,North,Desk Lamp,6,899,5394,0
+2026-07-12,North,Headphones,6,2499,14994,1
+2026-07-12,South,Notebook,50,120,6000,3
+2026-07-12,South,Backpack,8,1450,11600,0
+2026-07-12,South,Water Bottle,20,399,7980,0
+2026-07-12,South,Desk Lamp,7,899,6293,0
+2026-07-12,South,Headphones,5,2499,12495,0
+2026-07-12,East,Notebook,45,120,5400,2
+2026-07-12,East,Backpack,8,1450,11600,0
+2026-07-12,East,Water Bottle,19,399,7581,0
+2026-07-12,East,Desk Lamp,6,899,5394,0
+2026-07-12,East,Headphones,6,2499,14994,1
+2026-07-12,West,Notebook,48,120,5760,1
+2026-07-12,West,Backpack,9,1450,13050,0
+2026-07-12,West,Water Bottle,21,399,8379,0
+2026-07-12,West,Desk Lamp,9,899,8091,0
+2026-07-12,West,Headphones,6,2499,14994,0
+2026-07-13,North,Notebook,28,120,3360,0
+2026-07-13,North,Backpack,5,1450,7250,0
+2026-07-13,North,Water Bottle,13,399,5187,1
+2026-07-13,North,Desk Lamp,4,899,3596,0
+2026-07-13,North,Headphones,3,2499,7497,1
+2026-07-13,South,Notebook,31,120,3720,0
+2026-07-13,South,Backpack,5,1450,7250,0
+2026-07-13,South,Water Bottle,13,399,5187,0
+2026-07-13,South,Desk Lamp,6,899,5394,0
+2026-07-13,South,Headphones,3,2499,7497,0
+2026-07-13,East,Notebook,33,120,3960,1
+2026-07-13,East,Backpack,4,1450,5800,0
+2026-07-13,East,Water Bottle,16,399,6384,1
+2026-07-13,East,Desk Lamp,5,899,4495,0
+2026-07-13,East,Headphones,4,2499,9996,0
+2026-07-13,West,Notebook,26,120,3120,0
+2026-07-13,West,Backpack,6,1450,8700,0
+2026-07-13,West,Water Bottle,12,399,4788,1
+2026-07-13,West,Desk Lamp,4,899,3596,0
+2026-07-13,West,Headphones,3,2499,7497,0
+2026-07-14,North,Notebook,34,120,4080,1
+2026-07-14,North,Backpack,5,1450,7250,0
+2026-07-14,North,Water Bottle,11,399,4389,1
+2026-07-14,North,Desk Lamp,5,899,4495,0
+2026-07-14,North,Headphones,3,2499,7497,0
+2026-07-14,South,Notebook,31,120,3720,1
+2026-07-14,South,Backpack,6,1450,8700,0
+2026-07-14,South,Water Bottle,10,399,3990,0
+2026-07-14,South,Desk Lamp,4,899,3596,0
+2026-07-14,South,Headphones,4,2499,9996,1
+2026-07-14,East,Notebook,27,120,3240,1
+2026-07-14,East,Backpack,6,1450,8700,0
+2026-07-14,East,Water Bottle,13,399,5187,0
+2026-07-14,East,Desk Lamp,5,899,4495,0
+2026-07-14,East,Headphones,3,2499,7497,2
+2026-07-14,West,Notebook,30,120,3600,0
+2026-07-14,West,Backpack,5,1450,7250,0
+2026-07-14,West,Water Bottle,13,399,5187,1
+2026-07-14,West,Desk Lamp,4,899,3596,0
+2026-07-14,West,Headphones,3,2499,7497,1
+2026-07-15,North,Notebook,25,120,3000,1
+2026-07-15,North,Backpack,5,1450,7250,0
+2026-07-15,North,Water Bottle,13,399,5187,0
+2026-07-15,North,Desk Lamp,4,899,3596,0
+2026-07-15,North,Headphones,3,2499,7497,0
+2026-07-15,South,Notebook,34,120,4080,1
+2026-07-15,South,Backpack,5,1450,7250,0
+2026-07-15,South,Water Bottle,16,399,6384,1
+2026-07-15,South,Desk Lamp,5,899,4495,0
+2026-07-15,South,Headphones,4,2499,9996,0
+2026-07-15,East,Notebook,23,120,2760,1
+2026-07-15,East,Backpack,4,1450,5800,0
+2026-07-15,East,Water Bottle,12,399,4788,0
+2026-07-15,East,Desk Lamp,5,899,4495,0
+2026-07-15,East,Headphones,3,2499,7497,0
+2026-07-15,West,Notebook,22,120,2640,2
+2026-07-15,West,Backpack,5,1450,7250,0
+2026-07-15,West,Water Bottle,19,399,7581,0
+2026-07-15,West,Desk Lamp,5,899,4495,0
+2026-07-15,West,Headphones,3,2499,7497,1
+2026-07-16,North,Notebook,24,120,2880,1
+2026-07-16,North,Backpack,5,1450,7250,0
+2026-07-16,North,Water Bottle,13,399,5187,0
+2026-07-16,North,Desk Lamp,5,899,4495,0
+2026-07-16,North,Headphones,5,2499,12495,0
+2026-07-16,South,Notebook,33,120,3960,1
+2026-07-16,South,Backpack,5,1450,7250,0
+2026-07-16,South,Water Bottle,12,399,4788,1
+2026-07-16,South,Desk Lamp,4,899,3596,0
+2026-07-16,South,Headphones,3,2499,7497,1
+2026-07-16,East,Notebook,25,120,3000,1
+2026-07-16,East,Backpack,6,1450,8700,1
+2026-07-16,East,Water Bottle,14,399,5586,3
+2026-07-16,East,Desk Lamp,3,899,2697,0
+2026-07-16,East,Headphones,3,2499,7497,0
+2026-07-16,West,Notebook,32,120,3840,1
+2026-07-16,West,Backpack,6,1450,8700,0
+2026-07-16,West,Water Bottle,12,399,4788,0
+2026-07-16,West,Desk Lamp,5,899,4495,0
+2026-07-16,West,Headphones,3,2499,7497,1
+2026-07-17,North,Notebook,26,120,3120,1
+2026-07-17,North,Backpack,5,1450,7250,0
+2026-07-17,North,Water Bottle,17,399,6783,0
+2026-07-17,North,Desk Lamp,4,899,3596,0
+2026-07-17,North,Headphones,4,2499,9996,1
+2026-07-17,South,Notebook,33,120,3960,1
+2026-07-17,South,Backpack,7,1450,10150,0
+2026-07-17,South,Water Bottle,16,399,6384,0
+2026-07-17,South,Desk Lamp,5,899,4495,0
+2026-07-17,South,Headphones,4,2499,9996,0
+2026-07-17,East,Notebook,28,120,3360,0
+2026-07-17,East,Backpack,5,1450,7250,1
+2026-07-17,East,Water Bottle,11,399,4389,0
+2026-07-17,East,Desk Lamp,3,899,2697,0
+2026-07-17,East,Headphones,3,2499,7497,1
+2026-07-17,West,Notebook,22,120,2640,1
+2026-07-17,West,Backpack,7,1450,10150,0
+2026-07-17,West,Water Bottle,14,399,5586,0
+2026-07-17,West,Desk Lamp,5,899,4495,0
+2026-07-17,West,Headphones,4,2499,9996,1
+2026-07-18,North,Notebook,49,120,5880,5
+2026-07-18,North,Backpack,9,1450,13050,1
+2026-07-18,North,Water Bottle,18,399,7182,1
+2026-07-18,North,Desk Lamp,9,899,8091,1
+2026-07-18,North,Headphones,6,2499,14994,1
+2026-07-18,South,Notebook,50,120,6000,0
+2026-07-18,South,Backpack,8,1450,11600,0
+2026-07-18,South,Water Bottle,22,399,8778,1
+2026-07-18,South,Desk Lamp,7,899,6293,0
+2026-07-18,South,Headphones,5,2499,12495,0
+2026-07-18,East,Notebook,41,120,4920,0
+2026-07-18,East,Backpack,8,1450,11600,0
+2026-07-18,East,Water Bottle,18,399,7182,1
+2026-07-18,East,Desk Lamp,7,899,6293,0
+2026-07-18,East,Headphones,6,2499,14994,1
+2026-07-18,West,Notebook,53,120,6360,2
+2026-07-18,West,Backpack,10,1450,14500,1
+2026-07-18,West,Water Bottle,25,399,9975,2
+2026-07-18,West,Desk Lamp,7,899,6293,0
+2026-07-18,West,Headphones,7,2499,17493,1
+2026-07-19,North,Notebook,43,120,5160,2
+2026-07-19,North,Backpack,10,1450,14500,0
+2026-07-19,North,Water Bottle,23,399,9177,1
+2026-07-19,North,Desk Lamp,8,899,7192,0
+2026-07-19,North,Headphones,4,2499,9996,1
+2026-07-19,South,Notebook,45,120,5400,0
+2026-07-19,South,Backpack,9,1450,13050,0
+2026-07-19,South,Water Bottle,25,399,9975,1
+2026-07-19,South,Desk Lamp,8,899,7192,1
+2026-07-19,South,Headphones,6,2499,14994,1
+2026-07-19,East,Notebook,47,120,5640,1
+2026-07-19,East,Backpack,7,1450,10150,0
+2026-07-19,East,Water Bottle,20,399,7980,0
+2026-07-19,East,Desk Lamp,6,899,5394,0
+2026-07-19,East,Headphones,6,2499,14994,2
+2026-07-19,West,Notebook,49,120,5880,2
+2026-07-19,West,Backpack,8,1450,11600,0
+2026-07-19,West,Water Bottle,23,399,9177,1
+2026-07-19,West,Desk Lamp,8,899,7192,0
+2026-07-19,West,Headphones,6,2499,14994,1
+2026-07-20,North,Notebook,35,120,4200,0
+2026-07-20,North,Backpack,5,1450,7250,0
+2026-07-20,North,Water Bottle,13,399,5187,1
+2026-07-20,North,Desk Lamp,6,899,5394,0
+2026-07-20,North,Headphones,2,2499,4998,1
+2026-07-20,South,Notebook,21,120,2520,0
+2026-07-20,South,Backpack,7,1450,10150,0
+2026-07-20,South,Water Bottle,15,399,5985,0
+2026-07-20,South,Desk Lamp,5,899,4495,0
+2026-07-20,South,Headphones,3,2499,7497,1
+2026-07-20,East,Notebook,19,120,2280,0
+2026-07-20,East,Backpack,4,1450,5800,0
+2026-07-20,East,Water Bottle,7,399,2793,1
+2026-07-20,East,Desk Lamp,4,899,3596,1
+2026-07-20,East,Headphones,3,2499,7497,0
+2026-07-20,West,Notebook,26,120,3120,1
+2026-07-20,West,Backpack,6,1450,8700,0
+2026-07-20,West,Water Bottle,10,399,3990,0
+2026-07-20,West,Desk Lamp,4,899,3596,0
+2026-07-20,West,Headphones,4,2499,9996,1
+2026-07-21,North,Notebook,29,120,3480,0
+2026-07-21,North,Backpack,6,1450,8700,0
+2026-07-21,North,Water Bottle,16,399,6384,1
+2026-07-21,North,Desk Lamp,4,899,3596,0
+2026-07-21,North,Headphones,4,2499,9996,1
+2026-07-21,South,Notebook,25,120,3000,1
+2026-07-21,South,Backpack,5,1450,7250,0
+2026-07-21,South,Water Bottle,19,399,7581,0
+2026-07-21,South,Desk Lamp,3,899,2697,0
+2026-07-21,South,Headphones,3,2499,7497,0
+2026-07-21,East,Notebook,25,120,3000,0
+2026-07-21,East,Backpack,5,1450,7250,0
+2026-07-21,East,Water Bottle,13,399,5187,0
+2026-07-21,East,Desk Lamp,4,899,3596,0
+2026-07-21,East,Headphones,4,2499,9996,1
+2026-07-21,West,Notebook,35,120,4200,1
+2026-07-21,West,Backpack,6,1450,8700,0
+2026-07-21,West,Water Bottle,13,399,5187,0
+2026-07-21,West,Desk Lamp,5,899,4495,0
+2026-07-21,West,Headphones,4,2499,9996,1
+2026-07-22,North,Notebook,34,120,4080,0
+2026-07-22,North,Backpack,6,1450,8700,0
+2026-07-22,North,Water Bottle,14,399,5586,2
+2026-07-22,North,Desk Lamp,4,899,3596,0
+2026-07-22,North,Headphones,3,2499,7497,1
+2026-07-22,South,Notebook,30,120,3600,0
+2026-07-22,South,Backpack,6,1450,8700,0
+2026-07-22,South,Water Bottle,11,399,4389,1
+2026-07-22,South,Desk Lamp,5,899,4495,0
+2026-07-22,South,Headphones,4,2499,9996,1
+2026-07-22,East,Notebook,32,120,3840,1
+2026-07-22,East,Backpack,5,1450,7250,0
+2026-07-22,East,Water Bottle,13,399,5187,0
+2026-07-22,East,Desk Lamp,3,899,2697,1
+2026-07-22,East,Headphones,3,2499,7497,1
+2026-07-22,West,Notebook,39,120,4680,0
+2026-07-22,West,Backpack,6,1450,8700,0
+2026-07-22,West,Water Bottle,15,399,5985,0
+2026-07-22,West,Desk Lamp,4,899,3596,0
+2026-07-22,West,Headphones,3,2499,7497,1
+2026-07-23,North,Notebook,29,120,3480,0
+2026-07-23,North,Backpack,7,1450,10150,0
+2026-07-23,North,Water Bottle,12,399,4788,0
+2026-07-23,North,Desk Lamp,5,899,4495,0
+2026-07-23,North,Headphones,4,2499,9996,1
+2026-07-23,South,Notebook,30,120,3600,1
+2026-07-23,South,Backpack,5,1450,7250,0
+2026-07-23,South,Water Bottle,16,399,6384,0
+2026-07-23,South,Desk Lamp,5,899,4495,0
+2026-07-23,South,Headphones,3,2499,7497,1
+2026-07-23,East,Notebook,20,120,2400,1
+2026-07-23,East,Backpack,5,1450,7250,0
+2026-07-23,East,Water Bottle,10,399,3990,0
+2026-07-23,East,Desk Lamp,5,899,4495,0
+2026-07-23,East,Headphones,3,2499,7497,2
+2026-07-23,West,Notebook,29,120,3480,1
+2026-07-23,West,Backpack,7,1450,10150,0
+2026-07-23,West,Water Bottle,16,399,6384,0
+2026-07-23,West,Desk Lamp,5,899,4495,0
+2026-07-23,West,Headphones,3,2499,7497,0
+2026-07-24,North,Notebook,26,120,3120,0
+2026-07-24,North,Backpack,5,1450,7250,0
+2026-07-24,North,Water Bottle,15,399,5985,1
+2026-07-24,North,Desk Lamp,3,899,2697,0
+2026-07-24,North,Headphones,5,2499,12495,0
+2026-07-24,South,Notebook,28,120,3360,0
+2026-07-24,South,Backpack,7,1450,10150,0
+2026-07-24,South,Water Bottle,16,399,6384,0
+2026-07-24,South,Desk Lamp,5,899,4495,1
+2026-07-24,South,Headphones,3,2499,7497,0
+2026-07-24,East,Notebook,23,120,2760,0
+2026-07-24,East,Backpack,3,1450,4350,0
+2026-07-24,East,Water Bottle,10,399,3990,0
+2026-07-24,East,Desk Lamp,4,899,3596,0
+2026-07-24,East,Headphones,2,2499,4998,1
+2026-07-24,West,Notebook,43,120,5160,1
+2026-07-24,West,Backpack,6,1450,8700,0
+2026-07-24,West,Water Bottle,12,399,4788,1
+2026-07-24,West,Desk Lamp,4,899,3596,0
+2026-07-24,West,Headphones,4,2499,9996,2
+2026-07-25,North,Notebook,49,120,5880,0
+2026-07-25,North,Backpack,9,1450,13050,0
+2026-07-25,North,Water Bottle,23,399,9177,1
+2026-07-25,North,Desk Lamp,8,899,7192,0
+2026-07-25,North,Headphones,5,2499,12495,4
+2026-07-25,South,Notebook,50,120,6000,2
+2026-07-25,South,Backpack,9,1450,13050,0
+2026-07-25,South,Water Bottle,21,399,8379,0
+2026-07-25,South,Desk Lamp,7,899,6293,1
+2026-07-25,South,Headphones,6,2499,14994,3
+2026-07-25,East,Notebook,39,120,4680,0
+2026-07-25,East,Backpack,8,1450,11600,0
+2026-07-25,East,Water Bottle,18,399,7182,2
+2026-07-25,East,Desk Lamp,5,899,4495,0
+2026-07-25,East,Headphones,4,2499,9996,0
+2026-07-25,West,Notebook,42,120,5040,2
+2026-07-25,West,Backpack,8,1450,11600,0
+2026-07-25,West,Water Bottle,24,399,9576,0
+2026-07-25,West,Desk Lamp,8,899,7192,0
+2026-07-25,West,Headphones,5,2499,12495,0
+2026-07-26,North,Notebook,49,120,5880,0
+2026-07-26,North,Backpack,9,1450,13050,0
+2026-07-26,North,Water Bottle,19,399,7581,1
+2026-07-26,North,Desk Lamp,6,899,5394,0
+2026-07-26,North,Headphones,5,2499,12495,2
+2026-07-26,South,Notebook,45,120,5400,1
+2026-07-26,South,Backpack,10,1450,14500,1
+2026-07-26,South,Water Bottle,23,399,9177,1
+2026-07-26,South,Desk Lamp,7,899,6293,0
+2026-07-26,South,Headphones,6,2499,14994,1
+2026-07-26,East,Notebook,37,120,4440,3
+2026-07-26,East,Backpack,6,1450,8700,0
+2026-07-26,East,Water Bottle,19,399,7581,0
+2026-07-26,East,Desk Lamp,7,899,6293,0
+2026-07-26,East,Headphones,4,2499,9996,1
+2026-07-26,West,Notebook,39,120,4680,2
+2026-07-26,West,Backpack,9,1450,13050,0
+2026-07-26,West,Water Bottle,19,399,7581,1
+2026-07-26,West,Desk Lamp,9,899,8091,0
+2026-07-26,West,Headphones,5,2499,12495,0
+2026-07-27,North,Notebook,30,120,3600,1
+2026-07-27,North,Backpack,7,1450,10150,0
+2026-07-27,North,Water Bottle,15,399,5985,1
+2026-07-27,North,Desk Lamp,5,899,4495,0
+2026-07-27,North,Headphones,4,2499,9996,2
+2026-07-27,South,Notebook,30,120,3600,2
+2026-07-27,South,Backpack,6,1450,8700,0
+2026-07-27,South,Water Bottle,14,399,5586,0
+2026-07-27,South,Desk Lamp,4,899,3596,0
+2026-07-27,South,Headphones,4,2499,9996,0
+2026-07-27,East,Notebook,23,120,2760,0
+2026-07-27,East,Backpack,4,1450,5800,0
+2026-07-27,East,Water Bottle,14,399,5586,0
+2026-07-27,East,Desk Lamp,4,899,3596,0
+2026-07-27,East,Headphones,3,2499,7497,1
+2026-07-27,West,Notebook,20,120,2400,0
+2026-07-27,West,Backpack,6,1450,8700,0
+2026-07-27,West,Water Bottle,17,399,6783,2
+2026-07-27,West,Desk Lamp,4,899,3596,0
+2026-07-27,West,Headphones,4,2499,9996,2
+2026-07-28,North,Notebook,34,120,4080,0
+2026-07-28,North,Backpack,6,1450,8700,1
+2026-07-28,North,Water Bottle,15,399,5985,0
+2026-07-28,North,Desk Lamp,5,899,4495,0
+2026-07-28,North,Headphones,4,2499,9996,0
+2026-07-28,South,Notebook,28,120,3360,1
+2026-07-28,South,Backpack,7,1450,10150,0
+2026-07-28,South,Water Bottle,17,399,6783,1
+2026-07-28,South,Desk Lamp,5,899,4495,0
+2026-07-28,South,Headphones,4,2499,9996,2
+2026-07-28,East,Notebook,25,120,3000,0
+2026-07-28,East,Backpack,3,1450,4350,0
+2026-07-28,East,Water Bottle,10,399,3990,0
+2026-07-28,East,Desk Lamp,4,899,3596,0
+2026-07-28,East,Headphones,3,2499,7497,0
+2026-07-28,West,Notebook,40,120,4800,0
+2026-07-28,West,Backpack,5,1450,7250,1
+2026-07-28,West,Water Bottle,12,399,4788,1
+2026-07-28,West,Desk Lamp,5,899,4495,0
+2026-07-28,West,Headphones,4,2499,9996,1
+2026-07-29,North,Notebook,27,120,3240,1
+2026-07-29,North,Backpack,7,1450,10150,0
+2026-07-29,North,Water Bottle,14,399,5586,1
+2026-07-29,North,Desk Lamp,5,899,4495,0
+2026-07-29,North,Headphones,4,2499,9996,0
+2026-07-29,South,Notebook,26,120,3120,1
+2026-07-29,South,Backpack,4,1450,5800,0
+2026-07-29,South,Water Bottle,15,399,5985,0
+2026-07-29,South,Desk Lamp,5,899,4495,0
+2026-07-29,South,Headphones,3,2499,7497,1
+2026-07-29,East,Notebook,25,120,3000,1
+2026-07-29,East,Backpack,5,1450,7250,1
+2026-07-29,East,Water Bottle,6,399,2394,0
+2026-07-29,East,Desk Lamp,2,899,1798,0
+2026-07-29,East,Headphones,3,2499,7497,1
+2026-07-29,West,Notebook,20,120,2400,0
+2026-07-29,West,Backpack,7,1450,10150,1
+2026-07-29,West,Water Bottle,12,399,4788,0
+2026-07-29,West,Desk Lamp,5,899,4495,0
+2026-07-29,West,Headphones,4,2499,9996,0
+2026-07-30,North,Notebook,32,120,3840,0
+2026-07-30,North,Backpack,6,1450,8700,0
+2026-07-30,North,Water Bottle,14,399,5586,1
+2026-07-30,North,Desk Lamp,5,899,4495,0
+2026-07-30,North,Headphones,4,2499,9996,1
+2026-07-30,South,Notebook,34,120,4080,0
+2026-07-30,South,Backpack,7,1450,10150,0
+2026-07-30,South,Water Bottle,13,399,5187,0
+2026-07-30,South,Desk Lamp,4,899,3596,0
+2026-07-30,South,Headphones,3,2499,7497,1
+2026-07-30,East,Notebook,18,120,2160,0
+2026-07-30,East,Backpack,2,1450,2900,0
+2026-07-30,East,Water Bottle,9,399,3591,0
+2026-07-30,East,Desk Lamp,3,899,2697,0
+2026-07-30,East,Headphones,2,2499,4998,1
+2026-07-30,West,Notebook,25,120,3000,1
+2026-07-30,West,Backpack,6,1450,8700,0
+2026-07-30,West,Water Bottle,8,399,3192,0
+2026-07-30,West,Desk Lamp,4,899,3596,1
+2026-07-30,West,Headphones,3,2499,7497,0
+2026-07-31,North,Notebook,31,120,3720,0
+2026-07-31,North,Backpack,4,1450,5800,0
+2026-07-31,North,Water Bottle,11,399,4389,1
+2026-07-31,North,Desk Lamp,5,899,4495,0
+2026-07-31,North,Headphones,3,2499,7497,1
+2026-07-31,South,Notebook,38,120,4560,1
+2026-07-31,South,Backpack,5,1450,7250,0
+2026-07-31,South,Water Bottle,12,399,4788,0
+2026-07-31,South,Desk Lamp,5,899,4495,0
+2026-07-31,South,Headphones,4,2499,9996,0
+2026-07-31,East,Notebook,7,120,840,0
+2026-07-31,East,Backpack,4,1450,5800,0
+2026-07-31,East,Water Bottle,14,399,5586,0
+2026-07-31,East,Desk Lamp,3,899,2697,0
+2026-07-31,East,Headphones,3,2499,7497,1
+2026-07-31,West,Notebook,28,120,3360,1
+2026-07-31,West,Backpack,5,1450,7250,0
+2026-07-31,West,Water Bottle,14,399,5586,0
+2026-07-31,West,Desk Lamp,4,899,3596,0
+2026-07-31,West,Headphones,2,2499,4998,0
+2026-08-01,North,Notebook,40,120,4800,1
+2026-08-01,North,Backpack,9,1450,13050,0
+2026-08-01,North,Water Bottle,24,399,9576,0
+2026-08-01,North,Desk Lamp,8,899,7192,1
+2026-08-01,North,Headphones,6,2499,14994,2
+2026-08-01,South,Notebook,42,120,5040,1
+2026-08-01,South,Backpack,11,1450,15950,0
+2026-08-01,South,Water Bottle,18,399,7182,0
+2026-08-01,South,Desk Lamp,8,899,7192,1
+2026-08-01,South,Headphones,7,2499,17493,1
+2026-08-01,East,Notebook,39,120,4680,1
+2026-08-01,East,Backpack,9,1450,13050,0
+2026-08-01,East,Water Bottle,21,399,8379,1
+2026-08-01,East,Desk Lamp,6,899,5394,0
+2026-08-01,East,Headphones,4,2499,9996,2
+2026-08-01,West,Notebook,53,120,6360,1
+2026-08-01,West,Backpack,9,1450,13050,0
+2026-08-01,West,Water Bottle,24,399,9576,2
+2026-08-01,West,Desk Lamp,9,899,8091,1
+2026-08-01,West,Headphones,5,2499,12495,1
+2026-08-02,North,Notebook,52,120,6240,1
+2026-08-02,North,Backpack,8,1450,11600,1
+2026-08-02,North,Water Bottle,24,399,9576,1
+2026-08-02,North,Desk Lamp,8,899,7192,0
+2026-08-02,North,Headphones,6,2499,14994,1
+2026-08-02,South,Notebook,50,120,6000,0
+2026-08-02,South,Backpack,10,1450,14500,0
+2026-08-02,South,Water Bottle,18,399,7182,1
+2026-08-02,South,Desk Lamp,9,899,8091,0
+2026-08-02,South,Headphones,6,2499,14994,2
+2026-08-02,East,Notebook,36,120,4320,0
+2026-08-02,East,Backpack,7,1450,10150,1
+2026-08-02,East,Water Bottle,22,399,8778,1
+2026-08-02,East,Desk Lamp,6,899,5394,0
+2026-08-02,East,Headphones,6,2499,14994,1
+2026-08-02,West,Notebook,48,120,5760,1
+2026-08-02,West,Backpack,9,1450,13050,0
+2026-08-02,West,Water Bottle,23,399,9177,1
+2026-08-02,West,Desk Lamp,9,899,8091,0
+2026-08-02,West,Headphones,7,2499,17493,2
+2026-08-03,North,Notebook,33,120,3960,1
+2026-08-03,North,Backpack,6,1450,8700,0
+2026-08-03,North,Water Bottle,14,399,5586,1
+2026-08-03,North,Desk Lamp,4,899,3596,2
+2026-08-03,North,Headphones,4,2499,9996,2
+2026-08-03,South,Notebook,28,120,3360,0
+2026-08-03,South,Backpack,5,1450,7250,0
+2026-08-03,South,Water Bottle,12,399,4788,1
+2026-08-03,South,Desk Lamp,4,899,3596,0
+2026-08-03,South,Headphones,4,2499,9996,1
+2026-08-03,East,Notebook,25,120,3000,0
+2026-08-03,East,Backpack,2,1450,2900,0
+2026-08-03,East,Water Bottle,14,399,5586,0
+2026-08-03,East,Desk Lamp,2,899,1798,0
+2026-08-03,East,Headphones,2,2499,4998,0
+2026-08-03,West,Notebook,35,120,4200,2
+2026-08-03,West,Backpack,6,1450,8700,0
+2026-08-03,West,Water Bottle,9,399,3591,0
+2026-08-03,West,Desk Lamp,5,899,4495,0
+2026-08-03,West,Headphones,3,2499,7497,2
+2026-08-04,North,Notebook,30,120,3600,1
+2026-08-04,North,Backpack,6,1450,8700,0
+2026-08-04,North,Water Bottle,11,399,4389,0
+2026-08-04,North,Desk Lamp,4,899,3596,0
+2026-08-04,North,Headphones,4,2499,9996,3
+2026-08-04,South,Notebook,31,120,3720,1
+2026-08-04,South,Backpack,7,1450,10150,0
+2026-08-04,South,Water Bottle,15,399,5985,0
+2026-08-04,South,Desk Lamp,4,899,3596,0
+2026-08-04,South,Headphones,4,2499,9996,1
+2026-08-04,East,Notebook,20,120,2400,1
+2026-08-04,East,Backpack,3,1450,4350,0
+2026-08-04,East,Water Bottle,12,399,4788,0
+2026-08-04,East,Desk Lamp,3,899,2697,0
+2026-08-04,East,Headphones,2,2499,4998,0
+2026-08-04,West,Notebook,30,120,3600,2
+2026-08-04,West,Backpack,5,1450,7250,0
+2026-08-04,West,Water Bottle,12,399,4788,0
+2026-08-04,West,Desk Lamp,4,899,3596,0
+2026-08-04,West,Headphones,3,2499,7497,0
+2026-08-05,North,Notebook,25,120,3000,2
+2026-08-05,North,Backpack,6,1450,8700,0
+2026-08-05,North,Water Bottle,17,399,6783,1
+2026-08-05,North,Desk Lamp,5,899,4495,1
+2026-08-05,North,Headphones,2,2499,4998,1
+2026-08-05,South,Notebook,31,120,3720,1
+2026-08-05,South,Backpack,5,1450,7250,0
+2026-08-05,South,Water Bottle,13,399,5187,0
+2026-08-05,South,Desk Lamp,4,899,3596,0
+2026-08-05,South,Headphones,3,2499,7497,0
+2026-08-05,East,Notebook,14,120,1680,0
+2026-08-05,East,Backpack,5,1450,7250,0
+2026-08-05,East,Water Bottle,12,399,4788,0
+2026-08-05,East,Desk Lamp,3,899,2697,0
+2026-08-05,East,Headphones,3,2499,7497,0
+2026-08-05,West,Notebook,23,120,2760,0
+2026-08-05,West,Backpack,6,1450,8700,0
+2026-08-05,West,Water Bottle,17,399,6783,0
+2026-08-05,West,Desk Lamp,5,899,4495,0
+2026-08-05,West,Headphones,3,2499,7497,0
+2026-08-06,North,Notebook,25,120,3000,1
+2026-08-06,North,Backpack,5,1450,7250,0
+2026-08-06,North,Water Bottle,15,399,5985,1
+2026-08-06,North,Desk Lamp,4,899,3596,0
+2026-08-06,North,Headphones,3,2499,7497,1
+2026-08-06,South,Notebook,25,120,3000,1
+2026-08-06,South,Backpack,5,1450,7250,0
+2026-08-06,South,Water Bottle,12,399,4788,0
+2026-08-06,South,Desk Lamp,4,899,3596,0
+2026-08-06,South,Headphones,3,2499,7497,2
+2026-08-06,East,Notebook,23,120,2760,0
+2026-08-06,East,Backpack,5,1450,7250,0
+2026-08-06,East,Water Bottle,13,399,5187,0
+2026-08-06,East,Desk Lamp,3,899,2697,0
+2026-08-06,East,Headphones,2,2499,4998,0
+2026-08-06,West,Notebook,21,120,2520,1
+2026-08-06,West,Backpack,5,1450,7250,0
+2026-08-06,West,Water Bottle,13,399,5187,0
+2026-08-06,West,Desk Lamp,5,899,4495,0
+2026-08-06,West,Headphones,3,2499,7497,3
+2026-08-07,North,Notebook,26,120,3120,0
+2026-08-07,North,Backpack,4,1450,5800,0
+2026-08-07,North,Water Bottle,16,399,6384,1
+2026-08-07,North,Desk Lamp,4,899,3596,0
+2026-08-07,North,Headphones,4,2499,9996,0
+2026-08-07,South,Notebook,28,120,3360,0
+2026-08-07,South,Backpack,4,1450,5800,0
+2026-08-07,South,Water Bottle,12,399,4788,0
+2026-08-07,South,Desk Lamp,5,899,4495,0
+2026-08-07,South,Headphones,3,2499,7497,2
+2026-08-07,East,Notebook,17,120,2040,0
+2026-08-07,East,Backpack,1,1450,1450,0
+2026-08-07,East,Water Bottle,8,399,3192,0
+2026-08-07,East,Desk Lamp,4,899,3596,0
+2026-08-07,East,Headphones,2,2499,4998,0
+2026-08-07,West,Notebook,26,120,3120,0
+2026-08-07,West,Backpack,6,1450,8700,0
+2026-08-07,West,Water Bottle,12,399,4788,3
+2026-08-07,West,Desk Lamp,5,899,4495,0
+2026-08-07,West,Headphones,3,2499,7497,0
+2026-08-08,North,Notebook,44,120,5280,2
+2026-08-08,North,Backpack,9,1450,13050,0
+2026-08-08,North,Water Bottle,23,399,9177,0
+2026-08-08,North,Desk Lamp,8,899,7192,0
+2026-08-08,North,Headphones,7,2499,17493,0
+2026-08-08,South,Notebook,50,120,6000,2
+2026-08-08,South,Backpack,10,1450,14500,1
+2026-08-08,South,Water Bottle,24,399,9576,2
+2026-08-08,South,Desk Lamp,7,899,6293,0
+2026-08-08,South,Headphones,6,2499,14994,2
+2026-08-08,East,Notebook,38,120,4560,1
+2026-08-08,East,Backpack,6,1450,8700,0
+2026-08-08,East,Water Bottle,15,399,5985,0
+2026-08-08,East,Desk Lamp,6,899,5394,0
+2026-08-08,East,Headphones,3,2499,7497,2
+2026-08-08,West,Notebook,46,120,5520,0
+2026-08-08,West,Backpack,9,1450,13050,0
+2026-08-08,West,Water Bottle,21,399,8379,0
+2026-08-08,West,Desk Lamp,7,899,6293,1
+2026-08-08,West,Headphones,6,2499,14994,2
+2026-08-09,North,Notebook,42,120,5040,2
+2026-08-09,North,Backpack,9,1450,13050,1
+2026-08-09,North,Water Bottle,24,399,9576,1
+2026-08-09,North,Desk Lamp,7,899,6293,0
+2026-08-09,North,Headphones,6,2499,14994,1
+2026-08-09,South,Notebook,49,120,5880,0
+2026-08-09,South,Backpack,9,1450,13050,1
+2026-08-09,South,Water Bottle,19,399,7581,1
+2026-08-09,South,Desk Lamp,8,899,7192,1
+2026-08-09,South,Headphones,4,2499,9996,1
+2026-08-09,East,Notebook,46,120,5520,1
+2026-08-09,East,Backpack,6,1450,8700,0
+2026-08-09,East,Water Bottle,16,399,6384,0
+2026-08-09,East,Desk Lamp,6,899,5394,1
+2026-08-09,East,Headphones,4,2499,9996,0
+2026-08-09,West,Notebook,51,120,6120,1
+2026-08-09,West,Backpack,9,1450,13050,0
+2026-08-09,West,Water Bottle,27,399,10773,1
+2026-08-09,West,Desk Lamp,8,899,7192,0
+2026-08-09,West,Headphones,5,2499,12495,2
+2026-08-10,North,Notebook,20,120,2400,2
+2026-08-10,North,Backpack,4,1450,5800,0
+2026-08-10,North,Water Bottle,17,399,6783,2
+2026-08-10,North,Desk Lamp,3,899,2697,0
+2026-08-10,North,Headphones,4,2499,9996,2
+2026-08-10,South,Notebook,28,120,3360,0
+2026-08-10,South,Backpack,5,1450,7250,0
+2026-08-10,South,Water Bottle,13,399,5187,0
+2026-08-10,South,Desk Lamp,4,899,3596,0
+2026-08-10,South,Headphones,4,2499,9996,1
+2026-08-10,East,Notebook,15,120,1800,0
+2026-08-10,East,Backpack,5,1450,7250,0
+2026-08-10,East,Water Bottle,10,399,3990,0
+2026-08-10,East,Desk Lamp,3,899,2697,0
+2026-08-10,East,Headphones,3,2499,7497,0
+2026-08-10,West,Notebook,30,120,3600,0
+2026-08-10,West,Backpack,4,1450,5800,0
+2026-08-10,West,Water Bottle,12,399,4788,0
+2026-08-10,West,Desk Lamp,4,899,3596,1
+2026-08-10,West,Headphones,4,2499,9996,0
+2026-08-11,North,Notebook,34,120,4080,1
+2026-08-11,North,Backpack,5,1450,7250,0
+2026-08-11,North,Water Bottle,13,399,5187,0
+2026-08-11,North,Desk Lamp,3,899,2697,0
+2026-08-11,North,Headphones,4,2499,9996,1
+2026-08-11,South,Notebook,28,120,3360,1
+2026-08-11,South,Backpack,6,1450,8700,0
+2026-08-11,South,Water Bottle,16,399,6384,0
+2026-08-11,South,Desk Lamp,4,899,3596,0
+2026-08-11,South,Headphones,3,2499,7497,1
+2026-08-11,East,Notebook,19,120,2280,0
+2026-08-11,East,Backpack,5,1450,7250,0
+2026-08-11,East,Water Bottle,8,399,3192,1
+2026-08-11,East,Desk Lamp,4,899,3596,0
+2026-08-11,East,Headphones,2,2499,4998,0
+2026-08-11,West,Notebook,32,120,3840,0
+2026-08-11,West,Backpack,6,1450,8700,0
+2026-08-11,West,Water Bottle,15,399,5985,1
+2026-08-11,West,Desk Lamp,4,899,3596,1
+2026-08-11,West,Headphones,4,2499,9996,1
+2026-08-12,North,Notebook,35,120,4200,1
+2026-08-12,North,Backpack,6,1450,8700,2
+2026-08-12,North,Water Bottle,15,399,5985,0
+2026-08-12,North,Desk Lamp,5,899,4495,1
+2026-08-12,North,Headphones,2,2499,4998,0
+2026-08-12,South,Notebook,27,120,3240,0
+2026-08-12,South,Backpack,6,1450,8700,0
+2026-08-12,South,Water Bottle,12,399,4788,1
+2026-08-12,South,Desk Lamp,3,899,2697,0
+2026-08-12,South,Headphones,4,2499,9996,0
+2026-08-12,East,Notebook,20,120,2400,0
+2026-08-12,East,Backpack,5,1450,7250,0
+2026-08-12,East,Water Bottle,8,399,3192,0
+2026-08-12,East,Desk Lamp,4,899,3596,0
+2026-08-12,East,Headphones,2,2499,4998,1
+2026-08-12,West,Notebook,29,120,3480,0
+2026-08-12,West,Backpack,6,1450,8700,0
+2026-08-12,West,Water Bottle,13,399,5187,0
+2026-08-12,West,Desk Lamp,5,899,4495,0
+2026-08-12,West,Headphones,4,2499,9996,0
+2026-08-13,North,Notebook,32,120,3840,0
+2026-08-13,North,Backpack,4,1450,5800,0
+2026-08-13,North,Water Bottle,21,399,8379,1
+2026-08-13,North,Desk Lamp,4,899,3596,0
+2026-08-13,North,Headphones,4,2499,9996,0
+2026-08-13,South,Notebook,27,120,3240,1
+2026-08-13,South,Backpack,5,1450,7250,0
+2026-08-13,South,Water Bottle,18,399,7182,1
+2026-08-13,South,Desk Lamp,5,899,4495,0
+2026-08-13,South,Headphones,3,2499,7497,0
+2026-08-13,East,Notebook,21,120,2520,0
+2026-08-13,East,Backpack,4,1450,5800,0
+2026-08-13,East,Water Bottle,9,399,3591,0
+2026-08-13,East,Desk Lamp,3,899,2697,0
+2026-08-13,East,Headphones,2,2499,4998,0
+2026-08-13,West,Notebook,28,120,3360,2
+2026-08-13,West,Backpack,6,1450,8700,0
+2026-08-13,West,Water Bottle,16,399,6384,0
+2026-08-13,West,Desk Lamp,4,899,3596,0
+2026-08-13,West,Headphones,3,2499,7497,0
+2026-08-14,North,Notebook,35,120,4200,0
+2026-08-14,North,Backpack,5,1450,7250,0
+2026-08-14,North,Water Bottle,14,399,5586,1
+2026-08-14,North,Desk Lamp,5,899,4495,0
+2026-08-14,North,Headphones,5,2499,12495,1
+2026-08-14,South,Notebook,23,120,2760,0
+2026-08-14,South,Backpack,6,1450,8700,0
+2026-08-14,South,Water Bottle,16,399,6384,0
+2026-08-14,South,Desk Lamp,6,899,5394,1
+2026-08-14,South,Headphones,2,2499,4998,0
+2026-08-14,East,Notebook,29,120,3480,0
+2026-08-14,East,Backpack,5,1450,7250,0
+2026-08-14,East,Water Bottle,12,399,4788,2
+2026-08-14,East,Desk Lamp,3,899,2697,0
+2026-08-14,East,Headphones,2,2499,4998,0
+2026-08-14,West,Notebook,32,120,3840,0
+2026-08-14,West,Backpack,5,1450,7250,0
+2026-08-14,West,Water Bottle,15,399,5985,0
+2026-08-14,West,Desk Lamp,5,899,4495,0
+2026-08-14,West,Headphones,4,2499,9996,3
+2026-08-15,North,Notebook,45,120,5400,2
+2026-08-15,North,Backpack,9,1450,13050,0
+2026-08-15,North,Water Bottle,19,399,7581,0
+2026-08-15,North,Desk Lamp,8,899,7192,0
+2026-08-15,North,Headphones,6,2499,14994,1
+2026-08-15,South,Notebook,54,120,6480,0
+2026-08-15,South,Backpack,10,1450,14500,0
+2026-08-15,South,Water Bottle,26,399,10374,0
+2026-08-15,South,Desk Lamp,7,899,6293,0
+2026-08-15,South,Headphones,6,2499,14994,0
+2026-08-15,East,Notebook,28,120,3360,0
+2026-08-15,East,Backpack,6,1450,8700,0
+2026-08-15,East,Water Bottle,14,399,5586,0
+2026-08-15,East,Desk Lamp,4,899,3596,0
+2026-08-15,East,Headphones,4,2499,9996,1
+2026-08-15,West,Notebook,48,120,5760,1
+2026-08-15,West,Backpack,10,1450,14500,0
+2026-08-15,West,Water Bottle,23,399,9177,1
+2026-08-15,West,Desk Lamp,7,899,6293,1
+2026-08-15,West,Headphones,6,2499,14994,1
+2026-08-16,North,Notebook,48,120,5760,3
+2026-08-16,North,Backpack,8,1450,11600,0
+2026-08-16,North,Water Bottle,23,399,9177,1
+2026-08-16,North,Desk Lamp,8,899,7192,0
+2026-08-16,North,Headphones,6,2499,14994,2
+2026-08-16,South,Notebook,46,120,5520,3
+2026-08-16,South,Backpack,9,1450,13050,0
+2026-08-16,South,Water Bottle,23,399,9177,1
+2026-08-16,South,Desk Lamp,8,899,7192,0
+2026-08-16,South,Headphones,6,2499,14994,1
+2026-08-16,East,Notebook,35,120,4200,1
+2026-08-16,East,Backpack,7,1450,10150,0
+2026-08-16,East,Water Bottle,14,399,5586,2
+2026-08-16,East,Desk Lamp,4,899,3596,0
+2026-08-16,East,Headphones,3,2499,7497,1
+2026-08-16,West,Notebook,43,120,5160,0
+2026-08-16,West,Backpack,9,1450,13050,0
+2026-08-16,West,Water Bottle,20,399,7980,2
+2026-08-16,West,Desk Lamp,7,899,6293,0
+2026-08-16,West,Headphones,5,2499,12495,2
+2026-08-17,North,Notebook,26,120,3120,1
+2026-08-17,North,Backpack,5,1450,7250,0
+2026-08-17,North,Water Bottle,12,399,4788,0
+2026-08-17,North,Desk Lamp,5,899,4495,2
+2026-08-17,North,Headphones,3,2499,7497,0
+2026-08-17,South,Notebook,30,120,3600,1
+2026-08-17,South,Backpack,5,1450,7250,0
+2026-08-17,South,Water Bottle,13,399,5187,1
+2026-08-17,South,Desk Lamp,5,899,4495,0
+2026-08-17,South,Headphones,3,2499,7497,0
+2026-08-17,East,Notebook,21,120,2520,0
+2026-08-17,East,Backpack,2,1450,2900,0
+2026-08-17,East,Water Bottle,10,399,3990,0
+2026-08-17,East,Desk Lamp,3,899,2697,0
+2026-08-17,East,Headphones,2,2499,4998,0
+2026-08-17,West,Notebook,21,120,2520,0
+2026-08-17,West,Backpack,6,1450,8700,0
+2026-08-17,West,Water Bottle,12,399,4788,1
+2026-08-17,West,Desk Lamp,5,899,4495,1
+2026-08-17,West,Headphones,3,2499,7497,2
+2026-08-18,North,Notebook,29,120,3480,1
+2026-08-18,North,Backpack,8,1450,11600,0
+2026-08-18,North,Water Bottle,13,399,5187,1
+2026-08-18,North,Desk Lamp,4,899,3596,0
+2026-08-18,North,Headphones,4,2499,9996,1
+2026-08-18,South,Notebook,27,120,3240,1
+2026-08-18,South,Backpack,7,1450,10150,1
+2026-08-18,South,Water Bottle,13,399,5187,0
+2026-08-18,South,Desk Lamp,5,899,4495,0
+2026-08-18,South,Headphones,4,2499,9996,2
+2026-08-18,East,Notebook,14,120,1680,2
+2026-08-18,East,Backpack,4,1450,5800,0
+2026-08-18,East,Water Bottle,8,399,3192,0
+2026-08-18,East,Desk Lamp,3,899,2697,0
+2026-08-18,East,Headphones,2,2499,4998,0
+2026-08-18,West,Notebook,28,120,3360,1
+2026-08-18,West,Backpack,6,1450,8700,0
+2026-08-18,West,Water Bottle,13,399,5187,0
+2026-08-18,West,Desk Lamp,4,899,3596,0
+2026-08-18,West,Headphones,3,2499,7497,0
+2026-08-19,North,Notebook,29,120,3480,0
+2026-08-19,North,Backpack,6,1450,8700,0
+2026-08-19,North,Water Bottle,12,399,4788,1
+2026-08-19,North,Desk Lamp,5,899,4495,0
+2026-08-19,North,Headphones,4,2499,9996,0
+2026-08-19,South,Notebook,31,120,3720,1
+2026-08-19,South,Backpack,6,1450,8700,0
+2026-08-19,South,Water Bottle,10,399,3990,0
+2026-08-19,South,Desk Lamp,5,899,4495,0
+2026-08-19,South,Headphones,4,2499,9996,1
+2026-08-19,East,Notebook,15,120,1800,0
+2026-08-19,East,Backpack,4,1450,5800,0
+2026-08-19,East,Water Bottle,8,399,3192,1
+2026-08-19,East,Desk Lamp,3,899,2697,0
+2026-08-19,East,Headphones,2,2499,4998,0
+2026-08-19,West,Notebook,32,120,3840,0
+2026-08-19,West,Backpack,6,1450,8700,0
+2026-08-19,West,Water Bottle,14,399,5586,0
+2026-08-19,West,Desk Lamp,4,899,3596,1
+2026-08-19,West,Headphones,3,2499,7497,1
+2026-08-20,North,Notebook,28,120,3360,1
+2026-08-20,North,Backpack,5,1450,7250,0
+2026-08-20,North,Water Bottle,11,399,4389,0
+2026-08-20,North,Desk Lamp,4,899,3596,1
+2026-08-20,North,Headphones,4,2499,9996,0
+2026-08-20,South,Notebook,24,120,2880,1
+2026-08-20,South,Backpack,6,1450,8700,0
+2026-08-20,South,Water Bottle,12,399,4788,2
+2026-08-20,South,Desk Lamp,4,899,3596,0
+2026-08-20,South,Headphones,3,2499,7497,0
+2026-08-20,East,Notebook,30,120,3600,1
+2026-08-20,East,Backpack,4,1450,5800,0
+2026-08-20,East,Water Bottle,11,399,4389,0
+2026-08-20,East,Desk Lamp,2,899,1798,0
+2026-08-20,East,Headphones,2,2499,4998,0
+2026-08-20,West,Notebook,22,120,2640,0
+2026-08-20,West,Backpack,5,1450,7250,0
+2026-08-20,West,Water Bottle,14,399,5586,0
+2026-08-20,West,Desk Lamp,3,899,2697,0
+2026-08-20,West,Headphones,4,2499,9996,2
+2026-08-21,North,Notebook,36,120,4320,2
+2026-08-21,North,Backpack,6,1450,8700,0
+2026-08-21,North,Water Bottle,13,399,5187,0
+2026-08-21,North,Desk Lamp,4,899,3596,0
+2026-08-21,North,Headphones,4,2499,9996,3
+2026-08-21,South,Notebook,32,120,3840,0
+2026-08-21,South,Backpack,7,1450,10150,1
+2026-08-21,South,Water Bottle,12,399,4788,0
+2026-08-21,South,Desk Lamp,4,899,3596,0
+2026-08-21,South,Headphones,4,2499,9996,0
+2026-08-21,East,Notebook,10,120,1200,0
+2026-08-21,East,Backpack,3,1450,4350,0
+2026-08-21,East,Water Bottle,6,399,2394,0
+2026-08-21,East,Desk Lamp,3,899,2697,0
+2026-08-21,East,Headphones,2,2499,4998,1
+2026-08-21,West,Notebook,31,120,3720,0
+2026-08-21,West,Backpack,5,1450,7250,0
+2026-08-21,West,Water Bottle,16,399,6384,1
+2026-08-21,West,Desk Lamp,6,899,5394,1
+2026-08-21,West,Headphones,3,2499,7497,1
+2026-08-22,North,Notebook,53,120,6360,1
+2026-08-22,North,Backpack,10,1450,14500,0
+2026-08-22,North,Water Bottle,15,399,5985,0
+2026-08-22,North,Desk Lamp,8,899,7192,0
+2026-08-22,North,Headphones,6,2499,14994,0
+2026-08-22,South,Notebook,48,120,5760,0
+2026-08-22,South,Backpack,10,1450,14500,1
+2026-08-22,South,Water Bottle,22,399,8778,0
+2026-08-22,South,Desk Lamp,7,899,6293,0
+2026-08-22,South,Headphones,6,2499,14994,2
+2026-08-22,East,Notebook,24,120,2880,1
+2026-08-22,East,Backpack,5,1450,7250,0
+2026-08-22,East,Water Bottle,14,399,5586,0
+2026-08-22,East,Desk Lamp,4,899,3596,0
+2026-08-22,East,Headphones,3,2499,7497,0
+2026-08-22,West,Notebook,48,120,5760,2
+2026-08-22,West,Backpack,8,1450,11600,0
+2026-08-22,West,Water Bottle,26,399,10374,0
+2026-08-22,West,Desk Lamp,6,899,5394,0
+2026-08-22,West,Headphones,5,2499,12495,0
+2026-08-23,North,Notebook,49,120,5880,1
+2026-08-23,North,Backpack,9,1450,13050,0
+2026-08-23,North,Water Bottle,23,399,9177,0
+2026-08-23,North,Desk Lamp,7,899,6293,0
+2026-08-23,North,Headphones,7,2499,17493,3
+2026-08-23,South,Notebook,42,120,5040,3
+2026-08-23,South,Backpack,8,1450,11600,0
+2026-08-23,South,Water Bottle,20,399,7980,2
+2026-08-23,South,Desk Lamp,7,899,6293,0
+2026-08-23,South,Headphones,6,2499,14994,0
+2026-08-23,East,Notebook,31,120,3720,2
+2026-08-23,East,Backpack,5,1450,7250,0
+2026-08-23,East,Water Bottle,13,399,5187,0
+2026-08-23,East,Desk Lamp,4,899,3596,0
+2026-08-23,East,Headphones,3,2499,7497,1
+2026-08-23,West,Notebook,47,120,5640,1
+2026-08-23,West,Backpack,9,1450,13050,0
+2026-08-23,West,Water Bottle,25,399,9975,0
+2026-08-23,West,Desk Lamp,7,899,6293,1
+2026-08-23,West,Headphones,6,2499,14994,4
+2026-08-24,North,Notebook,21,120,2520,1
+2026-08-24,North,Backpack,4,1450,5800,0
+2026-08-24,North,Water Bottle,12,399,4788,0
+2026-08-24,North,Desk Lamp,5,899,4495,0
+2026-08-24,North,Headphones,3,2499,7497,0
+2026-08-24,South,Notebook,35,120,4200,2
+2026-08-24,South,Backpack,5,1450,7250,0
+2026-08-24,South,Water Bottle,12,399,4788,0
+2026-08-24,South,Desk Lamp,6,899,5394,0
+2026-08-24,South,Headphones,2,2499,4998,2
+2026-08-24,East,Notebook,13,120,1560,1
+2026-08-24,East,Backpack,4,1450,5800,0
+2026-08-24,East,Water Bottle,6,399,2394,0
+2026-08-24,East,Desk Lamp,3,899,2697,0
+2026-08-24,East,Headphones,2,2499,4998,1
+2026-08-24,West,Notebook,28,120,3360,1
+2026-08-24,West,Backpack,5,1450,7250,0
+2026-08-24,West,Water Bottle,12,399,4788,0
+2026-08-24,West,Desk Lamp,6,899,5394,1
+2026-08-24,West,Headphones,4,2499,9996,1
+2026-08-25,North,Notebook,32,120,3840,0
+2026-08-25,North,Backpack,4,1450,5800,0
+2026-08-25,North,Water Bottle,17,399,6783,1
+2026-08-25,North,Desk Lamp,5,899,4495,0
+2026-08-25,North,Headphones,3,2499,7497,1
+2026-08-25,South,Notebook,28,120,3360,1
+2026-08-25,South,Backpack,7,1450,10150,1
+2026-08-25,South,Water Bottle,13,399,5187,0
+2026-08-25,South,Desk Lamp,4,899,3596,0
+2026-08-25,South,Headphones,4,2499,9996,2
+2026-08-25,East,Notebook,24,120,2880,0
+2026-08-25,East,Backpack,1,1450,1450,0
+2026-08-25,East,Water Bottle,6,399,2394,0
+2026-08-25,East,Desk Lamp,3,899,2697,0
+2026-08-25,East,Headphones,3,2499,7497,1
+2026-08-25,West,Notebook,23,120,2760,1
+2026-08-25,West,Backpack,7,1450,10150,0
+2026-08-25,West,Water Bottle,14,399,5586,1
+2026-08-25,West,Desk Lamp,4,899,3596,1
+2026-08-25,West,Headphones,4,2499,9996,0
+2026-08-26,North,Notebook,27,120,3240,1
+2026-08-26,North,Backpack,6,1450,8700,0
+2026-08-26,North,Water Bottle,15,399,5985,0
+2026-08-26,North,Desk Lamp,4,899,3596,0
+2026-08-26,North,Headphones,3,2499,7497,0
+2026-08-26,South,Notebook,29,120,3480,1
+2026-08-26,South,Backpack,7,1450,10150,0
+2026-08-26,South,Water Bottle,11,399,4389,0
+2026-08-26,South,Desk Lamp,4,899,3596,0
+2026-08-26,South,Headphones,3,2499,7497,0
+2026-08-26,East,Notebook,20,120,2400,0
+2026-08-26,East,Backpack,5,1450,7250,0
+2026-08-26,East,Water Bottle,9,399,3591,2
+2026-08-26,East,Desk Lamp,2,899,1798,0
+2026-08-26,East,Headphones,1,2499,2499,0
+2026-08-26,West,Notebook,22,120,2640,0
+2026-08-26,West,Backpack,5,1450,7250,0
+2026-08-26,West,Water Bottle,14,399,5586,0
+2026-08-26,West,Desk Lamp,5,899,4495,0
+2026-08-26,West,Headphones,4,2499,9996,2
+2026-08-27,North,Notebook,26,120,3120,0
+2026-08-27,North,Backpack,6,1450,8700,0
+2026-08-27,North,Water Bottle,13,399,5187,0
+2026-08-27,North,Desk Lamp,4,899,3596,0
+2026-08-27,North,Headphones,4,2499,9996,0
+2026-08-27,South,Notebook,36,120,4320,2
+2026-08-27,South,Backpack,6,1450,8700,0
+2026-08-27,South,Water Bottle,16,399,6384,3
+2026-08-27,South,Desk Lamp,5,899,4495,0
+2026-08-27,South,Headphones,4,2499,9996,0
+2026-08-27,East,Notebook,25,120,3000,0
+2026-08-27,East,Backpack,1,1450,1450,0
+2026-08-27,East,Water Bottle,9,399,3591,0
+2026-08-27,East,Desk Lamp,3,899,2697,0
+2026-08-27,East,Headphones,2,2499,4998,0
+2026-08-27,West,Notebook,32,120,3840,0
+2026-08-27,West,Backpack,6,1450,8700,0
+2026-08-27,West,Water Bottle,12,399,4788,0
+2026-08-27,West,Desk Lamp,4,899,3596,0
+2026-08-27,West,Headphones,3,2499,7497,0
+2026-08-28,North,Notebook,24,120,2880,0
+2026-08-28,North,Backpack,5,1450,7250,0
+2026-08-28,North,Water Bottle,14,399,5586,1
+2026-08-28,North,Desk Lamp,4,899,3596,1
+2026-08-28,North,Headphones,3,2499,7497,2
+2026-08-28,South,Notebook,28,120,3360,0
+2026-08-28,South,Backpack,7,1450,10150,0
+2026-08-28,South,Water Bottle,14,399,5586,1
+2026-08-28,South,Desk Lamp,5,899,4495,0
+2026-08-28,South,Headphones,4,2499,9996,1
+2026-08-28,East,Notebook,17,120,2040,1
+2026-08-28,East,Backpack,2,1450,2900,0
+2026-08-28,East,Water Bottle,13,399,5187,1
+2026-08-28,East,Desk Lamp,3,899,2697,0
+2026-08-28,East,Headphones,2,2499,4998,1
+2026-08-28,West,Notebook,29,120,3480,0
+2026-08-28,West,Backpack,6,1450,8700,0
+2026-08-28,West,Water Bottle,15,399,5985,1
+2026-08-28,West,Desk Lamp,4,899,3596,0
+2026-08-28,West,Headphones,3,2499,7497,1
+2026-08-29,North,Notebook,46,120,5520,3
+2026-08-29,North,Backpack,8,1450,11600,0
+2026-08-29,North,Water Bottle,22,399,8778,2
+2026-08-29,North,Desk Lamp,7,899,6293,0
+2026-08-29,North,Headphones,4,2499,9996,1
+2026-08-29,South,Notebook,39,120,4680,2
+2026-08-29,South,Backpack,10,1450,14500,1
+2026-08-29,South,Water Bottle,22,399,8778,0
+2026-08-29,South,Desk Lamp,7,899,6293,0
+2026-08-29,South,Headphones,6,2499,14994,2
+2026-08-29,East,Notebook,28,120,3360,0
+2026-08-29,East,Backpack,5,1450,7250,0
+2026-08-29,East,Water Bottle,11,399,4389,0
+2026-08-29,East,Desk Lamp,5,899,4495,0
+2026-08-29,East,Headphones,4,2499,9996,0
+2026-08-29,West,Notebook,53,120,6360,2
+2026-08-29,West,Backpack,9,1450,13050,0
+2026-08-29,West,Water Bottle,25,399,9975,2
+2026-08-29,West,Desk Lamp,7,899,6293,0
+2026-08-29,West,Headphones,5,2499,12495,0
+2026-08-30,North,Notebook,40,120,4800,0
+2026-08-30,North,Backpack,8,1450,11600,0
+2026-08-30,North,Water Bottle,24,399,9576,1
+2026-08-30,North,Desk Lamp,8,899,7192,0
+2026-08-30,North,Headphones,6,2499,14994,2
+2026-08-30,South,Notebook,55,120,6600,1
+2026-08-30,South,Backpack,11,1450,15950,0
+2026-08-30,South,Water Bottle,22,399,8778,0
+2026-08-30,South,Desk Lamp,8,899,7192,0
+2026-08-30,South,Headphones,4,2499,9996,2
+2026-08-30,East,Notebook,31,120,3720,0
+2026-08-30,East,Backpack,6,1450,8700,0
+2026-08-30,East,Water Bottle,13,399,5187,1
+2026-08-30,East,Desk Lamp,5,899,4495,0
+2026-08-30,East,Headphones,3,2499,7497,0
+2026-08-30,West,Notebook,50,120,6000,1
+2026-08-30,West,Backpack,11,1450,15950,0
+2026-08-30,West,Water Bottle,20,399,7980,2
+2026-08-30,West,Desk Lamp,8,899,7192,1
+2026-08-30,West,Headphones,6,2499,14994,0
+2026-08-31,North,Notebook,20,120,2400,1
+2026-08-31,North,Backpack,5,1450,7250,0
+2026-08-31,North,Water Bottle,18,399,7182,2
+2026-08-31,North,Desk Lamp,4,899,3596,0
+2026-08-31,North,Headphones,4,2499,9996,0
+2026-08-31,South,Notebook,33,120,3960,2
+2026-08-31,South,Backpack,5,1450,7250,0
+2026-08-31,South,Water Bottle,13,399,5187,2
+2026-08-31,South,Desk Lamp,5,899,4495,0
+2026-08-31,South,Headphones,4,2499,9996,1
+2026-08-31,East,Notebook,10,120,1200,0
+2026-08-31,East,Backpack,2,1450,2900,0
+2026-08-31,East,Water Bottle,6,399,2394,0
+2026-08-31,East,Desk Lamp,3,899,2697,0
+2026-08-31,East,Headphones,2,2499,4998,0
+2026-08-31,West,Notebook,33,120,3960,2
+2026-08-31,West,Backpack,6,1450,8700,0
+2026-08-31,West,Water Bottle,16,399,6384,0
+2026-08-31,West,Desk Lamp,5,899,4495,0
+2026-08-31,West,Headphones,3,2499,7497,1
+2026-09-01,North,Notebook,27,120,3240,1
+2026-09-01,North,Backpack,5,1450,7250,0
+2026-09-01,North,Water Bottle,15,399,5985,0
+2026-09-01,North,Desk Lamp,5,899,4495,0
+2026-09-01,North,Headphones,4,2499,9996,1
+2026-09-01,South,Notebook,27,120,3240,0
+2026-09-01,South,Backpack,5,1450,7250,0
+2026-09-01,South,Water Bottle,16,399,6384,0
+2026-09-01,South,Desk Lamp,5,899,4495,1
+2026-09-01,South,Headphones,3,2499,7497,1
+2026-09-01,East,Notebook,17,120,2040,1
+2026-09-01,East,Backpack,3,1450,4350,0
+2026-09-01,East,Water Bottle,8,399,3192,0
+2026-09-01,East,Desk Lamp,2,899,1798,0
+2026-09-01,East,Headphones,2,2499,4998,0
+2026-09-01,West,Notebook,29,120,3480,4
+2026-09-01,West,Backpack,5,1450,7250,0
+2026-09-01,West,Water Bottle,10,399,3990,0
+2026-09-01,West,Desk Lamp,5,899,4495,0
+2026-09-01,West,Headphones,4,2499,9996,0
+2026-09-02,North,Notebook,30,120,3600,1
+2026-09-02,North,Backpack,5,1450,7250,0
+2026-09-02,North,Water Bottle,14,399,5586,0
+2026-09-02,North,Desk Lamp,5,899,4495,1
+2026-09-02,North,Headphones,3,2499,7497,2
+2026-09-02,South,Notebook,29,120,3480,0
+2026-09-02,South,Backpack,5,1450,7250,1
+2026-09-02,South,Water Bottle,15,399,5985,1
+2026-09-02,South,Desk Lamp,6,899,5394,0
+2026-09-02,South,Headphones,3,2499,7497,1
+2026-09-02,East,Notebook,12,120,1440,0
+2026-09-02,East,Backpack,4,1450,5800,0
+2026-09-02,East,Water Bottle,6,399,2394,0
+2026-09-02,East,Desk Lamp,2,899,1798,0
+2026-09-02,East,Headphones,2,2499,4998,2
+2026-09-02,West,Notebook,29,120,3480,1
+2026-09-02,West,Backpack,5,1450,7250,0
+2026-09-02,West,Water Bottle,13,399,5187,0
+2026-09-02,West,Desk Lamp,4,899,3596,0
+2026-09-02,West,Headphones,4,2499,9996,0
+2026-09-03,North,Notebook,25,120,3000,1
+2026-09-03,North,Backpack,6,1450,8700,0
+2026-09-03,North,Water Bottle,15,399,5985,0
+2026-09-03,North,Desk Lamp,5,899,4495,0
+2026-09-03,North,Headphones,3,2499,7497,0
+2026-09-03,South,Notebook,36,120,4320,1
+2026-09-03,South,Backpack,6,1450,8700,0
+2026-09-03,South,Water Bottle,15,399,5985,0
+2026-09-03,South,Desk Lamp,5,899,4495,0
+2026-09-03,South,Headphones,2,2499,4998,0
+2026-09-03,East,Notebook,15,120,1800,0
+2026-09-03,East,Backpack,2,1450,2900,0
+2026-09-03,East,Water Bottle,6,399,2394,0
+2026-09-03,East,Desk Lamp,3,899,2697,0
+2026-09-03,East,Headphones,2,2499,4998,0
+2026-09-03,West,Notebook,31,120,3720,0
+2026-09-03,West,Backpack,5,1450,7250,0
+2026-09-03,West,Water Bottle,13,399,5187,1
+2026-09-03,West,Desk Lamp,6,899,5394,0
+2026-09-03,West,Headphones,3,2499,7497,1
+2026-09-04,North,Notebook,22,120,2640,1
+2026-09-04,North,Backpack,7,1450,10150,0
+2026-09-04,North,Water Bottle,16,399,6384,1
+2026-09-04,North,Desk Lamp,4,899,3596,0
+2026-09-04,North,Headphones,4,2499,9996,1
+2026-09-04,South,Notebook,29,120,3480,0
+2026-09-04,South,Backpack,6,1450,8700,0
+2026-09-04,South,Water Bottle,16,399,6384,1
+2026-09-04,South,Desk Lamp,5,899,4495,0
+2026-09-04,South,Headphones,4,2499,9996,1
+2026-09-04,East,Notebook,17,120,2040,0
+2026-09-04,East,Backpack,3,1450,4350,0
+2026-09-04,East,Water Bottle,8,399,3192,0
+2026-09-04,East,Desk Lamp,3,899,2697,0
+2026-09-04,East,Headphones,1,2499,2499,0
+2026-09-04,West,Notebook,41,120,4920,1
+2026-09-04,West,Backpack,6,1450,8700,0
+2026-09-04,West,Water Bottle,10,399,3990,0
+2026-09-04,West,Desk Lamp,5,899,4495,1
+2026-09-04,West,Headphones,4,2499,9996,2
+2026-09-05,North,Notebook,45,120,5400,3
+2026-09-05,North,Backpack,10,1450,14500,0
+2026-09-05,North,Water Bottle,24,399,9576,1
+2026-09-05,North,Desk Lamp,9,899,8091,0
+2026-09-05,North,Headphones,5,2499,12495,2
+2026-09-05,South,Notebook,53,120,6360,0
+2026-09-05,South,Backpack,9,1450,13050,0
+2026-09-05,South,Water Bottle,25,399,9975,1
+2026-09-05,South,Desk Lamp,8,899,7192,0
+2026-09-05,South,Headphones,6,2499,14994,2
+2026-09-05,East,Notebook,22,120,2640,0
+2026-09-05,East,Backpack,7,1450,10150,0
+2026-09-05,East,Water Bottle,11,399,4389,0
+2026-09-05,East,Desk Lamp,4,899,3596,0
+2026-09-05,East,Headphones,3,2499,7497,1
+2026-09-05,West,Notebook,52,120,6240,0
+2026-09-05,West,Backpack,10,1450,14500,0
+2026-09-05,West,Water Bottle,22,399,8778,2
+2026-09-05,West,Desk Lamp,9,899,8091,1
+2026-09-05,West,Headphones,5,2499,12495,2
+2026-09-06,North,Notebook,49,120,5880,0
+2026-09-06,North,Backpack,9,1450,13050,0
+2026-09-06,North,Water Bottle,26,399,10374,0
+2026-09-06,North,Desk Lamp,8,899,7192,1
+2026-09-06,North,Headphones,6,2499,14994,2
+2026-09-06,South,Notebook,44,120,5280,2
+2026-09-06,South,Backpack,10,1450,14500,0
+2026-09-06,South,Water Bottle,24,399,9576,0
+2026-09-06,South,Desk Lamp,8,899,7192,0
+2026-09-06,South,Headphones,6,2499,14994,1
+2026-09-06,East,Notebook,30,120,3600,2
+2026-09-06,East,Backpack,4,1450,5800,0
+2026-09-06,East,Water Bottle,10,399,3990,0
+2026-09-06,East,Desk Lamp,4,899,3596,0
+2026-09-06,East,Headphones,4,2499,9996,0
+2026-09-06,West,Notebook,52,120,6240,4
+2026-09-06,West,Backpack,9,1450,13050,0
+2026-09-06,West,Water Bottle,21,399,8379,0
+2026-09-06,West,Desk Lamp,7,899,6293,0
+2026-09-06,West,Headphones,6,2499,14994,2
+2026-09-07,North,Notebook,34,120,4080,1
+2026-09-07,North,Backpack,5,1450,7250,0
+2026-09-07,North,Water Bottle,13,399,5187,1
+2026-09-07,North,Desk Lamp,4,899,3596,1
+2026-09-07,North,Headphones,2,2499,4998,0
+2026-09-07,South,Notebook,31,120,3720,0
+2026-09-07,South,Backpack,6,1450,8700,0
+2026-09-07,South,Water Bottle,11,399,4389,0
+2026-09-07,South,Desk Lamp,6,899,5394,1
+2026-09-07,South,Headphones,4,2499,9996,1
+2026-09-07,East,Notebook,20,120,2400,0
+2026-09-07,East,Backpack,3,1450,4350,0
+2026-09-07,East,Water Bottle,4,399,1596,1
+2026-09-07,East,Desk Lamp,2,899,1798,0
+2026-09-07,East,Headphones,2,2499,4998,0
+2026-09-07,West,Notebook,34,120,4080,1
+2026-09-07,West,Backpack,6,1450,8700,0
+2026-09-07,West,Water Bottle,12,399,4788,1
+2026-09-07,West,Desk Lamp,4,899,3596,0
+2026-09-07,West,Headphones,4,2499,9996,1
+2026-09-08,North,Notebook,30,120,3600,0
+2026-09-08,North,Backpack,6,1450,8700,0
+2026-09-08,North,Water Bottle,13,399,5187,0
+2026-09-08,North,Desk Lamp,5,899,4495,0
+2026-09-08,North,Headphones,3,2499,7497,1
+2026-09-08,South,Notebook,32,120,3840,0
+2026-09-08,South,Backpack,5,1450,7250,0
+2026-09-08,South,Water Bottle,14,399,5586,0
+2026-09-08,South,Desk Lamp,4,899,3596,0
+2026-09-08,South,Headphones,5,2499,12495,2
+2026-09-08,East,Notebook,16,120,1920,0
+2026-09-08,East,Backpack,3,1450,4350,0
+2026-09-08,East,Water Bottle,6,399,2394,0
+2026-09-08,East,Desk Lamp,2,899,1798,0
+2026-09-08,East,Headphones,3,2499,7497,0
+2026-09-08,West,Notebook,27,120,3240,0
+2026-09-08,West,Backpack,4,1450,5800,1
+2026-09-08,West,Water Bottle,10,399,3990,0
+2026-09-08,West,Desk Lamp,4,899,3596,0
+2026-09-08,West,Headphones,3,2499,7497,1
+2026-09-09,North,Notebook,31,120,3720,1
+2026-09-09,North,Backpack,5,1450,7250,0
+2026-09-09,North,Water Bottle,15,399,5985,2
+2026-09-09,North,Desk Lamp,6,899,5394,0
+2026-09-09,North,Headphones,3,2499,7497,0
+2026-09-09,South,Notebook,28,120,3360,0
+2026-09-09,South,Backpack,6,1450,8700,0
+2026-09-09,South,Water Bottle,17,399,6783,1
+2026-09-09,South,Desk Lamp,5,899,4495,0
+2026-09-09,South,Headphones,3,2499,7497,2
+2026-09-09,East,Notebook,20,120,2400,1
+2026-09-09,East,Backpack,3,1450,4350,0
+2026-09-09,East,Water Bottle,6,399,2394,0
+2026-09-09,East,Desk Lamp,1,899,899,0
+2026-09-09,East,Headphones,2,2499,4998,0
+2026-09-09,West,Notebook,31,120,3720,2
+2026-09-09,West,Backpack,6,1450,8700,0
+2026-09-09,West,Water Bottle,10,399,3990,0
+2026-09-09,West,Desk Lamp,5,899,4495,0
+2026-09-09,West,Headphones,3,2499,7497,2
+2026-09-10,North,Notebook,34,120,4080,1
+2026-09-10,North,Backpack,4,1450,5800,0
+2026-09-10,North,Water Bottle,11,399,4389,0
+2026-09-10,North,Desk Lamp,5,899,4495,0
+2026-09-10,North,Headphones,4,2499,9996,3
+2026-09-10,South,Notebook,34,120,4080,2
+2026-09-10,South,Backpack,7,1450,10150,0
+2026-09-10,South,Water Bottle,15,399,5985,1
+2026-09-10,South,Desk Lamp,5,899,4495,1
+2026-09-10,South,Headphones,2,2499,4998,0
+2026-09-10,East,Notebook,15,120,1800,1
+2026-09-10,East,Backpack,2,1450,2900,0
+2026-09-10,East,Water Bottle,7,399,2793,0
+2026-09-10,East,Desk Lamp,1,899,899,0
+2026-09-10,East,Headphones,1,2499,2499,0
+2026-09-10,West,Notebook,30,120,3600,1
+2026-09-10,West,Backpack,5,1450,7250,0
+2026-09-10,West,Water Bottle,13,399,5187,1
+2026-09-10,West,Desk Lamp,5,899,4495,0
+2026-09-10,West,Headphones,4,2499,9996,2
+2026-09-11,North,Notebook,31,120,3720,4
+2026-09-11,North,Backpack,6,1450,8700,1
+2026-09-11,North,Water Bottle,15,399,5985,1
+2026-09-11,North,Desk Lamp,2,899,1798,0
+2026-09-11,North,Headphones,3,2499,7497,0
+2026-09-11,South,Notebook,22,120,2640,0
+2026-09-11,South,Backpack,7,1450,10150,0
+2026-09-11,South,Water Bottle,16,399,6384,2
+2026-09-11,South,Desk Lamp,3,899,2697,0
+2026-09-11,South,Headphones,3,2499,7497,3
+2026-09-11,East,Notebook,20,120,2400,0
+2026-09-11,East,Backpack,1,1450,1450,0
+2026-09-11,East,Water Bottle,9,399,3591,1
+2026-09-11,East,Desk Lamp,1,899,899,0
+2026-09-11,East,Headphones,2,2499,4998,0
+2026-09-11,West,Notebook,28,120,3360,3
+2026-09-11,West,Backpack,5,1450,7250,0
+2026-09-11,West,Water Bottle,14,399,5586,0
+2026-09-11,West,Desk Lamp,2,899,1798,0
+2026-09-11,West,Headphones,4,2499,9996,1
+2026-09-12,North,Notebook,53,120,6360,0
+2026-09-12,North,Backpack,9,1450,13050,0
+2026-09-12,North,Water Bottle,23,399,9177,1
+2026-09-12,North,Desk Lamp,8,899,7192,0
+2026-09-12,North,Headphones,5,2499,12495,0
+2026-09-12,South,Notebook,47,120,5640,2
+2026-09-12,South,Backpack,9,1450,13050,0
+2026-09-12,South,Water Bottle,20,399,7980,2
+2026-09-12,South,Desk Lamp,7,899,6293,1
+2026-09-12,South,Headphones,5,2499,12495,3
+2026-09-12,East,Notebook,14,120,1680,0
+2026-09-12,East,Backpack,3,1450,4350,1
+2026-09-12,East,Water Bottle,11,399,4389,1
+2026-09-12,East,Desk Lamp,3,899,2697,0
+2026-09-12,East,Headphones,3,2499,7497,1
+2026-09-12,West,Notebook,55,120,6600,3
+2026-09-12,West,Backpack,10,1450,14500,0
+2026-09-12,West,Water Bottle,23,399,9177,0
+2026-09-12,West,Desk Lamp,7,899,6293,0
+2026-09-12,West,Headphones,6,2499,14994,1
+2026-09-13,North,Notebook,48,120,5760,2
+2026-09-13,North,Backpack,10,1450,14500,1
+2026-09-13,North,Water Bottle,20,399,7980,0
+2026-09-13,North,Desk Lamp,9,899,8091,1
+2026-09-13,North,Headphones,5,2499,12495,0
+2026-09-13,South,Notebook,44,120,5280,2
+2026-09-13,South,Backpack,8,1450,11600,0
+2026-09-13,South,Water Bottle,23,399,9177,1
+2026-09-13,South,Desk Lamp,8,899,7192,0
+2026-09-13,South,Headphones,5,2499,12495,2
+2026-09-13,East,Notebook,22,120,2640,1
+2026-09-13,East,Backpack,5,1450,7250,0
+2026-09-13,East,Water Bottle,16,399,6384,0
+2026-09-13,East,Desk Lamp,4,899,3596,1
+2026-09-13,East,Headphones,3,2499,7497,0
+2026-09-13,West,Notebook,48,120,5760,3
+2026-09-13,West,Backpack,10,1450,14500,1
+2026-09-13,West,Water Bottle,25,399,9975,0
+2026-09-13,West,Desk Lamp,7,899,6293,0
+2026-09-13,West,Headphones,6,2499,14994,2
+2026-09-14,North,Notebook,21,120,2520,1
+2026-09-14,North,Backpack,7,1450,10150,0
+2026-09-14,North,Water Bottle,13,399,5187,0
+2026-09-14,North,Desk Lamp,5,899,4495,0
+2026-09-14,North,Headphones,3,2499,7497,0
+2026-09-14,South,Notebook,28,120,3360,0
+2026-09-14,South,Backpack,4,1450,5800,0
+2026-09-14,South,Water Bottle,13,399,5187,1
+2026-09-14,South,Desk Lamp,5,899,4495,0
+2026-09-14,South,Headphones,5,2499,12495,2
+2026-09-14,East,Notebook,9,120,1080,0
+2026-09-14,East,Backpack,4,1450,5800,0
+2026-09-14,East,Water Bottle,6,399,2394,0
+2026-09-14,East,Desk Lamp,2,899,1798,0
+2026-09-14,East,Headphones,1,2499,2499,0
+2026-09-14,West,Notebook,30,120,3600,2
+2026-09-14,West,Backpack,5,1450,7250,0
+2026-09-14,West,Water Bottle,14,399,5586,1
+2026-09-14,West,Desk Lamp,4,899,3596,0
+2026-09-14,West,Headphones,3,2499,7497,1
+2026-09-15,North,Notebook,27,120,3240,0
+2026-09-15,North,Backpack,5,1450,7250,0
+2026-09-15,North,Water Bottle,15,399,5985,0
+2026-09-15,North,Desk Lamp,4,899,3596,0
+2026-09-15,North,Headphones,4,2499,9996,0
+2026-09-15,South,Notebook,29,120,3480,2
+2026-09-15,South,Backpack,5,1450,7250,0
+2026-09-15,South,Water Bottle,14,399,5586,0
+2026-09-15,South,Desk Lamp,4,899,3596,0
+2026-09-15,South,Headphones,3,2499,7497,1
+2026-09-15,East,Notebook,17,120,2040,1
+2026-09-15,East,Backpack,3,1450,4350,0
+2026-09-15,East,Water Bottle,7,399,2793,0
+2026-09-15,East,Desk Lamp,2,899,1798,1
+2026-09-15,East,Headphones,1,2499,2499,0
+2026-09-15,West,Notebook,33,120,3960,0
+2026-09-15,West,Backpack,5,1450,7250,0
+2026-09-15,West,Water Bottle,14,399,5586,1
+2026-09-15,West,Desk Lamp,3,899,2697,1
+2026-09-15,West,Headphones,3,2499,7497,0
+2026-09-16,North,Notebook,23,120,2760,0
+2026-09-16,North,Backpack,5,1450,7250,0
+2026-09-16,North,Water Bottle,15,399,5985,3
+2026-09-16,North,Desk Lamp,4,899,3596,0
+2026-09-16,North,Headphones,4,2499,9996,0
+2026-09-16,South,Notebook,26,120,3120,1
+2026-09-16,South,Backpack,5,1450,7250,1
+2026-09-16,South,Water Bottle,13,399,5187,0
+2026-09-16,South,Desk Lamp,5,899,4495,0
+2026-09-16,South,Headphones,4,2499,9996,0
+2026-09-16,East,Notebook,16,120,1920,0
+2026-09-16,East,Backpack,2,1450,2900,0
+2026-09-16,East,Water Bottle,6,399,2394,1
+2026-09-16,East,Desk Lamp,2,899,1798,0
+2026-09-16,East,Headphones,1,2499,2499,0
+2026-09-16,West,Notebook,21,120,2520,2
+2026-09-16,West,Backpack,8,1450,11600,0
+2026-09-16,West,Water Bottle,11,399,4389,1
+2026-09-16,West,Desk Lamp,4,899,3596,0
+2026-09-16,West,Headphones,4,2499,9996,0
+2026-09-17,North,Notebook,39,120,4680,1
+2026-09-17,North,Backpack,5,1450,7250,0
+2026-09-17,North,Water Bottle,15,399,5985,0
+2026-09-17,North,Desk Lamp,6,899,5394,0
+2026-09-17,North,Headphones,3,2499,7497,1
+2026-09-17,South,Notebook,33,120,3960,1
+2026-09-17,South,Backpack,5,1450,7250,0
+2026-09-17,South,Water Bottle,14,399,5586,0
+2026-09-17,South,Desk Lamp,5,899,4495,0
+2026-09-17,South,Headphones,4,2499,9996,0
+2026-09-17,East,Notebook,2,120,240,0
+2026-09-17,East,Backpack,1,1450,1450,0
+2026-09-17,East,Water Bottle,12,399,4788,0
+2026-09-17,East,Desk Lamp,2,899,1798,0
+2026-09-17,East,Headphones,1,2499,2499,0
+2026-09-17,West,Notebook,20,120,2400,2
+2026-09-17,West,Backpack,5,1450,7250,0
+2026-09-17,West,Water Bottle,15,399,5985,0
+2026-09-17,West,Desk Lamp,4,899,3596,0
+2026-09-17,West,Headphones,3,2499,7497,1
+2026-09-18,North,Notebook,40,120,4800,1
+2026-09-18,North,Backpack,5,1450,7250,1
+2026-09-18,North,Water Bottle,14,399,5586,2
+2026-09-18,North,Desk Lamp,4,899,3596,0
+2026-09-18,North,Headphones,2,2499,4998,0
+2026-09-18,South,Notebook,29,120,3480,1
+2026-09-18,South,Backpack,7,1450,10150,0
+2026-09-18,South,Water Bottle,14,399,5586,0
+2026-09-18,South,Desk Lamp,4,899,3596,0
+2026-09-18,South,Headphones,4,2499,9996,1
+2026-09-18,East,Notebook,6,120,720,1
+2026-09-18,East,Backpack,3,1450,4350,0
+2026-09-18,East,Water Bottle,5,399,1995,0
+2026-09-18,East,Desk Lamp,3,899,2697,0
+2026-09-18,East,Headphones,1,2499,2499,0
+2026-09-18,West,Notebook,26,120,3120,0
+2026-09-18,West,Backpack,5,1450,7250,0
+2026-09-18,West,Water Bottle,15,399,5985,2
+2026-09-18,West,Desk Lamp,4,899,3596,0
+2026-09-18,West,Headphones,3,2499,7497,0
+2026-09-19,North,Notebook,44,120,5280,1
+2026-09-19,North,Backpack,10,1450,14500,1
+2026-09-19,North,Water Bottle,20,399,7980,3
+2026-09-19,North,Desk Lamp,8,899,7192,0
+2026-09-19,North,Headphones,6,2499,14994,1
+2026-09-19,South,Notebook,52,120,6240,2
+2026-09-19,South,Backpack,10,1450,14500,0
+2026-09-19,South,Water Bottle,24,399,9576,0
+2026-09-19,South,Desk Lamp,8,899,7192,1
+2026-09-19,South,Headphones,6,2499,14994,2
+2026-09-19,East,Notebook,16,120,1920,1
+2026-09-19,East,Backpack,4,1450,5800,0
+2026-09-19,East,Water Bottle,6,399,2394,1
+2026-09-19,East,Desk Lamp,4,899,3596,1
+2026-09-19,East,Headphones,2,2499,4998,1
+2026-09-19,West,Notebook,48,120,5760,0
+2026-09-19,West,Backpack,9,1450,13050,0
+2026-09-19,West,Water Bottle,18,399,7182,0
+2026-09-19,West,Desk Lamp,7,899,6293,1
+2026-09-19,West,Headphones,5,2499,12495,1
+2026-09-20,North,Notebook,49,120,5880,2
+2026-09-20,North,Backpack,10,1450,14500,0
+2026-09-20,North,Water Bottle,23,399,9177,1
+2026-09-20,North,Desk Lamp,8,899,7192,0
+2026-09-20,North,Headphones,7,2499,17493,1
+2026-09-20,South,Notebook,42,120,5040,2
+2026-09-20,South,Backpack,10,1450,14500,1
+2026-09-20,South,Water Bottle,20,399,7980,1
+2026-09-20,South,Desk Lamp,7,899,6293,0
+2026-09-20,South,Headphones,5,2499,12495,2
+2026-09-20,East,Notebook,22,120,2640,1
+2026-09-20,East,Backpack,4,1450,5800,0
+2026-09-20,East,Water Bottle,11,399,4389,0
+2026-09-20,East,Desk Lamp,4,899,3596,0
+2026-09-20,East,Headphones,2,2499,4998,1
+2026-09-20,West,Notebook,43,120,5160,1
+2026-09-20,West,Backpack,8,1450,11600,0
+2026-09-20,West,Water Bottle,21,399,8379,0
+2026-09-20,West,Desk Lamp,7,899,6293,0
+2026-09-20,West,Headphones,7,2499,17493,1
+2026-09-21,North,Notebook,29,120,3480,0
+2026-09-21,North,Backpack,6,1450,8700,0
+2026-09-21,North,Water Bottle,17,399,6783,0
+2026-09-21,North,Desk Lamp,5,899,4495,0
+2026-09-21,North,Headphones,4,2499,9996,0
+2026-09-21,South,Notebook,25,120,3000,0
+2026-09-21,South,Backpack,5,1450,7250,0
+2026-09-21,South,Water Bottle,12,399,4788,0
+2026-09-21,South,Desk Lamp,5,899,4495,0
+2026-09-21,South,Headphones,3,2499,7497,0
+2026-09-21,East,Notebook,15,120,1800,0
+2026-09-21,East,Backpack,2,1450,2900,0
+2026-09-21,East,Water Bottle,6,399,2394,0
+2026-09-21,East,Desk Lamp,1,899,899,0
+2026-09-21,East,Headphones,2,2499,4998,2
+2026-09-21,West,Notebook,29,120,3480,1
+2026-09-21,West,Backpack,7,1450,10150,0
+2026-09-21,West,Water Bottle,12,399,4788,0
+2026-09-21,West,Desk Lamp,7,899,6293,0
+2026-09-21,West,Headphones,4,2499,9996,2
+2026-09-22,North,Notebook,22,120,2640,1
+2026-09-22,North,Backpack,4,1450,5800,0
+2026-09-22,North,Water Bottle,13,399,5187,0
+2026-09-22,North,Desk Lamp,5,899,4495,1
+2026-09-22,North,Headphones,4,2499,9996,1
+2026-09-22,South,Notebook,32,120,3840,0
+2026-09-22,South,Backpack,5,1450,7250,0
+2026-09-22,South,Water Bottle,12,399,4788,1
+2026-09-22,South,Desk Lamp,4,899,3596,0
+2026-09-22,South,Headphones,4,2499,9996,2
+2026-09-22,East,Notebook,12,120,1440,2
+2026-09-22,East,Backpack,4,1450,5800,0
+2026-09-22,East,Water Bottle,5,399,1995,0
+2026-09-22,East,Desk Lamp,2,899,1798,0
+2026-09-22,East,Headphones,2,2499,4998,0
+2026-09-22,West,Notebook,31,120,3720,3
+2026-09-22,West,Backpack,5,1450,7250,1
+2026-09-22,West,Water Bottle,14,399,5586,2
+2026-09-22,West,Desk Lamp,3,899,2697,0
+2026-09-22,West,Headphones,4,2499,9996,3
+2026-09-23,North,Notebook,31,120,3720,0
+2026-09-23,North,Backpack,8,1450,11600,1
+2026-09-23,North,Water Bottle,13,399,5187,0
+2026-09-23,North,Desk Lamp,3,899,2697,0
+2026-09-23,North,Headphones,3,2499,7497,0
+2026-09-23,South,Notebook,32,120,3840,0
+2026-09-23,South,Backpack,6,1450,8700,0
+2026-09-23,South,Water Bottle,12,399,4788,0
+2026-09-23,South,Desk Lamp,5,899,4495,0
+2026-09-23,South,Headphones,4,2499,9996,1
+2026-09-23,East,Notebook,8,120,960,0
+2026-09-23,East,Backpack,2,1450,2900,0
+2026-09-23,East,Water Bottle,4,399,1596,0
+2026-09-23,East,Desk Lamp,2,899,1798,2
+2026-09-23,East,Headphones,1,2499,2499,0
+2026-09-23,West,Notebook,25,120,3000,1
+2026-09-23,West,Backpack,5,1450,7250,0
+2026-09-23,West,Water Bottle,7,399,2793,0
+2026-09-23,West,Desk Lamp,5,899,4495,0
+2026-09-23,West,Headphones,3,2499,7497,1
+2026-09-24,North,Notebook,27,120,3240,1
+2026-09-24,North,Backpack,6,1450,8700,0
+2026-09-24,North,Water Bottle,16,399,6384,1
+2026-09-24,North,Desk Lamp,5,899,4495,0
+2026-09-24,North,Headphones,4,2499,9996,0
+2026-09-24,South,Notebook,28,120,3360,0
+2026-09-24,South,Backpack,7,1450,10150,0
+2026-09-24,South,Water Bottle,15,399,5985,2
+2026-09-24,South,Desk Lamp,5,899,4495,0
+2026-09-24,South,Headphones,3,2499,7497,0
+2026-09-24,East,Notebook,8,120,960,0
+2026-09-24,East,Backpack,2,1450,2900,0
+2026-09-24,East,Water Bottle,7,399,2793,0
+2026-09-24,East,Desk Lamp,2,899,1798,0
+2026-09-24,East,Headphones,2,2499,4998,0
+2026-09-24,West,Notebook,31,120,3720,0
+2026-09-24,West,Backpack,5,1450,7250,0
+2026-09-24,West,Water Bottle,15,399,5985,0
+2026-09-24,West,Desk Lamp,5,899,4495,1
+2026-09-24,West,Headphones,3,2499,7497,1
+2026-09-25,North,Notebook,36,120,4320,1
+2026-09-25,North,Backpack,6,1450,8700,0
+2026-09-25,North,Water Bottle,12,399,4788,1
+2026-09-25,North,Desk Lamp,3,899,2697,1
+2026-09-25,North,Headphones,3,2499,7497,0
+2026-09-25,South,Notebook,21,120,2520,1
+2026-09-25,South,Backpack,4,1450,5800,0
+2026-09-25,South,Water Bottle,12,399,4788,2
+2026-09-25,South,Desk Lamp,4,899,3596,0
+2026-09-25,South,Headphones,4,2499,9996,0
+2026-09-25,East,Notebook,12,120,1440,1
+2026-09-25,East,Backpack,3,1450,4350,0
+2026-09-25,East,Water Bottle,3,399,1197,0
+2026-09-25,East,Desk Lamp,1,899,899,0
+2026-09-25,East,Headphones,1,2499,2499,1
+2026-09-25,West,Notebook,26,120,3120,1
+2026-09-25,West,Backpack,5,1450,7250,0
+2026-09-25,West,Water Bottle,15,399,5985,2
+2026-09-25,West,Desk Lamp,4,899,3596,0
+2026-09-25,West,Headphones,4,2499,9996,0
+2026-09-26,North,Notebook,46,120,5520,2
+2026-09-26,North,Backpack,9,1450,13050,1
+2026-09-26,North,Water Bottle,23,399,9177,1
+2026-09-26,North,Desk Lamp,8,899,7192,0
+2026-09-26,North,Headphones,6,2499,14994,1
+2026-09-26,South,Notebook,40,120,4800,0
+2026-09-26,South,Backpack,8,1450,11600,1
+2026-09-26,South,Water Bottle,22,399,8778,2
+2026-09-26,South,Desk Lamp,6,899,5394,0
+2026-09-26,South,Headphones,6,2499,14994,1
+2026-09-26,East,Notebook,25,120,3000,0
+2026-09-26,East,Backpack,3,1450,4350,0
+2026-09-26,East,Water Bottle,5,399,1995,0
+2026-09-26,East,Desk Lamp,4,899,3596,0
+2026-09-26,East,Headphones,2,2499,4998,1
+2026-09-26,West,Notebook,49,120,5880,4
+2026-09-26,West,Backpack,9,1450,13050,0
+2026-09-26,West,Water Bottle,20,399,7980,1
+2026-09-26,West,Desk Lamp,7,899,6293,1
+2026-09-26,West,Headphones,5,2499,12495,1
+2026-09-27,North,Notebook,46,120,5520,3
+2026-09-27,North,Backpack,8,1450,11600,0
+2026-09-27,North,Water Bottle,23,399,9177,0
+2026-09-27,North,Desk Lamp,7,899,6293,1
+2026-09-27,North,Headphones,7,2499,17493,2
+2026-09-27,South,Notebook,53,120,6360,0
+2026-09-27,South,Backpack,8,1450,11600,1
+2026-09-27,South,Water Bottle,21,399,8379,0
+2026-09-27,South,Desk Lamp,8,899,7192,0
+2026-09-27,South,Headphones,7,2499,17493,0
+2026-09-27,East,Notebook,25,120,3000,0
+2026-09-27,East,Backpack,4,1450,5800,0
+2026-09-27,East,Water Bottle,12,399,4788,0
+2026-09-27,East,Desk Lamp,2,899,1798,0
+2026-09-27,East,Headphones,2,2499,4998,1
+2026-09-27,West,Notebook,55,120,6600,2
+2026-09-27,West,Backpack,9,1450,13050,0
+2026-09-27,West,Water Bottle,22,399,8778,1
+2026-09-27,West,Desk Lamp,7,899,6293,0
+2026-09-27,West,Headphones,6,2499,14994,2
+2026-09-28,North,Notebook,25,120,3000,2
+2026-09-28,North,Backpack,4,1450,5800,0
+2026-09-28,North,Water Bottle,13,399,5187,0
+2026-09-28,North,Desk Lamp,4,899,3596,0
+2026-09-28,North,Headphones,4,2499,9996,1
+2026-09-28,South,Notebook,27,120,3240,1
+2026-09-28,South,Backpack,7,1450,10150,1
+2026-09-28,South,Water Bottle,13,399,5187,0
+2026-09-28,South,Desk Lamp,4,899,3596,0
+2026-09-28,South,Headphones,4,2499,9996,1
+2026-09-28,East,Notebook,12,120,1440,1
+2026-09-28,East,Backpack,2,1450,2900,0
+2026-09-28,East,Water Bottle,3,399,1197,1
+2026-09-28,East,Desk Lamp,0,899,0,0
+2026-09-28,East,Headphones,0,2499,0,0
+2026-09-28,West,Notebook,25,120,3000,0
+2026-09-28,West,Backpack,4,1450,5800,0
+2026-09-28,West,Water Bottle,12,399,4788,0
+2026-09-28,West,Desk Lamp,4,899,3596,0
+2026-09-28,West,Headphones,3,2499,7497,0
+2026-09-29,North,Notebook,28,120,3360,2
+2026-09-29,North,Backpack,6,1450,8700,1
+2026-09-29,North,Water Bottle,11,399,4389,0
+2026-09-29,North,Desk Lamp,5,899,4495,0
+2026-09-29,North,Headphones,4,2499,9996,1
+2026-09-29,South,Notebook,28,120,3360,0
+2026-09-29,South,Backpack,5,1450,7250,0
+2026-09-29,South,Water Bottle,15,399,5985,1
+2026-09-29,South,Desk Lamp,5,899,4495,0
+2026-09-29,South,Headphones,5,2499,12495,1
+2026-09-29,East,Notebook,13,120,1560,1
+2026-09-29,East,Backpack,2,1450,2900,0
+2026-09-29,East,Water Bottle,6,399,2394,1
+2026-09-29,East,Desk Lamp,1,899,899,1
+2026-09-29,East,Headphones,1,2499,2499,0
+2026-09-29,West,Notebook,31,120,3720,2
+2026-09-29,West,Backpack,5,1450,7250,0
+2026-09-29,West,Water Bottle,14,399,5586,0
+2026-09-29,West,Desk Lamp,5,899,4495,0
+2026-09-29,West,Headphones,2,2499,4998,0
+2026-09-30,North,Notebook,25,120,3000,1
+2026-09-30,North,Backpack,7,1450,10150,1
+2026-09-30,North,Water Bottle,16,399,6384,0
+2026-09-30,North,Desk Lamp,5,899,4495,0
+2026-09-30,North,Headphones,4,2499,9996,1
+2026-09-30,South,Notebook,19,120,2280,0
+2026-09-30,South,Backpack,4,1450,5800,0
+2026-09-30,South,Water Bottle,14,399,5586,1
+2026-09-30,South,Desk Lamp,6,899,5394,0
+2026-09-30,South,Headphones,4,2499,9996,1
+2026-09-30,East,Notebook,8,120,960,0
+2026-09-30,East,Backpack,2,1450,2900,0
+2026-09-30,East,Water Bottle,7,399,2793,0
+2026-09-30,East,Desk Lamp,2,899,1798,0
+2026-09-30,East,Headphones,0,2499,0,0
+2026-09-30,West,Notebook,31,120,3720,4
+2026-09-30,West,Backpack,5,1450,7250,0
+2026-09-30,West,Water Bottle,14,399,5586,0
+2026-09-30,West,Desk Lamp,5,899,4495,0
+2026-09-30,West,Headphones,4,2499,9996,3

@@ -134,3 +134,9 @@ Never delete entries. Mark superseded ones with `SUPERSEDED by DEC-###`.
 - **Impact if changed:** banner text, About first lines, repo docs, CLAUDE.md identity, handle. The logo mark and watermark are unaffected. Renaming is cheapest now (0 videos).
 - **Status:** PROPOSED. A major brand change needs the creator's explicit choice.
 - **Approval record:** The creator, 2026-11-21: "aimadeusable and AI Made Usable". → **APPROVED → IMPLEMENTED** in the repo (banner re-rendered, About, keywords, CLAUDE.md, identity, profile, handoff). The positioning/tagline, logo and watermark are unchanged. **Pending:** the creator changes the name + handle in YouTube Studio. Handle verified claimed 2026-11-21 (youtube.com/@aimadeusable → our channel ID). The public display name still showed "ShippedWithAI" at that check.
+
+### DEC-018: Start production of week 1 (launch)
+- **Date:** 2026-11-21
+- **Description:** The creator asked to start: a long-form for Tuesday 2026-11-24 plus multiple Shorts. Claude created SWAI-L001 (ChatGPT vs Claude vs Gemini, 5 verifiable tasks) and SWAI-S001..S007 (daily per DEC-002) using its recommended defaults for the still-PROPOSED DEC-010/011/016. The Shorts voice for week 1 is the creator's own recording (DEC-013 option c) because no TTS exists.
+- **Approval record:** The creator, 2026-11-21: "so lets create a video that we published on tuesday but we create shorts multiple so that we start". This approves **starting production**. It does not approve the individual scripts (each item is approval_status PROPOSED) or DEC-010/011/012/013/016 as permanent strategy.
+- **Status:** APPROVED → IN PROGRESS.
