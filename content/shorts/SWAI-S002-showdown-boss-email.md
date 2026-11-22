@@ -8,7 +8,7 @@ objective: reach
 hypothesis: "If the Short shows a relatable work task with a clear checkable outcome, professionals watch to the end (avg % viewed)."
 title: "I Asked 3 AIs to Email My Boss"
 hook: "I gave three AIs my messy notes and one rule: keep every fact, add nothing."
-production_status: SCRIPTED
+production_status: EDITED
 approval_status: PROPOSED
 publish_date: "2026-11-23"
 video_url: ""
@@ -47,5 +47,10 @@ AI Showdown package (contestant tiles, round card, ✓/✗ stamps, mini scoreboa
 ## Performance
 | Pulled | Window | Views | Engaged views | Avg % viewed | Likes | Comments | Shares | Subs + / − |
 |---|---|---|---|---|---|---|---|---|
+
+## Final narration (as voiced 2026-11-23, clone take 1, 51.8 s)
+> I gave three AIs my messy notes and one rule: keep every fact. Add nothing. A delayed launch, two bugs, a new date, the budget, and one extra test day. Seven facts. Simple, right? ChatGPT thought about it... said absolutely nothing... then changed its mind. Solid email, but it invented one tiny reason. Nine out of ten. Claude said "untangling", kept every single fact, then proudly told me it kept all five. There were seven. Still, ten out of ten. Gemini didn't even think about it. Eleven seconds, straight into a Gmail draft, every fact. Ten. Round one: Claude and Gemini tie, ChatGPT one point behind. Four more rounds. Full showdown on Tuesday.
+
+Results (FACT, from the recordings in `out/SWAI-L001/raw/`): ChatGPT 9 · Claude 10 · Gemini 10. The creator's name in Claude's signature is blurred. Scene spec: `production/shorts/SWAI-S002.json`.
 
 ## Lessons learned

@@ -31,6 +31,10 @@ html,body{{margin:0;width:1080px;height:1920px;background:#0A0E14;font-family:'I
 .board{{display:flex;flex-direction:column;gap:22px;position:relative}}
 .board div{{display:flex;justify-content:space-between;width:760px;font-weight:800;font-size:64px;padding:22px 40px;border-radius:24px;background:#ffffff0d}}
 .board span{{font-family:'JetBrains Mono';color:#7CFFB2}}
+.cliptop{{position:absolute;top:150px;display:flex;flex-direction:column;align-items:center;gap:24px}}
+.cap{{font-weight:800;font-size:60px;line-height:1.1;max-width:920px}} .cap em{{font-style:normal;color:#7CFFB2}}
+.clipbox{{position:absolute;top:560px;left:40px;width:1000px;height:1000px;border-radius:28px;border:4px solid #22D3A666;box-sizing:border-box}}
+.badge{{position:absolute;top:1610px;font-family:'JetBrains Mono';font-weight:800;font-size:96px;color:#06110C;background:#7CFFB2;padding:10px 44px;border-radius:24px}}
 .brand{{position:absolute;bottom:250px;display:flex;align-items:center;gap:20px;font-weight:800;font-size:44px;opacity:.85}}
 .brand img{{width:84px;height:84px;border-radius:50%}}
 """
@@ -48,11 +52,15 @@ def scene_html(s):
         body = f"<div class='t {s['tile']} solo'>{s['tile']}</div><div class='big'>{b}</div>"
     elif k == 'round':
         body = f"<div class='rn'>ROUND {s['n']}</div><div class='emo'>{s['emoji']}</div><div class='big'>{html.escape(b)}</div>"
+    elif k == 'clip':
+        badge = f"<div class='badge'>{html.escape(s['score'])}</div>" if s.get('score') else ''
+        cap = f"<div class='cap'>{s['caption']}</div>" if s.get('caption') else ''
+        body = f"<div class='cliptop'><div class='t {s['label']}'>{s['label']}</div>{cap}</div><div class='clipbox'></div>{badge}"
     elif k == 'score':
-        body = "<div class='board'>" + ''.join(f"<div>{t}<span>??</span></div>" for t in ['ChatGPT','Claude','Gemini']) + f"</div><div class='big'>{b}</div>{sub}"
+        brd = s.get('board', {}); body = "<div class='board'>" + ''.join(f"<div>{t}<span>{brd.get(t, '??')}</span></div>" for t in ['ChatGPT','Claude','Gemini']) + f"</div><div class='big'>{b}</div>{sub}"
     else:
         body = f"<div class='big'>{b}</div>{sub}"
-    return f"<!doctype html><html><head><meta charset='utf-8'><style>{CSS}</style></head><body><div class='s'><div class='grid'></div>{body}<div class='brand'><img src='{logo}'>AI Made Usable</div></div></body></html>"
+    return f"<!doctype html><html><head><meta charset='utf-8'><style>{CSS}</style></head><body><div class='s'><div class='grid'></div>{body}{'' if k == 'clip' else f"<div class='brand'><img src='{logo}'>AI Made Usable</div>"}</div></body></html>"
 
 files = []
 for i, s in enumerate(spec['scenes']):
@@ -66,6 +74,21 @@ if a.audio:
 fps = 30; parts = []
 for i, d in enumerate(durs):
     n = max(1, round(d * fps)); seg = out / f'seg{i:02d}.mp4'
+    sc = spec['scenes'][i]
+    if sc['kind'] == 'clip':
+        src = str(ROOT / sc['src'])
+        sdur = float(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',src]).decode())
+        st = sc.get('start', 0); en = sc.get('end') or sdur
+        speed = max((en - st) / d, 0.25)
+        x, y, w, h = sc['crop']
+        chain = f"[1:v]trim={st}:{en},setpts=(PTS-STARTPTS)/{speed:.4f},fps={fps}"
+        if sc.get('blur'):
+            for bi, (bx, by, bw, bh) in enumerate(sc['blur']):
+                chain += f",split[m{bi}][b{bi}];[b{bi}]crop={bw}:{bh}:{bx}:{by},boxblur=luma_radius=8:luma_power=3:chroma_radius=4:chroma_power=3[bb{bi}];[m{bi}][bb{bi}]overlay={bx}:{by}"
+        chain += f",crop={w}:{h}:{x}:{y},scale=992:992:force_original_aspect_ratio=decrease,pad=992:992:(ow-iw)/2:(oh-ih)/2:color=0x0A0E14,tpad=stop_mode=clone:stop_duration=30[c];[0:v][c]overlay=44:564,format=yuv420p"
+        subprocess.run(['ffmpeg','-y','-v','error','-loop','1','-framerate',str(fps),'-i',str(out/f'scene{i:02d}.png'),'-i',src,
+            '-filter_complex',chain,'-frames:v',str(n),'-r',str(fps),'-c:v','libx264','-preset','veryfast','-crf','20','-an',str(seg)], check=True)
+        parts.append(seg); continue
     subprocess.run(['ffmpeg','-y','-v','error','-loop','1','-i',str(out/f'scene{i:02d}.png'),'-vf',
         f"scale=1188:2112,zoompan=z='1+0.06*on/{n}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={n}:s=1080x1920:fps={fps}",
         '-frames:v',str(n),'-pix_fmt','yuv420p','-c:v','libx264','-preset','veryfast','-crf','20',str(seg)], check=True)

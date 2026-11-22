@@ -8,7 +8,7 @@ Next free IDs: **SWAI-S011** (Short) · **SWAI-L002** (long-form)
 |---|---|---|---|---|---|---|---|
 | SWAI-L001 | I Made ChatGPT, Claude & Gemini Compete in 5 Real Tasks | Discover (DEC-010 proposed) | [BEG, PRO, STU, BIZ] | SCRIPTED | PROPOSED | 2026-11-24 | `content/long/SWAI-L001-chatgpt-vs-claude-vs-gemini.md` |
 | SWAI-S001 | I'm Making ChatGPT, Claude & Gemini Fight | Discover (DEC-010 proposed) | [BEG, PRO, ENT] | EDITED | PROPOSED | 2026-11-22 | `content/shorts/SWAI-S001-showdown-teaser.md` |
-| SWAI-S002 | I Asked 3 AIs to Email My Boss | Discover (DEC-010 proposed) | [PRO, BEG, FRE] | SCRIPTED | PROPOSED | 2026-11-23 | `content/shorts/SWAI-S002-showdown-boss-email.md` |
+| SWAI-S002 | I Asked 3 AIs to Email My Boss | Discover (DEC-010 proposed) | [PRO, BEG, FRE] | EDITED | PROPOSED | 2026-11-23 | `content/shorts/SWAI-S002-showdown-boss-email.md` |
 | SWAI-S003 | I Hid 3 Problems in a Spreadsheet. Which AI Found Them? | Discover (DEC-010 proposed) | [PRO, BIZ, BEG] | SCRIPTED | PROPOSED | 2026-11-24 | `content/shorts/SWAI-S003-showdown-hidden-problems.md` |
 | SWAI-S004 | AI Agents Explained in 45 Seconds | Automate (DEC-010 proposed) | [BEG, PRO, STU, BIZ] | KILLED | REJECTED |  | `content/shorts/SWAI-S004-ai-agents-45-seconds.md` |
 | SWAI-S005 | Make AI Tell You When It's Guessing | Discover (DEC-010 proposed) | [PRO, STU, BEG] | KILLED | REJECTED |  | `content/shorts/SWAI-S005-make-ai-check-its-work.md` |
