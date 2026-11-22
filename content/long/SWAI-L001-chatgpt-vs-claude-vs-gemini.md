@@ -47,7 +47,7 @@ updated: 2026-11-21
 **Scoreboard (fill in while recording):**
 | Round | ChatGPT | Claude | Gemini | Funniest moment (timestamp) |
 |---|---|---|---|---|
-| 1 Boss Email | 10 (2026-11-22: all 7 facts kept, nothing added, placeholders for names, rendered as an email card with a Send button) | | | |
+| 1 Boss Email | **9** (official recorded run 2026-11-22, 18 s: all 7 facts kept; added "so we can proceed with the retesting", a small invented link → −1. An earlier unrecorded run scored 10 and is not used) | | | ChatGPT: the reply area sits blank with only icons for a moment, then a loader, then the email card (~25–65% of the clip) → joke: "thought about it, said nothing, then changed its mind" |
 | 2 Sources | | | | |
 | 3 Hidden Problems | | | | |
 | 4 Build an App | | | | |
