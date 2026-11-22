@@ -163,3 +163,12 @@ Never delete entries. Mark superseded ones with `SUPERSEDED by DEC-###`.
 - **Policy notes:** YouTube "altered content" disclosure = **Yes** on every clone-narrated video (own-voice clone). Inauthentic-content risk is mitigated by original tests, original scripts and real screen recordings. Never templated mass output.
 - **Approval record:** The creator, 2026-11-21: "Video tu banayega na Kyu ki face wace wala kuch nhi hai bas voice aayegi Woh bhi ai tool meri voice mai krega".
 - **Status:** APPROVED → IMPLEMENTING.
+
+### DEC-021: Shorts-only launch week; first long-form moves to Tue 2026-12-01; keep a two-week buffer
+- **Date:** 2026-11-23
+- **Approval record:** The creator: "kalse shorts dalenge next tuesday we upload long video and next tuesday ke liye bhi content decide kr is week sirf shorts dalenge… after this tuesday we have next 2 tuesday content videos and shorts".
+- **Status:** APPROVED → calendar updated (`strategy/calendar.md`).
+
+### DEC-022: Topic for SWAI-L002 (Tue 2026-12-08)
+- **Recommendation:** "Build your first useful AI agent, no code (an engineer's honest test)" (OPP-007). Evidence: Jeff Su "AI Agents, Clearly Explained" 5.79M, Metics "Build Your First AI Agent (No Coding)" 877K. It fits the Automate pillar and is the natural next step after the showdown. Alternative: OPP-008 "Learn 80% of Claude Code for non-developers".
+- **Status:** PROPOSED.

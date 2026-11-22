@@ -19,3 +19,17 @@ Only items with approval status `APPROVED` may be placed in a slot as `SCHEDULED
 States: PLANNED (slot reserved) · SCHEDULED (approved, set in Studio) · PUBLISHED · MISSED (with reason).
 
 **Production dependency:** the SWAI-L001 test must be recorded **Sunday 2026-11-22** so Monday's Short (Round 1) can ship. S001 (Sunday) needs only a voice track.
+
+## Revised 2026-11-23 (DEC-021): Shorts-only week, long-form from Tue 2026-12-01, two-week buffer
+| Date | Day | Slot | Content ID | Note | State |
+|---|---|---|---|---|---|
+| 2026-11-24 | Tue | Short | SWAI-S001 | Teaser (rendered) | PLANNED |
+| 2026-11-25 | Wed | Short | SWAI-S002 | Round 1 (rendered) | PLANNED |
+| 2026-11-26 | Thu | Short | SWAI-S006 | Round 2 (recordings done) | PLANNED |
+| 2026-11-27 | Fri | Short | SWAI-S008 | Round 4 | PLANNED |
+| 2026-11-28 | Sat | Short | SWAI-S009 | Round 5 | PLANNED |
+| 2026-12-01 | Tue | **Long 19:30 IST** | **SWAI-L001** | The AI Showdown | PLANNED |
+| 2026-12-01 | Tue | Short (after L001) | SWAI-S003 | Round 3 reveal | PLANNED |
+| 2026-12-02 | Wed | Short | SWAI-S010 | Final cheat sheet | PLANNED |
+| 2026-12-08 | Tue | **Long** | SWAI-L002 | Topic pending creator approval (DEC-022) | PLANNED |
+The earlier week-1 table above is superseded.
