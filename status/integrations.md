@@ -39,5 +39,5 @@ Last verified: **2026-11-21** (cloud Claude Code session). Re-verify when someth
 
 ## Google Drive connector (connected 2026-11-23)
 - Works for folders, docs and small files. `create_file` takes inline base64, so **videos (10–80 MB) cannot go through it**. The creator stores videos manually.
-- Folders created by Claude: **AI Made Usable** (`13AJ5LmaOXzNLGm015_JfvOyedVzG5y9_`) → `1 Final Videos (upload-ready)` (`15hRMN8rDbZNFGhFvkpPLSUJzQ4pQou5U`) · `2 Raw Recordings` (`1E3UwB0lCxNoGNi_jLadEEWszo99sqhPq`) · `3 Brand Kit` (`1M3M7NinD87O_lb3Zjn-1XaBkgtHWF5gT`).
+- Folders created by Claude: **AI Made Usable** (`13AJ5LmaOXzNLGm015_JfvOyedVzG5y9_`) → `1 Final Videos (upload-ready)` (`15hRMN8rDbZNFGhFvkpPLSUJzQ4pQou5U`) · `2 Raw Recordings` (`1E3UwB0lCxNoGNi_jLadEEWszo99sqhPq`) · `3 Brand Kit` (`1M3M7NinD87O_lb3Zjn-1XaBkgtHWF5gT`) · `Shorts` (`1kNl7IWXKrHV7heyA4i_k2pfiBB56LNt-`, added at the creator's request).
 - Drive is the video store (creator uploads). GitHub is the source of truth for scripts, specs and decisions. Final renders in `out/` are git-ignored and lost when the container resets: re-render from `production/shorts/*.json` + raw recordings.
