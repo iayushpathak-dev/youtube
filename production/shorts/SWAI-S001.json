@@ -1,0 +1,17 @@
+{
+  "id": "SWAI-S001",
+  "scenes": [
+    {"dur": 3.2, "kind": "title", "kicker": "THE AI SHOWDOWN", "big": "I'm making them <em>FIGHT</em>", "tiles": ["ChatGPT", "Claude", "Gemini"]},
+    {"dur": 2.4, "kind": "sheet", "big": "…over a <em>spreadsheet</em>", "sub": "3 problems hidden inside 🔒🔒🔒"},
+    {"dur": 3.2, "kind": "stat", "lines": ["3 AIs", "5 real tasks", "0 bluffing"]},
+    {"dur": 3.6, "kind": "joke", "tile": "Gemini", "big": "has the entire internet <em>at home</em> 🏠"},
+    {"dur": 3.0, "kind": "big", "big": "Scored out of <em>50</em>", "sub": "like a very nerdy game show 🤓"},
+    {"dur": 2.0, "kind": "round", "n": 1, "big": "The Boss Email", "emoji": "📧"},
+    {"dur": 2.0, "kind": "round", "n": 2, "big": "Trust Me Bro (sources)", "emoji": "🔗"},
+    {"dur": 2.2, "kind": "round", "n": 3, "big": "The Hidden Problems", "emoji": "🔒"},
+    {"dur": 2.2, "kind": "round", "n": 4, "big": "Build Me an App", "emoji": "🛠️"},
+    {"dur": 2.4, "kind": "round", "n": 5, "big": "Teach Me Like I'm 15", "emoji": "🧠"},
+    {"dur": 4.0, "kind": "score", "big": "Who wins?", "sub": "Comment your guess 👇"},
+    {"dur": 3.6, "kind": "big", "big": "Loser gets <em>roasted</em>", "sub": "Full showdown · Tuesday 🔥"}
+  ]
+}

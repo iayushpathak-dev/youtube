@@ -1,0 +1,385 @@
+<title>AI Made Usable HQ</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: one narrow reading column for phones, sticky chip nav, collapsible scripts. Brand: ink + mint. */
+:root {
+  --bg:#F5F8F7; --panel:#FFFFFF; --fg:#0B1218; --muted:#55636E; --line:#DCE5E2;
+  --accent:#0E9F7E; --accent-ink:#FFFFFF; --soft:#E2F5EF;
+  --ok:#1C7C4A; --okbg:#DDF3E6; --warn:#8A5A00; --warnbg:#FFF0CC; --info:#1F5FA8; --infobg:#E1ECF8;
+  --sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif; --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg:#0A0E14; --panel:#111923; --fg:#E8EEF2; --muted:#93A3B0; --line:#1F2C38;
+  --accent:#7CFFB2; --accent-ink:#06110C; --soft:#12261F;
+  --ok:#7CE0A6; --okbg:#123022; --warn:#FFD27A; --warnbg:#33280F; --info:#9CC4FF; --infobg:#14243A; color-scheme:dark } }
+:root[data-theme="dark"] {
+  --bg:#0A0E14; --panel:#111923; --fg:#E8EEF2; --muted:#93A3B0; --line:#1F2C38;
+  --accent:#7CFFB2; --accent-ink:#06110C; --soft:#12261F;
+  --ok:#7CE0A6; --okbg:#123022; --warn:#FFD27A; --warnbg:#33280F; --info:#9CC4FF; --infobg:#14243A; color-scheme:dark }
+* { box-sizing:border-box }
+body { background:var(--bg); color:var(--fg); font:15px/1.55 var(--sans); }
+body::before { content:""; position:fixed; inset:0 0 auto; height:env(safe-area-inset-top,0px); z-index:10; background:var(--bg) }
+.wrap { max-width:760px; margin:0 auto; padding-left:max(16px,env(safe-area-inset-left,0px)); padding-right:max(16px,env(safe-area-inset-right,0px)); padding-block:20px 64px }
+header.top h1 { font-size:26px; line-height:1.15; margin:0; letter-spacing:-.4px; text-wrap:balance }
+header.top h1 span { color:var(--accent) }
+header.top .sub { color:var(--muted); margin:6px 0 0; font-size:14px }
+nav { position:sticky; top:env(safe-area-inset-top,0px); z-index:5; background:var(--bg); margin:16px calc(-1 * max(16px,env(safe-area-inset-left,0px))) 0; padding:10px max(16px,env(safe-area-inset-left,0px)); display:flex; gap:8px; overflow-x:auto; border-bottom:1px solid var(--line); scrollbar-width:none }
+nav a { flex:none; text-decoration:none; color:var(--fg); background:var(--panel); border:1px solid var(--line); border-radius:999px; padding:6px 12px; font-size:13px; font-weight:600 }
+nav a:focus-visible, button:focus-visible, summary:focus-visible { outline:2px solid var(--accent); outline-offset:2px }
+section { padding-top:24px; scroll-margin-top:64px }
+section > h2 { font-size:13px; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); margin:0 0 10px }
+.panel { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:14px 16px }
+.checks label { display:flex; gap:10px; align-items:flex-start; padding:9px 0; border-bottom:1px solid var(--line) }
+.checks label:last-child { border-bottom:0 }
+.checks input { width:20px; height:20px; accent-color:var(--accent); margin-top:2px; flex:none }
+.checks .who { font-size:12px; color:var(--muted) }
+.gallery { display:grid; grid-template-columns:1fr 1fr; gap:12px }
+.gallery figure { margin:0; min-width:0 }
+.gallery figure.wide { grid-column:1/-1 }
+.gallery img { display:block; width:100%; border-radius:10px; border:1px solid var(--line); background:#0A0E14 }
+.gallery img.round { border-radius:50%; max-width:180px; margin:0 auto }
+.gallery figcaption { font-size:12px; color:var(--muted); margin-top:6px; text-align:center }
+.hint { font-size:13px; color:var(--muted) }
+.code { position:relative; margin:10px 0 }
+.code pre { margin:0; background:var(--soft); border:1px solid var(--line); border-radius:10px; padding:12px; padding-top:34px; white-space:pre-wrap; word-break:break-word; font:13px/1.5 var(--mono) }
+.copy { position:absolute; top:6px; right:6px; font:600 12px var(--sans); background:var(--accent); color:var(--accent-ink); border:0; border-radius:8px; padding:5px 10px; cursor:pointer }
+.tbl { overflow-x:auto; margin:10px 0 }
+table { border-collapse:collapse; width:100%; font-size:13.5px }
+th, td { text-align:left; vertical-align:top; padding:7px 8px; border-bottom:1px solid var(--line) }
+th { color:var(--muted); font-weight:600; font-size:12px }
+td { min-width:90px }
+code { font:12.5px var(--mono); background:var(--soft); padding:1px 5px; border-radius:5px; word-break:break-word }
+blockquote { margin:10px 0; padding:4px 14px; border-left:3px solid var(--accent); color:var(--fg) }
+details.item { background:var(--panel); border:1px solid var(--line); border-radius:14px; margin-bottom:10px }
+details.item summary { list-style:none; cursor:pointer; padding:12px 14px; display:grid; grid-template-columns:auto 1fr; gap:2px 10px }
+details.item summary::-webkit-details-marker { display:none }
+.when { font:500 12px var(--mono); color:var(--muted) }
+.kind { font-size:12px; font-weight:700; color:var(--muted); justify-self:end }
+.kind.long { color:var(--accent) }
+.ttl { grid-column:1/-1; font-weight:700; font-size:15.5px; line-height:1.3 }
+.meta { grid-column:1/-1; display:flex; gap:6px; align-items:center; flex-wrap:wrap; font:500 11.5px var(--mono); color:var(--muted) }
+.chip { font:600 11px var(--sans); padding:2px 8px; border-radius:999px }
+.chip.ok { color:var(--ok); background:var(--okbg) } .chip.warn { color:var(--warn); background:var(--warnbg) }
+.chip.info { color:var(--info); background:var(--infobg) } .chip.muted { color:var(--muted); background:var(--soft) }
+details.item .body { padding:0 14px 14px; border-top:1px solid var(--line); min-width:0 }
+.body h3 { font-size:16px; margin:18px 0 6px } .body h4, .body h5 { font-size:14px; margin:14px 0 4px }
+.hook { background:var(--soft); border-radius:10px; padding:10px 12px; margin-top:12px }
+.src { font-size:13px }
+a { color:var(--accent) }
+.doc h2, .doc h3 { font-size:16px; margin:16px 0 6px }
+.doc h2:first-child { display:none }
+footer { margin-top:32px; font-size:12px; color:var(--muted) }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior:auto } }
+@media (min-width:640px) { .gallery { grid-template-columns:1fr 1fr 1fr } header.top h1 { font-size:32px } }
+</style>
+
+<div class="wrap">
+<header class="top">
+  <h1>AI <span>Made</span> Usable HQ</h1>
+  <p class="sub">@aimadeusable · Discover. Build. Automate. Ship. · Updated 2026-11-21</p>
+</header>
+<nav aria-label="Sections">
+  <a href="#next">Next steps</a><a href="#week">This week</a><a href="#scripts">Scripts</a><a href="#brand">Brand kit</a><a href="#voice">Voice</a><a href="#status">Status</a>
+</nav>
+
+<section id="next"><h2>Your next steps</h2>
+<div class="panel checks" id="checks">
+  <label><input type="checkbox" id="c1"><span>Record the 2-minute voice sample (script in <a href="#voice">Voice</a>)<br><span class="who">You · phone, quiet room</span></span></label>
+  <label><input type="checkbox" id="c2"><span>Create the Instant Voice Clone on elevenlabs.io, named <code>AI Made Usable - Creator</code><br><span class="who">You · 5 minutes</span></span></label>
+  <label><input type="checkbox" id="c3"><span>Upload logo, banner, watermark and paste the About + keywords in YouTube Studio<br><span class="who">You · see <a href="#brand">Brand kit</a></span></span></label>
+  <label><input type="checkbox" id="c4"><span>Read and approve this week's scripts (or tell Claude what to change)<br><span class="who">You · see <a href="#scripts">Scripts</a></span></span></label>
+  <label><input type="checkbox" id="c5"><span>Record the Tuesday test in ChatGPT, Claude and Gemini (protocol inside SWAI-L001)<br><span class="who">You · by Monday</span></span></label>
+  <label><input type="checkbox" id="c6"><span>Send recordings to Claude for editing, thumbnails and voiceovers<br><span class="who">You → Claude</span></span></label>
+</div>
+<p class="hint">Ticks are saved on this device only.</p>
+</section>
+
+<section id="week"><h2>This week</h2><div class="panel doc"><h2>Publishing calendar</h2>
+<p>Week 1 (launch) planned 2026-11-21, revised the same day to the AI Showdown set (all 7 Shorts cut from SWAI-L001, at the creator's request). Originally planned at the creator's request ("lets create a video that we published on tuesday but we create shorts multiple so that we start"). Shorts time is not decided (DEC-012/T5). Suggested default: 18:30 IST on non-Tuesday days.</p>
+<p>Cadence (DEC-002): Short every day · Long-form every Tuesday 19:30 IST (Shorts time not set yet). Only items with approval status <code>APPROVED</code> may be placed in a slot as <code>SCHEDULED</code>. Publishing itself needs the creator's go-ahead (CLAUDE.md §5).</p>
+<div class="tbl"><table><thead><tr><th>Date</th><th>Day</th><th>Slot</th><th>Content ID</th><th>Title</th><th>State</th></tr></thead><tbody><tr><td>2026-11-22</td><td>Sun</td><td>Short</td><td>SWAI-S001</td><td>I'm Making ChatGPT, Claude &amp; Gemini Fight (teaser)</td><td>PLANNED</td></tr><tr><td>2026-11-23</td><td>Mon</td><td>Short</td><td>SWAI-S002</td><td>I Asked 3 AIs to Email My Boss (Round 1)</td><td>PLANNED</td></tr><tr><td>2026-11-24</td><td>Tue</td><td><strong>Long 19:30 IST</strong></td><td><strong>SWAI-L001</strong></td><td><strong>I Made ChatGPT, Claude &amp; Gemini Compete in 5 Real Tasks</strong> (The AI Showdown, ~8–9 min)</td><td>PLANNED</td></tr><tr><td>2026-11-24</td><td>Tue</td><td>Short (after L001)</td><td>SWAI-S003</td><td>I Hid 3 Problems in a Spreadsheet. Which AI Found Them? (Round 3)</td><td>PLANNED</td></tr><tr><td>2026-11-25</td><td>Wed</td><td>Short</td><td>SWAI-S006</td><td>AI Links Are Like Gym Memberships (Round 2)</td><td>PLANNED</td></tr><tr><td>2026-11-26</td><td>Thu</td><td>Short</td><td>SWAI-S008</td><td>Can AI Build an App From One Prompt? (Round 4)</td><td>PLANNED</td></tr><tr><td>2026-11-27</td><td>Fri</td><td>Short</td><td>SWAI-S009</td><td>I Answered Wrong On Purpose. Here's How 3 AIs Reacted (Round 5)</td><td>PLANNED</td></tr><tr><td>2026-11-28</td><td>Sat</td><td>Short</td><td>SWAI-S010</td><td>Which AI for What? (After Testing All 3)</td><td>PLANNED</td></tr></tbody></table></div>
+<p>States: PLANNED (slot reserved) · SCHEDULED (approved, set in Studio) · PUBLISHED · MISSED (with reason).</p>
+<p><strong>Production dependency:</strong> the SWAI-L001 test must be recorded <strong>Sunday 2026-11-22</strong> so Monday's Short (Round 1) can ship. S001 (Sunday) needs only a voice track.</p></div></section>
+
+<section id="scripts"><h2>Scripts</h2><details class="item" id="swai-s001">
+<summary><span class="when">Sun 22 Nov</span><span class="kind ">Short</span>
+<span class="ttl">I&#x27;m Making ChatGPT, Claude &amp; Gemini Fight</span>
+<span class="meta">SWAI-S001 <span class="chip muted">EDITED</span> <span class="chip warn">PROPOSED</span></span></summary>
+<div class="body"><p class="hook"><strong>Hook:</strong> I'm making ChatGPT, Claude and Gemini fight. Over a spreadsheet.</p><blockquote><p><strong>v2 (2026-11-21):</strong> part of the <strong>AI Showdown</strong> set. All 7 launch-week Shorts come from SWAI-L001, at the creator's request ("us video ke 7 shorts… interesting, casual, AI jokes"). <code>{ }</code> = fill in from the real recording only. Jokes describe what happened on screen, never claims about the companies.</p><p><strong>Narration:</strong> the creator's ElevenLabs voice clone (DEC-020, faceless). <strong>Upload: Altered content = Yes.</strong></p></blockquote>
+<h3>Research</h3>
+<ul><li>Source video: SWAI-L001 (The AI Showdown). Test protocol, dataset and answer key: <code>content/long/SWAI-L001-chatgpt-vs-claude-vs-gemini.md</code>, <code>content/long/assets/SWAI-L001/</code>.</li><li>Format evidence: <code>research/competitors/snapshots/2026-11-21-l001-format-research.md</code>.</li><li><strong>Needs:</strong> Nothing from the test. Claude builds it fully from motion graphics + the voice track. <strong>Publishable Sunday.</strong></li></ul>
+<h3>Competitor references</h3>
+<ul><li>Greg Isenberg / Riley Brown Shorts (473K–846K): one concrete result per Short wins (Phase 1 scan).</li></ul>
+<h3>Script (45–60 s: 102 written words, plus the real results in { } ≈ 100–120 spoken words)</h3>
+<div class="tbl"><table><thead><tr><th>Time</th><th>Narration</th><th>On screen</th></tr></thead><tbody><tr><td>0–3 s</td><td>I'm making ChatGPT, Claude and Gemini fight. Over a spreadsheet.</td><td>Three contestant tiles slam in. "THE AI SHOWDOWN" + drum roll</td></tr><tr><td>3–18 s</td><td>Three AIs, five real tasks, and a spreadsheet where I hid three problems myself. So nobody gets to bluff. Not even Gemini, who has the entire internet at home. And I'm scoring them out of fifty, like a very nerdy game show.</td><td>Spreadsheet with three 🔒 padlocks</td></tr><tr><td>18–40 s</td><td>Round one, an email to my boss. Round two, sources I'll actually click. Round three, the hidden problems. Then they build me an app, and teach me something like I'm fifteen.</td><td>Five round cards flip in one by one, quick cuts</td></tr><tr><td>40–55 s</td><td>Who wins? My money's on… actually, I'm not telling you. Comment your guess. The loser gets roasted on Tuesday.</td><td>Scoreboard with ??? + "Your guess 👇"</td></tr></tbody></table></div>
+<h3>Visual direction</h3>
+<p>AI Showdown package (contestant tiles, round card, ✓/✗ stamps, mini scoreboard), 1080×1920. Captions burned in (Inter Black, mint key word), kept out of the bottom 20% and right 15%. SFX: ding, buzzer, drum roll. Brand tag "AI Made Usable".</p>
+<h3>Packaging</h3>
+<ul><li>Title: I'm Making ChatGPT, Claude &amp; Gemini Fight</li><li>Description: 3 AIs, 5 real tasks, answers I hid myself. Full AI Showdown Tuesday. Guess the winner 👇 #ChatGPT #Claude #Gemini</li><li>Pinned comment: "Who wins? ChatGPT, Claude or Gemini? 👇"</li></ul>
+<h3>Performance</h3>
+<div class="tbl"><table><thead><tr><th>Pulled</th><th>Window</th><th>Views</th><th>Engaged views</th><th>Avg % viewed</th><th>Likes</th><th>Comments</th><th>Shares</th><th>Subs + / −</th></tr></thead><tbody></tbody></table></div>
+<h3>Lessons learned</h3>
+<ul><li>2026-11-21 · Rendered with <code>production/shorts/render_short.py</code> + clone voice take 1 (40.6 s, a little under the 45 s target). Scenes are scaled proportionally to the voice, not word-aligned. Awaiting the creator's listen + approval before upload.</li></ul>
+<p class="src"><a href="https://github.com/iayushpathak-dev/youtube/blob/claude/adoring-pasteur-aywagg/content/shorts/SWAI-S001-showdown-teaser.md" target="_blank" rel="noopener">Open on GitHub ↗</a></p></div></details><details class="item" id="swai-s002">
+<summary><span class="when">Mon 23 Nov</span><span class="kind ">Short</span>
+<span class="ttl">I Asked 3 AIs to Email My Boss</span>
+<span class="meta">SWAI-S002 <span class="chip info">SCRIPTED</span> <span class="chip warn">PROPOSED</span></span></summary>
+<div class="body"><p class="hook"><strong>Hook:</strong> I gave three AIs my messy notes and one rule: keep every fact, add nothing.</p><blockquote><p><strong>v2 (2026-11-21):</strong> part of the <strong>AI Showdown</strong> set. All 7 launch-week Shorts come from SWAI-L001, at the creator's request ("us video ke 7 shorts… interesting, casual, AI jokes"). <code>{ }</code> = fill in from the real recording only. Jokes describe what happened on screen, never claims about the companies.</p><p><strong>Narration:</strong> the creator's ElevenLabs voice clone (DEC-020, faceless). <strong>Upload: Altered content = Yes.</strong></p></blockquote>
+<h3>Research</h3>
+<ul><li>Source video: SWAI-L001 (The AI Showdown). Test protocol, dataset and answer key: <code>content/long/SWAI-L001-chatgpt-vs-claude-vs-gemini.md</code>, <code>content/long/assets/SWAI-L001/</code>.</li><li>Format evidence: <code>research/competitors/snapshots/2026-11-21-l001-format-research.md</code>.</li><li><strong>Needs:</strong> Round 1 footage + scores. <strong>The test must be recorded on Sunday.</strong></li></ul>
+<h3>Competitor references</h3>
+<ul><li>Greg Isenberg / Riley Brown Shorts (473K–846K): one concrete result per Short wins (Phase 1 scan).</li></ul>
+<h3>Script (45–60 s: 79 written words, plus the real results in { } ≈ 100–120 spoken words)</h3>
+<div class="tbl"><table><thead><tr><th>Time</th><th>Narration</th><th>On screen</th></tr></thead><tbody><tr><td>0–3 s</td><td>I gave three AIs my messy notes and one rule: keep every fact. Add nothing.</td><td>Messy notes, highlighted "6 FACTS"</td></tr><tr><td>3–15 s</td><td>Launch delayed, two bugs, new date, budget, and one extra test day. Six facts. Simple, right?</td><td>Facts appear as six chips</td></tr><tr><td>15–42 s</td><td>{ChatGPT result}. {Claude result}. {Gemini result}. {Pick the real joke: "It added a team lunch. Nobody invited it." / "I asked for an email. It wrote a LinkedIn post." / "Honestly, I'd send this one."}</td><td>Three outputs side by side, chips tick ✓/✗, SFX ding/buzzer</td></tr><tr><td>42–55 s</td><td>Round one goes to {winner}. Four more rounds, full showdown on the channel.</td><td>Mini scoreboard + "Full video ↗"</td></tr></tbody></table></div>
+<h3>Visual direction</h3>
+<p>AI Showdown package (contestant tiles, round card, ✓/✗ stamps, mini scoreboard), 1080×1920. Captions burned in (Inter Black, mint key word), kept out of the bottom 20% and right 15%. SFX: ding, buzzer, drum roll. Brand tag "AI Made Usable".</p>
+<h3>Packaging</h3>
+<ul><li>Title: I Asked 3 AIs to Email My Boss</li><li>Description: Round 1 of the AI Showdown: 6 facts, 3 AIs. #ChatGPT #Claude #Gemini #productivity</li><li>Related video: SWAI-L001 (after it publishes)</li></ul>
+<h3>Performance</h3>
+<div class="tbl"><table><thead><tr><th>Pulled</th><th>Window</th><th>Views</th><th>Engaged views</th><th>Avg % viewed</th><th>Likes</th><th>Comments</th><th>Shares</th><th>Subs + / −</th></tr></thead><tbody></tbody></table></div>
+<h3>Lessons learned</h3>
+<p class="src"><a href="https://github.com/iayushpathak-dev/youtube/blob/claude/adoring-pasteur-aywagg/content/shorts/SWAI-S002-showdown-boss-email.md" target="_blank" rel="noopener">Open on GitHub ↗</a></p></div></details><details class="item" id="swai-l001">
+<summary><span class="when">Tue 24 Nov</span><span class="kind long">Long video</span>
+<span class="ttl">I Made ChatGPT, Claude &amp; Gemini Compete in 5 Real Tasks</span>
+<span class="meta">SWAI-L001 <span class="chip info">SCRIPTED</span> <span class="chip warn">PROPOSED</span></span></summary>
+<div class="body"><p class="hook"><strong>Hook:</strong> Three AIs. Five real tasks. One spreadsheet with answers I hid myself. Nobody gets to bluff. Welcome to the AI Showdown.</p><blockquote><p><strong>v2 (2026-11-21)</strong> at the creator's request: "not too long, not boring, interesting, casual, AI jokes, learning + fun". The format changed from a ~15-min straight comparison to an <strong>~8–9 min game show</strong>. The test protocol is unchanged (still verifiable). Research: <code>research/competitors/snapshots/2026-11-21-l001-format-research.md</code>. v1 is in git history.</p><p>Working assumptions: pillar/segments use Claude's recommended defaults (DEC-010/011 still PROPOSED).</p></blockquote>
+<h3>Research</h3>
+<ul><li>FACT · "I Tested AI…" challenge videos are the biggest format nearby: 5–10M views (Vlad and Chris, Sambucha, HopeScope). They lead with humour.</li><li>FACT · Comparison videos that worked are <strong>7–13 min</strong>: Parker Prompts "I Tested Gemini vs Claude vs ChatGPT So You Don't Have To" 211K at 8:51; "$20 plan" versions 267K–733K.</li><li>FACT · GPT-6 Astra (2026-09-03), Claude Opus 5.5 (2026-09-22), Gemini 4 (2026-09-30 → 11-18): three new flagships in under 3 months, so "which one?" is the question of the moment. Sources in <code>research/market/ai-landscape.md</code>.</li><li>Our angle: the <strong>game show</strong> (energy) + <strong>checkable answers</strong> (trust) + <strong>an engineer's quick verdict</strong> (credibility).</li><li>⚠️ Show each app's model picker on screen and name only the model actually used.</li></ul>
+<h3>Competitor references</h3>
+<ul><li>Parker Prompts: "I Tested Gemini vs Claude vs ChatGPT So You Don't Have To" (211K, 8:51): closest format, without humour or verifiable tasks.</li><li>Vlad and Chris: "I Tested AI Experiments" (8.9M): energy and reactions.</li><li>Jeff Su: "When to use ChatGPT, Gemini, and Claude" (Short, 234K): the decision-card payoff.</li></ul>
+<h3>The game (test protocol: unchanged, keeps it honest)</h3>
+<p><strong>Rules (on screen as "The Rulebook"):</strong> same prompt word-for-word · fresh chat · the model each app gives on your plan (show the picker) · max 1 follow-up, the same for all · no re-runs, no editing · score each round 0–10 with the rubric.</p>
+<div class="tbl"><table><thead><tr><th>Round</th><th>Name on screen</th><th>Exact prompt (copy-paste)</th><th>Scoring (0–10)</th></tr></thead><tbody><tr><td>1</td><td><strong>The Boss Email</strong></td><td><code>Turn these messy notes into a short, professional update email to my manager. Keep every fact, don't add any. Notes: launch moved from 3 Dec to 10 Dec because payment testing found 2 bugs; both fixed, retesting Thursday; marketing needs new date by Friday; budget unchanged; need approval for 1 extra QA day (₹8,000).</code></td><td>4 = all 6 facts, 3 = invents nothing, 3 = ready to send</td></tr><tr><td>2</td><td><strong>Trust Me Bro (Sources)</strong></td><td><code>Compare 3 laptops under ₹70,000 that a college student in India can buy right now. Give a table with price, battery life, weight, and a link to a source for each.</code></td><td>4 = links open and match (click all), 3 = plausible current prices, 3 = useful pick. −2 per dead/wrong link</td></tr><tr><td>3</td><td><strong>The Hidden Problems</strong></td><td>Upload <code>assets/SWAI-L001/test-data-sales.csv</code>, then: <code>I run a small shop. Find the 3 most important insights in this sales data and show one chart.</code></td><td>3 per planted insight (weekend +66%, East −52%, Headphones 22.8% returns, see <code>answer-key.md</code>), +1 correct chart, −1 per invented number</td></tr><tr><td>4</td><td><strong>Build Me an App</strong></td><td><code>Build a habit tracker as a single HTML file: add habits, tick off each day of the current week, show a streak count, and save in the browser so it remains after refresh.</code></td><td>4 = runs first try, 4 = features (add, tick, streak, saves), 2 = looks clean. Allowed follow-up: "fix any bugs"</td></tr><tr><td>5</td><td><strong>Teach Me Like I'm 15</strong></td><td><code>Explain how AI agents work to a 15-year-old in under 150 words. Then give me a 3-question quiz, one question at a time, and wait for my answer before the next.</code></td><td>4 = accurate + simple, 3 = word limit, 3 = quizzes one at a time and grades. Get one answer wrong on purpose</td></tr></tbody></table></div>
+<p><strong>Scoreboard (fill in while recording):</strong></p>
+<div class="tbl"><table><thead><tr><th>Round</th><th>ChatGPT</th><th>Claude</th><th>Gemini</th><th>Funniest moment (timestamp)</th></tr></thead><tbody><tr><td>1 Boss Email</td><td></td><td></td><td></td><td></td></tr><tr><td>2 Sources</td><td></td><td></td><td></td><td></td></tr><tr><td>3 Hidden Problems</td><td></td><td></td><td></td><td></td></tr><tr><td>4 Build an App</td><td></td><td></td><td></td><td></td></tr><tr><td>5 Teach Me</td><td></td><td></td><td></td><td></td></tr><tr><td><strong>Total /50</strong></td><td></td><td></td><td></td><td></td></tr></tbody></table></div>
+<h3>Script (creator's voice, casual: ~550 fixed words + ~400–500 words of real results ≈ 8–9 min with demo time)</h3>
+<p>Narrated by the creator's <strong>voice clone</strong> (DEC-020, faceless). Tone: talking to a friend, quick, a bit cheeky. Jokes are about what the AIs actually did on screen, never claims about the companies. <code>{ }</code> = fill in from the real recording only. <strong>[SFX]</strong> = sound effect. <strong>[MEME]</strong> = a reaction overlay (zoom-in, freeze-frame, emoji stamp, text pop) placed by Claude in the edit. No face on camera.</p>
+<p><strong>0:00 COLD OPEN (≈15 s)</strong> [The funniest real fail from the recording, 3–4 s, then freeze-frame + record-scratch SFX] "Yep. That's an AI, confidently doing {the fail}. Let me explain how we got here."</p>
+<p><strong>0:15 HOOK + INTRO (≈35 s)</strong> [Game-show title card: "THE AI SHOWDOWN" · drum roll SFX] "Three AIs. Five real tasks. And one spreadsheet with answers I hid myself, so nobody gets to bluff. In this corner, ChatGPT: the famous one. Your uncle uses it. Your boss uses it. Your boss's uncle uses it. Claude: the polite one. It apologises so much I'm pretty sure it's Canadian. And Gemini: Google's one. It has the entire internet at home. I'm a software engineer, and I've spent more time arguing with AI than with my family. Let's go."</p>
+<p><strong>0:50 THE RULEBOOK (≈20 s)</strong> [Rules card, fast] "Rules. Same prompt. Fresh chat. One follow-up, max. No re-runs, no editing. If an AI embarrasses itself, it stays in the video. That's the deal."</p>
+<p><strong>1:10 ROUND 1: THE BOSS EMAIL (≈75 s)</strong> [Messy notes on screen → three outputs side by side, the 6 facts tick ✓/✗] "Round one: the thing everyone actually uses AI for, turning chaos into an email your manager won't laugh at. Six facts. Keep all six. Add nothing. {per AI result}. Joke bank, pick what really happened:</p>
+<ul><li>adds a fact → "I said don't add anything. It added {thing}. Nobody invited it."</li><li>way too long → "I asked for an email. It wrote a LinkedIn post."</li><li>perfect → "Honestly? I'd send this. My manager would think I'm finally organised."</li></ul>
+<p>Scores: {x / y / z}. [SFX ding]"</p>
+<p><strong>2:25 ROUND 2: TRUST ME BRO (≈90 s)</strong> [Click every link on camera. ✓ / ✗ stamps] "Round two. I asked for laptops under seventy thousand rupees, with sources. And I'm going to click every single link, because AI links are like gym memberships: they look great until you actually use them. {per AI: how many links worked, any wrong models/prices}. Joke bank:</p>
+<ul><li>dead link → "This link goes nowhere. Like my New Year's resolutions."</li><li>wrong price → "That price is from a parallel universe. Lovely place. Doesn't ship to India."</li><li>all links work → "All links work. I'm genuinely shocked. Someone write this down."</li></ul>
+<p>The lesson, and I mean this: a confident answer is not a checked answer. Scores: {x / y / z}."</p>
+<p><strong>3:55 ROUND 3: THE HIDDEN PROBLEMS (≈100 s)</strong> [CSV scrolls; three "🔒" padlocks] "Round three, my favourite. I made a sales spreadsheet for a small shop and hid three problems inside it. I know the exact answers. No bluffing possible. [Each AI's insights + chart, padlocks unlock when found] {who found what, any invented numbers}. Joke bank:</p>
+<ul><li>invents a number → "That number doesn't exist anywhere in the file. That's not analysis, that's fan fiction."</li><li>finds all three → "All three. My accountant just got nervous."</li><li>finds none → "It looked at three months of data and said 'sales happened'. Thanks."</li></ul>
+<p>[Reveal card] The answers: weekends sell sixty-six percent more, the East region dropped fifty-two percent, and headphones get returned almost a quarter of the time. Scores: {x / y / z}."</p>
+<p><strong>5:35 ROUND 4: BUILD ME AN APP (≈85 s)</strong> [Open each HTML file, click everything, refresh the page: the moment of truth] "Round four. No coding. One prompt. Build me a habit tracker that remembers my habits after I refresh the page. {per AI: runs first try? features? needed the fix?} Joke bank:</p>
+<ul><li>crashes → "It built an app with one feature: disappointment."</li><li>forgets after refresh → "It has the memory of a goldfish. A very well-designed goldfish."</li><li>works first try → "It works. It saves. I'm now tracking one habit: testing AI."</li></ul>
+<p>Engineer's verdict, ten seconds: {e.g. "fine for you, not for 10,000 customers, so get it reviewed before you sell it"}. Scores: {x / y / z}."</p>
+<p><strong>7:00 ROUND 5: TEACH ME LIKE I'M 15 (≈55 s)</strong> [Live quiz screen recording. Creator types one wrong answer on purpose. MEME overlay on the AI's response] "Last round. Explain AI agents to a fifteen-year-old, then quiz me. I'm getting one wrong on purpose. {how each handled it: one question at a time? graded fairly? under 150 words?} Joke bank:</p>
+<ul><li>gentle correction → "It corrected me more kindly than any teacher I ever had."</li><li>dumps all questions at once → "I asked for one question at a time. It gave me the whole exam. Board exam flashbacks."</li></ul>
+<p>Scores: {x / y / z}."</p>
+<p><strong>7:55 FINAL SCOREBOARD (≈40 s)</strong> [Animated scoreboard + drum roll + confetti SFX] "Final scores, out of fifty: ChatGPT {n}, Claude {n}, Gemini {n}. The winner gets… absolutely nothing. It's software. But here's what actually matters: [Decision card] for {task} use {AI}, for {task} use {AI}, for {task} use {AI}. And the biggest surprise: {surprise}."</p>
+<p><strong>8:35 OUTRO (≈20 s)</strong> "So, which AI is best? Honestly, the one you double-check. I'm AI Made Usable: every week I test AI on real stuff so you don't waste your time. Comment which task I should throw at them next. And subscribe, before Gemini answers for you."</p>
+<h3>Visual direction &amp; editing notes</h3>
+<ul><li><strong>Game-show package (Claude builds it):</strong> "THE AI SHOWDOWN" title card, contestant cards (name tiles, no company logos needed), round title cards, ✓/✗ stamps, padlock unlocks, animated scoreboard, decision card, "AI Made Usable" lower third.</li><li><strong>Pace:</strong> cut every pause. Speed-ramp the AI "thinking". No shot longer than ~4 s without a change (zoom, highlight, stamp, cut to face).</li><li><strong>No face cam (DEC-020).</strong> Energy comes from motion graphics, MEME overlays (freeze-frame, zoom punch-in, emoji stamps), SFX and fast cuts. The intro and verdicts use full-screen graphic cards.</li><li><strong>SFX (royalty-free):</strong> drum roll, ding, buzzer, record scratch, confetti. Low background music, ducked under the voice.</li><li><strong>Screen hygiene:</strong> same zoom (125%) in all apps. Hide email, avatar and chat history.</li><li><strong>Honesty:</strong> never re-run a task for a better result. Fails stay in, they're the comedy.</li><li><strong>Audio:</strong> the voice clone via the ElevenLabs connector (Claude generates it per section), then mixed at −14 LUFS with music + SFX.</li></ul>
+<h3>Packaging</h3>
+<p><strong>Title options (finalise after recording; must match what happened):</strong></p>
+<ol><li>⭐ <code>I Made ChatGPT, Claude &amp; Gemini Compete in 5 Real Tasks</code> (54)</li><li><code>ChatGPT vs Claude vs Gemini: The AI Showdown (5 Real Tasks)</code> (58)</li><li><code>{Loser} Embarrassed Itself. ChatGPT vs Claude vs Gemini</code> (only if true)</li></ol>
+<p><strong>Thumbnail:</strong> A (ready): <code>assets/SWAI-L001/thumbnail-a.png</code>. Faceless channel (DEC-020): variant B uses the funniest real AI fail screenshot in the slot instead of a face.</p>
+<p><strong>Description:</strong></p>
+<div class="code"><button class="copy" type="button">Copy</button><pre>I made ChatGPT, Claude and Gemini compete in 5 real tasks: a boss email, research with sources, a spreadsheet with hidden answers, building an app, and teaching me something. Same prompts, no re-runs, nothing edited.
+
+Models used: {fill in model + plan per app}
+
+⏱ Chapters
+0:00 That moment
+0:15 Meet the contestants
+0:50 The rules
+1:10 Round 1: The Boss Email
+2:25 Round 2: Trust Me Bro (sources)
+3:55 Round 3: The Hidden Problems
+5:35 Round 4: Build Me an App
+7:00 Round 5: Teach Me Like I&#x27;m 15
+7:55 Final scores + which AI for what
+
+AI Made Usable: Discover. Build. Automate. Ship.
+New videos every Tuesday.
+
+#ChatGPT #Claude #Gemini</pre></div>
+<p>(Update chapter times after the edit.)</p>
+<p><strong>Tags:</strong> ChatGPT vs Claude vs Gemini, AI showdown, which AI is best, GPT-6 Astra, Claude Opus 5.5, Gemini 4, AI test, AI for beginners, funny AI test, AI Made Usable</p>
+<h3>Shorts from this video (7)</h3>
+<p>SWAI-S001 teaser (Sun) · S002 Round 1 (Mon) · S003 Round 3 (Tue) · S006 Round 2 (Wed) · S008 Round 4 (Thu) · S009 Round 5 (Fri) · S010 final cheat sheet (Sat).</p>
+<h3>Publishing checklist</h3>
+<ul><li>☐ Script approved by the creator</li><li>☐ <strong>Creator screen-records the test on Sunday 11-22</strong> (laptop or phone screen recording, no face/mic), fills in the scoreboard, notes the funniest moments</li><li>☐ Claude fills in the <code>{ }</code> results, generates the narration with the voice clone, and the creator listens and approves</li><li>☐ Claude edits: package graphics, SFX, captions, chapters, thumbnail B</li><li>☐ AI disclosure: <strong>Altered content = Yes</strong> (cloned own voice, DEC-020)</li><li>☐ Upload + schedule <strong>Tuesday 2026-11-24, 19:30 IST</strong>. Title/thumbnail Test &amp; Compare A/B</li><li>☐ Pinned comment: "Which task should I throw at them next? 👇"</li></ul>
+<h3>Performance</h3>
+<div class="tbl"><table><thead><tr><th>Pulled</th><th>Window</th><th>Views</th><th>Watch time (h)</th><th>Avg view duration</th><th>Avg % viewed</th><th>Likes</th><th>Comments</th><th>Shares</th><th>Subs + / −</th><th>Top traffic sources</th></tr></thead><tbody></tbody></table></div>
+<h3>Lessons learned</h3>
+<p class="src"><a href="https://github.com/iayushpathak-dev/youtube/blob/claude/adoring-pasteur-aywagg/content/long/SWAI-L001-chatgpt-vs-claude-vs-gemini.md" target="_blank" rel="noopener">Open on GitHub ↗</a></p></div></details><details class="item" id="swai-s003">
+<summary><span class="when">Tue 24 Nov</span><span class="kind ">Short</span>
+<span class="ttl">I Hid 3 Problems in a Spreadsheet. Which AI Found Them?</span>
+<span class="meta">SWAI-S003 <span class="chip info">SCRIPTED</span> <span class="chip warn">PROPOSED</span></span></summary>
+<div class="body"><p class="hook"><strong>Hook:</strong> I hid three problems in this spreadsheet. Let's see which AI is actually paying attention.</p><blockquote><p><strong>v2 (2026-11-21):</strong> part of the <strong>AI Showdown</strong> set. All 7 launch-week Shorts come from SWAI-L001, at the creator's request ("us video ke 7 shorts… interesting, casual, AI jokes"). <code>{ }</code> = fill in from the real recording only. Jokes describe what happened on screen, never claims about the companies.</p><p><strong>Narration:</strong> the creator's ElevenLabs voice clone (DEC-020, faceless). <strong>Upload: Altered content = Yes.</strong></p></blockquote>
+<h3>Research</h3>
+<ul><li>Source video: SWAI-L001 (The AI Showdown). Test protocol, dataset and answer key: <code>content/long/SWAI-L001-chatgpt-vs-claude-vs-gemini.md</code>, <code>content/long/assets/SWAI-L001/</code>.</li><li>Format evidence: <code>research/competitors/snapshots/2026-11-21-l001-format-research.md</code>.</li><li><strong>Needs:</strong> Round 3 footage + scores. Publish <strong>after</strong> SWAI-L001 goes live on Tuesday.</li></ul>
+<h3>Competitor references</h3>
+<ul><li>Greg Isenberg / Riley Brown Shorts (473K–846K): one concrete result per Short wins (Phase 1 scan).</li></ul>
+<h3>Script (45–60 s: 86 written words, plus the real results in { } ≈ 100–120 spoken words)</h3>
+<div class="tbl"><table><thead><tr><th>Time</th><th>Narration</th><th>On screen</th></tr></thead><tbody><tr><td>0–3 s</td><td>I hid three problems in this spreadsheet. Let's see which AI is actually paying attention.</td><td>CSV + three 🔒</td></tr><tr><td>3–18 s</td><td>Weekend sales way up. One region quietly dying. And one product people keep sending back. I know the exact numbers, so no bluffing.</td><td>Padlocks wobble</td></tr><tr><td>18–45 s</td><td>{ChatGPT found…}. {Claude found…}. {Gemini found…}. {Real joke: "That number doesn't exist. That's not analysis, that's fan fiction." / "All three. My accountant just got nervous."}</td><td>Each AI's answer, padlocks unlock ✓ or stay 🔒</td></tr><tr><td>45–58 s</td><td>The answers: plus sixty-six percent on weekends, East down fifty-two, headphones returned almost a quarter of the time. Full showdown is live.</td><td>Reveal card + "Full video ↗"</td></tr></tbody></table></div>
+<h3>Visual direction</h3>
+<p>AI Showdown package (contestant tiles, round card, ✓/✗ stamps, mini scoreboard), 1080×1920. Captions burned in (Inter Black, mint key word), kept out of the bottom 20% and right 15%. SFX: ding, buzzer, drum roll. Brand tag "AI Made Usable".</p>
+<h3>Packaging</h3>
+<ul><li>Title: I Hid 3 Problems in a Spreadsheet. Which AI Found Them?</li><li>Description: Same file, same prompt: ChatGPT vs Claude vs Gemini. Full AI Showdown linked. #ChatGPT #Claude #Gemini #Excel</li><li>Related video: SWAI-L001 (required)</li></ul>
+<h3>Performance</h3>
+<div class="tbl"><table><thead><tr><th>Pulled</th><th>Window</th><th>Views</th><th>Engaged views</th><th>Avg % viewed</th><th>Likes</th><th>Comments</th><th>Shares</th><th>Subs + / −</th></tr></thead><tbody></tbody></table></div>
+<h3>Lessons learned</h3>
+<p class="src"><a href="https://github.com/iayushpathak-dev/youtube/blob/claude/adoring-pasteur-aywagg/content/shorts/SWAI-S003-showdown-hidden-problems.md" target="_blank" rel="noopener">Open on GitHub ↗</a></p></div></details><details class="item" id="swai-s006">
+<summary><span class="when">Wed 25 Nov</span><span class="kind ">Short</span>
+<span class="ttl">AI Links Are Like Gym Memberships</span>
+<span class="meta">SWAI-S006 <span class="chip info">SCRIPTED</span> <span class="chip warn">PROPOSED</span></span></summary>
+<div class="body"><p class="hook"><strong>Hook:</strong> AI links are like gym memberships. They look great until you actually use them.</p><blockquote><p><strong>v2 (2026-11-21):</strong> part of the <strong>AI Showdown</strong> set. All 7 launch-week Shorts come from SWAI-L001, at the creator's request ("us video ke 7 shorts… interesting, casual, AI jokes"). <code>{ }</code> = fill in from the real recording only. Jokes describe what happened on screen, never claims about the companies.</p><p><strong>Narration:</strong> the creator's ElevenLabs voice clone (DEC-020, faceless). <strong>Upload: Altered content = Yes.</strong></p></blockquote>
+<h3>Research</h3>
+<ul><li>Source video: SWAI-L001 (The AI Showdown). Test protocol, dataset and answer key: <code>content/long/SWAI-L001-chatgpt-vs-claude-vs-gemini.md</code>, <code>content/long/assets/SWAI-L001/</code>.</li><li>Format evidence: <code>research/competitors/snapshots/2026-11-21-l001-format-research.md</code>.</li><li><strong>Needs:</strong> Round 2 footage + link results. ⚠️ If every link worked, switch to the "I'm genuinely shocked" version. Never stage a broken link.</li></ul>
+<h3>Competitor references</h3>
+<ul><li>Greg Isenberg / Riley Brown Shorts (473K–846K): one concrete result per Short wins (Phase 1 scan).</li></ul>
+<h3>Script (45–60 s: 79 written words, plus the real results in { } ≈ 100–120 spoken words)</h3>
+<div class="tbl"><table><thead><tr><th>Time</th><th>Narration</th><th>On screen</th></tr></thead><tbody><tr><td>0–3 s</td><td>AI links are like gym memberships. They look great until you actually use them.</td><td>Text: "SOURCE? 🤔"</td></tr><tr><td>3–15 s</td><td>I asked three AIs for laptops under seventy thousand rupees, with sources. Then I clicked every single link.</td><td>Cursor clicking, page loads</td></tr><tr><td>15–42 s</td><td>{per AI: X of 3 links worked / wrong price / wrong model}. {Real joke: "This one goes nowhere. Like my New Year's resolutions." / "All links work. Someone write this down."}</td><td>✓/✗ stamps on each link</td></tr><tr><td>42–55 s</td><td>Five-second rule: open it, find the claim, check the date. Full showdown on the channel.</td><td>Three steps card + "Full video ↗"</td></tr></tbody></table></div>
+<h3>Visual direction</h3>
+<p>AI Showdown package (contestant tiles, round card, ✓/✗ stamps, mini scoreboard), 1080×1920. Captions burned in (Inter Black, mint key word), kept out of the bottom 20% and right 15%. SFX: ding, buzzer, drum roll. Brand tag "AI Made Usable".</p>
+<h3>Packaging</h3>
+<ul><li>Title: AI Links Are Like Gym Memberships</li><li>Description: Round 2 of the AI Showdown: I clicked every AI source. #AI #ChatGPT #Gemini #Claude</li><li>Related video: SWAI-L001</li></ul>
+<h3>Performance</h3>
+<div class="tbl"><table><thead><tr><th>Pulled</th><th>Window</th><th>Views</th><th>Engaged views</th><th>Avg % viewed</th><th>Likes</th><th>Comments</th><th>Shares</th><th>Subs + / −</th></tr></thead><tbody></tbody></table></div>
+<h3>Lessons learned</h3>
+<p class="src"><a href="https://github.com/iayushpathak-dev/youtube/blob/claude/adoring-pasteur-aywagg/content/shorts/SWAI-S006-showdown-sources.md" target="_blank" rel="noopener">Open on GitHub ↗</a></p></div></details><details class="item" id="swai-s008">
+<summary><span class="when">Thu 26 Nov</span><span class="kind ">Short</span>
+<span class="ttl">Can AI Build an App From One Prompt?</span>
+<span class="meta">SWAI-S008 <span class="chip info">SCRIPTED</span> <span class="chip warn">PROPOSED</span></span></summary>
+<div class="body"><p class="hook"><strong>Hook:</strong> One prompt. No coding. Three AIs. Let's see whose app survives a page refresh.</p><blockquote><p><strong>v2 (2026-11-21):</strong> part of the <strong>AI Showdown</strong> set. All 7 launch-week Shorts come from SWAI-L001, at the creator's request ("us video ke 7 shorts… interesting, casual, AI jokes"). <code>{ }</code> = fill in from the real recording only. Jokes describe what happened on screen, never claims about the companies.</p><p><strong>Narration:</strong> the creator's ElevenLabs voice clone (DEC-020, faceless). <strong>Upload: Altered content = Yes.</strong></p></blockquote>
+<h3>Research</h3>
+<ul><li>Source video: SWAI-L001 (The AI Showdown). Test protocol, dataset and answer key: <code>content/long/SWAI-L001-chatgpt-vs-claude-vs-gemini.md</code>, <code>content/long/assets/SWAI-L001/</code>.</li><li>Format evidence: <code>research/competitors/snapshots/2026-11-21-l001-format-research.md</code>.</li><li><strong>Needs:</strong> Round 4 footage: open each app, click everything, refresh.</li></ul>
+<h3>Competitor references</h3>
+<ul><li>Greg Isenberg / Riley Brown Shorts (473K–846K): one concrete result per Short wins (Phase 1 scan).</li></ul>
+<h3>Script (45–60 s: 85 written words, plus the real results in { } ≈ 100–120 spoken words)</h3>
+<div class="tbl"><table><thead><tr><th>Time</th><th>Narration</th><th>On screen</th></tr></thead><tbody><tr><td>0–3 s</td><td>One prompt. No coding. Three AIs. Let's see whose app survives a page refresh.</td><td>Three blank browser windows</td></tr><tr><td>3–15 s</td><td>A habit tracker: add habits, tick the days, count my streak, and remember it all after I refresh.</td><td>Feature checklist</td></tr><tr><td>15–45 s</td><td>{ChatGPT app…}. {Claude app…}. {Gemini app…}. Refresh… {Real joke: "Memory of a goldfish. A very well-designed goldfish." / "It built an app with one feature: disappointment." / "It works. I'm now tracking one habit: testing AI."}</td><td>Clicking through each app, refresh moment with drum roll</td></tr><tr><td>45–58 s</td><td>As an engineer: great for you, not ready for ten thousand customers. Full showdown on the channel.</td><td>Verdict card + "Full video ↗"</td></tr></tbody></table></div>
+<h3>Visual direction</h3>
+<p>AI Showdown package (contestant tiles, round card, ✓/✗ stamps, mini scoreboard), 1080×1920. Captions burned in (Inter Black, mint key word), kept out of the bottom 20% and right 15%. SFX: ding, buzzer, drum roll. Brand tag "AI Made Usable".</p>
+<h3>Packaging</h3>
+<ul><li>Title: Can AI Build an App From One Prompt?</li><li>Description: Round 4 of the AI Showdown: ChatGPT vs Claude vs Gemini build a habit tracker. #AI #nocode #vibecoding</li><li>Related video: SWAI-L001</li></ul>
+<h3>Performance</h3>
+<div class="tbl"><table><thead><tr><th>Pulled</th><th>Window</th><th>Views</th><th>Engaged views</th><th>Avg % viewed</th><th>Likes</th><th>Comments</th><th>Shares</th><th>Subs + / −</th></tr></thead><tbody></tbody></table></div>
+<h3>Lessons learned</h3>
+<p class="src"><a href="https://github.com/iayushpathak-dev/youtube/blob/claude/adoring-pasteur-aywagg/content/shorts/SWAI-S008-showdown-build-app.md" target="_blank" rel="noopener">Open on GitHub ↗</a></p></div></details><details class="item" id="swai-s009">
+<summary><span class="when">Fri 27 Nov</span><span class="kind ">Short</span>
+<span class="ttl">I Answered Wrong On Purpose. Here&#x27;s How 3 AIs Reacted</span>
+<span class="meta">SWAI-S009 <span class="chip info">SCRIPTED</span> <span class="chip warn">PROPOSED</span></span></summary>
+<div class="body"><p class="hook"><strong>Hook:</strong> I answered a quiz wrong on purpose, just to see how three AIs would react.</p><blockquote><p><strong>v2 (2026-11-21):</strong> part of the <strong>AI Showdown</strong> set. All 7 launch-week Shorts come from SWAI-L001, at the creator's request ("us video ke 7 shorts… interesting, casual, AI jokes"). <code>{ }</code> = fill in from the real recording only. Jokes describe what happened on screen, never claims about the companies.</p><p><strong>Narration:</strong> the creator's ElevenLabs voice clone (DEC-020, faceless). <strong>Upload: Altered content = Yes.</strong></p></blockquote>
+<h3>Research</h3>
+<ul><li>Source video: SWAI-L001 (The AI Showdown). Test protocol, dataset and answer key: <code>content/long/SWAI-L001-chatgpt-vs-claude-vs-gemini.md</code>, <code>content/long/assets/SWAI-L001/</code>.</li><li>Format evidence: <code>research/competitors/snapshots/2026-11-21-l001-format-research.md</code>.</li><li><strong>Needs:</strong> Round 5 screen recording.</li></ul>
+<h3>Competitor references</h3>
+<ul><li>Greg Isenberg / Riley Brown Shorts (473K–846K): one concrete result per Short wins (Phase 1 scan).</li></ul>
+<h3>Script (45–60 s: 86 written words, plus the real results in { } ≈ 100–120 spoken words)</h3>
+<div class="tbl"><table><thead><tr><th>Time</th><th>Narration</th><th>On screen</th></tr></thead><tbody><tr><td>0–3 s</td><td>I answered a quiz wrong on purpose, just to see how three AIs would react.</td><td>Contestant tiles + "I did it on purpose 😈" text pop</td></tr><tr><td>3–15 s</td><td>I asked each one to explain AI agents like I'm fifteen, then quiz me. One question at a time.</td><td>Prompt on screen</td></tr><tr><td>15–45 s</td><td>{per AI: handled it / dumped the whole exam / corrected kindly}. {Real joke: "Nicer to me than any teacher I ever had." / "One question at a time, I said. It gave me the whole board exam."}</td><td>Quiz screen clips + MEME overlays</td></tr><tr><td>45–58 s</td><td>Use AI as a tutor, not an answer machine. Full showdown on the channel.</td><td>"Tutor mode" prompt card + "Full video ↗"</td></tr></tbody></table></div>
+<h3>Visual direction</h3>
+<p>AI Showdown package (contestant tiles, round card, ✓/✗ stamps, mini scoreboard), 1080×1920. Captions burned in (Inter Black, mint key word), kept out of the bottom 20% and right 15%. SFX: ding, buzzer, drum roll. Brand tag "AI Made Usable".</p>
+<h3>Packaging</h3>
+<ul><li>Title: I Answered Wrong On Purpose. Here's How 3 AIs Reacted</li><li>Description: Round 5 of the AI Showdown: AI as your tutor. #studytips #AI #students</li><li>Related video: SWAI-L001</li></ul>
+<h3>Performance</h3>
+<div class="tbl"><table><thead><tr><th>Pulled</th><th>Window</th><th>Views</th><th>Engaged views</th><th>Avg % viewed</th><th>Likes</th><th>Comments</th><th>Shares</th><th>Subs + / −</th></tr></thead><tbody></tbody></table></div>
+<h3>Lessons learned</h3>
+<p class="src"><a href="https://github.com/iayushpathak-dev/youtube/blob/claude/adoring-pasteur-aywagg/content/shorts/SWAI-S009-showdown-teach-me.md" target="_blank" rel="noopener">Open on GitHub ↗</a></p></div></details><details class="item" id="swai-s010">
+<summary><span class="when">Sat 28 Nov</span><span class="kind ">Short</span>
+<span class="ttl">Which AI for What? (After Testing All 3)</span>
+<span class="meta">SWAI-S010 <span class="chip info">SCRIPTED</span> <span class="chip warn">PROPOSED</span></span></summary>
+<div class="body"><p class="hook"><strong>Hook:</strong> I tested ChatGPT, Claude and Gemini on five real tasks. Here's the cheat sheet, so you don't have to.</p><blockquote><p><strong>v2 (2026-11-21):</strong> part of the <strong>AI Showdown</strong> set. All 7 launch-week Shorts come from SWAI-L001, at the creator's request ("us video ke 7 shorts… interesting, casual, AI jokes"). <code>{ }</code> = fill in from the real recording only. Jokes describe what happened on screen, never claims about the companies.</p><p><strong>Narration:</strong> the creator's ElevenLabs voice clone (DEC-020, faceless). <strong>Upload: Altered content = Yes.</strong></p></blockquote>
+<h3>Research</h3>
+<ul><li>Source video: SWAI-L001 (The AI Showdown). Test protocol, dataset and answer key: <code>content/long/SWAI-L001-chatgpt-vs-claude-vs-gemini.md</code>, <code>content/long/assets/SWAI-L001/</code>.</li><li>Format evidence: <code>research/competitors/snapshots/2026-11-21-l001-format-research.md</code>.</li><li><strong>Needs:</strong> Final scoreboard + decision card from SWAI-L001.</li></ul>
+<h3>Competitor references</h3>
+<ul><li>Greg Isenberg / Riley Brown Shorts (473K–846K): one concrete result per Short wins (Phase 1 scan).</li></ul>
+<h3>Script (45–60 s: 67 written words, plus the real results in { } ≈ 100–120 spoken words)</h3>
+<div class="tbl"><table><thead><tr><th>Time</th><th>Narration</th><th>On screen</th></tr></thead><tbody><tr><td>0–3 s</td><td>I tested ChatGPT, Claude and Gemini on five real tasks. Here's the cheat sheet.</td><td>"CHEAT SHEET" card</td></tr><tr><td>3–35 s</td><td>For {task}, use {AI}. For {task}, use {AI}. For {task}, use {AI}. And for anything with sources: {AI}, but click the links anyway.</td><td>Decision card builds line by line</td></tr><tr><td>35–50 s</td><td>Final score: ChatGPT {n}, Claude {n}, Gemini {n}. Winner gets nothing. It's software.</td><td>Scoreboard + confetti</td></tr><tr><td>50–58 s</td><td>And the one I actually open every day? {honest answer}. Screenshot this. Full showdown on the channel.</td><td>"Save this 📌" + "Full video ↗"</td></tr></tbody></table></div>
+<h3>Visual direction</h3>
+<p>AI Showdown package (contestant tiles, round card, ✓/✗ stamps, mini scoreboard), 1080×1920. Captions burned in (Inter Black, mint key word), kept out of the bottom 20% and right 15%. SFX: ding, buzzer, drum roll. Brand tag "AI Made Usable".</p>
+<h3>Packaging</h3>
+<ul><li>Title: Which AI for What? (After Testing All 3)</li><li>Description: The AI Showdown cheat sheet: ChatGPT vs Claude vs Gemini, based on 5 real tasks. #ChatGPT #Claude #Gemini #AItips</li><li>Related video: SWAI-L001 (required)</li></ul>
+<h3>Performance</h3>
+<div class="tbl"><table><thead><tr><th>Pulled</th><th>Window</th><th>Views</th><th>Engaged views</th><th>Avg % viewed</th><th>Likes</th><th>Comments</th><th>Shares</th><th>Subs + / −</th></tr></thead><tbody></tbody></table></div>
+<h3>Lessons learned</h3>
+<p class="src"><a href="https://github.com/iayushpathak-dev/youtube/blob/claude/adoring-pasteur-aywagg/content/shorts/SWAI-S010-showdown-cheat-sheet.md" target="_blank" rel="noopener">Open on GitHub ↗</a></p></div></details></section>
+
+<section id="brand"><h2>Brand kit</h2>
+<div class="panel">
+<div class="gallery">
+  <figure><img class="round" src="assets/logo.png" alt="AI Made Usable logo: green arrow with two sparks"><figcaption>Profile picture · 800×800</figcaption></figure>
+  <figure><img class="round" src="assets/watermark.png" alt="Round video watermark"><figcaption>Video watermark · 300×300</figcaption></figure>
+  <figure class="wide"><img src="assets/banner.png" alt="Channel banner: AI Made Usable"><figcaption>Banner · 2560×1440</figcaption></figure>
+</div>
+<p class="hint">To save an image on your phone: open it, then long-press → Save image.</p>
+<h3>About description</h3>
+<div class="code"><button class="copy" type="button">Copy</button><pre>Discover. Build. Automate. Ship.
+
+AI is changing the way we learn, work and create. At AI Made Usable, we show you how to actually use it in everyday life.
+
+Whether you&#x27;re a student, working professional, founder, creator or developer, you&#x27;ll find practical ways to make AI work for you.
+
+We dive into tools like ChatGPT, Claude, Gemini and more. We build apps and AI agents, experiment with automation and put AI to work on real-world problems.
+
+Expect practical tutorials, useful tools, real experiments and honest takes on what works, what doesn&#x27;t and what we&#x27;ve learned along the way.
+
+No hype. No unrealistic promises. Just useful AI, explored and put into action.
+
+New videos every Tuesday. Shorts daily.</pre></div>
+<h3>Channel keywords</h3>
+<div class="code"><button class="copy" type="button">Copy</button><pre>AI tools, how to use AI, AI agents, AI automation, build with AI, no code AI, Claude, ChatGPT, Gemini, vibe coding, AI for business, AI productivity, learn AI, AI for beginners, AI Made Usable</pre></div>
+<h3>Where it goes in YouTube Studio</h3>
+<ol><li><strong>Customization → Basic info:</strong> Name <code>AI Made Usable</code>, paste the description.</li>
+<li><strong>Customization → Profile:</strong> Picture = logo, Banner image = banner.</li>
+<li><strong>Customization → Branding:</strong> Video watermark, display time "Entire video".</li>
+<li><strong>Settings → Channel:</strong> paste the keywords. Then <strong>Publish</strong>.</li></ol>
+</div></section>
+
+<section id="voice"><h2>Voice</h2><div class="panel doc"><h2>Creator voice clone (Shorts narration)</h2>
+<p>Decision: DEC-008 + DEC-013 (b). The creator asked on 2026-11-21: "so lets set up a ai voice tool jo meri voice use krega".</p>
+<h3>Setup</h3>
+<div class="tbl"><table><thead><tr><th>Item</th><th>Value</th></tr></thead><tbody><tr><td>Provider</td><td><strong>ElevenLabs</strong>: Instant Voice Cloning, API, commercial licence</td></tr><tr><td>Plan</td><td>Starter (≈ US$6/month, ~30k credits, cloning + commercial rights per third-party guides, Nov 2026). <strong>Verify the price at elevenlabs.io/pricing before paying.</strong></td></tr><tr><td>API host</td><td><code>api.elevenlabs.io</code>, header <code>xi-api-key</code></td></tr><tr><td>Key storage</td><td>Environment network secret (saved via the secure form). <strong>Never in this repo.</strong></td></tr><tr><td>Voice name</td><td><code>AI Made Usable - Creator</code> (voice_id recorded below once created)</td></tr><tr><td>Model</td><td>Multilingual v2 (handles the Indian-English accent of the sample). Re-evaluate after the first listening test.</td></tr><tr><td>voice_id</td><td><strong><code>pm90bpkUxKb7610rgiaR</code></strong>, name in ElevenLabs: <code>ai-made-usable-voice-sample</code> (created by the creator 2026-11-21)</td></tr></tbody></table></div>
+<h3>Rules</h3>
+<ul><li>Clone <strong>only the creator's own voice</strong>, with the creator's consent (given 2026-11-21).</li><li><strong>YouTube disclosure:</strong> a cloned own voice counts as altered/synthetic content, so tick <strong>"Altered content = Yes"</strong> at upload for every Short narrated by the clone. Per YouTube, this doesn't limit reach or monetization. <a href="https://support.google.com/youtube/answer/14328491" target="_blank" rel="noopener">YouTube Help</a></li><li>~~Long-form stays in the creator's real voice (DEC-003).~~ <strong>Changed by DEC-020 (2026-11-21): all narration, long-form included, uses the clone. Faceless channel.</strong></li><li>Every clone-narrated Short must carry original insight or a real demo (inauthentic-content policy, Jul 2026).</li><li>The creator listens to every generated voiceover before it is published.</li></ul>
+<h3>Recording the sample (creator)</h3>
+<ul><li>1.5–3 minutes total. Quiet room (soft furnishings, no fan/AC noise), phone 20–30 cm from the mouth, the same distance throughout.</li><li>Speak naturally, at your normal Shorts energy. Don't "perform". Pauses are fine.</li><li>Export as the original voice memo file (m4a/wav/mp3). Don't apply filters.</li><li>Read the script below in one take (re-read a line if you stumble, Claude trims it).</li></ul>
+<h4>Sample script (≈2 minutes)</h4>
+<blockquote><p>Hi, I'm the voice behind AI Made Usable. Every week I test AI tools on real work, so you can see what actually helps and what doesn't.</p><p>Today's question is simple: which AI should you use for which job? ChatGPT, Claude, Gemini. They all sound confident. But confidence isn't the same as being right, so I built a test they can't bluff.</p><p>Here's the idea. I made a spreadsheet for a small shop and hid three problems inside it. Weekend sales are sixty-six percent higher. One region dropped by half. And one product keeps coming back as returns. A good AI should find all three. A bad one will invent numbers.</p><p>Quick tip before we start. If your AI emails sound robotic, give it four things: who's reading, what you want, the facts, and the tone. Reader, goal, facts, tone. That's it.</p><p>Now, agents. A chatbot answers you. An agent does the work. It plans the steps, uses tools, checks the result, and repeats until the job is done. Sounds amazing, right? It is, until it makes a mistake, which is why the best agents ask before doing anything important.</p><p>And one more thing. Never trust a link just because an AI gave it to you. Open it. Find the exact claim. Check the date. Five seconds, every time.</p><p>Okay, that's enough from me. Is this exciting? Honestly, yes. Is it perfect? Not even close. Let's find out what actually works. Discover, build, automate, ship. See you on Tuesday.</p></blockquote>
+<h3>Log</h3>
+<ul><li>2026-11-21 · Setup started. The secure API-key form was <strong>declined</strong> by the creator. Until a key is added (environment settings → network secrets, host <code>api.elevenlabs.io</code>, header <code>xi-api-key</code>), use <strong>manual mode</strong>: the creator clones their voice in the ElevenLabs website, pastes Claude's script, downloads the MP3 and sends it to Claude for editing.</li></ul>
+<h3>Free / low-cost options (researched 2026-11-21, at the creator's request "free for one month")</h3>
+<div class="tbl"><table><thead><tr><th>Option</th><th>Cost</th><th>Clones own voice?</th><th>Commercial (YouTube) use?</th><th>Notes</th></tr></thead><tbody><tr><td>ElevenLabs Starter, first-month offer</td><td><strong>US$1 first month</strong>, then ~US$6</td><td>Yes (Instant)</td><td>Yes</td><td>Offer seen on the pricing page 2026-11-09/10. The end date is unclear (reported until 11-16, another source has no end date). <strong>Check checkout.</strong> Cancel before renewal if not kept. <a href="https://www.stork.ai/blog/elevenlabs-promo-code-2026" target="_blank" rel="noopener">Stork</a>, <a href="https://devopscube.com/elevenlabs-discount/" target="_blank" rel="noopener">DevOpsCube</a></td></tr><tr><td>Chatterbox (Resemble AI, open source)</td><td><strong>Free</strong></td><td>Yes (short reference clip)</td><td>Yes, <strong>MIT licence</strong></td><td>Runs in this cloud container (CPU, slower), so no account or key is needed. Needs approval to allow <code>huggingface.co</code> (model download) + install the Python package. <a href="https://www.resemble.ai/best-open-source-ai-voice-cloning-tools/" target="_blank" rel="noopener">Resemble</a>, <a href="https://findskill.ai/blog/best-open-source-tts-2026/" target="_blank" rel="noopener">findskill</a></td></tr><tr><td>F5-TTS / XTTS v2 (open source)</td><td>Free</td><td>Yes</td><td><strong>No</strong>: model weights are non-commercial (CC-BY-NC / CPML)</td><td>Not usable for a monetized channel. <a href="https://codesota.com/guides/tts-models" target="_blank" rel="noopener">codesota</a></td></tr><tr><td>Hosted free tiers (various)</td><td>Free</td><td>Sometimes</td><td><strong>Usually no</strong> (personal use only) and low character caps</td><td><a href="https://fish.audio/blog/is-free-voice-cloning-really-free-2026-guide/" target="_blank" rel="noopener">Fish Audio guide</a>, <a href="https://www.scriptbyai.com/best-free-ai-voice-cloning/" target="_blank" rel="noopener">scriptbyai</a></td></tr></tbody></table></div>
+<ul><li>2026-11-21 · <strong>ElevenLabs connector connected</strong> (claude.ai connector, OAuth, no API key needed). Verified: plan <strong>starter</strong>, status active, 40,000 characters/month, 0/10 voice slots used. The connector can <strong>generate speech</strong> (<code>creative_generate_speech</code>) with any voice in the account and list voices. It <strong>cannot create an Instant Voice Clone from a recording</strong> (it only has "design a voice from a description"). So: the creator makes the clone once on elevenlabs.io (Voices → Add voice → Instant Voice Clone → upload sample), then Claude finds it with <code>creative_list_voices</code> and generates every Shorts voiceover through the connector.</li><li>Budget: a 45–60 s Short ≈ 600–750 characters per take, and the connector defaults to 2 takes ≈ 1,500 characters. A week of 7 Shorts ≈ 10,000 of the 40,000 monthly characters.</li><li>2026-11-21 · Re-checked the connector's full node list: "voice-creation" = <strong>Voice Design from a text description</strong> (eleven_ttv_v3), not cloning from audio. Voice Changer, Isolator and TTS exist. <strong>There is no Instant Voice Clone tool</strong>, so even if the creator sends the recording to Claude, Claude cannot create the clone through the connector. The creator uploads the sample on elevenlabs.io once (or adds an API key, which was declined earlier).</li><li>2026-11-21 · <strong>Clone created</strong> by the creator (voice_id <code>pm90bpkUxKb7610rgiaR</code>). First use: SWAI-S001 voiceover, model eleven_v4, 2 takes (591 credits each; 40.6 s and 41.2 s). Audio check (ffmpeg): no clipping (peak −1.6/−1.2 dBFS), no silences &gt; 0.7 s, LRA 3.0/3.7. Final mix normalised to ≈ −16 LUFS. Network: <code>elevenlabsusercontent.com</code> added to the environment's allowed hosts (approved 2026-11-21) to download generations.</li></ul></div></section>
+
+<section id="status"><h2>Project status</h2><div class="panel doc"><h2>Project status</h2>
+<p><strong>Channel:</strong> AI Made Usable (@aimadeusable), renamed from ShippedWithAI on 2026-11-21 (DEC-017).</p>
+<p><strong>Last updated:</strong> 2026-11-21 · <strong>Phase:</strong> 2, <strong>Launch week production</strong>: The AI Showdown (DEC-019). Long-form SWAI-L001 (~8–9 min, game show, jokes) on Tue 2026-11-24 19:30 IST + 7 Shorts cut from it (S001 Sun 11-22 → S010 Sat 11-28). Scripted, awaiting the creator's review + recording (test <strong>Sunday</strong>).</p>
+<h3>Channel state (FACT, Windsor.ai, 2026-11-21)</h3>
+<p>0 subscribers · 0 public videos · 0 views · About description empty. Brand v2 files ready in <code>brand/assets/</code> (v1 archived). Not yet uploaded.</p>
+<h3>Done</h3>
+<ul><li>2026-11-19 · Tooling declared (yt-dlp, Remotion, HyperFrames) and channel profile written.</li><li>2026-11-21 · Logo + banner v1 (DEC-005). Initial AI-coding search scan. Draft 3-month revenue plan (DEC-007).</li><li>2026-11-21 · Windsor.ai YouTube connector linked by the creator. Baseline analytics recorded.</li><li>2026-11-21 · Project knowledge system initialised (DEC-004). PR #1 merged into the default branch <code>claude/gifted-gates-6r6omc</code>.</li><li>2026-11-21 · <strong>Phase 1 research completed:</strong> <code>reports/research/2026-11-21-phase-1-research-report.md</code>.</li><li>34-channel competitor deep dive + 24 segment searches (<code>research/competitors/</code>).</li><li>Market landscape across all areas with sources (<code>research/market/ai-landscape.md</code>).</li><li>Segments validated and prioritised (<code>research/audience/</code>).</li><li>Opportunities OPP-006..015 (<code>research/opportunities.md</code>).</li><li>Packaging patterns (<code>strategy/seo-packaging.md</code>).</li><li>Banner v2 proposal (<code>brand/assets/proposals/banner-v2.png</code>).</li><li>Monetization v2 proposal (<code>strategy/proposals/2026-11-21-monetization-v2.md</code>).</li><li>Decisions DEC-011..016 proposed. Lessons LES-004..006.</li><li>2026-11-21 · <strong>Brand identity v2 final</strong> (DEC-005/006 approved by the creator): new logo, banner, watermark, About text + keywords. Awaiting upload.</li></ul>
+<h3>Pending approvals (see <code>status/decisions.md</code>). Phase 2 is blocked on the first five.</h3>
+<div class="tbl"><table><thead><tr><th>ID</th><th>Topic</th><th>Claude's recommendation</th></tr></thead><tbody><tr><td>DEC-010</td><td>Content pillars + weights</td><td>Build 35 / Automate 30 / Discover 25 / Ship 10</td></tr><tr><td>DEC-011</td><td>Segment priority</td><td>Primary PRO, BEG, BIZ</td></tr><tr><td>DEC-016</td><td>Launch formats</td><td>Masterclass / Clearly Explained + build / honest experiment / monthly course. No daily news.</td></tr><tr><td>DEC-012</td><td>Shorts cadence (would change DEC-002)</td><td>3–4/week for 8 weeks, then review</td></tr><tr><td>DEC-015</td><td>Monetization v2 (supersedes DEC-007)</td><td>Approve the direction</td></tr><tr><td>DEC-014</td><td>Research access (API key, hosts, Studio export)</td><td>Approve</td></tr><tr><td>DEC-009</td><td>Weekly research/analytics session</td><td>Start when publishing starts</td></tr></tbody></table></div>
+<h3>Pending tasks</h3>
+<div class="tbl"><table><thead><tr><th>#</th><th>Task</th><th>Owner</th><th>Blocked by</th></tr></thead><tbody><tr><td>T1</td><td>✅ Week 1 calendar + scripts (L001, S001–S007)</td><td>Claude</td><td>done 2026-11-21</td></tr><tr><td>T7</td><td>Approve/edit the week-1 scripts</td><td>Creator</td><td>—</td></tr><tr><td>T8</td><td><strong>Sunday 11-22:</strong> record the AI Showdown test (protocol in SWAI-L001) + voice for S001 (clone or phone)</td><td>Creator</td><td>T7</td></tr><tr><td>T9</td><td>Edit L001 + Shorts, graphics, captions, thumbnail B (with the creator's photo)</td><td>Claude</td><td>T8 (recordings), T4</td></tr><tr><td>T10</td><td>Upload + schedule each video in Studio</td><td>Creator</td><td>T9</td></tr><tr><td>T2</td><td>In YouTube Studio: change the display name to <strong>AI Made Usable</strong> (handle @aimadeusable ✅ done), upload logo/banner/watermark, paste About + keywords (<code>brand/channel-profile.md</code>)</td><td>Creator</td><td>— (approved 2026-11-21)</td></tr><tr><td>T3</td><td>Voice clone: ElevenLabs connector ✅ connected (Starter). The creator creates the <strong>Instant Voice Clone</strong> once on elevenlabs.io from the 2-min sample (<code>brand/voice-clone.md</code>). Claude then generates the Shorts voiceovers via the connector</td><td>Creator → Claude</td><td>creator's clone</td></tr><tr><td>T4</td><td><code>npm install</code> Remotion/HyperFrames when production starts</td><td>Claude</td><td>Phase 2</td></tr><tr><td>T5</td><td>Decide the daily/regular Shorts publish time</td><td>Creator</td><td>DEC-012</td></tr><tr><td>T6</td><td>Next competitor pass: comments/hooks, Hindi channels, thumbnails at scale</td><td>Claude</td><td>DEC-014 (API key) for comments</td></tr></tbody></table></div>
+<h3>Blockers / missing access (detail: <code>status/integrations.md</code>)</h3>
+<ul><li>YouTube per-video data (comments, likes, transcripts) blocked by the bot check → DEC-014.</li><li>Google Trends, Reddit and Hacker News blocked by the network policy → DEC-014.</li><li>No impressions/CTR/returning viewers via the connector → weekly Studio export.</li><li>No TTS/voice clone → DEC-013/008.</li><li>Upload/scheduling is manual (the creator).</li></ul>
+<h3>Branch</h3>
+<p>The working branch is <code>claude/adoring-pasteur-aywagg</code>. The repo's default branch is <code>claude/gifted-gates-6r6omc</code> (no <code>main</code>). PR #1 merged. Phase 1 work is on the working branch. Merging needs a new PR when the creator asks.</p></div></section>
+
+<footer>Generated from the GitHub repo by <code>tools/build_hub.py</code>. <a href="https://github.com/iayushpathak-dev/youtube/tree/claude/adoring-pasteur-aywagg" target="_blank" rel="noopener">Open the repo ↗</a></footer>
+</div>
+
+<script>
+document.querySelectorAll('.copy').forEach(function(b){
+  b.addEventListener('click',function(){
+    var pre=b.parentNode.querySelector('pre');
+    var done=function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1500)};
+    try { navigator.clipboard.writeText(pre.innerText).then(done,function(){sel(pre)}) } catch(e) { sel(pre) }
+  });
+});
+function sel(el){ var r=document.createRange(); r.selectNodeContents(el); var s=getSelection(); s.removeAllRanges(); s.addRange(r); }
+document.querySelectorAll('#checks input').forEach(function(c){
+  try { c.checked = localStorage.getItem('hq-'+c.id)==='1' } catch(e) {}
+  c.addEventListener('change',function(){ try { localStorage.setItem('hq-'+c.id, c.checked?'1':'0') } catch(e) {} });
+});
+</script>

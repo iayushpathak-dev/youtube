@@ -1,11 +1,11 @@
-# CLAUDE.md: ShippedWithAI operating instructions
+# CLAUDE.md: AI Made Usable operating instructions
 
-This repository is the **permanent memory and source of truth** for the ShippedWithAI YouTube channel.
+This repository is the **permanent memory and source of truth** for the **AI Made Usable** YouTube channel (formerly ShippedWithAI, renamed 2026-11-21, DEC-017).
 Anything not written here is not known to the next session. Read this file in full at the start of every session.
 
 ## 1. Project identity (approved, DEC-001)
 
-- **Name:** ShippedWithAI · **Handle:** @shippedwithaihq · **Channel ID:** UCa2_ah_ehFCOyIn_QUt8t-w
+- **Name:** AI Made Usable · **Handle:** @aimadeusable (claimed and verified 2026-11-21; previously @shippedwithaihq) · **Channel ID:** UCa2_ah_ehFCOyIn_QUt8t-w
 - **Positioning:** *Discover. Build. Automate. Ship.*
 - **Vision:** Build a global YouTube brand that helps everyone understand, explore, use and build with AI.
 - **Audience:** students, beginners, developers, software engineers, content creators, entrepreneurs,
@@ -16,7 +16,7 @@ Anything not written here is not known to the next session. Read this file in fu
 ## 2. Operating assumptions (approved as initial assumptions, DEC-002 / DEC-003)
 
 - One YouTube Short every day, 45–60 s, AI-assisted narration.
-- One long-form video every Tuesday, narrated in the creator's own voice.
+- One long-form video every Tuesday. **Faceless; all narration (long + Shorts) in the creator's ElevenLabs voice clone** (DEC-020). Claude produces the videos. The creator screen-records AI-app tests and uploads.
 - These can only change with the creator's approval (see §5).
 
 ## 3. Session protocol
@@ -37,6 +37,7 @@ Anything not written here is not known to the next session. Read this file in fu
 5. If content items changed, run `python3 tools/content_index.py` to regenerate and validate `content/registry.md`.
 6. Review `git diff`, then commit with a descriptive message and push to the working branch.
 7. Verify the push (`git status` shows up to date with the remote). Never claim a push you didn't verify.
+8. If scripts, calendar, status, brand or voice files changed, rebuild and republish the mobile Control Center: `python3 tools/build_hub.py`, then publish `hub/index.html` to https://claude.ai/artifact/B5BxntDZ8SeH6M4VqC7gRe (files: assets/logo.png, banner.png, watermark.png from `brand/assets/`). The creator uses it from their phone.
 
 ## 4. Knowledge rules
 
@@ -94,7 +95,7 @@ A recommendation is never an approved decision. An approval is recorded with its
 
 The current inventory and gaps are in `status/integrations.md`. Check it before assuming any access.
 Key points:
-- Public YouTube research: `yt-dlp` (works).
+- Public YouTube research: `yt-dlp` list-level data + RSS (works). Per-video pages (comments, transcripts, likes) are **blocked**.
 - Channel analytics: Windsor.ai YouTube connector (read analytics; edit video details, comments and playlists; **no upload**;
   no impressions/CTR/returning viewers; trial = last 30 days).
 - Web research: the WebSearch tool.

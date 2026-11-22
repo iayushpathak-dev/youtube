@@ -6,14 +6,15 @@ const path = require('path');
   const src = path.join(__dirname, '..', 'brand', 'assets', 'src');
   const out = path.join(src, '..');
   const b = await chromium.launch();
-  async function shot(file, w, h, png) {
+  async function shot(file, w, h, png, transparent = false) {
     const p = await b.newPage({ viewport: { width: w, height: h } });
     await p.goto('file://' + path.join(src, file));
     await p.evaluate(() => document.fonts.ready);
-    await p.screenshot({ path: path.join(out, png) });
+    await p.screenshot({ path: path.join(out, png), omitBackground: transparent });
     await p.close();
   }
   await shot('logo.html', 800, 800, 'logo.png');      // banner embeds logo.png, so render it first
   await shot('banner.html', 2560, 1440, 'banner.png');
+  await shot('watermark.html', 300, 300, 'watermark.png', true); // transparent corners
   await b.close();
 })();

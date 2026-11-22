@@ -1,11 +1,12 @@
-# ShippedWithAI
+# AI Made Usable
 
-**Discover. Build. Automate. Ship.** A YouTube channel helping everyone understand, explore, use and build with AI.
+**Discover. Build. Automate. Ship.** A YouTube channel (formerly ShippedWithAI) helping everyone understand, explore, use and build with AI.
 
 This repository is the channel's operating system and permanent memory.
 
 - Start here: [`CLAUDE.md`](CLAUDE.md) (operating rules) → [`INDEX.md`](INDEX.md) (where everything lives) → [`status/STATUS.md`](status/STATUS.md) (current state)
 - Decisions: [`status/decisions.md`](status/decisions.md)
+- Latest research: [`reports/research/2026-11-21-phase-1-research-report.md`](reports/research/2026-11-21-phase-1-research-report.md)
 
 ## Tooling
 ```bash
