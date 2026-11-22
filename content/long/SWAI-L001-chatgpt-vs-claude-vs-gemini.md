@@ -47,7 +47,7 @@ updated: 2026-11-21
 **Scoreboard (fill in while recording):**
 | Round | ChatGPT | Claude | Gemini | Funniest moment (timestamp) |
 |---|---|---|---|---|
-| 1 Boss Email | **9** (official recorded run 2026-11-22, 18 s: all 7 facts kept; added "so we can proceed with the retesting", a small invented link → −1. An earlier unrecorded run scored 10 and is not used) | | | ChatGPT: the reply area sits blank with only icons for a moment, then a loader, then the email card (~25–65% of the clip) → joke: "thought about it, said nothing, then changed its mind" |
+| 1 Boss Email | **9** (official recorded run 2026-11-22, 18 s: all 7 facts kept; added "so we can proceed with the retesting", a small invented link → −1. An earlier unrecorded run scored 10 and is not used) | **10** (recorded 2026-11-22, 15.7 s, model shown on screen: Opus 5.5 · Medium: all 7 facts, nothing invented, subject line + "Send via Gmail", flagged the "confirmed by Friday" wording for the user to check) | | ChatGPT: the reply area sits blank with only icons for a moment, then a loader, then the email card (~25–65% of the clip) → joke: "thought about it, said nothing, then changed its mind" · Claude: status text "Untangling…" while thinking; then says "all **five** facts" when there were seven → joke: "even Claude can't count all my problems". ⚠️ **PRIVACY: Claude signed the email with the creator's real first name. Blur the signature line in the edit.** |
 | 2 Sources | | | | |
 | 3 Hidden Problems | | | | |
 | 4 Build an App | | | | |
