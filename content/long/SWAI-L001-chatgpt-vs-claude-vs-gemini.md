@@ -26,7 +26,7 @@ updated: 2026-11-21
 - FACT · GPT-6 Astra (2026-09-03), Claude Opus 5.5 (2026-09-22), Gemini 4 (2026-09-30 → 11-18): three new flagships in under 3 months, so "which one?" is the question of the moment. Sources in `research/market/ai-landscape.md`.
 - Our angle: the **game show** (energy) + **checkable answers** (trust) + **an engineer's quick verdict** (credibility).
 - ⚠️ Show each app's model picker on screen and name only the model actually used.
-- 2026-11-21 · The ChatGPT UI no longer shows the model name. Use "ChatGPT default model on the **Go** plan (paid), Nov 2026" in the video and description. Don't ask the AI which model it is (unreliable). Plans: ChatGPT = **Go (paid)**, Claude = _tbd_, Gemini = _tbd_.
+- 2026-11-21 · The ChatGPT UI no longer shows the model name. Use "ChatGPT default model on the **Go** plan (paid), Nov 2026" in the video and description. Don't ask the AI which model it is (unreliable). Plans (creator, 2026-11-22): ChatGPT = **Go (paid)**, Claude = **paid (₹2,499/month)**, Gemini = **paid (bundled with a Jio recharge)**. All three are paid tiers, which makes the comparison fair. On screen: "all three on paid plans".
 
 ## Competitor references
 - Parker Prompts: "I Tested Gemini vs Claude vs ChatGPT So You Don't Have To" (211K, 8:51): closest format, without humour or verifiable tasks.
@@ -47,7 +47,7 @@ updated: 2026-11-21
 **Scoreboard (fill in while recording):**
 | Round | ChatGPT | Claude | Gemini | Funniest moment (timestamp) |
 |---|---|---|---|---|
-| 1 Boss Email | | | | |
+| 1 Boss Email | 10 (2026-11-22: all 7 facts kept, nothing added, placeholders for names, rendered as an email card with a Send button) | | | |
 | 2 Sources | | | | |
 | 3 Hidden Problems | | | | |
 | 4 Build an App | | | | |
