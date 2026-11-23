@@ -68,5 +68,8 @@
 ## Branch
 The working branch is `claude/adoring-pasteur-aywagg`. The repo's default branch is `claude/gifted-gates-6r6omc` (no `main`). PR #1 merged. Phase 1 work is on the working branch. Merging needs a new PR when the creator asks.
 
+### Research 2026-11-23: new fast-growing AI channels
+- `research/competitors/snapshots/2026-11-23-new-fast-growing-ai-channels.md`: 3 confirmed new channels (InRecord, AI by Alex, Theo) and 3 probable ones. Main lessons (HYPOTHESES): growth came from long-form, not Shorts; story or curiosity titles; one concrete outcome plus the year in the title; beginner AI agents is a proven topic (supports DEC-022). Re-scan in ~4 weeks to measure real growth.
+
 ### Upload file names (creator's request, 2026-11-23)
 Files sent to the creator use simple names (copies in `out/upload/`, git-ignored): final-short-1 = S001 (Mon 23, uploaded) · final-short-2 = S002 (Tue 24) · final-short-3 = S006 (Wed 25) · final-short-4 = S008 (Thu 26) · final-short-5 = S009 (Fri 27) · final-long-video-1 = L001 (Sat 28) · final-short-6 = S003 (Sat 28, after L001) · final-short-7 = S010 (Sun 29). Each thumbnail has the same name with `.jpg`. Keep this pattern for future videos (final-long-video-2 = L002).

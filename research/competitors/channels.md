@@ -72,3 +72,10 @@ Raw data: `snapshots/2026-11-21-phase1-channel-scan.md`. Update rows in place an
 - Hindi/regional AI channels beyond Satish Dhawale, Vaibhav Sisinty, codebasics: not yet mapped.
 - Thumbnails: not yet reviewed visually (thumbnails are downloadable; planned for the next pass).
 - Growth over time: only measurable from our own repeated snapshots. No historical data exists.
+
+## New fast-growing AI channels (added 2026-11-23)
+Detail and method: `snapshots/2026-11-23-new-fast-growing-ai-channels.md`.
+- InRecord (UCasAOOwbKBRYTGpWz4Z3SoA): first upload 2026-10-16, 8 videos, 32,900 subs. Story/investigation titles, ~8–9 min, no Shorts.
+- AI by Alex (UCIZbRKt113GeTgxqEDW8dww): first upload 2026-09-27, 12 videos, 58,600 subs. "Top 5 AI tools for X in 2026", ~5–6 min.
+- Theo - Dawnspire Academy (UCIBN_ixxnop1MGbeGVvNUSA): first upload 2026-06-27, 6 videos, 14,700 subs. Beginner AI agents.
+- Probably new: James Blue (UCAIrvLzg19ny6ymCUjQ0Txg, 44,100), Matteo AI (UCGQ2e-iocKJn9tVEnO_OQbg, 11,100), Ed Hill | AI Automation (UC5_2We-HeVdEeHcIyfmMHOg, 87,400).

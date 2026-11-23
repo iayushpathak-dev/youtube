@@ -173,6 +173,8 @@ Never delete entries. Mark superseded ones with `SUPERSEDED by DEC-###`.
 - **Recommendation:** "Build your first useful AI agent, no code (an engineer's honest test)" (OPP-007). Evidence: Jeff Su "AI Agents, Clearly Explained" 5.79M, Metics "Build Your First AI Agent (No Coding)" 877K. It fits the Automate pillar and is the natural next step after the showdown. Alternative: OPP-008 "Learn 80% of Claude Code for non-developers".
 - **Status:** PROPOSED.
 
+- **New evidence (2026-11-23):** new fast-growing channels confirm demand for beginner AI agent videos (Theo - Dawnspire Academy: 6 videos, 14,700 subs; Ed Hill "Build Your First AI Agent in 18 Minutes | No-Code" 91K views). See `research/competitors/snapshots/2026-11-23-new-fast-growing-ai-channels.md`. Still PROPOSED until the creator approves.
+
 ### DEC-023: Long-form publishing day moves from Tuesday to Saturday
 - **Status:** APPROVED (2026-11-23) → IMPLEMENTED in docs the same day
 - **Creator's words (2026-11-23):** "ek shorts ko edit krna hai tuesday ki jagah saturday bolna hai usmai har sat hum video dalenge lambi wali jo pehle tuesday humne kaha tha and all are update krde memory mai github"
