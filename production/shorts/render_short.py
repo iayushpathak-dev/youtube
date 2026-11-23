@@ -46,7 +46,7 @@ html,body,.s{width:1920px;height:1080px} .s{gap:40px;padding:0 140px}
 .big{font-size:104px} .sub{font-size:48px} .t{width:300px;height:150px;font-size:56px} .t.solo{width:520px;height:190px;font-size:80px}
 .lines div{font-size:104px} .emo{font-size:170px}
 .board div{width:900px;font-size:58px;padding:16px 40px} .board{gap:16px}
-.cliptop{top:34px;flex-direction:row;gap:30px} .cliptop .t{width:260px;height:100px;font-size:46px} .cap{font-size:50px;max-width:1400px;text-align:left}
+.cliptop{top:34px;flex-direction:row;gap:30px} .cliptop .t{width:260px;height:100px;font-size:46px} .cap{font-size:46px;max-width:1180px;text-align:left}
 .clipbox{top:176px;left:180px;width:1560px;height:840px}
 .badge{top:44px;right:60px;font-size:64px;padding:4px 30px}
 .brand{bottom:44px;left:60px;font-size:34px} .brand img{width:60px;height:60px}
