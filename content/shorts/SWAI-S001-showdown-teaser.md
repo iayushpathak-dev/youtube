@@ -11,7 +11,7 @@ hook: "I'm making ChatGPT, Claude and Gemini fight. Over a spreadsheet."
 production_status: EDITED
 approval_status: PROPOSED
 publish_date: "2026-11-23"
-video_url: ""
+video_url: "https://youtube.com/shorts/aP01Cycm9Mc"
 experiments: []
 created: 2026-11-21
 updated: 2026-11-23
@@ -53,3 +53,5 @@ AI Showdown package (contestant tiles, round card, ✓/✗ stamps, mini scoreboa
 
 ## Lessons learned
 - 2026-11-21 · Rendered with `production/shorts/render_short.py` + clone voice take 1 (40.6 s, a little under the 45 s target). Scenes are scaled proportionally to the voice, not word-aligned. Awaiting the creator's listen + approval before upload.
+
+- 2026-11-23 · **Uploaded and scheduled** by the creator for 23 Nov 2026 18:30 IST: https://youtube.com/shorts/aP01Cycm9Mc . Title "I made ChatGPT, Claude and Gemini fight over a spreadsheet" (human style, no emojis). Custom English subtitles published (auto-captions said "Chad GPT" and dropped "Saturday"). Altered content = Yes. Pinned comment to add after it goes live.
