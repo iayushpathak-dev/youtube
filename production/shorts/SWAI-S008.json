@@ -10,7 +10,8 @@
     "ChatGPT",
     "Claude",
     "Gemini"
-   ]
+   ],
+   "say": "I asked three AIs to build me a habit tracker."
   },
   {
    "dur": 6.0,
@@ -19,7 +20,8 @@
     "1 prompt · 1 file",
     "Add 2 habits · tick today",
     "Reload → still saved?"
-   ]
+   ],
+   "say": "One prompt. One file. Then I ran the exact same test on all three: add two habits, tick today, reload the page."
   },
   {
    "dur": 8.0,
@@ -35,7 +37,8 @@
     40,
     1100,
     820
-   ]
+   ],
+   "say": "ChatGPT: clean, simple, everything saved. Ten."
   },
   {
    "dur": 9.0,
@@ -51,7 +54,8 @@
     60,
     1100,
     800
-   ]
+   ],
+   "say": "Claude: week navigation, even a warning if storage fails. And it honestly admitted it hadn't clicked through it. Ten."
   },
   {
    "dur": 6.0,
@@ -67,7 +71,8 @@
     60,
     920,
     760
-   ]
+   ],
+   "say": "Gemini built the prettiest app by far. But it gave me a three-day water streak before I drank anything."
   },
   {
    "dur": 5.0,
@@ -83,7 +88,8 @@
     60,
     920,
     760
-   ]
+   ],
+   "say": "And it lets you complete Wednesday on Monday. Productivity unlocked. Eight."
   },
   {
    "dur": 4.5,
@@ -94,13 +100,15 @@
     "ChatGPT": "10",
     "Claude": "10",
     "Gemini": "8"
-   }
+   },
+   "say": "The good news? All three apps actually work."
   },
   {
    "dur": 3.0,
    "kind": "big",
    "big": "Full showdown",
-   "sub": "This Saturday 🔥"
+   "sub": "This Saturday 🔥",
+   "say": "Full showdown, this Saturday."
   }
  ]
 }

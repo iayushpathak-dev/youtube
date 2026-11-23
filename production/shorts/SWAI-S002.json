@@ -1,13 +1,106 @@
 {
-  "id": "SWAI-S002",
-  "scenes": [
-    {"dur": 3.0, "kind": "title", "kicker": "THE AI SHOWDOWN · ROUND 1", "big": "Email my <em>boss</em>", "tiles": ["ChatGPT", "Claude", "Gemini"]},
-    {"dur": 4.0, "kind": "big", "big": "Keep every fact.<br><em>Add nothing.</em>", "sub": "7 facts · 3 AIs · same prompt"},
-    {"dur": 4.0, "kind": "stat", "lines": ["3 Dec → 10 Dec", "2 bugs · fixed", "₹8,000 QA day"]},
-    {"dur": 8.5, "kind": "clip", "label": "ChatGPT", "caption": "thought about it… said <em>nothing</em>…", "score": "9/10", "src": "out/SWAI-L001/raw/round1-chatgpt.mp4", "crop": [560, 40, 860, 860]},
-    {"dur": 8.5, "kind": "clip", "label": "Claude", "caption": "kept 7 facts, said <em>“all five”</em> 🤦", "score": "10/10", "src": "out/SWAI-L001/raw/round1-claude.mp4", "crop": [560, 60, 820, 820], "blur": [[588, 570, 150, 36]]},
-    {"dur": 7.0, "kind": "clip", "label": "Gemini", "caption": "11 seconds. <em>Straight to Gmail.</em>", "score": "10/10", "src": "out/SWAI-L001/raw/round1-gemini.mp4", "crop": [430, 0, 780, 780]},
-    {"dur": 4.5, "kind": "score", "big": "Round 1", "sub": "Claude & Gemini tie · ChatGPT −1", "board": {"ChatGPT": "9", "Claude": "10", "Gemini": "10"}},
-    {"dur": 3.5, "kind": "big", "big": "4 more rounds", "sub": "Full showdown · Saturday 🔥"}
-  ]
+ "id": "SWAI-S002",
+ "scenes": [
+  {
+   "dur": 3.0,
+   "kind": "title",
+   "kicker": "THE AI SHOWDOWN · ROUND 1",
+   "big": "Email my <em>boss</em>",
+   "tiles": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "say": "I gave three AIs my messy notes"
+  },
+  {
+   "dur": 4.0,
+   "kind": "big",
+   "big": "Keep every fact.<br><em>Add nothing.</em>",
+   "sub": "7 facts · 3 AIs · same prompt",
+   "say": "and one rule: keep every fact. Add nothing."
+  },
+  {
+   "dur": 4.0,
+   "kind": "stat",
+   "lines": [
+    "3 Dec → 10 Dec",
+    "2 bugs · fixed",
+    "₹8,000 QA day"
+   ],
+   "say": "A delayed launch, two bugs, a new date, the budget, and one extra test day. Seven facts. Simple, right?"
+  },
+  {
+   "dur": 8.5,
+   "kind": "clip",
+   "label": "ChatGPT",
+   "caption": "thought about it… said <em>nothing</em>…",
+   "score": "9/10",
+   "src": "out/SWAI-L001/raw/round1-chatgpt.mp4",
+   "crop": [
+    560,
+    40,
+    860,
+    860
+   ],
+   "say": "ChatGPT thought about it... said absolutely nothing... then changed its mind. Solid email, but it invented one tiny reason. Nine out of ten."
+  },
+  {
+   "dur": 8.5,
+   "kind": "clip",
+   "label": "Claude",
+   "caption": "kept 7 facts, said <em>“all five”</em> 🤦",
+   "score": "10/10",
+   "src": "out/SWAI-L001/raw/round1-claude.mp4",
+   "crop": [
+    560,
+    60,
+    820,
+    820
+   ],
+   "blur": [
+    [
+     588,
+     570,
+     150,
+     36
+    ]
+   ],
+   "say": "Claude said untangling, kept every single fact, then proudly told me it kept all five. There were seven. Still, ten out of ten."
+  },
+  {
+   "dur": 7.0,
+   "kind": "clip",
+   "label": "Gemini",
+   "caption": "11 seconds. <em>Straight to Gmail.</em>",
+   "score": "10/10",
+   "src": "out/SWAI-L001/raw/round1-gemini.mp4",
+   "crop": [
+    430,
+    0,
+    780,
+    780
+   ],
+   "say": "Gemini didn't even think about it. Eleven seconds, straight into a Gmail draft, every fact. Ten."
+  },
+  {
+   "dur": 4.5,
+   "kind": "score",
+   "big": "Round 1",
+   "sub": "Claude & Gemini tie · ChatGPT −1",
+   "board": {
+    "ChatGPT": "9",
+    "Claude": "10",
+    "Gemini": "10"
+   },
+   "say": "Round one: Claude and Gemini tie, ChatGPT one point behind."
+  },
+  {
+   "dur": 3.5,
+   "kind": "big",
+   "big": "4 more rounds",
+   "sub": "Full showdown · Saturday 🔥",
+   "say": "Four more rounds. Full showdown on Saturday."
+  }
+ ]
 }

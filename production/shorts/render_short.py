@@ -70,7 +70,29 @@ subprocess.run(['node', str(ROOT / 'production/shorts/shoot.js'), *files], check
 durs = [s['dur'] for s in spec['scenes']]
 if a.audio:
     alen = float(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',a.audio]).decode())
-    k = (alen + 0.6) / sum(durs); durs = [d * k for d in durs]
+    says = [s.get('say') for s in spec['scenes']]
+    if all(says):
+        # Word-sync: each scene carries the narration it covers ("say"). Expected cut = character
+        # share of the voice length, snapped to the nearest real pause in the audio (silencedetect).
+        import re
+        log = subprocess.run(['ffmpeg','-hide_banner','-i',a.audio,'-af','silencedetect=n=-32dB:d=0.12','-f','null','-'],capture_output=True,text=True).stderr
+        st = [float(x) for x in re.findall(r'silence_start: ([\d.]+)', log)]
+        en = [float(x) for x in re.findall(r'silence_end: ([\d.]+)', log)]
+        pauses = [(s + e) / 2 for s, e in zip(st, en) if 0.3 < s < alen - 0.3]
+        lens = [len(re.sub(r'[^A-Za-z0-9]', '', t)) for t in says]; tot = sum(lens)
+        lead = en[0] if st and st[0] < 0.05 and en else 0.0
+        tail = st[-1] if st and len(st) > len(en) or (st and en and en[-1] >= alen - 0.05) else alen
+        cuts, acc, prev = [0.0], 0, 0.0
+        for L in lens[:-1]:
+            acc += L; exp = lead + (tail - lead) * acc / tot
+            near = [p for p in pauses if abs(p - exp) < 1.6 and p > prev + 0.8]
+            c = min(near, key=lambda p: abs(p - exp)) if near else exp
+            cuts.append(c); prev = c
+        cuts.append(alen + 0.6)
+        durs = [b - a_ for a_, b in zip(cuts, cuts[1:])]
+        print('sync cuts:', ' '.join(f'{c:.2f}' for c in cuts))
+    else:
+        k = (alen + 0.6) / sum(durs); durs = [d * k for d in durs]
 fps = 30; parts = []
 for i, d in enumerate(durs):
     n = max(1, round(d * fps)); seg = out / f'seg{i:02d}.mp4'

@@ -10,13 +10,15 @@
     "ChatGPT",
     "Claude",
     "Gemini"
-   ]
+   ],
+   "say": "I asked three AIs to teach me AI agents like I'm fifteen. Then quiz me."
   },
   {
    "dur": 4.0,
    "kind": "big",
    "big": "I answered <em>wrong</em>",
-   "sub": "…on purpose 😈"
+   "sub": "…on purpose 😈",
+   "say": "And I answered wrong on purpose."
   },
   {
    "dur": 9.0,
@@ -32,7 +34,8 @@
     200,
     760,
     700
-   ]
+   ],
+   "say": "ChatGPT built an entire quiz app. With a score table. Calm down. It still caught my wrong answer and explained why."
   },
   {
    "dur": 9.0,
@@ -48,7 +51,8 @@
     0,
     700,
     560
-   ]
+   ],
+   "say": "Claude used a weekend trip to Jaipur, called an agent a smart intern, and graded me two out of three. Fair."
   },
   {
    "dur": 9.0,
@@ -64,7 +68,8 @@
     40,
     700,
     520
-   ]
+   ],
+   "say": "Gemini? I answered D. There was no D. Haha, nice try. There is no D. Caught me."
   },
   {
    "dur": 4.5,
@@ -75,13 +80,15 @@
     "ChatGPT": "10",
     "Claude": "10",
     "Gemini": "10"
-   }
+   },
+   "say": "All three taught it well and graded me honestly. Ten, ten, ten."
   },
   {
    "dur": 3.5,
    "kind": "big",
    "big": "Final scores",
-   "sub": "This Saturday · comment your winner 👇"
+   "sub": "This Saturday · comment your winner 👇",
+   "say": "The final scores drop this Saturday. Comment who you think won."
   }
  ]
 }
