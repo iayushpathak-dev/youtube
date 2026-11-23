@@ -48,7 +48,7 @@ html,body,.s{width:1920px;height:1080px} .s{gap:40px;padding:0 140px}
 .board div{width:900px;font-size:58px;padding:16px 40px} .board{gap:16px}
 .cliptop{top:34px;flex-direction:row;gap:30px} .cliptop .t{width:260px;height:100px;font-size:46px} .cap{font-size:50px;max-width:1400px;text-align:left}
 .clipbox{top:176px;left:180px;width:1560px;height:840px}
-.badge{top:auto;bottom:40px;right:60px;font-size:72px;padding:6px 34px}
+.badge{top:44px;right:60px;font-size:64px;padding:4px 30px}
 .brand{bottom:44px;left:60px;font-size:34px} .brand img{width:60px;height:60px}
 """
 def scene_html(s):
