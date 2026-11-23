@@ -10,11 +10,11 @@ title: "I Asked 3 AIs to Email My Boss"
 hook: "I gave three AIs my messy notes and one rule: keep every fact, add nothing."
 production_status: EDITED
 approval_status: PROPOSED
-publish_date: "2026-11-23"
+publish_date: "2026-11-25"
 video_url: ""
 experiments: []
 created: 2026-11-21
-updated: 2026-11-21
+updated: 2026-11-23
 ---
 
 > **v2 (2026-11-21):** part of the **AI Showdown** set. All 7 launch-week Shorts come from SWAI-L001, at the creator's request ("us video ke 7 shorts… interesting, casual, AI jokes"). `{ }` = fill in from the real recording only. Jokes describe what happened on screen, never claims about the companies.
@@ -52,5 +52,8 @@ AI Showdown package (contestant tiles, round card, ✓/✗ stamps, mini scoreboa
 > I gave three AIs my messy notes and one rule: keep every fact. Add nothing. A delayed launch, two bugs, a new date, the budget, and one extra test day. Seven facts. Simple, right? ChatGPT thought about it... said absolutely nothing... then changed its mind. Solid email, but it invented one tiny reason. Nine out of ten. Claude said "untangling", kept every single fact, then proudly told me it kept all five. There were seven. Still, ten out of ten. Gemini didn't even think about it. Eleven seconds, straight into a Gmail draft, every fact. Ten. Round one: Claude and Gemini tie, ChatGPT one point behind. Four more rounds. Full showdown on Tuesday.
 
 Results (FACT, from the recordings in `out/SWAI-L001/raw/`): ChatGPT 9 · Claude 10 · Gemini 10. The creator's name in Claude's signature is blurred. Scene spec: `production/shorts/SWAI-S002.json`.
+
+
+- 2026-11-23 · **v2:** last line now "Full showdown on **Saturday**" (DEC-023). Re-voiced (take 1, 50.6 s), re-rendered, end card says Saturday.
 
 ## Lessons learned

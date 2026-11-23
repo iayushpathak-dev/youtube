@@ -23,6 +23,12 @@
   - Decisions DEC-011..016 proposed. Lessons LES-004..006.
 - 2026-11-21 · **Brand identity v2 final** (DEC-005/006 approved by the creator): new logo, banner, watermark, About text + keywords. Awaiting upload.
 
+### 2026-11-23 (late)
+- **SWAI-L001 fully scored:** ChatGPT 40 · Claude 41 · **Gemini 44** (Round 5: 10/10/10).
+- **DEC-023 APPROVED:** long-form moves to **Saturday**. L001 → Sat 28 Nov, L002 → Sat 5 Dec. CLAUDE.md, identity, calendar updated.
+- S001 + S002 re-voiced with "Saturday" and re-rendered. **S006 (Round 2) rendered** (46 s). All three sent to the creator in chat. Drive upload is not possible from Claude (4.2 MB per-call limit), so the creator moves them to Drive `Shorts`.
+- **Next:** S008 (Round 4, Fri 27) → L001 long video (Sat 28) + S003 → S009, S010. DEC-022 (L002 topic) needs approval this week.
+
 ## Pending approvals (see `status/decisions.md`). Phase 2 is blocked on the first five.
 | ID | Topic | Claude's recommendation |
 |---|---|---|

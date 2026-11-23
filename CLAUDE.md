@@ -16,7 +16,7 @@ Anything not written here is not known to the next session. Read this file in fu
 ## 2. Operating assumptions (approved as initial assumptions, DEC-002 / DEC-003)
 
 - One YouTube Short every day, 45–60 s, AI-assisted narration.
-- One long-form video every Tuesday. **Faceless; all narration (long + Shorts) in the creator's ElevenLabs voice clone** (DEC-020). Claude produces the videos. The creator screen-records AI-app tests and uploads.
+- One long-form video every **Saturday** (DEC-023, changed from Tuesday on 2026-11-23). **Faceless; all narration (long + Shorts) in the creator's ElevenLabs voice clone** (DEC-020). Claude produces the videos. The creator screen-records AI-app tests and uploads.
 - These can only change with the creator's approval (see §5).
 
 ## 3. Session protocol

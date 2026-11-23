@@ -39,7 +39,7 @@ Tone set by the creator for the first video (DEC-019, 2026-11-21): **casual, fun
 
 ## Formats (approved assumptions, DEC-002 / DEC-003)
 - Shorts: daily, 45–60 s, AI-assisted narration.
-- Long-form: weekly (Tuesday), the creator's own voice.
+- Long-form: weekly (Saturday, DEC-023; was Tuesday), narrated in the creator's voice clone (DEC-020).
 
 ## History
 - 2026-11-19 → 2026-11-21: the original positioning was "Real apps, built with AI, shipped to production", aimed at developers

@@ -10,11 +10,11 @@ title: "I'm Making ChatGPT, Claude & Gemini Fight"
 hook: "I'm making ChatGPT, Claude and Gemini fight. Over a spreadsheet."
 production_status: EDITED
 approval_status: PROPOSED
-publish_date: "2026-11-22"
+publish_date: "2026-11-24"
 video_url: ""
 experiments: []
 created: 2026-11-21
-updated: 2026-11-21
+updated: 2026-11-23
 ---
 
 > **v2 (2026-11-21):** part of the **AI Showdown** set. All 7 launch-week Shorts come from SWAI-L001, at the creator's request ("us video ke 7 shorts… interesting, casual, AI jokes"). `{ }` = fill in from the real recording only. Jokes describe what happened on screen, never claims about the companies.
@@ -47,6 +47,9 @@ AI Showdown package (contestant tiles, round card, ✓/✗ stamps, mini scoreboa
 ## Performance
 | Pulled | Window | Views | Engaged views | Avg % viewed | Likes | Comments | Shares | Subs + / − |
 |---|---|---|---|---|---|---|---|---|
+
+
+- 2026-11-23 · **v2:** last line changed to "The loser gets roasted on **Saturday**" (DEC-023). Re-voiced (clone, eleven_v4, take 1, 40.7 s) and re-rendered; end card "Full showdown · Saturday 🔥". Description should say "Full AI Showdown Saturday".
 
 ## Lessons learned
 - 2026-11-21 · Rendered with `production/shorts/render_short.py` + clone voice take 1 (40.6 s, a little under the 45 s target). Scenes are scaled proportionally to the voice, not word-aligned. Awaiting the creator's listen + approval before upload.

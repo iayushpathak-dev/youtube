@@ -1,0 +1,13 @@
+{
+  "id": "SWAI-S006",
+  "scenes": [
+    {"dur": 3.5, "kind": "title", "kicker": "THE AI SHOWDOWN · ROUND 2", "big": "AI links are like <em>gym memberships</em>", "tiles": ["ChatGPT", "Claude", "Gemini"]},
+    {"dur": 5.0, "kind": "big", "big": "Laptops under <em>₹70,000</em>", "sub": "with sources · then I clicked every link 🖱️"},
+    {"dur": 8.5, "kind": "clip", "label": "ChatGPT", "caption": "said ₹66k · its own link: <em>₹78,176</em>", "score": "6/10", "src": "out/SWAI-L001/raw/round2-chatgpt-links.mp4", "start": 3, "end": 11, "crop": [1370, 40, 490, 620]},
+    {"dur": 8.5, "kind": "clip", "label": "Claude", "caption": "top pick: <em>out of stock</em> 🫠", "score": "7/10", "src": "out/SWAI-L001/raw/round2-claude.mp4", "start": 37, "end": 45, "crop": [440, 330, 640, 600]},
+    {"dur": 7.5, "kind": "clip", "label": "Gemini", "caption": "3 links · 3 prices · <em>all exact</em>", "score": "10/10", "src": "out/SWAI-L001/raw/round2-gemini.mp4", "start": 29, "end": 37, "crop": [150, 40, 700, 560]},
+    {"dur": 5.5, "kind": "stat", "lines": ["1 · Open the link", "2 · Find the claim", "3 · Check the date"]},
+    {"dur": 4.0, "kind": "score", "big": "Round 2", "sub": "Gemini wins the link test", "board": {"ChatGPT": "6", "Claude": "7", "Gemini": "10"}},
+    {"dur": 3.0, "kind": "big", "big": "Full showdown", "sub": "This Saturday 🔥"}
+  ]
+}

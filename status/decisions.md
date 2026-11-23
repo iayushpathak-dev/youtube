@@ -169,6 +169,13 @@ Never delete entries. Mark superseded ones with `SUPERSEDED by DEC-###`.
 - **Approval record:** The creator: "kalse shorts dalenge next tuesday we upload long video and next tuesday ke liye bhi content decide kr is week sirf shorts dalenge… after this tuesday we have next 2 tuesday content videos and shorts".
 - **Status:** APPROVED → calendar updated (`strategy/calendar.md`).
 
-### DEC-022: Topic for SWAI-L002 (Tue 2026-12-08)
+### DEC-022: Topic for SWAI-L002 (now Sat 2026-12-05, see DEC-023)
 - **Recommendation:** "Build your first useful AI agent, no code (an engineer's honest test)" (OPP-007). Evidence: Jeff Su "AI Agents, Clearly Explained" 5.79M, Metics "Build Your First AI Agent (No Coding)" 877K. It fits the Automate pillar and is the natural next step after the showdown. Alternative: OPP-008 "Learn 80% of Claude Code for non-developers".
 - **Status:** PROPOSED.
+
+### DEC-023: Long-form publishing day moves from Tuesday to Saturday
+- **Status:** APPROVED (2026-11-23) → IMPLEMENTED in docs the same day
+- **Creator's words (2026-11-23):** "ek shorts ko edit krna hai tuesday ki jagah saturday bolna hai usmai har sat hum video dalenge lambi wali jo pehle tuesday humne kaha tha and all are update krde memory mai github"
+- **Change:** one long-form video every **Saturday** 19:30 IST (replaces Tuesday from DEC-002/DEC-021). Shorts stay daily.
+- **Interpretation (Claude, to confirm):** S001 posts Tue 24 Nov and says "Saturday", so SWAI-L001 publishes **Sat 28 Nov** (was Tue 1 Dec). SWAI-L002 moves to Sat 5 Dec. If the creator meant Sat 5 Dec for L001, only the calendar rows change.
+- **Implemented:** CLAUDE.md §2, brand/identity.md, strategy/calendar.md, S001 + S002 re-voiced and re-rendered ("Saturday"), S006 says "this Saturday".

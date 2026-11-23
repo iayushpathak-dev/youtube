@@ -8,13 +8,13 @@ objective: trust
 hypothesis: "If we show the link check with humour, the "honest tester" brand lands (comments, shares)."
 title: "AI Links Are Like Gym Memberships"
 hook: "AI links are like gym memberships. They look great until you actually use them."
-production_status: SCRIPTED
+production_status: EDITED
 approval_status: PROPOSED
-publish_date: "2026-11-25"
+publish_date: "2026-11-26"
 video_url: ""
 experiments: []
 created: 2026-11-21
-updated: 2026-11-21
+updated: 2026-11-23
 ---
 
 > **v2 (2026-11-21):** part of the **AI Showdown** set. All 7 launch-week Shorts come from SWAI-L001, at the creator's request ("us video ke 7 shorts… interesting, casual, AI jokes"). `{ }` = fill in from the real recording only. Jokes describe what happened on screen, never claims about the companies.
@@ -47,5 +47,11 @@ AI Showdown package (contestant tiles, round card, ✓/✗ stamps, mini scoreboa
 ## Performance
 | Pulled | Window | Views | Engaged views | Avg % viewed | Likes | Comments | Shares | Subs + / − |
 |---|---|---|---|---|---|---|---|---|
+
+
+## Final narration (as voiced 2026-11-23, clone take 1, 46.0 s)
+> AI links are like gym memberships. They look great… until you actually use them. I asked ChatGPT, Claude and Gemini for laptops under seventy thousand rupees, with sources. Then I clicked every single link. ChatGPT said sixty-six thousand. Its own link? Seventy-eight thousand. Over budget. Thanks, I hate it. Claude's top pick? Out of stock. Everywhere. To be fair, Claude did tell me to check the prices first. Gemini: three laptops, three links, three prices. All exactly right. Someone write this down. So here's the five-second rule: open the link, find the claim, check the date. Round two goes to Gemini. Full showdown, this Saturday.
+
+Results (FACT, verified from the recordings 2026-11-23): ChatGPT 6 (ASUS ₹65,990 claimed vs ₹78,176 on its own link) · Claude 7 (MacBook Neo out of stock; it warned to check prices) · Gemini 10 (all three prices matched). Scene spec: `production/shorts/SWAI-S006.json`. Clips: chatgpt-links 3–11 s, claude 37–45 s, gemini 29–37 s.
 
 ## Lessons learned

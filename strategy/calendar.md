@@ -2,7 +2,7 @@
 
 Week 1 (launch) planned 2026-11-21, revised the same day to the AI Showdown set (all 7 Shorts cut from SWAI-L001, at the creator's request). Originally planned at the creator's request ("lets create a video that we published on tuesday but we create shorts multiple so that we start"). Shorts time is not decided (DEC-012/T5). Suggested default: 18:30 IST on non-Tuesday days.
 
-Cadence (DEC-002): Short every day · Long-form every Tuesday 19:30 IST (Shorts time not set yet).
+Cadence: Short every day · Long-form every **Saturday** 19:30 IST (DEC-023, 2026-11-23; was Tuesday under DEC-002) (Shorts time not set yet).
 Only items with approval status `APPROVED` may be placed in a slot as `SCHEDULED`. Publishing itself needs the creator's go-ahead (CLAUDE.md §5).
 
 | Date | Day | Slot | Content ID | Title | State |
@@ -33,3 +33,18 @@ States: PLANNED (slot reserved) · SCHEDULED (approved, set in Studio) · PUBLIS
 | 2026-12-02 | Wed | Short | SWAI-S010 | Final cheat sheet | PLANNED |
 | 2026-12-08 | Tue | **Long** | SWAI-L002 | Topic pending creator approval (DEC-022) | PLANNED |
 The earlier week-1 table above is superseded.
+The DEC-021 table above is superseded by DEC-023.
+
+## Revised 2026-11-23 (DEC-023): long-form moves to Saturday
+| Date | Day | Slot | Content ID | Note | State |
+|---|---|---|---|---|---|
+| 2026-11-24 | Tue | Short | SWAI-S001 | Teaser, v2 says "roasted on Saturday" (rendered) | PLANNED |
+| 2026-11-25 | Wed | Short | SWAI-S002 | Round 1, v2 says "Full showdown on Saturday" (rendered) | PLANNED |
+| 2026-11-26 | Thu | Short | SWAI-S006 | Round 2 links (rendered 2026-11-23) | PLANNED |
+| 2026-11-27 | Fri | Short | SWAI-S008 | Round 4 app | PLANNED |
+| 2026-11-28 | Sat | **Long 19:30 IST** | **SWAI-L001** | The AI Showdown (final score 40 / 41 / 44) | PLANNED |
+| 2026-11-28 | Sat | Short (after L001) | SWAI-S003 | Round 3 reveal | PLANNED |
+| 2026-11-29 | Sun | Short | SWAI-S009 | Round 5 quiz | PLANNED |
+| 2026-11-30 | Mon | Short | SWAI-S010 | Final cheat sheet | PLANNED |
+| 2026-12-05 | Sat | **Long** | SWAI-L002 | Topic pending creator approval (DEC-022) | PLANNED |
+⚠️ Moving L001 from Tue 1 Dec to Sat 28 Nov removes three production days, and L002 moves from 8 Dec to 5 Dec. HYPOTHESIS: L001 is feasible by Sat because all 5 rounds are recorded and scored. L002 needs the DEC-022 topic approved this week.
