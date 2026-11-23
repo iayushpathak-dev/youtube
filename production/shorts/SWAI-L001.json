@@ -1,0 +1,555 @@
+{
+ "id": "SWAI-L001",
+ "landscape": true,
+ "scenes": [
+  {
+   "dur": 6,
+   "kind": "clip",
+   "label": "Gemini",
+   "src": "out/SWAI-L001/raw/round4-gemini.mp4",
+   "start": 29,
+   "end": 38,
+   "crop": [
+    360,
+    60,
+    900,
+    480
+   ],
+   "caption": "a 3-day water streak… <em>before I drank anything</em>",
+   "score": "",
+   "say": "Yep. That's an AI giving me a three-day water streak… before I drank a single glass. Let me explain how we got here."
+  },
+  {
+   "dur": 4,
+   "kind": "title",
+   "say": "Three AIs. Five real tasks. And one spreadsheet with answers I hid myself, so nobody gets to bluff.",
+   "kicker": "THE AI SHOWDOWN",
+   "big": "3 AIs · <em>5 real tasks</em>",
+   "tiles": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ]
+  },
+  {
+   "dur": 4,
+   "kind": "joke",
+   "say": "In this corner, ChatGPT. The famous one. Your uncle uses it. Your boss uses it. Your boss's uncle uses it.",
+   "tile": "ChatGPT",
+   "big": "The <em>famous</em> one"
+  },
+  {
+   "dur": 4,
+   "kind": "joke",
+   "say": "Claude. The polite one. It apologises so much, I'm pretty sure it's Canadian.",
+   "tile": "Claude",
+   "big": "The <em>polite</em> one"
+  },
+  {
+   "dur": 4,
+   "kind": "joke",
+   "say": "And Gemini. Google's one. It has the entire internet at home.",
+   "tile": "Gemini",
+   "big": "Has the entire internet <em>at home</em>"
+  },
+  {
+   "dur": 4,
+   "kind": "big",
+   "say": "Every round is scored out of ten. Fifty points total. Let's go.",
+   "big": "Scored out of <em>50</em>",
+   "sub": "10 points a round"
+  },
+  {
+   "dur": 4,
+   "kind": "stat",
+   "say": "Rules. Same prompt. Fresh chat. No re-runs, no editing. All three on paid plans, default models. If an AI embarrasses itself, it stays in the video. That's the deal.",
+   "lines": [
+    "Same prompt",
+    "No re-runs",
+    "Fails stay in"
+   ]
+  },
+  {
+   "dur": 4,
+   "kind": "round",
+   "say": "Round one. The thing everyone actually uses AI for: turning messy notes into an email your boss won't laugh at.",
+   "n": 1,
+   "big": "The Boss Email",
+   "emoji": "📧"
+  },
+  {
+   "dur": 4,
+   "kind": "stat",
+   "say": "Seven facts. A delayed launch, two bugs, a new date, the budget, and one extra test day. Keep all seven. Add nothing.",
+   "lines": [
+    "7 facts",
+    "Keep all 7",
+    "Add nothing"
+   ]
+  },
+  {
+   "dur": 6,
+   "kind": "clip",
+   "label": "ChatGPT",
+   "src": "out/SWAI-L001/raw/round1-chatgpt.mp4",
+   "start": 0,
+   "end": 18,
+   "crop": [
+    380,
+    30,
+    1400,
+    750
+   ],
+   "caption": "thought about it… then <em>invented one tiny reason</em>",
+   "score": "9/10",
+   "say": "ChatGPT thought about it… said absolutely nothing… then changed its mind. Solid email. But it added one tiny reason I never gave it. Nobody invited that. Nine."
+  },
+  {
+   "dur": 6,
+   "kind": "clip",
+   "label": "Claude",
+   "src": "out/SWAI-L001/raw/round1-claude.mp4",
+   "start": 0,
+   "end": 15.7,
+   "crop": [
+    380,
+    40,
+    1400,
+    750
+   ],
+   "caption": "kept 7 facts, said <em>“all five”</em>",
+   "score": "10/10",
+   "say": "Claude said untangling, kept every single fact, then proudly told me it kept all five. There were seven. Even Claude can't count all my problems. Still, nothing missing, nothing invented. Ten.",
+   "blur": [
+    [
+     588,
+     570,
+     150,
+     36
+    ]
+   ]
+  },
+  {
+   "dur": 6,
+   "kind": "clip",
+   "label": "Gemini",
+   "src": "out/SWAI-L001/raw/round1-gemini.mp4",
+   "start": 0,
+   "end": 11.3,
+   "crop": [
+    250,
+    0,
+    1150,
+    615
+   ],
+   "caption": "11 seconds. <em>Straight to Gmail.</em>",
+   "score": "10/10",
+   "say": "Gemini didn't even think about it. Eleven seconds, straight into a Gmail draft. Every fact. Ten."
+  },
+  {
+   "dur": 4,
+   "kind": "score",
+   "say": "Round one: Claude and Gemini tie. ChatGPT, one point behind.",
+   "big": "Round 1",
+   "sub": "Claude and Gemini tie",
+   "board": {
+    "ChatGPT": "9",
+    "Claude": "10",
+    "Gemini": "10"
+   }
+  },
+  {
+   "dur": 4,
+   "kind": "round",
+   "say": "Round two. Trust me, bro. I asked for three laptops under seventy thousand rupees that a student can buy right now, with sources. And I clicked every single link.",
+   "n": 2,
+   "big": "Trust Me Bro (sources)",
+   "emoji": "🔗"
+  },
+  {
+   "dur": 4,
+   "kind": "big",
+   "say": "Because AI links are like gym memberships. They look great, until you actually use them.",
+   "big": "AI links are like <em>gym memberships</em>"
+  },
+  {
+   "dur": 6,
+   "kind": "clip",
+   "label": "ChatGPT",
+   "src": "out/SWAI-L001/raw/round2-chatgpt-links.mp4",
+   "start": 0,
+   "end": 16,
+   "crop": [
+    500,
+    0,
+    1362,
+    730
+   ],
+   "caption": "said ₹66k · its own link: <em>₹78,176</em>",
+   "score": "6/10",
+   "say": "ChatGPT said the ASUS Vivobook was sixty-six thousand. Its own link? Seventy-eight thousand. Over budget. That price is from a parallel universe. Six."
+  },
+  {
+   "dur": 6,
+   "kind": "clip",
+   "label": "Claude",
+   "src": "out/SWAI-L001/raw/round2-claude.mp4",
+   "start": 36,
+   "end": 58,
+   "crop": [
+    0,
+    0,
+    1918,
+    938
+   ],
+   "caption": "MacBook <em>out of stock</em> · Lenovo ₹14k more",
+   "score": "7/10",
+   "say": "Claude's top pick, a MacBook? Out of stock. Everywhere. And the Lenovo was fourteen thousand more than it said. To be fair, Claude did warn me to check the live price, especially for the Lenovo. Seven."
+  },
+  {
+   "dur": 6,
+   "kind": "clip",
+   "label": "Gemini",
+   "src": "out/SWAI-L001/raw/round2-gemini.mp4",
+   "start": 28,
+   "end": 58,
+   "crop": [
+    0,
+    0,
+    1626,
+    870
+   ],
+   "caption": "3 links · 3 prices · <em>all exact</em>",
+   "score": "10/10",
+   "say": "Gemini. Three laptops. Three links. Three prices. All exactly right. I'm genuinely shocked. Someone write this down. Ten."
+  },
+  {
+   "dur": 4,
+   "kind": "score",
+   "say": "The lesson: a confident answer is not a checked answer.",
+   "big": "Round 2",
+   "sub": "Confident is not the same as checked",
+   "board": {
+    "ChatGPT": "6",
+    "Claude": "7",
+    "Gemini": "10"
+   }
+  },
+  {
+   "dur": 4,
+   "kind": "round",
+   "say": "Round three. My favourite.",
+   "n": 3,
+   "big": "The Hidden Problems",
+   "emoji": "🔒"
+  },
+  {
+   "dur": 4,
+   "kind": "sheet",
+   "say": "I made a sales spreadsheet for a small shop, and hid three problems inside it. I know the exact answers, so no bluffing.",
+   "big": "3 problems hidden",
+   "sub": "I know the exact answers"
+  },
+  {
+   "dur": 6,
+   "kind": "clip",
+   "label": "ChatGPT",
+   "src": "out/SWAI-L001/raw/round3-chatgpt.mp4",
+   "start": 22,
+   "end": 50,
+   "crop": [
+    450,
+    30,
+    1000,
+    535
+   ],
+   "caption": "headphone returns 22.8% · revenue falling · <em>missed the region</em>",
+   "score": "5/10",
+   "say": "ChatGPT found the headphone returns, almost twenty-three percent, and revenue falling every month. Every number checked out. But it missed the region, and the weekends. Five."
+  },
+  {
+   "dur": 6,
+   "kind": "clip",
+   "label": "Claude",
+   "src": "out/SWAI-L001/raw/round3-claude.mp4",
+   "start": 30,
+   "end": 51,
+   "crop": [
+    500,
+    150,
+    1000,
+    535
+   ],
+   "caption": "East sales <em>cut in half</em>. then… stopped.",
+   "score": "4/10",
+   "say": "Claude went straight for the region. East sales, cut in half, with a weekly chart. It even spotted days with zero headphone sales in the East. And then… it just stopped. One insight. Four."
+  },
+  {
+   "dur": 6,
+   "kind": "clip",
+   "label": "Gemini",
+   "src": "out/SWAI-L001/raw/round3-gemini.mp4",
+   "start": 16,
+   "end": 95,
+   "crop": [
+    250,
+    0,
+    1300,
+    700
+   ],
+   "caption": "headphones · decline · weak East · <em>a whole dashboard</em>",
+   "score": "6/10",
+   "say": "Gemini found the headphones, the monthly decline, and that the East region was weak. It even built a whole dashboard. Six."
+  },
+  {
+   "dur": 4,
+   "kind": "stat",
+   "say": "And the answers? Weekends sell sixty-six percent more. The East dropped fifty-two percent from July to September. And headphones get returned almost a quarter of the time.",
+   "lines": [
+    "Weekends +66%",
+    "East −52%",
+    "Headphones 22.8% returned"
+   ]
+  },
+  {
+   "dur": 4,
+   "kind": "score",
+   "say": "The weekend one? Not a single AI found it. Apparently AIs don't get weekends.",
+   "big": "Round 3",
+   "sub": "Nobody found the weekends",
+   "board": {
+    "ChatGPT": "5",
+    "Claude": "4",
+    "Gemini": "6"
+   }
+  },
+  {
+   "dur": 4,
+   "kind": "round",
+   "say": "Round four. No coding. One prompt. Build me a habit tracker in a single file that remembers my habits after I refresh the page.",
+   "n": 4,
+   "big": "Build Me an App",
+   "emoji": "🛠️"
+  },
+  {
+   "dur": 4,
+   "kind": "stat",
+   "say": "Then I ran the exact same test on all three. Add two habits. Tick today. Reload.",
+   "lines": [
+    "Add 2 habits",
+    "Tick today",
+    "Reload"
+   ]
+  },
+  {
+   "dur": 6,
+   "kind": "clip",
+   "label": "ChatGPT",
+   "src": "out/SWAI-L001/raw/round4-chatgpt.mp4",
+   "start": 72,
+   "end": 87,
+   "crop": [
+    380,
+    40,
+    1400,
+    750
+   ],
+   "caption": "clean, simple, <em>everything saved</em>",
+   "score": "10/10",
+   "say": "ChatGPT: clean, simple, everything saved. Future days locked. Ten."
+  },
+  {
+   "dur": 6,
+   "kind": "clip",
+   "label": "Claude",
+   "src": "out/SWAI-L001/raw/round4-claude.mp4",
+   "start": 98,
+   "end": 117,
+   "crop": [
+    380,
+    40,
+    1400,
+    750
+   ],
+   "caption": "“haven't clicked through it” · <em>honest</em>",
+   "score": "10/10",
+   "say": "Claude: week navigation, a warning if storage fails, and it honestly told me it checked the code but hadn't clicked through it. Respect. Everything saved. Ten."
+  },
+  {
+   "dur": 6,
+   "kind": "clip",
+   "label": "Gemini",
+   "src": "out/SWAI-L001/raw/round4-gemini.mp4",
+   "start": 19,
+   "end": 38,
+   "crop": [
+    360,
+    60,
+    900,
+    480
+   ],
+   "caption": "prettiest · <em>3 habits I never added</em>",
+   "score": "8/10",
+   "say": "Gemini built the prettiest app by far. But it came pre-loaded with three habits I never added, including a three-day water streak."
+  },
+  {
+   "dur": 6,
+   "kind": "clip",
+   "label": "Gemini",
+   "src": "out/SWAI-L001/raw/round4-gemini.mp4",
+   "start": 46,
+   "end": 58,
+   "crop": [
+    360,
+    60,
+    900,
+    480
+   ],
+   "caption": "complete Wednesday <em>on Monday</em>",
+   "score": "8/10",
+   "say": "And it lets you complete Wednesday… on Monday. Productivity unlocked. Eight."
+  },
+  {
+   "dur": 4,
+   "kind": "score",
+   "say": "Engineer's verdict: all three apps actually work. Fine for you. If you want to sell it, get the code reviewed first.",
+   "big": "Round 4",
+   "sub": "All three work · review before you sell",
+   "board": {
+    "ChatGPT": "10",
+    "Claude": "10",
+    "Gemini": "8"
+   }
+  },
+  {
+   "dur": 4,
+   "kind": "round",
+   "say": "Last round. Explain AI agents to a fifteen-year-old, then quiz me, one question at a time. And I'm getting one wrong on purpose.",
+   "n": 5,
+   "big": "Teach Me Like I'm 15",
+   "emoji": "🧠"
+  },
+  {
+   "dur": 6,
+   "kind": "clip",
+   "label": "ChatGPT",
+   "src": "out/SWAI-L001/raw/round5-chatgpt.mp4",
+   "start": 30,
+   "end": 62,
+   "crop": [
+    450,
+    100,
+    1250,
+    670
+   ],
+   "caption": "built a whole <em>quiz app</em>",
+   "score": "10/10",
+   "say": "ChatGPT built an entire quiz app. With a score table. Calm down. It caught my wrong answer and explained why. Ten."
+  },
+  {
+   "dur": 6,
+   "kind": "clip",
+   "label": "Claude",
+   "src": "out/SWAI-L001/raw/round5-claude.mp4",
+   "start": 0,
+   "end": 45,
+   "crop": [
+    500,
+    0,
+    1300,
+    700
+   ],
+   "caption": "agent = <em>smart intern</em> · 2 out of 3",
+   "score": "10/10",
+   "say": "Claude used a weekend trip to Jaipur, called an agent a smart intern, and graded me two out of three. Fair. Ten."
+  },
+  {
+   "dur": 6,
+   "kind": "clip",
+   "label": "Gemini",
+   "src": "out/SWAI-L001/raw/round5-gemini.mp4",
+   "start": 31,
+   "end": 42,
+   "crop": [
+    400,
+    40,
+    900,
+    480
+   ],
+   "caption": "“Haha, nice try — <em>there is no D!</em>”",
+   "score": "10/10",
+   "say": "Gemini? I answered D. There was no D. Haha, nice try. There is no D. Caught me. Ten."
+  },
+  {
+   "dur": 4,
+   "kind": "score",
+   "say": "All three taught it well, and graded me honestly.",
+   "big": "Round 5",
+   "sub": "All three graded honestly",
+   "board": {
+    "ChatGPT": "10",
+    "Claude": "10",
+    "Gemini": "10"
+   }
+  },
+  {
+   "dur": 4,
+   "kind": "score",
+   "say": "Final scores, out of fifty. ChatGPT… forty. Claude… forty-one. And the winner… Gemini, with forty-four.",
+   "big": "Final score",
+   "sub": "out of 50",
+   "board": {
+    "ChatGPT": "40",
+    "Claude": "41",
+    "Gemini": "44"
+   }
+  },
+  {
+   "dur": 4,
+   "kind": "joke",
+   "say": "The winner gets absolutely nothing. It's software.",
+   "tile": "Gemini",
+   "big": "Prize: <em>absolutely nothing</em>"
+  },
+  {
+   "dur": 4,
+   "kind": "stat",
+   "say": "But here's what actually matters. Writing an email? Claude or Gemini. Shopping with sources? Gemini, but still click the link. Spreadsheets? None of them found everything, so check the numbers yourself.",
+   "lines": [
+    "Email → Claude / Gemini",
+    "Sources → Gemini",
+    "Data → check yourself"
+   ]
+  },
+  {
+   "dur": 4,
+   "kind": "stat",
+   "say": "A quick app? ChatGPT or Claude. And learning something new? Any of them.",
+   "lines": [
+    "App → ChatGPT / Claude",
+    "Learning → any of them"
+   ]
+  },
+  {
+   "dur": 4,
+   "kind": "big",
+   "say": "The biggest surprise: three of the smartest AIs in the world, and not one noticed that people shop more on weekends.",
+   "big": "Not one AI noticed <em>weekends</em>",
+   "sub": "the biggest surprise"
+  },
+  {
+   "dur": 4,
+   "kind": "big",
+   "say": "So, which AI is best? Honestly, the one you double-check.",
+   "big": "Which AI is best?",
+   "sub": "The one you double-check"
+  },
+  {
+   "dur": 4,
+   "kind": "big",
+   "say": "This is AI Made Usable. Every week I test AI on real stuff, so you don't waste your time. Comment which task I should throw at them next. And subscribe, before Gemini answers for you.",
+   "big": "AI Made <em>Usable</em>",
+   "sub": "Comment the next task · Subscribe"
+  }
+ ]
+}

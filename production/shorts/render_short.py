@@ -10,6 +10,8 @@ import json, sys, subprocess, pathlib, html, argparse
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 ap = argparse.ArgumentParser(); ap.add_argument('spec'); ap.add_argument('--audio'); a = ap.parse_args()
 spec = json.load(open(a.spec)); sid = spec['id']
+LAND = bool(spec.get('landscape'))  # long-form: 1920x1080
+W, H = (1920, 1080) if LAND else (1080, 1920)
 out = ROOT / 'out' / sid; out.mkdir(parents=True, exist_ok=True)
 logo = (ROOT / 'brand/assets/logo.png').as_uri()
 CSS = f"""
@@ -38,6 +40,17 @@ html,body{{margin:0;width:1080px;height:1920px;background:#0A0E14;font-family:'I
 .brand{{position:absolute;bottom:250px;display:flex;align-items:center;gap:20px;font-weight:800;font-size:44px;opacity:.85}}
 .brand img{{width:84px;height:84px;border-radius:50%}}
 """
+if LAND:
+    CSS += """
+html,body,.s{width:1920px;height:1080px} .s{gap:40px;padding:0 140px}
+.big{font-size:104px} .sub{font-size:48px} .t{width:300px;height:150px;font-size:56px} .t.solo{width:520px;height:190px;font-size:80px}
+.lines div{font-size:104px} .emo{font-size:170px}
+.board div{width:900px;font-size:58px;padding:16px 40px} .board{gap:16px}
+.cliptop{top:34px;flex-direction:row;gap:30px} .cliptop .t{width:260px;height:100px;font-size:46px} .cap{font-size:50px;max-width:1400px;text-align:left}
+.clipbox{top:176px;left:180px;width:1560px;height:840px}
+.badge{top:auto;bottom:40px;right:60px;font-size:72px;padding:6px 34px}
+.brand{bottom:44px;left:60px;font-size:34px} .brand img{width:60px;height:60px}
+"""
 def scene_html(s):
     b = s.get('big', ''); sub = f"<div class='sub'>{html.escape(s['sub'])}</div>" if s.get('sub') else ''
     k = s['kind']
@@ -65,7 +78,8 @@ def scene_html(s):
 files = []
 for i, s in enumerate(spec['scenes']):
     f = out / f'scene{i:02d}.html'; f.write_text(scene_html(s), encoding='utf-8'); files.append(str(f))
-subprocess.run(['node', str(ROOT / 'production/shorts/shoot.js'), *files], check=True)
+import os
+subprocess.run(['node', str(ROOT / 'production/shorts/shoot.js'), *files], check=True, env={**os.environ, 'W': str(W), 'H': str(H)})
 
 durs = [s['dur'] for s in spec['scenes']]
 if a.audio:
@@ -114,6 +128,7 @@ if a.audio:
     else:
         k = (alen + 0.6) / sum(durs); durs = [d * k for d in durs]
 fps = 30; parts = []
+CW, CH, CX, CY = (1552, 832, 184, 180) if LAND else (992, 992, 44, 564)
 for i, d in enumerate(durs):
     n = max(1, round(d * fps)); seg = out / f'seg{i:02d}.mp4'
     sc = spec['scenes'][i]
@@ -121,18 +136,18 @@ for i, d in enumerate(durs):
         src = str(ROOT / sc['src'])
         sdur = float(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',src]).decode())
         st = sc.get('start', 0); en = sc.get('end') or sdur
-        speed = max((en - st) / d, 0.25)
+        speed = max((en - st) / d, 1.0 if LAND else 0.25)  # long-form: never slow footage down, hold the last frame instead
         x, y, w, h = sc['crop']
         chain = f"[1:v]trim={st}:{en},setpts=(PTS-STARTPTS)/{speed:.4f},fps={fps}"
         if sc.get('blur'):
             for bi, (bx, by, bw, bh) in enumerate(sc['blur']):
                 chain += f",split[m{bi}][b{bi}];[b{bi}]crop={bw}:{bh}:{bx}:{by},boxblur=luma_radius=8:luma_power=3:chroma_radius=4:chroma_power=3[bb{bi}];[m{bi}][bb{bi}]overlay={bx}:{by}"
-        chain += f",crop={w}:{h}:{x}:{y},scale=992:992:force_original_aspect_ratio=decrease,pad=992:992:(ow-iw)/2:(oh-ih)/2:color=0x0A0E14,tpad=stop_mode=clone:stop_duration=30[c];[0:v][c]overlay=44:564,format=yuv420p"
+        chain += f",crop={w}:{h}:{x}:{y},scale={CW}:{CH}:force_original_aspect_ratio=decrease,pad={CW}:{CH}:(ow-iw)/2:(oh-ih)/2:color=0x0A0E14,tpad=stop_mode=clone:stop_duration=30[c];[0:v][c]overlay={CX}:{CY},format=yuv420p"
         subprocess.run(['ffmpeg','-y','-v','error','-loop','1','-framerate',str(fps),'-i',str(out/f'scene{i:02d}.png'),'-i',src,
             '-filter_complex',chain,'-frames:v',str(n),'-r',str(fps),'-c:v','libx264','-preset','veryfast','-crf','20','-an',str(seg)], check=True)
         parts.append(seg); continue
     subprocess.run(['ffmpeg','-y','-v','error','-loop','1','-i',str(out/f'scene{i:02d}.png'),'-vf',
-        f"scale=1188:2112,zoompan=z='1+0.06*on/{n}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={n}:s=1080x1920:fps={fps}",
+        f"scale={int(W*1.1)}:{int(H*1.1)},zoompan=z='1+0.06*on/{n}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={n}:s={W}x{H}:fps={fps}",
         '-frames:v',str(n),'-pix_fmt','yuv420p','-c:v','libx264','-preset','veryfast','-crf','20',str(seg)], check=True)
     parts.append(seg)
 (out/'list.txt').write_text(''.join(f"file '{x.name}'\n" for x in parts))
