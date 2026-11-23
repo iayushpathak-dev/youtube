@@ -92,9 +92,9 @@ if a.audio:
         wcache = pathlib.Path(a.audio).with_suffix('.words.json')
         if not wcache.exists():
             wcache.write_text(subprocess.check_output([sys.executable, str(ROOT / 'production/shorts/words.py'), a.audio]).decode())
-        W = json.loads(wcache.read_text())
+        WD = json.loads(wcache.read_text())
         norm = lambda t: re.sub(r'[^a-z0-9]', '', t.lower())
-        tw = [norm(w[2]) for w in W]
+        tw = [norm(w[2]) for w in WD]
         sw, first = [], []
         for t in says:
             first.append(len(sw)); sw += [x for x in (norm(y) for y in t.split()) if x]
@@ -104,7 +104,7 @@ if a.audio:
         cuts = [0.0]
         for i in first[1:]:
             k = next((m[x] for x in range(i, len(sw)) if x in m), None)
-            cuts.append(max(cuts[-1] + 0.6, W[k][0] - 0.12) if k is not None else cuts[-1] + 2)
+            cuts.append(max(cuts[-1] + 0.6, WD[k][0] - 0.12) if k is not None else cuts[-1] + 2)
         cuts.append(alen + 0.6)
         durs = [b - a_ for a_, b in zip(cuts, cuts[1:])]
         print('word-sync cuts:', ' '.join(f'{c:.2f}' for c in cuts))
