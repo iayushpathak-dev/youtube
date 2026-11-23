@@ -10,7 +10,7 @@ title: "I'm Making ChatGPT, Claude & Gemini Fight"
 hook: "I'm making ChatGPT, Claude and Gemini fight. Over a spreadsheet."
 production_status: EDITED
 approval_status: PROPOSED
-publish_date: "2026-11-24"
+publish_date: "2026-11-23"
 video_url: ""
 experiments: []
 created: 2026-11-21

@@ -10,7 +10,7 @@ title: "I Answered Wrong On Purpose. Here's How 3 AIs Reacted"
 hook: "I answered a quiz wrong on purpose, just to see how three AIs would react."
 production_status: EDITED
 approval_status: PROPOSED
-publish_date: "2026-11-29"
+publish_date: "2026-11-27"
 video_url: ""
 experiments: []
 created: 2026-11-21

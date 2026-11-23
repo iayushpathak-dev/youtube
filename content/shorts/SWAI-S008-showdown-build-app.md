@@ -10,7 +10,7 @@ title: "Can AI Build an App From One Prompt?"
 hook: "One prompt. No coding. Three AIs. Let's see whose app survives a page refresh."
 production_status: EDITED
 approval_status: PROPOSED
-publish_date: "2026-11-27"
+publish_date: "2026-11-26"
 video_url: ""
 experiments: []
 created: 2026-11-21

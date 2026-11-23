@@ -10,7 +10,7 @@ title: "I Asked 3 AIs to Email My Boss"
 hook: "I gave three AIs my messy notes and one rule: keep every fact, add nothing."
 production_status: EDITED
 approval_status: PROPOSED
-publish_date: "2026-11-25"
+publish_date: "2026-11-24"
 video_url: ""
 experiments: []
 created: 2026-11-21

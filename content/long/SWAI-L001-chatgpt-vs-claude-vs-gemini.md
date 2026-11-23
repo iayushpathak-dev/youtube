@@ -10,7 +10,7 @@ title: "I Made ChatGPT, Claude & Gemini Compete in 5 Real Tasks"
 hook: "Three AIs. Five real tasks. One spreadsheet with answers I hid myself. Nobody gets to bluff. Welcome to the AI Showdown."
 production_status: SCRIPTED
 approval_status: PROPOSED
-publish_date: "2026-11-24"
+publish_date: "2026-11-28"
 video_url: ""
 experiments: []
 created: 2026-11-21

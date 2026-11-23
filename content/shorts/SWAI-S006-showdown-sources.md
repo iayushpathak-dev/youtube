@@ -10,7 +10,7 @@ title: "AI Links Are Like Gym Memberships"
 hook: "AI links are like gym memberships. They look great until you actually use them."
 production_status: EDITED
 approval_status: PROPOSED
-publish_date: "2026-11-26"
+publish_date: "2026-11-25"
 video_url: ""
 experiments: []
 created: 2026-11-21

@@ -179,3 +179,8 @@ Never delete entries. Mark superseded ones with `SUPERSEDED by DEC-###`.
 - **Change:** one long-form video every **Saturday** 19:30 IST (replaces Tuesday from DEC-002/DEC-021). Shorts stay daily.
 - **Interpretation (Claude, to confirm):** S001 posts Tue 24 Nov and says "Saturday", so SWAI-L001 publishes **Sat 28 Nov** (was Tue 1 Dec). SWAI-L002 moves to Sat 5 Dec. If the creator meant Sat 5 Dec for L001, only the calendar rows change.
 - **Implemented:** CLAUDE.md §2, brand/identity.md, strategy/calendar.md, S001 + S002 re-voiced and re-rendered ("Saturday"), S006 says "this Saturday".
+
+### DEC-024: Shorts start Mon 23 Nov; remaining videos one per day
+- **Status:** APPROVED (2026-11-23) → IMPLEMENTED in `strategy/calendar.md`
+- **Creator's words (2026-11-23):** "save krdo kal ek video banayega tu parsu dusri narsu tesri mai bolunga bachi hui video bana tu banana suru krdena" (in reply to Claude's proposed order: S001 today, S002 Tue … S009 Fri, L001 + S003 Sat, S010 Sun).
+- **Plan:** Claude makes one remaining video per day (L001 → S003 → S010), starting when the creator says "bachi hui video bana".

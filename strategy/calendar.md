@@ -48,3 +48,23 @@ The DEC-021 table above is superseded by DEC-023.
 | 2026-11-30 | Mon | Short | SWAI-S010 | Final cheat sheet | PLANNED |
 | 2026-12-05 | Sat | **Long** | SWAI-L002 | Topic pending creator approval (DEC-022) | PLANNED |
 ⚠️ Moving L001 from Tue 1 Dec to Sat 28 Nov removes three production days, and L002 moves from 8 Dec to 5 Dec. HYPOTHESIS: L001 is feasible by Sat because all 5 rounds are recorded and scored. L002 needs the DEC-022 topic approved this week.
+The DEC-023 table above is superseded by DEC-024 (dates shifted one day earlier).
+
+## Revised 2026-11-23 (DEC-024): Shorts start today, S009 on Friday
+| Date | Day | Slot | Content ID | Note | State |
+|---|---|---|---|---|---|
+| 2026-11-23 | Mon | Short | SWAI-S001 | Teaser ("roasted on Saturday"), 18:30 IST suggested | PLANNED |
+| 2026-11-24 | Tue | Short | SWAI-S002 | Round 1 | PLANNED |
+| 2026-11-25 | Wed | Short | SWAI-S006 | Round 2 | PLANNED |
+| 2026-11-26 | Thu | Short | SWAI-S008 | Round 4 | PLANNED |
+| 2026-11-27 | Fri | Short | SWAI-S009 | Round 5 ("final scores drop this Saturday" fits) | PLANNED |
+| 2026-11-28 | Sat | **Long 19:30 IST** | **SWAI-L001** | The AI Showdown | PLANNED |
+| 2026-11-28 | Sat | Short (after L001) | SWAI-S003 | Round 3 reveal | PLANNED |
+| 2026-11-29 | Sun | Short | SWAI-S010 | Final cheat sheet | PLANNED |
+| 2026-12-05 | Sat | **Long** | SWAI-L002 | Topic pending (DEC-022) | PLANNED |
+
+## Production plan (creator, 2026-11-23)
+One remaining video per day, started when the creator says "bachi hui video bana":
+1. Day 1 (Tue 24): **SWAI-L001** long video (biggest, due Sat 28). If it doesn't fit in one session, continue on day 2.
+2. Day 2 (Wed 25): **SWAI-S003** (Round 3 Short).
+3. Day 3 (Thu 26): **SWAI-S010** (cheat sheet Short).

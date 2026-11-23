@@ -10,7 +10,7 @@ title: "Which AI for What? (After Testing All 3)"
 hook: "I tested ChatGPT, Claude and Gemini on five real tasks. Here's the cheat sheet, so you don't have to."
 production_status: SCRIPTED
 approval_status: PROPOSED
-publish_date: "2026-11-28"
+publish_date: "2026-11-29"
 video_url: ""
 experiments: []
 created: 2026-11-21
