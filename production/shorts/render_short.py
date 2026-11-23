@@ -74,7 +74,27 @@ if a.audio:
     if all(says):
         # Word-sync: each scene carries the narration it covers ("say"). Expected cut = character
         # share of the voice length, snapped to the nearest real pause in the audio (silencedetect).
-        import re
+        import re, difflib
+        wcache = pathlib.Path(a.audio).with_suffix('.words.json')
+        if not wcache.exists():
+            wcache.write_text(subprocess.check_output([sys.executable, str(ROOT / 'production/shorts/words.py'), a.audio]).decode())
+        W = json.loads(wcache.read_text())
+        norm = lambda t: re.sub(r'[^a-z0-9]', '', t.lower())
+        tw = [norm(w[2]) for w in W]
+        sw, first = [], []
+        for t in says:
+            first.append(len(sw)); sw += [x for x in (norm(y) for y in t.split()) if x]
+        m = {}
+        for blk in difflib.SequenceMatcher(None, sw, tw, autojunk=False).get_matching_blocks():
+            for j in range(blk.size): m[blk.a + j] = blk.b + j
+        cuts = [0.0]
+        for i in first[1:]:
+            k = next((m[x] for x in range(i, len(sw)) if x in m), None)
+            cuts.append(max(cuts[-1] + 0.6, W[k][0] - 0.12) if k is not None else cuts[-1] + 2)
+        cuts.append(alen + 0.6)
+        durs = [b - a_ for a_, b in zip(cuts, cuts[1:])]
+        print('word-sync cuts:', ' '.join(f'{c:.2f}' for c in cuts))
+    elif False:  # old pause-snap method, superseded by word-sync
         log = subprocess.run(['ffmpeg','-hide_banner','-i',a.audio,'-af','silencedetect=n=-32dB:d=0.12','-f','null','-'],capture_output=True,text=True).stderr
         st = [float(x) for x in re.findall(r'silence_start: ([\d.]+)', log)]
         en = [float(x) for x in re.findall(r'silence_end: ([\d.]+)', log)]

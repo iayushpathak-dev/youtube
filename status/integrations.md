@@ -44,3 +44,10 @@ Last verified: **2026-11-21** (cloud Claude Code session). Re-verify when someth
 - 2026-11-23 · Drive backup verified (file sizes match the session copies byte-for-byte). `2 Raw Recordings` holds: `Recording 2026-11-23 003325.mp4` = round1-chatgpt · `…004117` = round1-claude · `…004818` = round1-gemini · `gpt-2-compressed` = round2-chatgpt · `gpt-34-compressed` = round2-chatgpt-links · `claude-2-compressed` = round2-claude · `gemini-2-compressed` = round2-gemini. Higher-quality originals are also there: `gpt-2`, `gpt-34`, `claude-2`, `gemini-2` (33–71 MB). `Shorts` holds SWAI-S001-final and SWAI-S002-final.
 - 2026-11-23 · **Limit found:** each connector call is capped at **4.2 MB** (≈3.1 MB of file). Short finals are 5.6–6.9 MB, so Claude **cannot** upload them to Drive. Claude sends finals in chat (SendUserFile) and the creator moves them to Drive.
 - Note (superseded for files > 3 MB): the Drive connector supports uploading local files by `sha256:<hash>:<path>` reference (no base64 in context), so Claude can upload finished renders to Drive itself.
+
+## Word-level voice sync (added 2026-11-23, creator approved: "whisper ... download krle and voice sync krle")
+- `faster-whisper` 1.2.1 installed with pip (not persistent: reinstall in a new container with `pip install faster-whisper`). Model `base.en` (CPU, int8).
+- Hosts added to the environment (approved via prompt): `huggingface.co`, `us.aws.cdn.hf.co`, `cas-bridge.xethub.hf.co`, `cdn-lfs.huggingface.co`, `cas-server.xethub.hf.co`. Set `HF_HUB_DISABLE_XET=1`.
+- PyAV in this container rejects faster-whisper's audio open call, so `production/shorts/words.py` decodes with ffmpeg and passes a numpy array.
+- `render_short.py`: if every scene has `say`, each cut = first word of that scene's line − 0.12 s (difflib alignment of script words to Whisper words). Cached as `<voice>.words.json`.
+- FACT (S002, 2026-11-23): the earlier pause-snap method cut up to 1.2 s early (Gemini scene 34.38 s vs word 35.58 s); word-sync lands 0.12 s before each word.

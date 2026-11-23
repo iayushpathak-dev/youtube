@@ -28,7 +28,8 @@
 - **DEC-023 APPROVED:** long-form moves to **Saturday**. L001 → Sat 28 Nov, L002 → Sat 5 Dec. CLAUDE.md, identity, calendar updated.
 - S001 + S002 re-voiced with "Saturday" and re-rendered. **S006 (Round 2) rendered** (46 s). All three sent to the creator in chat. Drive upload is not possible from Claude (4.2 MB per-call limit), so the creator moves them to Drive `Shorts`.
 - S008 (Round 4) and S009 (Round 5) rendered and sent the same evening: **5 Shorts ready** (S001, S002, S006, S008, S009).
-- **Sound sync fix (2026-11-23):** `render_short.py` now cuts each scene where its own line ends: every scene carries its narration (`say`), and the cut snaps to the real pause in the voice (ffmpeg silencedetect). All 5 Shorts re-rendered (S001 is already uploaded; its old render stays on YouTube).
+- **Word-level sync (2026-11-23, Whisper):** replaces the pause method below; S002, S006, S008, S009 (and S001 for re-use) re-rendered.
+- **Sound sync fix (2026-11-23, superseded):** `render_short.py` now cuts each scene where its own line ends: every scene carries its narration (`say`), and the cut snaps to the real pause in the voice (ffmpeg silencedetect). All 5 Shorts re-rendered (S001 is already uploaded; its old render stays on YouTube).
 - **DEC-024:** Shorts start today (Mon 23: S001), S009 moves to Fri 27, S010 to Sun 29.
 - **Next (when the creator says "bachi hui video bana"):** Day 1 L001 long video → Day 2 S003 → Day 3 S010. Then L002 (needs DEC-022). DEC-022 (L002 topic) needs approval this week.
 
