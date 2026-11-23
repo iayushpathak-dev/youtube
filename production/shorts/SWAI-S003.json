@@ -1,0 +1,104 @@
+{
+ "id": "SWAI-S003",
+ "scenes": [
+  {
+   "dur": 3,
+   "kind": "title",
+   "kicker": "THE AI SHOWDOWN · ROUND 3",
+   "big": "I hid <em>3 problems</em>",
+   "tiles": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "say": "I hid three problems in a spreadsheet."
+  },
+  {
+   "dur": 6,
+   "kind": "stat",
+   "lines": [
+    "Headphone returns",
+    "East region dying",
+    "Weekend spike"
+   ],
+   "say": "Headphones getting returned like crazy. One region quietly dying. And people buying way more on weekends."
+  },
+  {
+   "dur": 3,
+   "kind": "sheet",
+   "big": "Find them.",
+   "sub": "3 AIs · same file · same prompt",
+   "say": "Then I asked three AIs to find them."
+  },
+  {
+   "dur": 8,
+   "kind": "clip",
+   "label": "ChatGPT",
+   "caption": "headphones + falling revenue · <em>missed the region</em>",
+   "score": "5/10",
+   "src": "out/SWAI-L001/raw/round3-chatgpt.mp4",
+   "start": 33,
+   "end": 48,
+   "crop": [
+    500,
+    40,
+    900,
+    860
+   ],
+   "say": "ChatGPT found the headphones and the falling revenue. Missed the region. Five out of ten."
+  },
+  {
+   "dur": 8,
+   "kind": "clip",
+   "label": "Claude",
+   "caption": "East sales <em>cut in half</em>. then… stopped.",
+   "score": "4/10",
+   "src": "out/SWAI-L001/raw/round3-claude.mp4",
+   "start": 34,
+   "end": 50,
+   "crop": [
+    560,
+    160,
+    820,
+    640
+   ],
+   "say": "Claude went straight for the region. East sales cut in half, with a chart. And then it just stopped. One insight. Four."
+  },
+  {
+   "dur": 7,
+   "kind": "clip",
+   "label": "Gemini",
+   "caption": "headphones · decline · weak region",
+   "score": "6/10",
+   "src": "out/SWAI-L001/raw/round3-gemini.mp4",
+   "start": 80,
+   "end": 95,
+   "crop": [
+    430,
+    40,
+    740,
+    860
+   ],
+   "say": "Gemini found the headphones, the decline, and the weak region. Six."
+  },
+  {
+   "dur": 5,
+   "kind": "big",
+   "big": "Weekends?",
+   "sub": "Not one AI found it. AIs don't get weekends.",
+   "say": "And the weekend problem? Not one AI found it. Apparently AIs don't get weekends."
+  },
+  {
+   "dur": 3,
+   "kind": "score",
+   "big": "Round 3",
+   "sub": "Full showdown is live",
+   "board": {
+    "ChatGPT": "5",
+    "Claude": "4",
+    "Gemini": "6"
+   },
+   "say": "Full showdown is live on the channel."
+  }
+ ]
+}

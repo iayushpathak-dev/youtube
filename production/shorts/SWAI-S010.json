@@ -1,0 +1,71 @@
+{
+ "id": "SWAI-S010",
+ "scenes": [
+  {
+   "dur": 4,
+   "kind": "title",
+   "kicker": "AFTER TESTING ALL 3",
+   "big": "Which AI <em>for what?</em>",
+   "tiles": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "say": "I tested ChatGPT, Claude and Gemini on five real tasks. Here's which one I'd actually use for what."
+  },
+  {
+   "dur": 5,
+   "kind": "big",
+   "big": "Writing an email",
+   "sub": "Claude or Gemini · both kept every fact",
+   "say": "Writing an email? Claude or Gemini. Both kept every fact. Gemini even put it straight into Gmail."
+  },
+  {
+   "dur": 5,
+   "kind": "big",
+   "big": "Shopping with sources",
+   "sub": "Gemini · every price matched · still click the link",
+   "say": "Finding something to buy, with sources? Gemini. Every price matched. Still, click the link."
+  },
+  {
+   "dur": 5,
+   "kind": "big",
+   "big": "Analysing a spreadsheet",
+   "sub": "Gemini found the most · check the numbers yourself",
+   "say": "Analysing a spreadsheet? Gemini found the most, but none of them found everything. So check the numbers yourself."
+  },
+  {
+   "dur": 5,
+   "kind": "big",
+   "big": "Building a quick app",
+   "sub": "ChatGPT or Claude · cleaner code, no fake data",
+   "say": "Building a quick app? ChatGPT or Claude. Cleaner code, and no fake data."
+  },
+  {
+   "dur": 5,
+   "kind": "big",
+   "big": "Learning something new",
+   "sub": "Any of them · all three scored 10",
+   "say": "Learning something new? Honestly, any of them. All three scored ten."
+  },
+  {
+   "dur": 5,
+   "kind": "score",
+   "big": "Final score",
+   "sub": "out of 50",
+   "board": {
+    "ChatGPT": "40",
+    "Claude": "41",
+    "Gemini": "44"
+   },
+   "say": "Final score: ChatGPT forty, Claude forty-one, Gemini forty-four."
+  },
+  {
+   "dur": 2,
+   "kind": "big",
+   "big": "Save this",
+   "sub": "for later",
+   "say": "Save this one for later."
+  }
+ ]
+}

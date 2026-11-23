@@ -8,13 +8,13 @@ objective: reach
 hypothesis: "If the strongest, most verifiable round goes out on the long-form day, it drives clicks to the full video (related-video clicks)."
 title: "I Hid 3 Problems in a Spreadsheet. Which AI Found Them?"
 hook: "I hid three problems in this spreadsheet. Let's see which AI is actually paying attention."
-production_status: SCRIPTED
+production_status: EDITED
 approval_status: PROPOSED
 publish_date: "2026-11-28"
 video_url: ""
 experiments: []
 created: 2026-11-21
-updated: 2026-11-21
+updated: 2026-11-23
 ---
 
 > **v2 (2026-11-21):** part of the **AI Showdown** set. All 7 launch-week Shorts come from SWAI-L001, at the creator's request ("us video ke 7 shorts… interesting, casual, AI jokes"). `{ }` = fill in from the real recording only. Jokes describe what happened on screen, never claims about the companies.
@@ -47,5 +47,11 @@ AI Showdown package (contestant tiles, round card, ✓/✗ stamps, mini scoreboa
 ## Performance
 | Pulled | Window | Views | Engaged views | Avg % viewed | Likes | Comments | Shares | Subs + / − |
 |---|---|---|---|---|---|---|---|---|
+
+
+## Final narration (as voiced 2026-11-23, clone take 1, 40.2 s, Whisper word-sync)
+> I hid three problems in a spreadsheet. Headphones getting returned like crazy. One region quietly dying. And people buying way more on weekends. Then I asked three AIs to find them. ChatGPT found the headphones and the falling revenue. Missed the region. Five out of ten. Claude went straight for the region. East sales cut in half, with a chart. And then it just stopped. One insight. Four. Gemini found the headphones, the decline, and the weak region. Six. And the weekend problem? Not one AI found it. Apparently AIs don't get weekends. Full showdown is live on the channel.
+
+Scores are FACT from the L001 scoreboard (verified against the recordings and the answer key). Spec: `production/shorts/SWAI-S003.json`.
 
 ## Lessons learned

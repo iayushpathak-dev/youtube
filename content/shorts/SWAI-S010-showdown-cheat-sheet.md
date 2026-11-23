@@ -8,13 +8,13 @@ objective: reach
 hypothesis: "If the week ends with a saveable cheat sheet based on real results, viewers save/share it (shares, saves)."
 title: "Which AI for What? (After Testing All 3)"
 hook: "I tested ChatGPT, Claude and Gemini on five real tasks. Here's the cheat sheet, so you don't have to."
-production_status: SCRIPTED
+production_status: EDITED
 approval_status: PROPOSED
 publish_date: "2026-11-29"
 video_url: ""
 experiments: []
 created: 2026-11-21
-updated: 2026-11-21
+updated: 2026-11-23
 ---
 
 > **v2 (2026-11-21):** part of the **AI Showdown** set. All 7 launch-week Shorts come from SWAI-L001, at the creator's request ("us video ke 7 shorts… interesting, casual, AI jokes"). `{ }` = fill in from the real recording only. Jokes describe what happened on screen, never claims about the companies.
@@ -47,5 +47,11 @@ AI Showdown package (contestant tiles, round card, ✓/✗ stamps, mini scoreboa
 ## Performance
 | Pulled | Window | Views | Engaged views | Avg % viewed | Likes | Comments | Shares | Subs + / − |
 |---|---|---|---|---|---|---|---|---|
+
+
+## Final narration (as voiced 2026-11-23, clone take 1, 46.0 s, Whisper word-sync)
+> I tested ChatGPT, Claude and Gemini on five real tasks. Here's which one I'd actually use for what. Writing an email? Claude or Gemini. Both kept every fact. Gemini even put it straight into Gmail. Finding something to buy, with sources? Gemini. Every price matched. Still, click the link. Analysing a spreadsheet? Gemini found the most, but none of them found everything. So check the numbers yourself. Building a quick app? ChatGPT or Claude. Cleaner code, and no fake data. Learning something new? Honestly, any of them. All three scored ten. Final score: ChatGPT forty, Claude forty-one, Gemini forty-four. Save this one for later.
+
+Scores are FACT from the L001 scoreboard (verified against the recordings and the answer key). Spec: `production/shorts/SWAI-S010.json`.
 
 ## Lessons learned
