@@ -44,3 +44,6 @@ Tone set by the creator for the first video (DEC-019, 2026-11-21): **casual, fun
 ## History
 - 2026-11-19 → 2026-11-21: the original positioning was "Real apps, built with AI, shipped to production", aimed at developers
   (`brand/channel-profile.md`). Broadened by DEC-001.
+
+## Packaging style rule (creator, 2026-11-23)
+- Titles, descriptions, tags and comments must read like a real person wrote them: plain casual words, **no emojis or icons**, no AI-sounding lists or hype phrases. Creator's words: "inko human type title and all hona chaheye not ai based so icon nhi aayenge".
