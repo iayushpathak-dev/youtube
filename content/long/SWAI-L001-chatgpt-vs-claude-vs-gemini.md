@@ -8,13 +8,13 @@ objective: reach
 hypothesis: "If our first video is a fast, funny game show with checkable results (not a dry comparison), then viewers stay longer than in typical comparison videos (avg % viewed ≥45%) and the 5 rounds work as standalone Shorts that feed the long video."
 title: "I Made ChatGPT, Claude & Gemini Compete in 5 Real Tasks"
 hook: "Three AIs. Five real tasks. One spreadsheet with answers I hid myself. Nobody gets to bluff. Welcome to the AI Showdown."
-production_status: SCRIPTED
+production_status: EDITED
 approval_status: PROPOSED
 publish_date: "2026-11-28"
 video_url: ""
 experiments: []
 created: 2026-11-21
-updated: 2026-11-21
+updated: 2026-11-23
 ---
 
 > **v2 (2026-11-21)** at the creator's request: "not too long, not boring, interesting, casual, AI jokes, learning + fun". The format changed from a ~15-min straight comparison to an **~8–9 min game show**. The test protocol is unchanged (still verifiable). Research: `research/competitors/snapshots/2026-11-21-l001-format-research.md`. v1 is in git history.
@@ -192,3 +192,5 @@ SWAI-S001 teaser (Sun) · S002 Round 1 (Mon) · S003 Round 3 (Tue) · S006 Round
 |---|---|---|---|---|---|---|---|---|---|---|
 
 ## Lessons learned
+
+- 2026-11-23 · **Rendered** (6:04, 1920x1080, clone voice in 3 parts, Whisper word-sync, 45 scenes; spec `production/shorts/SWAI-L001.json`). Claude's R1 signature blurred. Chapters (from the word-sync cuts): 0:00 cold open · 0:08 meet the contestants · 0:39 rules · 0:51 Round 1 · 1:45 Round 2 · 2:39 Round 3 · 3:40 Round 4 · 4:33 Round 5 · 5:10 final scores. Packaging is human style, no emojis (brand rule 2026-11-23). Thumbnail A.
