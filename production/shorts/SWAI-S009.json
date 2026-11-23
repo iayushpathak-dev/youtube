@@ -1,0 +1,87 @@
+{
+ "id": "SWAI-S009",
+ "scenes": [
+  {
+   "dur": 3.5,
+   "kind": "title",
+   "kicker": "THE AI SHOWDOWN · ROUND 5",
+   "big": "Teach me like I'm <em>15</em>",
+   "tiles": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ]
+  },
+  {
+   "dur": 4.0,
+   "kind": "big",
+   "big": "I answered <em>wrong</em>",
+   "sub": "…on purpose 😈"
+  },
+  {
+   "dur": 9.0,
+   "kind": "clip",
+   "label": "ChatGPT",
+   "caption": "built a whole <em>quiz app</em>. calm down.",
+   "score": "10/10",
+   "src": "out/SWAI-L001/raw/round5-chatgpt.mp4",
+   "start": 50,
+   "end": 62,
+   "crop": [
+    540,
+    200,
+    760,
+    700
+   ]
+  },
+  {
+   "dur": 9.0,
+   "kind": "clip",
+   "label": "Claude",
+   "caption": "agent = <em>smart intern</em> · 2/3, fair",
+   "score": "10/10",
+   "src": "out/SWAI-L001/raw/round5-claude.mp4",
+   "start": 22,
+   "end": 45,
+   "crop": [
+    560,
+    0,
+    700,
+    560
+   ]
+  },
+  {
+   "dur": 9.0,
+   "kind": "clip",
+   "label": "Gemini",
+   "caption": "“Haha, nice try — <em>there is no D!</em>”",
+   "score": "10/10",
+   "src": "out/SWAI-L001/raw/round5-gemini.mp4",
+   "start": 32,
+   "end": 42,
+   "crop": [
+    400,
+    40,
+    700,
+    520
+   ]
+  },
+  {
+   "dur": 4.5,
+   "kind": "score",
+   "big": "Round 5",
+   "sub": "All three graded me honestly",
+   "board": {
+    "ChatGPT": "10",
+    "Claude": "10",
+    "Gemini": "10"
+   }
+  },
+  {
+   "dur": 3.5,
+   "kind": "big",
+   "big": "Final scores",
+   "sub": "This Saturday · comment your winner 👇"
+  }
+ ]
+}

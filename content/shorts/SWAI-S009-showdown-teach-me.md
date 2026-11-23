@@ -8,13 +8,13 @@ objective: reach
 hypothesis: "If the Short shows AI as a tutor with a funny wrong-answer moment, students engage (comments, audience age data)."
 title: "I Answered Wrong On Purpose. Here's How 3 AIs Reacted"
 hook: "I answered a quiz wrong on purpose, just to see how three AIs would react."
-production_status: SCRIPTED
+production_status: EDITED
 approval_status: PROPOSED
-publish_date: "2026-11-27"
+publish_date: "2026-11-29"
 video_url: ""
 experiments: []
 created: 2026-11-21
-updated: 2026-11-21
+updated: 2026-11-23
 ---
 
 > **v2 (2026-11-21):** part of the **AI Showdown** set. All 7 launch-week Shorts come from SWAI-L001, at the creator's request ("us video ke 7 shorts… interesting, casual, AI jokes"). `{ }` = fill in from the real recording only. Jokes describe what happened on screen, never claims about the companies.
@@ -47,5 +47,11 @@ AI Showdown package (contestant tiles, round card, ✓/✗ stamps, mini scoreboa
 ## Performance
 | Pulled | Window | Views | Engaged views | Avg % viewed | Likes | Comments | Shares | Subs + / − |
 |---|---|---|---|---|---|---|---|---|
+
+
+## Final narration (as voiced 2026-11-23, clone take 1, 40.1 s)
+> I asked three AIs to teach me AI agents like I'm fifteen. Then quiz me. And I answered wrong… on purpose. ChatGPT built an entire quiz app. With a score table. Calm down. It still caught my wrong answer and explained why. Claude used a weekend trip to Jaipur, called an agent a smart intern, and graded me two out of three. Fair. Gemini? I answered D. There was no D. "Haha, nice try. There is no D." Caught me. All three taught it well and graded me honestly. Ten, ten, ten. The final scores drop this Saturday. Comment who you think won.
+
+Results (FACT, recordings 2026-11-23): 10 · 10 · 10. Spec: `production/shorts/SWAI-S009.json`. Note: it publishes Sun 29 (after L001), so before upload change the last line/end card to "Full showdown is live" if the creator wants; the current render says "this Saturday".
 
 ## Lessons learned

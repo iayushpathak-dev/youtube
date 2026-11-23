@@ -1,0 +1,106 @@
+{
+ "id": "SWAI-S008",
+ "scenes": [
+  {
+   "dur": 3.5,
+   "kind": "title",
+   "kicker": "THE AI SHOWDOWN · ROUND 4",
+   "big": "Build me an <em>app</em>",
+   "tiles": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ]
+  },
+  {
+   "dur": 6.0,
+   "kind": "stat",
+   "lines": [
+    "1 prompt · 1 file",
+    "Add 2 habits · tick today",
+    "Reload → still saved?"
+   ]
+  },
+  {
+   "dur": 8.0,
+   "kind": "clip",
+   "label": "ChatGPT",
+   "caption": "clean, simple, <em>everything saved</em>",
+   "score": "10/10",
+   "src": "out/SWAI-L001/raw/round4-chatgpt.mp4",
+   "start": 72,
+   "end": 87,
+   "crop": [
+    380,
+    40,
+    1100,
+    820
+   ]
+  },
+  {
+   "dur": 9.0,
+   "kind": "clip",
+   "label": "Claude",
+   "caption": "“haven't clicked through it” <em>honest</em> 😅",
+   "score": "10/10",
+   "src": "out/SWAI-L001/raw/round4-claude.mp4",
+   "start": 98,
+   "end": 117,
+   "crop": [
+    380,
+    60,
+    1100,
+    800
+   ]
+  },
+  {
+   "dur": 6.0,
+   "kind": "clip",
+   "label": "Gemini",
+   "caption": "3-day water streak… <em>before I drank anything</em>",
+   "score": "8/10",
+   "src": "out/SWAI-L001/raw/round4-gemini.mp4",
+   "start": 29,
+   "end": 38,
+   "crop": [
+    360,
+    60,
+    920,
+    760
+   ]
+  },
+  {
+   "dur": 5.0,
+   "kind": "clip",
+   "label": "Gemini",
+   "caption": "complete Wednesday <em>on Monday</em> 🚀",
+   "score": "8/10",
+   "src": "out/SWAI-L001/raw/round4-gemini.mp4",
+   "start": 48,
+   "end": 58,
+   "crop": [
+    360,
+    60,
+    920,
+    760
+   ]
+  },
+  {
+   "dur": 4.5,
+   "kind": "score",
+   "big": "Round 4",
+   "sub": "All three apps actually work",
+   "board": {
+    "ChatGPT": "10",
+    "Claude": "10",
+    "Gemini": "8"
+   }
+  },
+  {
+   "dur": 3.0,
+   "kind": "big",
+   "big": "Full showdown",
+   "sub": "This Saturday 🔥"
+  }
+ ]
+}

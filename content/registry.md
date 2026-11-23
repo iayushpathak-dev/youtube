@@ -14,6 +14,6 @@ Next free IDs: **SWAI-S011** (Short) · **SWAI-L002** (long-form)
 | SWAI-S005 | Make AI Tell You When It's Guessing | Discover (DEC-010 proposed) | [PRO, STU, BEG] | KILLED | REJECTED |  | `content/shorts/SWAI-S005-make-ai-check-its-work.md` |
 | SWAI-S006 | AI Links Are Like Gym Memberships | Discover (DEC-010 proposed) | [STU, PRO, BEG] | EDITED | PROPOSED | 2026-11-26 | `content/shorts/SWAI-S006-showdown-sources.md` |
 | SWAI-S007 | Stop Using AI to Do Your Homework. Do This. | Discover (DEC-010 proposed) | [STU, BEG, PRO] | KILLED | REJECTED |  | `content/shorts/SWAI-S007-ai-quiz-me.md` |
-| SWAI-S008 | Can AI Build an App From One Prompt? | Discover (DEC-010 proposed) | [BEG, DEV, BIZ] | SCRIPTED | PROPOSED | 2026-11-26 | `content/shorts/SWAI-S008-showdown-build-app.md` |
-| SWAI-S009 | I Answered Wrong On Purpose. Here's How 3 AIs Reacted | Discover (DEC-010 proposed) | [STU, BEG, PRO] | SCRIPTED | PROPOSED | 2026-11-27 | `content/shorts/SWAI-S009-showdown-teach-me.md` |
+| SWAI-S008 | Can AI Build an App From One Prompt? | Discover (DEC-010 proposed) | [BEG, DEV, BIZ] | EDITED | PROPOSED | 2026-11-27 | `content/shorts/SWAI-S008-showdown-build-app.md` |
+| SWAI-S009 | I Answered Wrong On Purpose. Here's How 3 AIs Reacted | Discover (DEC-010 proposed) | [STU, BEG, PRO] | EDITED | PROPOSED | 2026-11-29 | `content/shorts/SWAI-S009-showdown-teach-me.md` |
 | SWAI-S010 | Which AI for What? (After Testing All 3) | Discover (DEC-010 proposed) | [BEG, PRO, STU, BIZ] | SCRIPTED | PROPOSED | 2026-11-28 | `content/shorts/SWAI-S010-showdown-cheat-sheet.md` |

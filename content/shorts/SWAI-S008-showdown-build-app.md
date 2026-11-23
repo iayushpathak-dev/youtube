@@ -8,13 +8,13 @@ objective: reach
 hypothesis: "If non-coders see an app built from one prompt (and its flaws), the Build pillar draws them in (views, subs from Short)."
 title: "Can AI Build an App From One Prompt?"
 hook: "One prompt. No coding. Three AIs. Let's see whose app survives a page refresh."
-production_status: SCRIPTED
+production_status: EDITED
 approval_status: PROPOSED
-publish_date: "2026-11-26"
+publish_date: "2026-11-27"
 video_url: ""
 experiments: []
 created: 2026-11-21
-updated: 2026-11-21
+updated: 2026-11-23
 ---
 
 > **v2 (2026-11-21):** part of the **AI Showdown** set. All 7 launch-week Shorts come from SWAI-L001, at the creator's request ("us video ke 7 shorts… interesting, casual, AI jokes"). `{ }` = fill in from the real recording only. Jokes describe what happened on screen, never claims about the companies.
@@ -47,5 +47,11 @@ AI Showdown package (contestant tiles, round card, ✓/✗ stamps, mini scoreboa
 ## Performance
 | Pulled | Window | Views | Engaged views | Avg % viewed | Likes | Comments | Shares | Subs + / − |
 |---|---|---|---|---|---|---|---|---|
+
+
+## Final narration (as voiced 2026-11-23, clone take 1, 42.0 s)
+> I asked three AIs to build me a habit tracker. One prompt. One file. Then I ran the exact same test on all three: add two habits, tick today, reload the page. ChatGPT: clean, simple, everything saved. Ten. Claude: week navigation, even a warning if storage fails. And it honestly admitted it hadn't clicked through it. Ten. Gemini built the prettiest app by far. But it gave me a three-day water streak… before I drank anything. And it lets you complete Wednesday on Monday. Productivity unlocked. Eight. The good news? All three apps actually work. Full showdown, this Saturday.
+
+Results (FACT, recordings + scripted Playwright test 2026-11-23): ChatGPT 10 · Claude 10 · Gemini 8. Spec: `production/shorts/SWAI-S008.json`.
 
 ## Lessons learned
