@@ -8,7 +8,7 @@ With --audio: scene durations are scaled to fit the voice track, and the audio i
 """
 import json, sys, subprocess, pathlib, html, argparse
 ROOT = pathlib.Path(__file__).resolve().parents[2]
-ap = argparse.ArgumentParser(); ap.add_argument('spec'); ap.add_argument('--audio'); a = ap.parse_args()
+ap = argparse.ArgumentParser(); ap.add_argument('spec'); ap.add_argument('--audio'); ap.add_argument('--audio-only', action='store_true', help='reuse the rendered visual, only remix audio'); a = ap.parse_args()
 spec = json.load(open(a.spec)); sid = spec['id']
 LAND = bool(spec.get('landscape'))  # long-form: 1920x1080
 W, H = (1920, 1080) if LAND else (1080, 1920)
@@ -79,7 +79,8 @@ files = []
 for i, s in enumerate(spec['scenes']):
     f = out / f'scene{i:02d}.html'; f.write_text(scene_html(s), encoding='utf-8'); files.append(str(f))
 import os
-subprocess.run(['node', str(ROOT / 'production/shorts/shoot.js'), *files], check=True, env={**os.environ, 'W': str(W), 'H': str(H)})
+if not a.audio_only:
+    subprocess.run(['node', str(ROOT / 'production/shorts/shoot.js'), *files], check=True, env={**os.environ, 'W': str(W), 'H': str(H)})
 
 durs = [s['dur'] for s in spec['scenes']]
 if a.audio:
@@ -129,7 +130,7 @@ if a.audio:
         k = (alen + 0.6) / sum(durs); durs = [d * k for d in durs]
 fps = 30; parts = []
 CW, CH, CX, CY = (1552, 832, 184, 180) if LAND else (992, 992, 44, 564)
-for i, d in enumerate(durs):
+for i, d in enumerate([] if a.audio_only else durs):
     n = max(1, round(d * fps)); seg = out / f'seg{i:02d}.mp4'
     sc = spec['scenes'][i]
     if sc['kind'] == 'clip':
@@ -150,11 +151,48 @@ for i, d in enumerate(durs):
         f"scale={int(W*1.1)}:{int(H*1.1)},zoompan=z='1+0.06*on/{n}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={n}:s={W}x{H}:fps={fps}",
         '-frames:v',str(n),'-pix_fmt','yuv420p','-c:v','libx264','-preset','veryfast','-crf','20',str(seg)], check=True)
     parts.append(seg)
-(out/'list.txt').write_text(''.join(f"file '{x.name}'\n" for x in parts))
 silent = out / f'{sid}-visual.mp4'
-subprocess.run(['ffmpeg','-y','-v','error','-f','concat','-safe','0','-i',str(out/'list.txt'),'-c','copy',str(silent)], check=True)
+if not a.audio_only:
+  (out/'list.txt').write_text(''.join(f"file '{x.name}'\n" for x in parts))
+  subprocess.run(['ffmpeg','-y','-v','error','-f','concat','-safe','0','-i',str(out/'list.txt'),'-c','copy',str(silent)], check=True)
 if a.audio:
     final = out / f'{sid}-final.mp4'
-    subprocess.run(['ffmpeg','-y','-v','error','-i',str(silent),'-i',a.audio,'-filter:a','loudnorm=I=-14:TP=-1.5:LRA=11','-c:v','copy','-c:a','aac','-b:a','192k','-shortest',str(final)], check=True)
+    music = spec.get('music')
+    if not music:
+        subprocess.run(['ffmpeg','-y','-v','error','-i',str(silent),'-i',a.audio,'-filter:a','loudnorm=I=-14:TP=-1.5:LRA=11','-c:v','copy','-c:a','aac','-b:a','192k','-shortest',str(final)], check=True)
+    else:
+        # Music bed (looped, quiet, ducked under the voice) + SFX placed per scene.
+        # Auto SFX: title/round -> whoosh at start; score board -> ding (final board -> drumroll before it);
+        # clip with a score -> ding (>=8/10) or buzzer (<=7/10) ~0.9 s before the scene ends (when the score is said).
+        # A scene can override with "sfx": name or "none", and "sfx_at": seconds from scene start.
+        SFX = ROOT / 'brand/audio/sfx'
+        starts = [sum(durs[:i]) for i in range(len(durs))]
+        hits = []
+        for i, sc in enumerate(spec['scenes']):
+            st0, d = starts[i], durs[i]; name = sc.get('sfx'); at = sc.get('sfx_at')
+            if name is None:
+                k = sc['kind']
+                if k in ('title', 'round'): name, at = 'whoosh', 0.0
+                elif k == 'score' and 'final' in sc.get('big', '').lower(): name, at = 'drumroll', 0.0
+                elif k == 'score': name, at = 'ding', 0.15
+                elif k == 'clip' and sc.get('score'):
+                    v = int(sc['score'].split('/')[0]); name, at = ('ding' if v >= 8 else 'buzzer'), max(d - 0.9, 0.3)
+            if name and at is None and sc['kind'] == 'clip': at = max(d - 0.9, 0.3)
+            if name and name != 'none':
+                t = st0 + (at if at is not None else 0.0)
+                if hits and t - hits[-1][1] < 1.5 and name in ('ding', 'whoosh'): continue  # no double hits
+                hits.append((str(SFX / f'{name}.mp3'), t))
+        cmd = ['ffmpeg','-y','-v','error','-i',str(silent),'-i',a.audio,'-stream_loop','-1','-i',str(ROOT / music)]
+        for f, _ in hits: cmd += ['-i', f]
+        fc = "[1:a]aformat=sample_rates=44100:channel_layouts=stereo,asplit=2[v][vk];"
+        fc += f"[2:a]aformat=sample_rates=44100:channel_layouts=stereo,volume={spec.get('music_volume', 0.22)}[m];"
+        fc += "[m][vk]sidechaincompress=threshold=0.02:ratio=6:attack=30:release=400[md];"
+        mix = ['[v]', '[md]']
+        for j, (_, t) in enumerate(hits):
+            fc += f"[{3+j}:a]aformat=sample_rates=44100:channel_layouts=stereo,volume=0.55,adelay={int(t*1000)}:all=1[s{j}];"; mix.append(f'[s{j}]')
+        fc += ''.join(mix) + f"amix=inputs={len(mix)}:duration=first:normalize=0,afade=t=out:st={sum(durs)-1.2:.2f}:d=1.2,loudnorm=I=-14:TP=-1.5:LRA=11[a]"
+        cmd += ['-filter_complex', fc, '-map', '0:v', '-map', '[a]', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-t', f'{sum(durs):.2f}', str(final)]
+        subprocess.run(cmd, check=True)
+        print('sfx:', ' '.join(f'{pathlib.Path(f).stem}@{t:.1f}' for f, t in hits))
     print('final:', final)
 print('visual:', silent, f'{sum(durs):.1f}s')

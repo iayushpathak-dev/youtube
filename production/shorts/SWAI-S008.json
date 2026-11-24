@@ -72,7 +72,8 @@
     920,
     760
    ],
-   "say": "Gemini built the prettiest app by far. But it gave me a three-day water streak before I drank anything."
+   "say": "Gemini built the prettiest app by far. But it gave me a three-day water streak before I drank anything.",
+   "sfx": "buzzer"
   },
   {
    "dur": 5.0,
@@ -110,5 +111,6 @@
    "sub": "This Saturday 🔥",
    "say": "Full showdown, this Saturday."
   }
- ]
+ ],
+ "music": "brand/audio/bed-gameshow.mp3"
 }

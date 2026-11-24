@@ -73,3 +73,7 @@ The working branch is `claude/adoring-pasteur-aywagg`. The repo's default branch
 
 ### Upload file names (creator's request, 2026-11-23)
 Files sent to the creator use simple names (copies in `out/upload/`, git-ignored): final-short-1 = S001 (Mon 23, uploaded) · final-short-2 = S002 (Tue 24) · final-short-3 = S006 (Wed 25) · final-short-4 = S008 (Thu 26) · final-short-5 = S009 (Fri 27) · final-long-video-1 = L001 (Sat 28) · final-short-6 = S003 (Sat 28, after L001) · final-short-7 = S010 (Sun 29). Each thumbnail has the same name with `.jpg`. Keep this pattern for future videos (final-long-video-2 = L002).
+
+### 2026-11-24
+- S002 uploaded and scheduled (Tue 24, 18:30 IST) by the creator from the phone. Title initially missing (showed the date); creator told to fix it in Studio.
+- Music + SFX added to final-short-3..7 and final-long-video-1 (details: `brand/voice-clone.md`). S001/S002 stay without music as the comparison. ElevenLabs credits after this: ~17,500 of 40,000 left this cycle.

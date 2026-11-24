@@ -17,7 +17,9 @@
    ],
    "caption": "a 3-day water streak… <em>before I drank anything</em>",
    "score": "",
-   "say": "Yep. That's an AI giving me a three-day water streak… before I drank a single glass. Let me explain how we got here."
+   "say": "Yep. That's an AI giving me a three-day water streak… before I drank a single glass. Let me explain how we got here.",
+   "sfx": "scratch",
+   "sfx_at": 5.63
   },
   {
    "dur": 4,
@@ -299,7 +301,8 @@
    ],
    "caption": "headphones · decline · weak East · <em>a whole dashboard</em>",
    "score": "6/10",
-   "say": "Gemini found the headphones, the monthly decline, and that the East region was weak. It even built a whole dashboard. Six."
+   "say": "Gemini found the headphones, the monthly decline, and that the East region was weak. It even built a whole dashboard. Six.",
+   "sfx": "ding"
   },
   {
    "dur": 4,
@@ -321,7 +324,9 @@
     "ChatGPT": "5",
     "Claude": "4",
     "Gemini": "6"
-   }
+   },
+   "sfx": "buzzer",
+   "sfx_at": 1.2
   },
   {
    "dur": 4,
@@ -390,7 +395,8 @@
    ],
    "caption": "prettiest · <em>3 habits I never added</em>",
    "score": "8/10",
-   "say": "Gemini built the prettiest app by far. But it came pre-loaded with three habits I never added, including a three-day water streak."
+   "say": "Gemini built the prettiest app by far. But it came pre-loaded with three habits I never added, including a three-day water streak.",
+   "sfx": "buzzer"
   },
   {
    "dur": 6,
@@ -551,5 +557,7 @@
    "big": "AI Made <em>Usable</em>",
    "sub": "Comment the next task · Subscribe"
   }
- ]
+ ],
+ "music": "brand/audio/bed-gameshow.mp3",
+ "music_volume": 0.18
 }

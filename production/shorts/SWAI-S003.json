@@ -79,14 +79,18 @@
     740,
     860
    ],
-   "say": "Gemini found the headphones, the decline, and the weak region. Six."
+   "say": "Gemini found the headphones, the decline, and the weak region. Six.",
+   "sfx": "ding",
+   "sfx_at": null
   },
   {
    "dur": 5,
    "kind": "big",
    "big": "Weekends?",
    "sub": "Not one AI found it. AIs don't get weekends.",
-   "say": "And the weekend problem? Not one AI found it. Apparently AIs don't get weekends."
+   "say": "And the weekend problem? Not one AI found it. Apparently AIs don't get weekends.",
+   "sfx": "buzzer",
+   "sfx_at": 1.6
   },
   {
    "dur": 3,
@@ -100,5 +104,6 @@
    },
    "say": "Full showdown is live on the channel."
   }
- ]
+ ],
+ "music": "brand/audio/bed-gameshow.mp3"
 }
