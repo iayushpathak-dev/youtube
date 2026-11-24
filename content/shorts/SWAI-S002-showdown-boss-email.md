@@ -57,3 +57,5 @@ Results (FACT, from the recordings in `out/SWAI-L001/raw/`): ChatGPT 9 · Claude
 - 2026-11-23 · **v2:** last line now "Full showdown on **Saturday**" (DEC-023). Re-voiced (take 1, 50.6 s), re-rendered, end card says Saturday.
 
 ## Lessons learned
+
+- 2026-11-24 · **Upload pack** (human style, no emojis; uses the 2026-11-23 research: curiosity frame + concrete task). File sent as `final-short-2.mp4` + `final-short-2.jpg`. Title: "I asked 3 AIs to email my boss. One of them can't count." Related video: S001. Schedule 18:30 IST.
