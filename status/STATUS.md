@@ -77,3 +77,4 @@ Files sent to the creator use simple names (copies in `out/upload/`, git-ignored
 ### 2026-11-24
 - S002 uploaded and scheduled (Tue 24, 18:30 IST) by the creator from the phone. Title initially missing (showed the date); creator told to fix it in Studio.
 - Music + SFX added to final-short-3..7 and final-long-video-1 (details: `brand/voice-clone.md`). S001/S002 stay without music as the comparison. ElevenLabs credits after this: ~17,500 of 40,000 left this cycle.
+- 2026-11-24 · Comments on S001 (FACT, creator screenshot): @hasanabdelhamid "GEMINI!!!" (creator replied: "I'll add a test in your name on Saturday. What task do you want Gemini to crush?"), @proxsher "Look a round is done but still gemini" (with a Gemini image). **Open promise:** a viewer test for @hasanabdelhamid. L001 is already final, so deliver it as a separate Short or inside L002 once they name a task. Rule from now: don't promise content in replies before checking it can be delivered.
